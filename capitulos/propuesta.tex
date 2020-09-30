@@ -1,0 +1,167 @@
+
+ Este problema se quiere solucionar integrando visión computacional y redes neuronales convolucionales al sistema de fila única, para poder así determinar el tiempo promedio de espera de un cliente en la fila, dependiendo  del resultado se procederá en abrir mas cajas para mejorar la situación del cliente. Teniendo esta información, el supermercado podrá saber en qué horarios necesitará más personal y cuándo no. De esta manera será posible organizar mejor a los empleados, asignándoles un horario mejor establecido y determinar la cantidad de empleados necesarios, para así no tener personal sin hacer nada. Este procedimiento beneficiará tanto al cliente como al supermercado.
+
+
+
+\section{Índice tentativo}
+En esta sección se describirán de forma detallada los capítulos que comprenderán el documento de tesis. Y estos se distribuirán de la siguiente manera:
+
+\begin{enumerate}
+  \item \textbf{CAPÍTULO I: INTRODUCCIÓN}
+	  \begin{enumerate}[label*=\arabic*.]
+	    \item Antecedentes
+	    \item Planteamiento del problema
+	    \item Objetivos
+			\begin{enumerate}[label*=\arabic*.]
+				\item Objetivo general
+				\item Objetivos específicos 
+			\end{enumerate}
+		\item Justificación
+		\item Delimitación
+		  	\begin{enumerate}[label*=\arabic*.]
+			  	\item Límites
+			  	\item Alcances
+		  	\end{enumerate}
+	  	\item Estructura del documento
+	  	\end{enumerate}
+  \item\textbf{CAPÍTULO II: MARCO TEÓRICO}
+  	\begin{enumerate}[label*=\arabic*.]
+	  	\item Estado del Arte
+		  \begin{enumerate}[label*=\arabic*.]
+			  	\item Evolución de los Sistemas de filas de un supermercado
+			  	\item Innovación en las rede neuronales
+		 \end{enumerate} 
+	  	\item Fundamentos Teóricos
+		  	\begin{enumerate}[label*=\arabic*.]
+			  	\item Redes neuronales
+				  	\begin{enumerate}[label*=\arabic*.]
+					  	\item Capas
+					  	\item Metodos de aprendizaje
+				  		\item Aprendizaje supervisado
+				  		\item Aprendizaje no supervisado
+				  		\item Aprendizaje reforzado
+				  	\end{enumerate}
+				 \item Función de activación
+					 \begin{enumerate}[label*=\arabic*.]
+					  	\item Sigmoide
+					  	\item Tangencial
+				  		\item Relu
+				  		\item Softmax
+				  	  \end{enumerate}
+				 \item YOLO
+				 	  \begin{enumerate}[label*=\arabic*.]
+					  	\item Darknet
+					  	\item Darkflow
+				  	  \end{enumerate}
+				 \item Machine Learning
+					  \begin{enumerate}[label*=\arabic*.]
+					  	\item Tensorflow
+					  	\item Keras
+				  		\item Pytorch
+				  	  \end{enumerate}
+				 \item Deep Learning
+				 \item Inteligencia artificial
+				 	  \begin{enumerate}[label*=\arabic*.]
+					  	\item Visión computacional
+				  	  \end{enumerate}
+				 \item Servicios de computo en la nube
+				 	  \begin{enumerate}[label*=\arabic*.]
+					  	\item Amazon Web Service
+					  	\item Google Cloud
+				  		\item Google Colab
+				  	  \end{enumerate}
+		  		\end{enumerate}
+		  	\end{enumerate}
+		  	\item \textbf{CAPÍTULO III: MARCO PRÁCTICO}
+			  	\begin{enumerate}[label*=\arabic*.]
+				  	\item Esquema general del proyecto
+				  	\item Armar una base de datos
+				  	\item Etiquetar las imágenes
+				  	\item Iniciar el entrenamiento
+				  	\item Pruebas de la detección de imágenes
+				  	\item Unificar la detección de objetos con rastreo de objetos
+				  	\item Establecer un sistema para el contador
+				  	\item Crear una base de datos para el contador
+			  	\item Herramientas
+				  	\begin{enumerate}[label*=\arabic*.]
+					  	\item Hardware
+					  	  \begin{enumerate}[label*=\arabic*.]
+					  	\item Cámaras de seguridad
+				  	      \end{enumerate}
+					  	\item Software
+					  	  \begin{enumerate}[label*=\arabic*.]
+					  	\item Pychar
+					  	\item Labelling
+				  		\item iTerm2
+				  		\item YOLO
+				  		\item OpenCv
+				  		\item Google Colab
+				  		\item Amazon EC2
+				  	      \end{enumerate}
+				  	\end{enumerate}
+				\item Conclusión del capítulo
+			  	\end{enumerate}
+		\item \textbf{CAPÍTULO IV: MARCO ANALÍTICO}
+		  	\begin{enumerate}[label*=\arabic*.]
+			  	\item Resultados y Discusión
+			  	\item Análisis de costos
+			  	\item Conclusión del capítulo
+		  	\end{enumerate}
+		\item \textbf{CAPÍTULO V: MARCO CONCLUSIVO}
+		  	\begin{enumerate}[label*=\arabic*.]
+			  	\item Conclusiones
+			  	\item Recomendaciones
+			  	\item Trabajos futuros
+		  	\end{enumerate}
+		\item \textbf{BIBLIOGRAFÍA ANEXOS} \\
+		\textbf{ARTÍCULO DE INVESTIGACIÓN (FORMATO IEEE)} 
+		
+
+  	\end{enumerate}
+
+
+\section{Análisis económico}
+
+Para este tipo de proyecto no es necesario una inversión económica para compra de equipos o de licencias de software, ya que para la realización del proyecto se esta haciendo uso de diferentes herramientas que son gratuitas.
+Pero por otra parte el requerimiento mínimo de la computadora para que pueda funcionar es la siguiente:
+\\
+\begin{table}[h]
+
+\begin{center}
+\begin{tabular}{| r | l |}
+Componente & Detalle \\ \hline
+CPU & Procesador Intel i5 \\
+RAM & Se necesita 8 Giga's de memoria \\
+GPU & No es necesario, pero se recomienda la Nvidea GTX1080  \\ Ethernet & Es necesario tener un puerto para conectarse a internet\\ \hline
+\end{tabular}
+\caption{Requerimientos mínimos de la computadora para que se pueda ejecutar la aplicación.}
+\label{tab:fruta}
+\end{center}
+\end{table}
+
+\clearpage
+\section{Cronograma de actividades}
+
+En esta sección se detallara el orden de las actividades que realizaran para poder desarrollar la aplicación, con estimaciones mediante el diagrama de Gantt.
+ \begin{figure}[h]
+	\centering
+	\includegraphics[width=18cm, height=6cm, angle=90]{imagenes/crono23.png}
+	\caption{Cronograma de actividades para desarrollar la aplicacion.}
+	\label{fig:cro}
+\end{figure}
+	% TODO: Diagrama de gantt o Cronograma de trabajo 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
