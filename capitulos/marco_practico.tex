@@ -2,12 +2,34 @@
 En este capítulo se desarrollaran los diferentes pasos para lograr entrenar una red neuronal, para que se capaz de detectar personas ya sea en imágenes y en videos tanto grabados como en tiempo real.
  \subsection{Base de datos}
 Uno de los primeros pasos para entrenar una red neuronal es tener una base de datos, el cual esta compuesto por imágenes (donde aparezca el objeto a detectar) y un archivo que indique la posición del objeto a detectar en la imagen.
-\\ Para ello se consiguió 400 imágenes donde aparezcan personas y con ellos realizar un procedimiento de etiquetado, en la figura \ref{fig:labeling}} se observa este proceso. Esto se logra mediante el uso de un programa que te permite etiquet
+\\ Para ello se consiguió 400 imágenes donde aparezcan personas y con ellos realizar un procedimiento de etiquetado, en la figura \ref{fig:labeling} se observa este proceso. Esto se logra mediante el programa LabelImg que te permite etiquetar la posición de una persona en una imagen.
+
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.7]{imagenes/fila_larga.png}
-	\caption{Representación de una fila larga.}
-	\source{Shutterstock}
+	\includegraphics[scale=0.25]{imagenes/persona1.png}
+	\caption{Proceso de etiquetado para general los archivos necesarios para el entrenamiento.}
+	\source{Elaboración propia}
 	\label{fig:labeling}
 \end{figure}
+
+\clearpage
+
+Este proceso se realiza con cada imagen, para así obtener un archivo que especifica la posición de dónde se encuentra la \say{persona} en este caso. En la figura \ref{fig:labeling2} se observa la manera en la que se guardan esos datos. 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{imagenes/persona2.png}
+	\caption{Coordenadas obtenidas por el programa LabelImg al etiquetar a un objeto.}
+	\source{Elaboración propia}
+	\label{fig:labeling2}
+\end{figure}
+
+Esta tarea dependiendo de la cantidad imágenes podrá ser muy tedioso 
+
+
+
+
+
+
