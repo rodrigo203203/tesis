@@ -1,5 +1,19 @@
+\section{Elección de una red neuronal}
+Para la elección de la red neuronal se tomara en cuenta un estudio realizado por ... que mediante unas pruebas realizadas con un mismo \textit{hardware}, para así determinar cual es el que posee un mejor rendimiento, estas pruebas se puede observar en la figura \ref{fig:labeling3}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.2]{imagenes/persona1.png}
+	\caption{Proceso de etiquetado para general los archivos necesarios para el entrenamiento.}
+	\source{Elaboración propia}
+	\label{fig:labeling3}
+\end{figure}
+
+Las pruebas fueron realizadas con la base de datos \say{coco}, que recopila una gran base de datos que facilitan la detección de diferentes objetos. Con estos resultados nos muestran que la red neuronal YOLO es la mejor opción, ya que detecta los objetos con mayor velocidad y con un mayor porcentaje de acierto. 
+
 \section{Entrenamiento de la red neuronal}
 En este capítulo se desarrollaran los diferentes pasos para lograr entrenar una red neuronal, para que se capaz de detectar personas ya sea en imágenes y en videos tanto grabados como en tiempo real.
+
  \subsection{Base de datos}
 Uno de los primeros pasos para entrenar una red neuronal es tener una base de datos, el cual esta compuesto por imágenes (donde aparezca el objeto a detectar) y un archivo que indique la posición del objeto a detectar en la imagen.
 \\ Para ello se consiguió 400 imágenes donde aparezcan personas y con ellos realizar un procedimiento de etiquetado, en la figura \ref{fig:labeling} se observa este proceso. Esto se logra mediante el programa LabelImg que te permite etiquetar la posición de una persona en una imagen.
@@ -13,8 +27,6 @@ Uno de los primeros pasos para entrenar una red neuronal es tener una base de da
 	\label{fig:labeling}
 \end{figure}
 
-\clearpage
-
 Este proceso se realiza con cada imagen, para así obtener un archivo que especifica la posición de dónde se encuentra la \say{persona} en este caso. En la figura \ref{fig:labeling2} se observa la manera en la que se guardan esos datos. 
 
 
@@ -26,7 +38,110 @@ Este proceso se realiza con cada imagen, para así obtener un archivo que especi
 	\label{fig:labeling2}
 \end{figure}
 
-Esta tarea dependiendo de la cantidad imágenes podrá ser muy tedioso 
+Esta recopilación de datos se puede realizar mas fácil gracias a Google, facilitándote esta tarea permitiéndote usar su propia base de datos donde aproximadamente tiene cuatro millones de imágenes, figura \ref{fig:labeling5}, el cual ya fueron etiquetados varios objetos como ser personas, autos, aviones, relojes y otros mas.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.2]{imagenes/persona5.png}
+	\caption{Base de datos de Google para el entrenamiento de redes neuronales.}
+	\source{Elaboración propia}
+	\label{fig:labeling5}
+	\end{figure}
+
+\subsection{Preparación del ambiente}
+
+Para entrenar una red neuronal se necesita muchos recursos en una computadora sobre todo en la área del GPU, ya que todos los cálculos que realiza son procesados de manera más efectiva en esa área. 
+Por ese motivo se decidió usar un servicio de Google que es Colab, el cual te permite conectarse a sus servidores y poder entrenar la red de forma gratuita. 
+\\
+
+Colab es un editor de Python online, que te permite escribir tu código y probarlo sin que instales programas en tu computadora, pero será necesarios instalarlos en tu editor online. EL primer paso es instalar Darknet, el cual te permite trabajar con YOLO.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona3.png}
+	\caption{Frameworks necesarios para que funcione Darknet.}
+	\source{Elaboración propia}
+	\label{fig:labeling4}
+\end{figure}
+
+ Como se observa en la figura \ref{fig:labeling4}, Darknet necesita diferentes frameworks para que funcione. Estos se instalan con la ayuda del comando \say{pip}, el cual es un sistema de gestión de paquetes de Python. Se procederá a instalar estos paquetes mediante el comando que se aprecia en la figura, ya que estos requisitos están guardados en un archivo \say{.txt} en el mismo Darknet.
+ 
+ \clearpage
+ 
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona4.png}
+	\caption{Comando de instalación de paquetes.}
+	\source{Elaboración propia}
+	\label{fig:labeling4}
+\end{figure}
+
+
+\subsection{Personalizar una red neuronal}
+
+En esta etapa se tiene que modificar diferentes archivos para que la red pueda detectar a personas. Estos archivos a modificar son los parámetros que definen la red neuronal, en Darknet existen 2 redes principales que son Yolo y Tiny-Yolo. La gran diferencia entre estos son la cantidad de capas que poseen, esto llega a afectar el rendimiento en una detección. 
+\vspace{5mm}
+
+Por eso mismo se decidió usar Tiny-Yolo, ya que con pruebas realizadas dio un mejor rendimiento en el apartado de fotógrafas por segundo (fps), al momento de trabajar con videos, esto es muy importante ya que la detección se realizara en tiempo real. Los resultados de la prueba se apreciara mejor en la figura .
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona4.png}
+	\caption{Comparación de rendimiento entre diferentes redes neuronales YOLO.}
+	\source{Elaboración propia}
+	\label{fig:labeling4}
+\end{figure}
+
+Con estos resultados se modificara el archivo \say{yolov4-tiny.cfg}, y los datos a cambiar dependerán mayormente a la cantidad de clases al cual se entrenara la red neuronal, estos datos son los que están marcados en la figura \ref{fig:labeling6}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{imagenes/persona6.png}
+	\caption{Comparación de rendimiento entre diferentes redes neuronales YOLO.}
+	\source{Elaboración propia}
+	\label{fig:labeling6}
+\end{figure}
+
+El dato marcado \say{learning rate} es el que determina el ritmo de aprendizaje, entre mas bajo sea podrá aprender mas pero eso alarga el periodo de entrenamiento, en este apartado no hay que exagerar ya que un dato muy bajo simplemente lo hará mas lento y no ayudara en el entrenamiento.
+
+\clearpage
+El siguiente es \say{max batches}, el que encarga de limitar el numero de pasos máximo que realizara en el entrenamiento. Este numero es obtenido mediante una simple formula, pero solo es aplicada cuando se trabajara con 3 o mas clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}. En \say{step} se tomara el 80\% y 90\% de \say{max batches} respectivamente.
+
+\begin{equation}
+	max\_batches = \#\operatorname{clases} * 2000
+\end{equation}
+
+Los otros datos a modificar son los que se aprecian en la figura \ref{fig:labeling7}, que consiste la cantidad de filtros y especificar cuántas clases tendrá que aprender la red neuronal.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{imagenes/persona7.png}
+	\caption{Comparación de rendimiento entre diferentes redes neuronales YOLO.}
+	\source{Elaboración propia}
+	\label{fig:labeling7}
+\end{figure}
+
+Para calcular la cantidad de filtros se tendrá que usar otra formula simple, este dato obtenido se tendrá cambiar en todos los filtros que se encuentra en el documento \say{yolov4-tiny.cfg}.
+
+\begin{equation}
+	filtros = (\#\operatorname{clases}+5)*3
+	\label{eq:persona}
+\end{equation}
+
+Con eso finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aun falta editar otros 2 archivos mas el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar y la locación de donde se guardara la red entrenada, esto se aprecia en la figura .
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{imagenes/persona8.png}
+	\caption{Comparación de rendimiento entre diferentes redes neuronales YOLO.}
+	\source{Elaboración propia}
+	\label{fig:labeling8}
+\end{figure}
+
+
+
+
+
 
 
 
