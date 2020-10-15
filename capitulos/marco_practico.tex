@@ -174,11 +174,131 @@ Al terminar el entrenamiento ya se tendra una red neuronal funcional, capaza de 
 	\label{fig:labeling8}
 \end{figure}
 
-\section{Yolo}
-\section{Agregar el tracker a la detección}
-\section{Agregar contador y limite de detección}
-\section{Alarma al superar el tiempo maximo}
-\section{Crear una base de datos}
+\section{Desarrollo de la aplicación}
 
+Para comenzar el desarrollo de la aplicación primeramente se tiene que crear una ambiente virtual de python en la computadora, ya que se necesita instalar ciertos paquetes que podrían entrar en conflicto con algunas aplicaciones ya instaladas y también genera un mayor orden.
+La herramienta ideal para realizar esto es virtualenvWrapper, ya que es fácil de instalar y sobre todo es simple de ingresar al ambiente virtual, sobre todo cuando se compara con otras herramientas. Esta diferencia aprecia mejor en la figura \ref{fig:labeling9}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona15.png}
+	\caption{Diferencia entre iniciar un ambiente virtual de Python entre VirtualWrapper y Virtualenv.}
+	\source{Elaboración propia}
+	\label{fig:labeling9}
+\end{figure}
+
+\clearpage
+
+Con el ambiente virtual se procede a instalar los diversos paquetes necesarios, donde los principales son Tensorflow y OpenCv. Teniendo estos recursos instalados, se tendrá que convertir la red neuronal entrenada a un formato que Tensorflow soporte. Para ello usaremos un código disponible hecho por la misma comunidad, que esta echo en python, en la figura \ref{fig:labeling10} se muestra el comando para convertir la red.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona16.png}
+	\caption{Comando para convertir la red neuronal.}
+	\source{Elaboración propia}
+	\label{fig:labeling10}
+\end{figure}
+
+ Para realizar la aplicación se hará uso del editor Pycharm, porque es gratis y tiene una interfaz intuitiva al momento de usarlo.
+ El primer paso al comenzar la aplicación es comenzar a importar todos los paquetes que se necesitara para que funcione, la manera en la que se importa los paquetes esta en la figura \ref{fig:labeling11}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona16.png}
+	\caption{Manera en la que se importa los paquetes en un documento Python.}
+	\source{Elaboración propia}
+	\label{fig:labeling11}
+\end{figure}
+
+Con todo esto ya se pude dar comienzo para que la aplicación pueda leer los videos mediante OpenCv y así iniciar el detector para que encuentre las personas de un video.
+
+\subsection{Agregar el tracker a la detección}
+
+Por sí solas la detección que se puede hacer no brinda la información suficiente como para contar las detecciones o corregir errores que se pueden generar. Uno de estos errores es que como en un video hay objetos en movimiento simplemente puede desaparecer las detecciones, debido a que por el movimiento no se llega a reconocer al objeto, esto se puede ver en la figura \ref{fig:labeling12}
+
+\clearpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona17.png}
+	\caption{Comparación entre usar solo la detección y usar tracker con detección.}
+	\source{Elaboración propia}
+	\label{fig:labeling12}
+\end{figure}
+
+Cómo se ve en la figura anterior, no se marca todos los objetos en el lado que no utiliza tracker, ya que justo en ese \textit{frame} no lo identifica bien y se pierde. Pero en otra parte del mismo video se ve que en la figura \ref{fig:labeling13} se marca otro objeto pero desaparece uno, por otra parte el que utiliza el tracker no pierde ninguna detección.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona18.png}
+	\caption{Comparación entre usar solo la detección y usar tracker con detección.}
+	\source{Elaboración propia}
+	\label{fig:labeling13}
+\end{figure}
+
+\clearpage
+
+Pero el problema mas importante es que cuando una persona se sale del enfoque de la cámara o es cubierto por algún objeto, la detección se pierde y cuando vuelve a aparecer la app lo detecta como si fuera una nueva persona. 
+Esto se podrá solucionar incorporando a la detección un tracker, mediante esto se podrá generar ID a cada detección y con eso se podrá diferenciar entre detecciones ya que todos tendrán un identificador que permitiría contar a las personas detectadas.
+El tracker a utilizar es DeepSort, el cual es de uso libre, para que funcione correctamente se tiene que usar una red pre-entrenada que ayuda al proceso del rastreo.
+
+\subsection{Agregar contador y limite de detección}
+
+Para que se pueda contar la cantidad de personas detectas se usara una función de Deepsort el cual genera una lista de la detecciones y mediante OpenCv se podrá mostrar en la pantalla del mismo video como se ve en la figura \ref{fig:labeling14}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona19.png}
+	\caption{Contador de personas en un video.}
+	\source{Elaboración propia}
+	\label{fig:labeling14}
+\end{figure}
+
+El limite se encargara de reiniciar el contador y los cálculos de tiempo máximo de espera de un cliente en una fila. En la figura \ref{fig:labeling15} se aprecia cómo se muestra el limite creado, esta linea es solo una representación visual, ya que las coordenadas de la linea son los importantes al momento de trabajar en la aplicación.
+
+\clearpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona20.png}
+	\caption{.}
+	\source{Elaboración propia}
+	\label{fig:labeling15}
+\end{figure}
+
+Esto se logra gracias a Opencv, ya que con él se dibujara una linea, el cual representa el limite para la detección y cuando un objeto cruce la linea ya no será tomando en cuenta. Esto funciona porque por cada detección genera unas coordenadas de la posición del objeto, teniendo esto se sabe cuándo cruza la linea.
+
+\subsection{Alarma al superar el tiempo máximo}
+
+Este apartado se encarga de informar cuando se sobrepase el tiempo máximo de espera definido, para saber esto se creo una lista donde se registra la hora en la que se detecto la persona, en la figura \ref{fig:labeling16} se observa como esta compuesta la lista el cual guarda datos necesarios para realizar la alarma y el limite de detección.
+
+\clearpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona21.png}
+	\caption{Lista que guarda datos cada vez que se realiza una nueva detección.}
+	\source{Elaboración propia}
+	\label{fig:labeling16}
+\end{figure}
+
+Teniendo esta lista podemos registrar la hora en la que fue detectado una persona y con ello al tener una lista donde se detectaron 3 personas nos permite calcular un tiempo promedio de espera y con ese dato se podrá comparar con el tiempo máximo de espera.
+Si este tiempo promedio de espera es mayor que el tiempo máximo, se procederá a notificar mediante un \say{popup} que el cliente esta esperando mucho y que se recomienda abrir una nueva caja.
+\\
+
+Otra manera en la que se puede activar la alarma es cuando por un determinado tiempo ni una persona llego a cruzar el limite definido, de igual manera que en el anterior caso se activara un \say{popup} notificando un problema al encargado para determinar si lo ve necesario abrir una caja o no. En la figura \ref{fig:labeling17} se observa el diseño del \say{popup} y el mensaje que da.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/persona22.png}
+	\caption{Alera popup que se activa cuando se alcanza el tiempo máximo de espera.}
+	\source{Elaboración propia}
+	\label{fig:labeling17}
+\end{figure}
+
+\clearpage
+
+\subsection{Crear una base de datos}
+\section{Funcionamiento de la aplicación}
 
 
