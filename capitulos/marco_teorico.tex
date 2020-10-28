@@ -11,12 +11,12 @@ El primer supermercado se inauguro en el año 1916 en Tennessee, Estados Unidos,
 \end{figure}
 
 La gran innovación surgió cuando se incorporó el concepto de la teoría de colas, que fue introducido por Agner Kraup Erlang, que cuyo articulo estaba enfocado en las llamadas telefónicas. 
-Teniendo los conceptos ya establecidos, se fueron probando diferentes sistemas para agilizar la atención, ya que cada vez mas gente realizaban sus compras en las tiendas. Estos modelos son: FIFO, LIFO y SJF, (\cite{fifo}). 
+Teniendo los conceptos ya establecidos, se fueron probando diferentes sistemas para agilizar la atención, ya que cada vez mas gente realizaba sus compras en las tiendas. Estos modelos son: FIFO, LIFO y SJF, (\cite{fifo}). 
 \clearpage
 
 La búsqueda de mejoras para agilizar la atención en las cajas es un hecho, ya que estudios demuestran la importancia sobre generar una gran experiencia de compra, porque eso aumenta la probabilidad que el cliente vuelva a comprar en el mismo lugar, y un punto clave son  las filas, (\cite{enjoy1}), (\cite{enjoy2}), (\cite{shoppingExp}), (\cite{enjoy3}).\\ 
 
-Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió locales en el que no existen cajas, como se observa en la figura: \ref{fig:amago}. Este nuevo sistema que utiliza Amazon, realiza el cobro mediante el uso de  cámaras con visión computacional para así detectar que productos selecciona el cliente, esos productos seleccionados se agregan directamente a un carrito virtual en la aplicación de Amazon, el cobro se realiza cuando el cliente sale del local, (\cite{ama}), (\cite{ama2}).\\
+Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió locales en el que no existen cajas, como se observa en la figura: \ref{fig:amago}. Este nuevo sistema que utiliza Amazon realiza el cobro mediante el uso de  cámaras con visión computacional para así detectar que productos selecciona el cliente, esos productos seleccionados se agregan directamente a un carrito virtual en la aplicación de Amazon, el cobro se realiza cuando el cliente sale del local, (\cite{ama}), (\cite{ama2}).\\
 
 \begin{figure}[h]
 	\centering
@@ -44,7 +44,7 @@ El dato sustancial para este proyecto es la introducción de las redes neuronale
 	\source{Hamilton Chang (2019).}
 	\label{fig:gato}
 \end{figure}
- Para que se pueda realizar la convolución, la imagen tiene que ser bidimencional. una vez lista se procede a multiplicar con un kernel, este procedimiento se apreciara en la figura \ref{fig:conv24}. En la figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila y primera y última columna se les ha asignado el valor original, (\cite{conv2323}).
+ Para que se pueda realizar la convolución, la imagen tiene que ser bidimensional. una vez lista se procede a multiplicar con un kernel, este procedimiento se apreciará en la figura \ref{fig:conv24}. En la figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila y primera y última columna se les ha asignado el valor original, (\cite{conv2323}).
 \clearpage
  \begin{figure}[h]
 	\centering
@@ -62,7 +62,7 @@ Volume 9 (2016).}
 Volume 9(2) (2016).}
 	\label{fig:conv23}
 \end{figure}
-Las redes neuronales convolucionales son la base de todo proyecto que utilice reconocimiento de objetos en imágenes (\cite{neu6}), (\cite{neu7}), (\cite{neu8}), estos proyectos van desde el reconocimiento facial, clasificación de imágenes, detección de letras manuscritas y otros mas. Las mejoras de esta red están enfocadas en aumentar la velocidad de respuesta y hacer más accesibles esta tecnología a mas dispositivos, ya que un problema al trabajar con videos en tiempo real es la laténcia. Este problema se solucionara con YOLO, gracias a su manera de aplicar CNN (\cite{yolo}), como se muestra en la figura \ref{fig:yo}, se obtiene unos tiempos de ejecución favorables a este nuevo método. Donde COCO, es una base de datos y esta medido en porcentaje de acierto.
+Las redes neuronales convolucionales son la base de todo proyecto que utilice reconocimiento de objetos en imágenes (\cite{neu6}), (\cite{neu7}), (\cite{neu8}), estos proyectos van desde el reconocimiento facial, clasificación de imágenes, detección de letras manuscritas y otros mas. Las mejoras de esta red están enfocadas en aumentar la velocidad de respuesta y hacer más accesibles esta tecnología a mas dispositivos, ya que un problema al trabajar con videos en tiempo real es la laténcia. Este problema se solucionará con YOLO, gracias a su manera de aplicar CNN (\cite{yolo}), como se muestra en la figura \ref{fig:yo}, se obtiene unos tiempos de ejecución favorables a este nuevo método. Donde COCO, es una base de datos y esta medido en porcentaje de acierto.
  \clearpage
  \begin{figure}[h]
 	\centering
@@ -103,7 +103,7 @@ La palabra red, en el término \say{red neuronal artificial} se refiere a las in
 \subsubsection{Capas}
 
 Para empezar una red neuronal es un conjunto de capas y una capa se puede considerar como un conjunto de neuronas, en el cual solo serán contadas a partir de la primera capa que seria la entrada.
-Como se observa en la figura \ref{fig:capa}, esa red neuronal tiene 3 capas, que son: la de entrada, la oculta y la de salida, pero en realidad solo habrían dos capas porque se descarta la capa de entrada. A simple vista, uno podría notar que las capas envían múltiples datos a la siguiente pero no es el caso, ya que dependiendo de la situación solo una neurona enviara la información a la próxima y así sucesivamente hasta llegar a la salida.
+Como se observa en la figura \ref{fig:capa}, esa red neuronal tiene 3 capas, que son: la de entrada, la oculta y la de salida, pero en realidad solo habría dos capas porque se descarta la capa de entrada. A simple vista, uno podría notar que las capas envían múltiples datos a la siguiente pero no es el caso, ya que dependiendo de la situación solo una neurona enviara la información a la próxima y así sucesivamente hasta llegar a la salida.
 
 \begin{figure}[h]
 	\centering
@@ -121,7 +121,7 @@ Dependiendo del problema a resolver el método de aprendizaje puede variar, de e
 \subsubsection{Aprendizaje supervisado}
 
 
-En el aprendizaje supervisado, los diferentes algoritmos trabajan con datos \say{etiquetados} (\textit{Labeled data}), que intentan encontrar una función, que dada a las variables de entrada \textit{(input data)}, se puede llegar asignar una etiqueta adecuada como se observa en la figura \ref{fig:AprenSup}. El algoritmo se entrena mediante una base de datos y puede \say{aprender} a asignar la etiquetas de salida adecuadas (\cite{AprendizajeSup}).
+En el aprendizaje supervisado, los diferentes algoritmos trabajan con datos \say{etiquetados} (\textit{Labeled data}), que intentan encontrar una función, que dada a las variables de entrada \textit{(input data)}, se puede llegar asignar una etiqueta adecuada como se observa en la figura \ref{fig:AprenSup}. El algoritmo se entrena mediante una base de datos y puede \say{aprender} a asignar las etiquetas de salida adecuadas (\cite{AprendizajeSup}).
 \vspace{5mm}
 \\
 El aprendizaje supervisado se suele usar en:
@@ -195,14 +195,14 @@ Esta es otra similitud que tiene una red neuronal biológica con una artificial,
 Existen varias funciones de activación que actúan de diferente manera y eso nos permite adecuar las capas de las neuronas, para que actúen de manera diferente y estas funciones son (\cite{funAc}):
 \subsubsection{Sigmoid/Sigmoide}
 
-Esta función se encarga de transformar los valores introducidos a una escala de (0,1), la ecuación \ref{eq:sigmoideq} tomara los valores de alto rango y lo transformara de manera asintomática a 1 y los valores bajos tienden de manera contraria acercándose al 0, (\cite{activa2}), la gráfica de la función se apreciara en la figura \ref{fig:sigmoid}.
+Esta función se encarga de transformar los valores introducidos a una escala de (0,1), la ecuación \ref{eq:sigmoideq} tomara los valores de alto rango y lo transformara de manera asintomática a 1 y los valores bajos tienden de manera contraria acercándose al 0, (\cite{activa2}), la gráfica de la función se apreciará en la figura \ref{fig:sigmoid}.
 
 \begin{equation}
 \label{eq:sigmoideq}
 	f(x)=\frac{1}{(1-e^{-x})}
 \end{equation}
 
-Esta función se caracteriza en las siguientes factores :
+Esta función se caracteriza en los siguientes factores :
 \begin{itemize}
 	\item Posee una lenta convergencia.
 	\item Tiene un gran rendimiento en la ultima capa.
@@ -219,7 +219,7 @@ Esta función se caracteriza en las siguientes factores :
 
 \subsubsection{Tangente hiperbólica(Tanh)}
 
-Esta función tangencial consiste en transformar los valores de entrada en una escala (-1,1), donde los valores altos tenderán de manera asintomática a 1 y los valores de bajo nivel tenderán a 0, (\cite{activa2}). La gráfica de esta función se representara en figura \ref{fig:tange}.
+Esta función tangencial consiste en transformar los valores de entrada en una escala (-1,1), donde los valores altos tenderán de manera asintomática a 1 y los valores de bajo nivel tenderán a 0, (\cite{activa2}). La gráfica de esta función se representará en figura \ref{fig:tange}.
 \begin{equation}
 	f\left( x\right) =\frac {2}{1+e^{-2x}}-1
 \end{equation}
@@ -255,7 +255,7 @@ x para\geq 0\end{cases}
 Algunas de las características de esta función son las siguientes:
 
 \begin{itemize}
-	\item Solo se activara cuando los valores sean positivos.
+	\item Solo se activará cuando los valores sean positivos.
 	\item Se comporta bien con imágenes.
 	\item Tiene un gran desempeño con las redes neuronales.
 \end{itemize}
@@ -423,11 +423,11 @@ Uno de los elementos principales al momento de crear una red neuronal son las ca
 
 \vspace{5mm}
 
-Al crear estas capas con Keras se necesita iniciar con el siguiente comando “tf.keras.layers.Flatten” si se quiere trabajar con análisis de imágenes, que consiste en transformar una imagen en un formato adecuado para que se pueda trabajar, con esto quiero decir que por ejemplo teniendo una imagen de un tamaño de 75x75 pixeles, al ejecutar el comando esta imagen se transformaría en 5625 pixeles (75 * 75 = 5625). Esta acción de “aplanar” los píxeles es el trabajo de la primera capa que se utiliza, con esta capa no comenzara con él aprendizaje solo adecuara los set de datos.
+Al crear estas capas con Keras se necesita iniciar con el siguiente comando “tf.keras.layers.Flatten” si se quiere trabajar con análisis de imágenes, que consiste en transformar una imagen en un formato adecuado para que se pueda trabajar, con esto quiero decir que por ejemplo teniendo una imagen de un tamaño de 75x75 pixeles, al ejecutar el comando esta imagen se transformaría en 5625 pixeles (75 * 75 = 5625). Esta acción de “aplanar” los píxeles es el trabajo de la primera capa que se utiliza, con esta capa no comenzara con él aprendizaje solo adecuara los sets de datos.
 
 \vspace{5mm}
 
-Para la siguiente etapa se tiene que aplicar una nueva capa con 2 diferentes configuraciones, para la primera capa se definirá con 128 nodos o neuronas y con la función de activación “relu“, par la siguiente capa solo tendrá 10 nodos y una función de activación “softmax”, estos comando se observaran en la figura \ref{fig:keras2}.
+Para la siguiente etapa se tiene que aplicar una nueva capa con 2 diferentes configuraciones, para la primera capa se definirá con 128 nodos o neuronas y con la función de activación “relu“, par la siguiente capa solo tendrá 10 nodos y una función de activación “softmax”, estos comandos se observaran en la figura \ref{fig:keras2}.
 
 
 \begin{figure}[h]
@@ -469,7 +469,7 @@ Como su nombre indica \textit{Deep learning} es la parte profunda del aprendizaj
 	\label{fig:deep1}
 \end{figure}
 
-Los datos de entrada que almacena una capa se lo conoce como \say{weights}, que en esencia son un montón de números. En términos más técnicos \say{weigts} se lo conoce como parámetros de una capa.
+Los datos de entrada que almacena una capa se lo conocen como \say{weights}, que en esencia son un montón de números. En términos más técnicos \say{weigts} se lo conoce como parámetros de una capa.
 
 \vspace{5mm}
 
@@ -517,12 +517,12 @@ OpenCv presenta una estructura modular, el cual dependiendo de las versión pued
 	\item Calibración de cámara y reconstrucción 3D.
 	\item Detección de objetos.
 	\item Video I/O.
-	\item Nucleo funcional.
+	\item Núcleo funcional.
 \end{itemize} 
 
 \subsection{Servicios de computo en la nube}
 
-Computación en la nube es un termino que normalmente se utiliza para denominar cualquier servicio que realice algún tipo de hospedaje a travez de internet. Para contratar un servicio de este estilo se tiene que hacer por AWS (\textit{Amazon Web Service}), Microsft Azure o Google Cloud.
+Computación en la nube es un termino que normalmente se utiliza para denominar cualquier servicio que realice algún tipo de hospedaje a través de internet. Para contratar un servicio de este estilo se tiene que hacer por AWS (\textit{Amazon Web Service}), Microsft Azure o Google Cloud.
 
 
 
@@ -562,7 +562,7 @@ El servicio de \textit{Google Cloud Plataform} es un servicio muy similar que el
 \end{figure}
 \subsubsection{Google Colab}
 
-Google Colab es una plataforma de programación en Python a travez de la nube, la ventaja de este servicio es que ofrece el uso de GPU para el entrenamiento de redes neuronales de manera gratuita, pero por solo 5 horas de uso. Para usar este servicio lo único que se necesita es una cuenta en Google e iniciar sesión.
+Google Colab es una plataforma de programación en Python a través de la nube, la ventaja de este servicio es que ofrece el uso de GPU para el entrenamiento de redes neuronales de manera gratuita, pero por solo 5 horas de uso. Para usar este servicio lo único que se necesita es una cuenta en Google e iniciar sesión.
 
 \vspace{5mm}
 

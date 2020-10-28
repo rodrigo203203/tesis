@@ -6,6 +6,7 @@
 \usepackage{float, graphicx, caption, color, amsmath}
 
 \usepackage[hidelinks]{hyperref}
+\usepackage{afterpage}
 %\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage[a4paper, left=20mm, right=30mm, top=30mm,bottom=20mm]{geometry}
 \usepackage{dirtytalk}
@@ -35,7 +36,7 @@
     	\vspace{10mm} 
     	\large{\textbf{Rodrigo Morales Rivas}} \\
     	\vspace{5mm}
-    	\textbf{RECONOCIMIENTO DE PERSONAS MEDIANTE REDES NEURONALES CONVOLUCIONALES YOLO PARA LA OPTIMIZACION DE FILAS DE LOS SUPERMERCADOS} \\
+    	\textbf{RECONOCIMIENTO DE PERSONAS MEDIANTE REDES NEURONALES CONVOLUCIONALES YOLO PARA LA OPTIMIZACIÓN DE FILAS DE LOS SUPERMERCADOS} \\
     	\vspace{10mm}
     	\begin{multicols}{2}
     	\vfill\null
@@ -51,9 +52,66 @@
 
 
 \maketitle
+\afterpage{\thispagestyle{empty}\null\newpage}
 \clearpage
-\section*{Abreviaciones y acronimos}
-\noindent
+\begin{center}
+	\textbf{Rodrigo Morales Rivas} \\
+    \vspace{5mm}	
+	\textbf{RECONOCIMIENTO DE PERSONAS MEDIANTE REDES NEURONALES CONVOLUCIONALES YOLO PARA LA OPTIMIZACIÓN DE FILAS DE LOS SUPERMERCADOS}
+	
+	\vspace{15mm}
+	
+	Trabajo Dirigido fue sometido a análisis y defendido ante el tribunal compuesto por: \\
+	% TODO: Preguntar si tienen que estar las tres opciones...
+	
+	\vspace{30mm}
+
+	\begin{tabular}{@{}p{.in}p{2in}@{}}
+	& \hrulefill \\
+	& Job Ledezma, PhD. \\
+	& \textbf{DOCENTE DE TALLER DE GRADO I} \\
+	\end{tabular}
+
+	\vspace{30mm}
+
+	\begin{tabular}{@{}p{.in}p{2in}@{}}
+	& \hrulefill \\
+	& Francisco Suares, Ing. \\
+	& \textbf{TUTOR} \\
+	\end{tabular}
+	
+	\vspace{30mm}
+
+	\begin{tabular}{@{}p{.in}p{2in}@{}}
+	& \hrulefill \\
+
+	% TODO: Preguntar el nombre del docente
+	& Erik Pozo, Msc. \\
+	& \textbf{DOCENTE INVITADO} \\
+	\end{tabular}
+
+	\vspace{30mm}
+	Santa Cruz de la Sierra, 7 de julio del 2020
+	\thispagestyle{empty}
+	\end{center}
+	
+\clearpage
+
+\input{capitulos/agredecimientos}
+
+\clearpage
+
+\input{capitulos/resumen}
+
+\clearpage
+
+\input{capitulos/abstract}
+
+\clearpage
+\begin{center}
+	\section*{Abreviaciones y acrónimos}
+\end{center}
+\vspace{15mm}
 \textbf{Bokeh} =  Desenfoque.\\
 \textbf{YOLO} = You Only Look Once.\\
 \textbf{FIFO} = Primero en entrar, primero en salir (first in, first out).\\
@@ -77,8 +135,11 @@
 \chapter{MARCO PRÁCTICO}
 \input{capitulos/marco_practico}
 
-\chapter{Conclusión}
-\input{capitulos/conclusion.tex}
+\chapter{Conclusiones}
+\input{capitulos/conclusion}
+
+\chapter{Recomendaciones}
+\input{capitulos/recomendaciones.tex}
 
 \bibliographystyle{unsrt}
 \addcontentsline{toc}{chapter}{Bibliografia}

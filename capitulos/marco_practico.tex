@@ -82,7 +82,7 @@ Colab es un editor de Python online, que te permite escribir tu código y probar
 
 \subsection{Personalizar una red neuronal}
 
-En esta etapa se tiene que modificar diferentes archivos para que la red pueda detectar a personas. Estos archivos a modificar son los parámetros que definen la red neuronal, en Darknet existen 2 redes principales que son Yolo y Tiny-Yolo. La gran diferencia entre estos son la cantidad de capas que poseen, esto llega a afectar el rendimiento en una detección. 
+En esta etapa se tiene que modificar diferentes archivos para que la red pueda detectar a personas. Estos archivos por modificar son los parámetros que definen la red neuronal, en Darknet existen 2 redes principales que son Yolo y Tiny-Yolo. La gran diferencia entre estos son la cantidad de capas que poseen, esto llega a afectar el rendimiento en una detección. 
 \vspace{5mm}
 
 Por eso mismo se decidió usar Tiny-Yolo, ya que con pruebas realizadas dio un mejor rendimiento en el apartado de fotógrafas por segundo (fps), al momento de trabajar con videos, esto es muy importante ya que la detección se realizara en tiempo real. Los resultados de la prueba se apreciara mejor en la figura \ref{fig:labeling4}.
@@ -102,7 +102,7 @@ Con estos resultados se modificara el archivo \say{yolov4-tiny.cfg}, y los datos
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{imagenes/persona6.png}
-	\caption{Datos a modifircar en yolov4-tiny.cfg.}
+	\caption{Datos a modificar en yolov4-tiny.cfg.}
 	\source{Elaboración propia}
 	\label{fig:labeling6}
 \end{figure}
@@ -115,7 +115,7 @@ El siguiente es \say{max batches}, el que encarga de limitar el numero de pasos 
 	max\_batches = \#\operatorname{clases} * 2000
 \end{equation}
 
-Los otros datos a modificar son los que se aprecian en la figura \ref{fig:labeling7}, que consiste la cantidad de filtros y especificar cuántas clases tendrá que aprender la red neuronal.
+Los otros datos por modificar son los que se aprecian en la figura \ref{fig:labeling7}, que consiste la cantidad de filtros y especificar cuántas clases tendrá que aprender la red neuronal.
 
 \begin{figure}[h]
 	\centering
@@ -303,7 +303,7 @@ Otra manera en la que se puede activar la alarma es cuando por un determinado ti
 Con este apartado se esta utilizando una base datos para registrar la hora exacta cuando salte una alarma. Esto sirve para poder ver cuándo son las horas criticas y así buscar una solución que mejoraría la atención.
 Para la base de datos se usa Mongodb, el cual te permite guardar los datos tanto de manera local como en la nube y es una herramienta gratuita.
 
-En este caso como aplicación fue probada en un MacBook Pro 2014, la instalación de Mongodb variara en una maquina Windows. Simplemente para instalar la base de datos se tendrá que correr el siguiente comando que aparece en la figura \ref{fig:labeling18}, estos comandos se tiene que hacer correr en la terminal.
+En este caso como aplicación fue probada en un MacBook Pro 2014, la instalación de Mongodb variara en una maquina Windows. Simplemente para instalar la base de datos se tendrá que correr el siguiente comando que aparece en la figura \ref{fig:labeling18}, estos comandos se tienen que hacer correr en la terminal.
 
 \begin{figure}[h]
 	\centering
@@ -323,7 +323,7 @@ El dato que se guardara es la hora en la que la alarma se active, esto se logra 
 	\label{fig:labeling19}
 \end{figure}
 
-En este caso la información de la base de datos se almacenan de manera local, lo que significa que cada vez que se inicie la aplicación se tendrá que activar Mongodb, esto se logra con el siguiente comando que aparece en la figura \ref{fig:labeling20}, de la misma manera se tendrá que desactivar cuando ya no se utilice la aplicación. 
+En este caso la información de la base de datos se almacena de manera local, lo que significa que cada vez que se inicie la aplicación se tendrá que activar Mongodb, esto se logra con el siguiente comando que aparece en la figura \ref{fig:labeling20}, de la misma manera se tendrá que desactivar cuando ya no se utilice la aplicación. 
 
 \begin{figure}[h]
 	\centering
@@ -335,5 +335,60 @@ En este caso la información de la base de datos se almacenan de manera local, l
 
 
 \section{Funcionamiento de la aplicación}
+
+En este apartado se explicara el funcionamiento de la aplicación, que permitirá poder obtener datos en tiempo real de cuanto una persona en promedio espera hasta ser atendido en la caja.
+
+\subsection{Proceso de iniciar la aplicación}
+
+Para que la aplicación funcione se tiene que correr mediante terminar, utilizando el siguiente comando que aparece en la figura , el comando  correrá el código escrito y se agregan ciertos parámetros que necesita Darknet, el cual definirán el funcionamiento.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=150mm, height=45mm]{imagenes/persona26.png}
+	\caption{Comando para que funcione la aplicación, con los parámetros necesarios.}
+	\source{Elaboración propia}
+	\label{fig:labeling15}
+\end{figure}
+
+Estos parámetros definen con qué tipo de video se trabajara, si será un video local, usar una cámara convencional o usar una cámara IP. Otro parámetro importante es definir si los resultados del análisis se guardara en un video.	
+
+\subsection{Proceso de detección y calculo de tiempo de espera promedio}
+
+Cuando la aplicación ya esta iniciada comenzara a realizar la detección en cada Frame del video esperando detectar alguna persona. 
+Ahora cuando llega a detectar una persona guardara los siguientes datos: la hora en la que fue detectada, el numero de detección, la posición del objeto detectado.
+\vspace{5mm}
+
+Paralela a la acción anterior también comienza a ejecutarse continuamente 2 funciones que calculara el tiempo promedio de espera de un cliente.
+Una función ira calculando el tiempo dependiendo de la cantidad de personas que están haciendo fila, pero el otro se encarga de calcular el tiempo en el que una persona tarda en cruzar el limite definido.
+\clearpage
+
+Los cálculos de estas funciones serán reincidas cada vez que salte la alarma o cuando sea atendido una persona.
+La alarma suena cada vez que se supere el tiempo máximo de espera, el cual se define al comienzo de la aplicación. 
+\vspace{5mm}
+
+Al sonar la alarma se inician 2 procesos importantes, el primero se encargara de generar un \say{popup} con un mensaje avisando que es recomendable abrir una nueva caja. Por otra parte, la otra función se encarga de registrar de la hora en la que se activo la alarma, para así tener un registro para observar cuales son los periodos del día con más problemas en atender al cliente. Con esa información se puede buscar una solución permanente que mejore la experiencia del cliente al tener menos tiempo de espera.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

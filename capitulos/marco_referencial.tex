@@ -21,10 +21,10 @@ Los autos con piloto automático son otro ejemplo del uso de estas tecnologías,
 	\source{Tesla (2019).}
 	\label{fig:tesla}
 \end{figure}
-En el sector de los supermercados no aparecieron grandes innovaciones en la ultima década para facilitar la atención, mas allá de aplicar la teoría de colas. Con el paso del tiempo surgieron ideas como el uso del sistema de fila única y el método de auto cobro de productos, que consiste que el mismo cliente escanea sus compras y realiza el pago mediante tarjeta. Pero, en los últimos años la tecnología de inteligencia artificial y visión computacional se hicieron mas accesibles, por lo cual se presentaron soluciones innovadoras, como ser el caso de las tiendas de Amazon, que no necesitan tener cajeros, (\cite{ama}), ya que la instalación de cámaras y etiquetas realizan todo el procedimiento de cobranza de los productos.
+En el sector de los supermercados no aparecieron grandes innovaciones en la ultima década para facilitar la atención, mas allá de aplicar la teoría de colas. Con el paso del tiempo surgieron ideas como el uso del sistema de fila única y el método de auto cobro de productos, que consiste que el mismo cliente escanea sus compras y realiza el pago mediante tarjeta. Pero la innovación principal es con la llegada de la inteligencia artificial y visión computacional, el cual se hicieron mas accesibles, por lo tanto se presentaron nuevas soluciones, como ser el caso de las tiendas de Amazon, que no necesitan tener cajeros, (\cite{ama}), ya que la instalación de cámaras y etiquetas realizan todo el procedimiento de cobranza de los productos.
 \\
 
-Teniendo en cuenta estas ultimas innovaciones, se quiere realizar una aplicación con visión computacional junto a una red neuronal, con el fin de poder detectar a las personas que estén esperando en una fila y así calcular el tiempo promedio de espera actual, este tiempo obtenido se comparara con el máximo establecido, si este llega a ser mayor se procederá en abrir una nueva caja. Para desarrollar esto se pretende utilizar redes ya construidas como YOLO, cuyo funcionamiento se puede observar en la figura \ref{fig:deyolo}, o también considerar la opción de crear una propia red mediante el uso de diferentes herramientas como Tensorflow, Keras y Pytorch. La elección del método dependerá de las exigencias del proyecto y el lenguaje de programación a escoger.
+Teniendo en cuenta estas ultimas innovaciones, se quiere realizar una aplicación con visión computacional junto a una red neuronal, con el fin de poder detectar a las personas que estén esperando en una fila y así calcular el tiempo promedio de espera actual, este tiempo obtenido se comparará con el máximo establecido, si este llega a ser mayor se procederá en abrir una nueva caja. Para desarrollar esto se pretende utilizar redes ya construidas como YOLO, cuyo funcionamiento se puede observar en la figura \ref{fig:deyolo}, o también considerar la opción de crear una propia red mediante el uso de diferentes herramientas como Tensorflow, Keras y Pytorch. La elección del método dependerá de las exigencias del proyecto y el lenguaje de programación a escoger.
  
 \begin{figure}[h]
 	\centering
@@ -71,7 +71,7 @@ Desarrollar una aplicación utilizando YOLO para detectar personas y así poder 
 
 
 \begin{itemize}
-	\item Indicar las diferentes herramientas que permiten crear algoritmos para la detección de objetos.
+	\item Indicar las herramientas más populares que permiten trabajar con redes neuronales artificiales.
     \item Seleccionar el algoritmo de detección de objetos basado en los requerimientos del proyecto.
     \item Entrenar una red neuronal para que sea capaz de detectar personas a través de videos de cámara de seguridad.
     \item Realizar una aplicación que pueda efectuar un seguimiento de las personas en una fila de supermercado.
@@ -82,14 +82,13 @@ Desarrollar una aplicación utilizando YOLO para detectar personas y así poder 
 
 \section{Motivación}
 
-Actualmente, la inteligencia artificial con la visión computacional son utilizadas en diversos campos, desde el sector automotriz, financiero, educativo, hasta sistemas de seguridad. Teniendo esto en cuenta, desarrollar aplicaciones que utilicen estas tecnologías serán muy aprovechadas aún con el paso del tiempo desde su implementación. Así, al existir un problema de filas en los supermercados y ser algo muy frecuente, usar estas nuevas tecnologías para solucionar esta dificultad.
-\clearpage
+En los últimos años la inteligencia artificial junto con la visión computacional son tecnologías que son usadas en diversos campos en la industria, desde el sector automotriz, financiero, educativo y hasta sistemas de seguridad. Tomando en cuenta esto, desarrollar aplicaciones que utilicen estas tecnologías serán de gran uso y algo que seguirá creciendo en el tiempo ya que cada vez se lo esta usando en funciones más cotidianas. Como en este caso utilizar esta tecnología para solucionar un problema que surge en los supermercados cuando se utiliza un sistema de fila única.\clearpage
 \section{Justificación}
 
  Un tiempo de espera elevado afectan tanto al cliente (más tiempo de espera) como al supermercado (cajeros desocupados). Reducir la espera de un comprador por un cajero desocupado podría mejorar la experiencia de compra y con ello aumentar las probabilidades de retorno del cliente al local. Por tanto, este proyecto se lleva a cabo para ayudar a determinar cuántas cajas tienen que estar abiertas en un sistema de fila única.
  \\
  
-Con esta información el supermercado puede determinar en qué momento necesitara mayor personal para mejorar la atención y cuándo no, con esto podrá tomar la decisión si es necesario reducir la cantidad de empleados en los periodos que no son necesitados.
+Con esta información el supermercado puede determinar en qué momento necesitará mayor personal para mejorar la atención y cuándo no, con esto podrá tomar la decisión si es necesario reducir la cantidad de empleados en los periodos que no son necesitados.
 
 \section{Delimitación}
 Los limites y alcances del proyecto, se resumen en los siguientes puntos: 
@@ -101,7 +100,7 @@ Se decidió utilizar YOLO como la herramienta para la detección de personas med
 
 \subsection{Alcances}
 
-En el presente trabajo se demostraran los beneficios de utilizar la red neuronal YOLO para detección de personas, realizando la implementación de una aplicación que permitiría al supermercado de la ciudad de Santa Cruz de la Sierra, poder reducir el cuello de botella que se genera a partir de la aglomeración de clientes en una fila.
+En el presente trabajo se demostrarán los beneficios de utilizar la red neuronal YOLO para detección de personas, realizando la implementación de una aplicación que permitiría al supermercado de la ciudad de Santa Cruz de la Sierra, poder reducir el cuello de botella que se genera a partir de la aglomeración de clientes en una fila.
 
 
 
