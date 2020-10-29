@@ -107,7 +107,7 @@ Con estos resultados se modificara el archivo \say{yolov4-tiny.cfg}, y los datos
 	\label{fig:labeling6}
 \end{figure}
 
-El dato marcado \say{learning rate} es el que determina el ritmo de aprendizaje, entre mas bajo sea podrá aprender mas pero eso alarga el periodo de entrenamiento, en este apartado no hay que exagerar ya que un dato muy bajo simplemente lo hará mas lento y no ayudara en el entrenamiento.
+El dato marcado \say{learning rate} es el que determina el ritmo de aprendizaje, entre mas bajo sea podrá aprender mas pero  eso alarga el periodo de entrenamiento, en este apartado no hay que exagerar ya que un dato muy bajo simplemente lo hará mas lento y no ayudara en el entrenamiento.
 
 El siguiente es \say{max batches}, el que encarga de limitar el numero de pasos máximo que realizara en el entrenamiento. Este numero es obtenido mediante una simple formula, pero solo es aplicada cuando se trabajara con 3 o mas clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}. En \say{step} se tomara el 80\% y 90\% de \say{max batches} respectivamente.
 
@@ -120,7 +120,7 @@ Los otros datos por modificar son los que se aprecian en la figura \ref{fig:labe
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{imagenes/persona7.png}
-	\caption{Datos a modificar en yolov4-tiny.cfg.}
+	\caption{Más datos a modificar en yolov4-tiny.cfg.}
 	\source{Elaboración propia}
 	\label{fig:labeling7}
 \end{figure}
@@ -222,7 +222,7 @@ Por sí solas la detección que se puede hacer no brinda la información suficie
 	\centering
 	\includegraphics[scale=0.5]{imagenes/persona17.png}
 	\caption{Comparación entre usar solo la detección y usar tracker con detección.}
-	\source{Elaboración propia}
+	\source{Rokas Balsys.}
 	\label{fig:labeling12}
 \end{figure}
 
@@ -231,8 +231,8 @@ Cómo se ve en la figura anterior, no se marca todos los objetos en el lado que 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/persona18.png}
-	\caption{Comparación entre usar solo la detección y usar tracker con detección.}
-	\source{Elaboración propia}
+	\caption{Error al solo usar la detección en un proyecto.}
+	\source{Rokas Balsys.}
 	\label{fig:labeling13}
 \end{figure}
 
@@ -261,7 +261,7 @@ El limite se encargara de reiniciar el contador y los cálculos de tiempo máxim
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/persona20.png}
-	\caption{.}
+	\caption{Linea que limita las detecciones en un video.}
 	\source{Elaboración propia}
 	\label{fig:labeling15}
 \end{figure}
