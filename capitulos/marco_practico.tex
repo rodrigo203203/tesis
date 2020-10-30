@@ -175,7 +175,58 @@ Al terminar el entrenamiento ya se tendrá una red neuronal funcional, capaz de 
 \end{figure}
 
 \section{Diseño de la interfaz}
-\section{Diagrama de secuencias}
+Para el desarrollo de interfaces se utilizo la herramienta Balsamiq Wireframes con 2 pantallas principales, el cual son: detección de personas y ventana de alarma. 
+\subsection{Detección de personas}
+
+Esta es la pantalla principal de la aplicación, en el cual se observa las detecciones que se esta realizando, el limite de detección y la cantidad de personas que aparecen en el video, esto se apreciara mejor en la figura \ref{fig:labeling30}.
+\clearpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{imagenes/imagen1.png}
+	\caption{Pantalla principal de la aplicación NeoVision.}
+	\source{Elaboración propia}
+	\label{fig:labeling30}
+\end{figure}
+
+\subsection{Pantalla de alerta}
+
+Esta pantalla solo aparecerá cuando la alarma se active, lo que significa, es que se llego a sobrepasar el tiempo máximo de espera de una persona en la fila, el diseño de esta pantalla se puede ver en la figura \ref{fig:labeling31}.
+
+\clearpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/imagen2.png}
+	\caption{Mockup de la pantalla de alerta.}
+	\source{Elaboración propia}
+	\label{fig:labeling31}
+\end{figure}
+
+\section{Diagrama de flujo}
+En este apartado se mostrara un diagrama de flujo en el que se representa los principales procesos de este proyecto, cuales son detectar a personas y dependiendo del tiempo de espera notificar con una alerta, este diagrama se observa en la figura \ref{fig:labeling33}.
+\clearpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.6]{imagenes/NeoVision.png}
+	\caption{Diagrama de flujo explicativo sobre la función de la aplicación NeoVision.}
+	\source{Elaboración propia}
+	\label{fig:labeling33}
+\end{figure}
+
+\section{Diagrama C4Model}
+En este apartado se dará conocer un esquema siguiendo el modelo C4Model, el cual se va explicando de manera general hasta llegar a lo mas especifico, empezando por el contexto de la situación, sus contenedores, componentes y por ultimo un diagrama de todas las clases.
+\subsection{Contexto}
+En este apartado se observara las diferentes interacciones que tiene la aplicación, esto se apreciara mejor en la figura \ref{fig:labeling32}.
+
+\clearpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/contexto.png}
+	\caption{Diagrama de contexto que representa las interacciones del sistema.}
+	\source{Elaboración propia}
+	\label{fig:labeling32}
+\end{figure}
+
+\subsection{Contenedores}
 
 \section{Descripción de la aplicación}
 
@@ -183,7 +234,6 @@ Al terminar el entrenamiento ya se tendrá una red neuronal funcional, capaz de 
 
 Para comenzar el desarrollo de la aplicación primeramente se tiene que crear una ambiente virtual de python en la computadora, ya que se necesita instalar ciertos paquetes que podrían entrar en conflicto con algunas aplicaciones ya instaladas y también genera un mayor orden.
 La herramienta ideal para realizar esto es VirtualenvWrapper, ya que es fácil de instalar y sobre todo es simple de ingresar al ambiente virtual, sobre todo cuando se compara con otras herramientas. Esta diferencia aprecia mejor en la figura \ref{fig:labeling9}.
-\clearpage
 
 \begin{figure}[h]
 	\centering
