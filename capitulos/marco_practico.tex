@@ -228,6 +228,17 @@ En este apartado se observara las diferentes interacciones que tiene la aplicaci
 
 \subsection{Contenedores}
 
+En esta sección se observa mas a detalle los sistemas usados para que la aplicación funcione, esto se ve en la figura \ref{fig:labeling34}.
+\clearpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.5]{imagenes/contenedor.png}
+	\caption{.}
+	\source{Elaboración propia}
+	\label{fig:labeling34}
+\end{figure}
+
+
 \section{Descripción de la aplicación}
 
 
@@ -310,7 +321,7 @@ Para que se pueda contar la cantidad de personas detectas se usara una función 
 	\label{fig:labeling14}
 \end{figure}
 
-El limite se encargara de reiniciar el contador y los cálculos de tiempo máximo de espera de un cliente en una fila. En la figura \ref{fig:labeling15} se aprecia cómo se muestra el limite creado, esta linea es solo una representación visual, ya que las coordenadas de la linea son los importantes al momento de trabajar en la aplicación.
+El limite se encargara de reiniciar el contador y los cálculos de tiempo máximo de espera de un cliente en una fila. En la figura \ref{fig:labeling35} se aprecia cómo se muestra el limite creado, esta linea es solo una representación visual, ya que las coordenadas de la linea son los importantes al momento de trabajar en la aplicación.
 
 \clearpage
 
@@ -319,7 +330,7 @@ El limite se encargara de reiniciar el contador y los cálculos de tiempo máxim
 	\includegraphics[scale=0.5]{imagenes/persona20.png}
 	\caption{Linea que limita las detecciones en un video.}
 	\source{Elaboración propia}
-	\label{fig:labeling15}
+	\label{fig:labeling35}
 \end{figure}
 
 Esto se logra gracias a OpenCV, ya que con él se dibujara una linea, el cual representa el limite para la detección y cuando un objeto cruce la linea ya no será tomando en cuenta. Esto funciona porque por cada detección genera unas coordenadas de la posición del objeto, teniendo esto se sabe cuándo cruza la linea.
@@ -396,7 +407,7 @@ En este apartado se explicara el funcionamiento de la aplicación, que permitir�
 
 \subsection{Proceso de iniciar la aplicación}
 
-Para que la aplicación funcione se tiene que correr mediante terminar, utilizando el siguiente comando que aparece en la figura , el comando  correrá el código escrito y se agregan ciertos parámetros que necesita Darknet, el cual definirán el funcionamiento.
+Para que la aplicación funcione se tiene que correr mediante terminar, utilizando el siguiente comando que aparece en la figura , el comando  correrá el código escrito y se agregan ciertos parámetros que necesita Darknet, el cual definirán el funcionamiento, este comando se observa en la figura \ref{fig:labeling15}.
 
 \begin{figure}[h]
 	\centering
