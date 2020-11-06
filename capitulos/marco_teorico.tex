@@ -1,6 +1,6 @@
 \section{Estado del Arte}
 \subsection{Evolución de los Sistemas de filas de un supermercado}
-El primer supermercado se inauguro en el año 1916 en Tennessee, Estados Unidos, con el nombre Pegly Wiggly, pero presentaba un sistema de cajas que se concentraban mas en facilitar y agilizar el trabajo del cajero, sin darle mucha importancia al cliente, ya que las personas no tenían mucho espacio de maniobra, como puede observarse en la figura \ref{fig:qw}.
+El primer supermercado se inauguró en el año 1916 en Tennessee, Estados Unidos, con el nombre Pegly Wiggly, pero presentaba un sistema de cajas que se concentraban más en facilitar y agilizar el trabajo del cajero, sin darle mucha importancia al cliente, ya que las personas no tenían mucho espacio de maniobra, como puede observarse en la figura \ref{fig:qw}.
 
 \begin{figure}[h]
 	\centering
@@ -10,7 +10,7 @@ El primer supermercado se inauguro en el año 1916 en Tennessee, Estados Unidos,
 	\label{fig:qw}
 \end{figure}
 
-La gran innovación surgió cuando se incorporó el concepto de la teoría de colas, que fue introducido por Agner Kraup Erlang, que cuyo articulo estaba enfocado en las llamadas telefónicas. 
+La gran innovación surgió cuando se incorporó el concepto de la teoría de colas, que fue introducido por Agner Kraup Erlang,  cuyo articulo estaba enfocado en las llamadas telefónicas. 
 Teniendo los conceptos ya establecidos, se fueron probando diferentes sistemas para agilizar la atención, ya que cada vez mas gente realizaba sus compras en las tiendas. Estos modelos son: FIFO, LIFO y SJF, (\cite{fifo}). 
 \clearpage
 
@@ -44,7 +44,7 @@ El dato sustancial para este proyecto es la introducción de las redes neuronale
 	\source{Hamilton Chang (2019).}
 	\label{fig:gato}
 \end{figure}
- Para que se pueda realizar la convolución, la imagen tiene que ser bidimensional. una vez lista se procede a multiplicar con un kernel, este procedimiento se apreciará en la figura \ref{fig:conv24}. En la figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila y primera y última columna se les ha asignado el valor original, (\cite{conv2323}).
+En el proceso de la convulución se pasa por diferentes procedimientos, uno de ellos es la multiplicación con un kernel, este proceso se apreciará mejor en la figura \ref{fig:conv24}. En la figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila y primera y última columna se les ha asignado el valor original, (\cite{conv2323}).
 \clearpage
  \begin{figure}[h]
 	\centering
@@ -62,7 +62,7 @@ Volume 9 (2016).}
 Volume 9(2) (2016).}
 	\label{fig:conv23}
 \end{figure}
-Las redes neuronales convolucionales son la base de todo proyecto que utilice reconocimiento de objetos en imágenes (\cite{neu6}), (\cite{neu7}), (\cite{neu8}), estos proyectos van desde el reconocimiento facial, clasificación de imágenes, detección de letras manuscritas y otros mas. Las mejoras de esta red están enfocadas en aumentar la velocidad de respuesta y hacer más accesibles esta tecnología a mas dispositivos, ya que un problema al trabajar con videos en tiempo real es la laténcia. Este problema se solucionará con YOLO, gracias a su manera de aplicar CNN (\cite{yolo}), como se muestra en la figura \ref{fig:yo}, se obtiene unos tiempos de ejecución favorables a este nuevo método. Donde COCO, es una base de datos y esta medido en porcentaje de acierto.
+Las redes neuronales convolucionales son la base de la mayoría de los proyectos que utilicen reconocimiento de objetos en imágenes (\cite{neu6}), (\cite{neu7}), (\cite{neu8}), estos proyectos van desde el reconocimiento facial, clasificación de imágenes, detección de letras manuscritas y otros mas. Las mejoras de esta red están enfocadas en aumentar la velocidad de respuesta y hacer más accesibles esta tecnología a más dispositivos, ya que un problema al trabajar con videos en tiempo real es la latencia. Este problema se solucionará con YOLO, gracias a su manera de aplicar CNN (\cite{yolo}), como se muestra en la figura \ref{fig:yo}, se obtiene unos tiempos de ejecución favorables a este nuevo método. Donde COCO es una base de datos y está medido en porcentaje de acierto.
  \clearpage
  \begin{figure}[h]
 	\centering
@@ -77,7 +77,7 @@ Las redes neuronales convolucionales son la base de todo proyecto que utilice re
 \section{Fundamentos Teóricos}
 \subsection{Redes neuronales artificiales}
 
-Las redes neuronales artificiales siguen el mismo funcionamiento que las neuronas biológicas, en el que las dendritas se encargan de captar los impulsos nerviosos que emiten otras neuronas, luego se las procesa y si es necesario se envía a otra neurona. En el caso de las neuronas artificiales, la suma de las entradas multiplicadas por el valor asociado determina el \say{impulso nervioso} que recibe la neurona. Este valor, se procesa en el interior de la célula mediante una función de activación que devuelve un valor que se envía como salida de la neurona, esto se apreciara mejor en la figura \ref{fig:natu}, (\cite{open}). 
+Las redes neuronales artificiales siguen el mismo funcionamiento que las neuronas biológicas, en el que las dendritas se encargan de captar los impulsos nerviosos que emiten otras neuronas, luego se las procesa y si es necesario se envía a otra neurona. En el caso de las neuronas artificiales, la suma de las entradas multiplicadas por el valor asociado determina el \say{impulso nervioso} que recibe la neurona. Este valor se procesa en el interior de la célula mediante una función de activación que devuelve un valor que se envía como salida de la neurona, esto se apreciará mejor en la figura \ref{fig:natu}, (\cite{open}). 
 \clearpage
 %poner mas ejemplos de con imagenes sobre rede neuronales
 \begin{figure}[h]
@@ -90,7 +90,7 @@ Las redes neuronales artificiales siguen el mismo funcionamiento que las neurona
 
 \vspace{5mm}
 
-La palabra red, en el término \say{red neuronal artificial} se refiere a las interconexiones entre las neuronas en las diferentes capas de cada sistema. Una configuración ejemplar tiene tres capas. La primera posee neuronas de entrada que envían datos a través de las sinapsis a la segunda capa, y luego a través de mas sinapsis a la tercera capa de salida. Los sistemas más complejos tendrán mayor numero capas. Como, se observa en la figura \ref{fig:redneu} se presenta un ejemplo de cómo una neurona artificial tiene diferentes capas y cómo se conectan entre ellas.
+La palabra red, en el término \say{red neuronal artificial} se refiere a las interconexiones entre las neuronas en las diferentes capas de cada sistema. Una configuración ejemplar tiene tres capas. La primera posee neuronas de entrada que envían datos a través de las sinapsis a la segunda capa, y luego a través de más sinapsis a la tercera capa de salida. Los sistemas más complejos tendrán mayor número capas. Como se observa en la figura \ref{fig:redneu} se presenta un ejemplo de cómo una neurona artificial tiene diferentes capas y cómo se conectan entre ellas.
 
 \begin{figure}[h]
 	\centering
@@ -102,8 +102,8 @@ La palabra red, en el término \say{red neuronal artificial} se refiere a las in
 
 \subsubsection{Capas}
 
-Para empezar una red neuronal es un conjunto de capas y una capa se puede considerar como un conjunto de neuronas, en el cual solo serán contadas a partir de la primera capa que seria la entrada.
-Como se observa en la figura \ref{fig:capa}, esa red neuronal tiene 3 capas, que son: la de entrada, la oculta y la de salida, pero en realidad solo habría dos capas porque se descarta la capa de entrada. A simple vista, uno podría notar que las capas envían múltiples datos a la siguiente pero no es el caso, ya que dependiendo de la situación solo una neurona enviara la información a la próxima y así sucesivamente hasta llegar a la salida.
+Para empezar una red neuronal es un conjunto de capas, y una capa se puede considerar como un conjunto de neuronas, en el cual sólo serán contadas a partir de la primera capa que sería la entrada.
+Como se observa en la figura \ref{fig:capa}, esa red neuronal tiene 3 capas, que son: la de entrada, la oculta y la de salida, pero en realidad sólo habría dos capas porque se descarta la capa de entrada. A simple vista, uno podría notar que las capas envían múltiples datos a la siguiente pero no es el caso, ya que dependiendo de la situación sólo una neurona enviará la información a la próxima y así sucesivamente hasta llegar a la salida.
 
 \begin{figure}[h]
 	\centering
@@ -116,7 +116,7 @@ Como se observa en la figura \ref{fig:capa}, esa red neuronal tiene 3 capas, que
 \subsubsection{Métodos de aprendizaje}
 
 
-Dependiendo del problema a resolver el método de aprendizaje puede variar, de esta manera se podrá adecuarse al proyecto de una mejor forma, estos métodos se distinguen en tres tipos de esquemas:
+Dependiendo del problema a resolver, el método de aprendizaje puede variar, de esta manera se podrá adecuar al proyecto de una mejor forma, estos métodos se distinguen en tres tipos de esquemas:
 
 \subsubsection{Aprendizaje supervisado}
 
@@ -155,7 +155,7 @@ Por otra parte, el aprendizaje no supervisado, no necesita conocer la respuesta 
  
 \vspace{5mm}
 
-Este tipo de aprendizaje puede sonar complicado en comparación del anterior método, ya que se espera que este modelo pueda aprender sin decirle qué es lo que tiene que encontrar. El problema mas habitual que uno se puede encontrar es el \textit{clustering}, que se entenderá mejor el concepto observando la figura: \ref{fig:clust}.
+Este tipo de aprendizaje puede sonar complicado en comparación del anterior método, ya que se espera que este modelo pueda aprender sin decirle qué es lo que tiene que encontrar. El problema más habitual que uno se puede encontrar es el \textit{clustering}, que se entenderá mejor el concepto observando la figura: \ref{fig:clust}.
 \\
 
 \begin{figure}[h]
@@ -174,12 +174,11 @@ Al explorar los datos sin un objetivo definido, se pueden encontrar correlacione
 
 
 \subsubsection{Aprendizaje reforzado}
-El objetivo del aprendizaje reforzado, consiste que el mismo sistema pueda aprender y tomar decisiones por su misma experiencia. Es decir, dependiendo a la situación determinada el sistema va a seleccionar la opción más optima, para así ejecutar un proceso. Esta respuesta mejorara con el tiempo médiate un procedimiento de prueba y error, que continuara hasta alcanzar al objetivo deseado, (\cite{refor}).
+El objetivo del aprendizaje reforzado, consiste que el mismo sistema pueda aprender y tomar decisiones por su misma experiencia. Es decir, dependiendo a la situación determinada el sistema va a seleccionar la opción optima, para así ejecutar un proceso. Esta respuesta mejorará con el tiempo médiate un procedimiento de prueba y error, que continuará hasta alcanzar al objetivo deseado (\cite{refor}).
 
 \vspace{5mm}
 
-Para realizar este entrenamiento se necesita de una “agente” en un estado determinado dentro de un ambiente, esta configuración se observa en la figura \ref{fig:aprRefor}. Este método necesita una recompensa cada vez que alcance un un objetivo, caso contrario recibirá un castigo.
-
+Para realizar este entrenamiento se necesita de un “agente” en un estado determinado dentro de un ambiente, esta configuración se observa en la figura \ref{fig:aprRefor}. Este método necesita una recompensa cada vez que alcance un objetivo, también se le dará una recompensa cuando alcance escenarios no deseados.
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/apreRefor.png}
@@ -189,13 +188,13 @@ Para realizar este entrenamiento se necesita de una “agente” en un estado de
 \end{figure}
 
 \subsection{Función de activación}
-Esta es otra similitud que tiene una red neuronal biológica con una artificial, esta función de activación es considerada como un impulso nervioso que es enviado al cerebro. Esta función de activación utiliza una suma ponderada de la entrada anterior.
+Ésta es otra similitud que tiene una red neuronal biológica con una artificial, esta función de activación es considerada como un impulso nervioso que es enviado al cerebro. Esta función de activación utiliza una suma ponderada de la entrada anterior.
 \\
 
-Existen varias funciones de activación que actúan de diferente manera y eso nos permite adecuar las capas de las neuronas, para que actúen de manera diferente y estas funciones son (\cite{funAc}):
+Existen varias funciones de activación que actúan de diferente manera y eso nos permite adecuar las capas de las neuronas, estas funciones son (\cite{funAc}):
 \subsubsection{Sigmoid/Sigmoide}
 
-Esta función se encarga de transformar los valores introducidos a una escala de (0,1), la ecuación \ref{eq:sigmoideq} tomara los valores de alto rango y lo transformara de manera asintomática a 1 y los valores bajos tienden de manera contraria acercándose al 0, (\cite{activa2}), la gráfica de la función se apreciará en la figura \ref{fig:sigmoid}.
+Esta función se encarga de transformar los valores introducidos a una escala de (0,1), la ecuación \ref{eq:sigmoideq} tómara los valores de alto rango y lo transformara de manera asintomática a 1 y los valores bajos tienden de manera contraria acercándose al 0, (\cite{activa2}), la gráfica de la función se apreciará en la figura \ref{fig:sigmoid}.
 
 \begin{equation}
 \label{eq:sigmoideq}
@@ -272,7 +271,7 @@ Algunas de las características de esta función son las siguientes:
 
 \subsubsection{Softmax}
 
-la función Softmax consiste en calcular las probabilidades de un evento sobre \say{n} eventos diferentes. Es decir que esta función calculara las probabilidades de cada clase de objeto sobre todas las diferentes clases de objetivos posibles. el rango de esta función será de (0,1), y todas las sumas de las probabilidades serán igual a uno. esta función se utiliza mas que todo para obtener la probabilidad de modelos de multi clasificación, (\cite{activa2}). la representación gráfica de la función esta en la figura \ref{fig:soft}.
+La función Softmax consiste en calcular las probabilidades de un evento sobre \say{n} eventos diferentes. Es decir que esta función calculara las probabilidades de cada clase de objeto sobre todas las diferentes clases de objetivos posibles. El rango de esta función será de (0,1), y todas las sumas de las probabilidades serán igual a uno. Esta función se utiliza más que todo para obtener la probabilidad de modelos de multi clasificación, (\cite{activa2}). La representación gráfica de la función está en la figura \ref{fig:soft}.
 
 \begin{equation}
 	f\left( z\right) _{j}=\frac {e^{zj}}{\sum ^{k}_{k=1}e^{z}k}
@@ -305,7 +304,7 @@ YOLO (\textit{You Only Look Once}, \say{sólo se ve una vez}) es un algoritmo de
 \end{figure}
 
 La principal innovación que YOLO trajo consigo a este campo, fue el hecho de que es capaz de realizar múltiples detecciones de una sola vez, lo cual realiza este proceso bastante rápido y eficiente.
-El procesamiento de imágenes con YOLO es simple y directo, por ejemplo teniendo una imagen de entrada de un tamaño de 448x448ppx, esto se aprecia en la figura \ref{fig:yolo2}, ejecuta una red convolucional a la imagen que llegaría a cambiar de tamaño y así limitar los resultantes de las detecciones confiando en el modelo que se uso para entrenar la red neuronal. 
+El procesamiento de imágenes con YOLO es simple y directo, por ejemplo, teniendo una imagen de entrada de un tamaño de 448x448ppx, esto se aprecia en la figura \ref{fig:yolo2}, ejecuta una red convolucional a la imagen que llegaría a cambiar de tamaño y así limitar los resultantes de las detecciones confiando en el modelo que se usó para entrenar la red neuronal. 
 
 \begin{figure}[h]
 	\centering
@@ -315,33 +314,33 @@ El procesamiento de imágenes con YOLO es simple y directo, por ejemplo teniendo
 	\label{fig:yolo2}
 \end{figure}
 
-Entrando más a detalle, YOLO primeramente empieza a cuadricular la imagen que se esta usando para la detección, seguido de eso va dibujando unas \say{cajas delimitadoras} mediante la guía del modelo entrenado, este modelo puede tener diversas etiquetas para la identificación de objetos y determinara cuando lleguen a un porcentaje de confianza definido, todos esos pasos se pueden apreciar en la figura \ref{fig:yolo4}. 
+Entrando más a detalle, YOLO primeramente empieza a cuadricular la imagen que se está usando para la detección, seguido de eso va dibujando unas \say{cajas delimitadoras} mediante la guía del modelo entrenado, este modelo puede tener diversas etiquetas para la identificación de objetos y determinará cuando lleguen a un porcentaje de confianza definido, todos esos pasos se pueden apreciar en la figura \ref{fig:yolo4}. 
 
  \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.6]{imagenes/yolo3.png}
-	\caption{División de los sectores en ciencias de computación.}
+	\caption{Proceso que realiza YOLO para generar una detección de uno o varios objetos dentro de una imagen.}
 	\source{YOLO (2018).}
 	\label{fig:yolo4}
 \end{figure}
 
 \subsubsection{Darknet}
 
-Darknet es un \textit{framework} de \textit{open source} (código abierto) que permite entrenar a una red neuronal, este \textit{framework} esta escrita en C/CUDA y usa los servicios básicos de YOLO. La finalidad de utilizar Darknet es poder entrenar a YOLO, lo que significa es que usando este framework nos permite establecer la arquitectura de la red.
+Darknet es un \textit{framework} de \textit{open source} (código abierto) que permite entrenar a una red neuronal, este \textit{framework} esta escrita en C/CUDA. La finalidad de utilizar Darknet es poder implementar YOLO en un proyecto, lo que significa es que usando este framework nos permite establecer la arquitectura de la red.
 \subsubsection{Darkflow}
 
 Darkflow es una herramienta muy similar a Darknet, pero con la diferencia de que Darkflow utiliza Tensorflow como motor para la red neuronal, lo cual provoca que para usar esta red se tiene que realizar en un entorno que reconozca el lenguaje Python.
 
 \subsection{Machine Learning}
 
-El aprendizaje por maquina o \textit{machine learning} en ingles, consiste en poder extraer información de una base de datos y poder aprender de ella. El uso de \textit{machine learning} en los últimos años se hizo muy común, desde las paginas web como ser Facebook, YouTube o Amazon poseen algún tipo de \textit{machine learning}, ya que dependiendo del contenido que uno mire o producto que se busque generará información para que la pagina aprenda y sepa que tipo de contenido recomendar (\cite{machine}).
+El aprendizaje por máquina o \textit{machine learning} en ingles, consiste en poder extraer información de una base de datos y poder aprender de ella. El uso de \textit{machine learning} en los últimos años se hizo muy común, desde las páginas web como ser Facebook, YouTube o Amazon poseen algún tipo de \textit{machine learning}, ya que dependiendo del contenido que uno mire o producto que se busque generará información para qué la página aprenda y sepa que tipo de contenido recomendar (\cite{machine}).
 
 
-El problema mas común para el cual se utiliza \textit{machine learning}, es para la toma de desiciones, tomando en cuenta ejemplos de casos anteriores. Con esa información la \say{máquina} puede predecir cual sería la salida dependiendo la entrada que se le entregue, esta respuesta que entrega podría ser una nueva creada por si misma para satisfacer a la \say{pregunta}, todo esto lo realiza sin la interferencia de un individuo. Esta manera de aprendizaje que realiza es conocido como \say{aprendizaje supervisado}.
+El problema más común para el cual se utiliza \textit{machine learning}, es para la toma de desiciones, tomando en cuenta ejemplos de casos anteriores. Con esa información la \say{máquina} puede predecir cúal sería la salida dependiendo la entrada que se le entregue, esta respuesta que entrega podría ser una nueva creada por sí misma para satisfacer a la \say{pregunta}, todo esto lo realiza sin la intervención de un individuo.
 \subsubsection{Tensorflow}
 
 
-Tensorflow, es una biblioteca de software de código abierto para la computación numérica, esta herramienta fue desarrollado por Google. Tensorflow se creo para poder construir y entrenar redes neuronales, el cual permite detectar, descifrar patrones y correlaciones en los datos que se están estudiando. En los últimos años, el interés por esta biblioteca que creo Google fue creciendo tal como se muestra en la figura \ref{fig:datosT}, ya que es una herramienta muy útil para proyectos que tengan el uso de \textit{Machine learning}.
+Tensorflow, es una biblioteca de software de código abierto para la computación numérica, esta herramienta fue desarrollado por Google. Tensorflow se creó para poder construir y entrenar redes neuronales, las cuales permite detectar, descifrar patrones y correlaciones en los datos que se están estudiando. En los últimos años, el interés por esta biblioteca que creó Google fue creciendo tal como se muestra en la figura \ref{fig:datosT}, ya que es una herramienta muy útil para proyectos que tengan el uso de \textit{Machine learning}.
 \clearpage
 \begin{figure}[h]
 	\centering
@@ -351,7 +350,7 @@ Tensorflow, es una biblioteca de software de código abierto para la computació
 	\label{fig:datosT}
 \end{figure}
 
-La plataforma tuvo sus inicios en el 2011 por parte del equipo Google Brain, que su lema se aprecia en la figura \ref{fig:google22}, la primera versión de la plataforma era conocido con el nombre de DistBelief. Por el año 2014 el proyecto fue creciendo y tomando forma, así que se le cambio el nombre y ahí fue que le conoció como Tensorflow. Google libero este software en su segunda versión el 9 de noviembre del 2015. Al pasar el tiempo esta herramienta se convirtió el mas usado en el campo de Deep Learning, y eso se debe por la filosofía de Google: «código primero, código siempre».
+La plataforma tuvo sus inicios en el 2011 por parte del equipo Google Brain, que su lema se aprecia en la figura \ref{fig:google22}, la primera versión de la plataforma era conocido con el nombre de DistBelief. Por el año 2014 el proyecto fue creciendo y tomando forma, así que se le cambió el nombre y ahí fue que le conoció como Tensorflow. Google liberó este software en su segunda versión el 9 de noviembre del 2015. Al pasar el tiempo esta herramienta se convirtió el más usado en el campo de Deep Learning, y eso se debe por la filosofía de Google: «código primero, código siempre».
 
 \begin{figure}[h]
 	\centering
@@ -361,14 +360,14 @@ La plataforma tuvo sus inicios en el 2011 por parte del equipo Google Brain, que
 	\label{fig:google22}
 \end{figure}
 
-Para el año 2016, Google anunció una nueva función que permitiría ser la unidad de procesamiento de Tensor (TPU), en el cual es una construcción de un circuito integrado de aplicación específica o ASIC por sus siglas en ingles. Este circuito, permite realizar un aprendizaje automática y que se adapta para Tensorflow. Esta implementación del TPU al fin al cabo es un acelerador programable, con el fin de conseguir un alto \textit{throughput} (numero de mensajes recibidos con éxito), y para correr modelos más rápidos al general un entrenamiento. 
+Para el año 2016, Google anunció una nueva función con el nombre de TPU o unidad de procesamiento de tensor, el cual es una construcción de un circuito integrado de aplicación específica o ASIC por sus siglas en ingles. Este circuito permite realizar un aprendizaje automática y que se adapta para Tensorflow. Esta implementación del TPU es un acelerador programable, con el fin de conseguir un alto \textit{throughput} (número de mensajes recibidos con éxito), y para correr modelos más rápidos al generar un entrenamiento. 
 
 \subsubsection{Gráficos de cómputo}
 
-Usando Tensorflow nos permite crear algoritmos de aprendizaje que puedan interactuar entre sí, y estas interacciones se los llega a conocer como gráficos de cómputo.
-Al referirse a un gráfico en este tema, se quiere decir a un conjunto de nodos conectados entre si, estos nodos normalmente tienen entrada y salida al mismo tiempo, cada nodo tiene a dentro alguna función aritmética, desde las mas simples como ser sumas y multiplicaciones hasta las mas complejas, (\cite{tensor1}).
+Usando Tensorflow nos permite crear algoritmos de aprendizaje que puedan interactuar entre sí, y estas interacciones se los llega a conocer como grafo computacional.
+Al referirse a un grafo en este tema, se quiere decir a un conjunto de nodos conectados entre sí, estos nodos normalmente tienen entrada y salida al mismo tiempo, cada nodo tiene a dentro alguna función aritmética, desde las más simples como ser sumas y multiplicaciones hasta las más complejas, (\cite{tensor1}).
 
-Para la creación de un gráfico se usará un ejemplo básico del libro \textit{Learning Tensorflow} (\cite{tensor1}), Para empezar, se importará la librería al editor mediante el primer comando que se aprecia en la figura \ref{fig:capa1}, siguiendo de eso se crearan unos 3 nodos con diferente valor.
+Para la creación de un grafo se usará un ejemplo básico del libro \textit{Learning Tensorflow} (\cite{tensor1}), Para empezar, se importará la librería al editor mediante el primer comando que se aprecia en la figura \ref{fig:capa1}, siguiendo de eso se crearan unos 3 nodos con diferente valor.
 
 \begin{figure}[h]
 	\centering
@@ -378,7 +377,7 @@ Para la creación de un gráfico se usará un ejemplo básico del libro \textit{
 	\label{fig:capa1}
 \end{figure}
 
-Para la siguiente etapa se creara otros 3 nodos pero esta vez tendrán ecuaciones que se ejecuten dentro ellas y ademas uno de esos nodos tendrá una variable que no se definió anteriormente, la escritura del código se podrá apreciar en la figura \ref{fig:capa2}.
+Para la siguiente etapa se creará otros 3 nodos pero esta vez tendrán ecuaciones que se ejecuten dentro ellas y además uno de esos nodos tendrá una variable que no se definió anteriormente, la escritura del código se podrá apreciar en la figura \ref{fig:capa2}.
 
 
 \begin{figure}[h]
@@ -401,33 +400,26 @@ La representación gráfica de las funciones creadas mediante código se podrán
 
 \subsubsection{Keras}
 
-Es una extension de alto nivel de TensorFlow que permite construir y entrenar modelos de aprendizaje profundo, esta modificación hace que TensorFlow sea más fácil de usar sin sacrificar la flexibilidad y el rendimiento. Para poder correr esta herramienta se necesita instalarlo mediante los comandos que se mostrara en la figura \ref{fig:keras1}, Keras contiene varias implementaciones de los bloques constructivos de las redes neuronales como por ejemplo los layers, función de objetivo y función de activación.
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.7]{imagenes/keras1.png}
-	\caption{Comando para usar Keras en tu entorno de desarrollo.}
-	\source{Elaboración propia.}
-	\label{fig:keras1}
-\end{figure}
+Es una extensión de alto nivel de TensorFlow que permite construir y entrenar modelos de aprendizaje profundo, esta modificación hace que TensorFlow sea más fácil de usar sin sacrificar la flexibilidad y el rendimiento. Keras contiene varias implementaciones de los bloques constructivos de las redes neuronales como por ejemplo los layers, función de objetivo y función de activación.
 
 Algunas ventajas al usar esta herramienta son las siguientes:
 \begin{itemize}
     \item Keras presenta una interfaz simple y optimizada para diferentes casos de uso para el usuario, ya que proporciona información clara sobre errores que se podrían presentar al correr algún programa.
-    \item Los modelos que se pueden crear con Keras son mediante bloques de conexión que se pueden configurar con pacas restricciones.
-    \item Presenta una gran facilidad al momento de crear bloques, capas, métricas y diferentes funciones que se llegaran a necesitar que lleguen a satisfacer el proyecto.
+    \item Los modelos que se pueden crear con Keras son mediante bloques de conexión que se pueden configurar con pocas restricciones.
+    \item Presenta una gran facilidad al momento de crear bloques, capas, métricas y diferentes funciones.
  \end{itemize}
 
 \subsubsection{Configuración de capas iniciales}
 
-Uno de los elementos principales al momento de crear una red neuronal son las capas que lo componen, estas tienen como función de extraer la información del conjunto de datos que se están utilizando. Hay que tomar en cuenta que esa información extraída no siempre será útil para el problema que se quiere solucionar.
+Uno de los elementos principales al momento de crear una red neuronal son las capas que lo componen, éstas tienen como función de extraer la información del conjunto de datos que se están utilizando. Hay que tomar en cuenta que esa información extraída no siempre será útil para el problema que se quiere solucionar.
 
 \vspace{5mm}
 
-Al crear estas capas con Keras se necesita iniciar con el siguiente comando “tf.keras.layers.Flatten” si se quiere trabajar con análisis de imágenes, que consiste en transformar una imagen en un formato adecuado para que se pueda trabajar, con esto quiero decir que por ejemplo teniendo una imagen de un tamaño de 75x75 pixeles, al ejecutar el comando esta imagen se transformaría en 5625 pixeles (75 * 75 = 5625). Esta acción de “aplanar” los píxeles es el trabajo de la primera capa que se utiliza, con esta capa no comenzara con él aprendizaje solo adecuara los sets de datos.
+Al crear estas capas con Keras se necesita iniciar con el siguiente comando “tf.keras.layers.Flatten” si se quiere trabajar con análisis de imágenes, que consiste en transformar una imagen en un formato adecuado para que se pueda trabajar, con esto quiero decir que por ejemplo teniendo una imagen de un tamaño de 75x75 pixeles, al ejecutar el comando esta imagen se transformaría en 5625 pixeles (75 * 75 = 5625). Esta acción de “aplanar” los píxeles es el trabajo de la primera capa que se utiliza, con esta capa no comenzara con él aprendizaje sólo adecuará los sets de datos.
 
 \vspace{5mm}
 
-Para la siguiente etapa se tiene que aplicar una nueva capa con 2 diferentes configuraciones, para la primera capa se definirá con 128 nodos o neuronas y con la función de activación “relu“, par la siguiente capa solo tendrá 10 nodos y una función de activación “softmax”, estos comandos se observaran en la figura \ref{fig:keras2}.
+Para la siguiente etapa se tiene que aplicar una nueva capa con 2 diferentes configuraciones, para la primera capa se definirá con 128 nodos o neuronas y con la función de activación “relu“, par la siguiente capa solo tendrá 10 nodos y una función de activación “softmax”, estos comandos se observarán en la figura \ref{fig:keras2}.
 
 
 \begin{figure}[h]
@@ -436,25 +428,6 @@ Para la siguiente etapa se tiene que aplicar una nueva capa con 2 diferentes con
 	\caption{Configuración con Keras para trabajar con imágenes.}
 	\source{Elaboración propia.}
 	\label{fig:keras2}
-\end{figure}
-
-\subsubsection{Pytorch}
-
-Pythorch es una librería \textit{OpenSource} dedicada a \textit{machine learning} que esta basada en \textit{Torch}, los proyectos que normalmente se realizan con esta librería tienen que ver con visión computacional. Esta herramienta fue creada por Facebook por el área dedicada a inteligencia de artificial (\cite{pytorch}). La imagen del logo de esta herramienta se aprecia en la figura \ref{fig:pytorch}.
-
- Algunas ventajas que hacen destacar esta herramienta son las siguientes:
- \begin{itemize}
- 	\item Crear proyectos es fácil y flexible.
- 	\item Se puede crear proyecto para móviles.
- 	\item Compatibilidad con el lenguaje C++.
- \end{itemize}
- 
- \begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.1]{imagenes/pytorch.png}
-	\caption{Logotipo de la libreria Pytorch.}
-	\source{Facebook IA (2019).}
-	\label{fig:pytorch}
 \end{figure}
  
 \subsection{Deep Learning}
@@ -474,14 +447,14 @@ Los datos de entrada que almacena una capa se lo conocen como \say{weights}, que
 \vspace{5mm}
 
  Así que este aprendizaje consiste en encontrar valores que satisfagan a los parámetros establecido en el \say{weights} de la red neuronal. 
- Pero estos parámetros pueden ser mas de millones así que encontrar un valor que satisfaga a cada parámetro puede parecer tediosos mas aun que cuando se encuentra un valor eso afecta a los demás.
+ Pero estos parámetros pueden ser mas de  un millón, así que encontrar un valor que satisfaga a cada parámetro puede parecer tedioso, más aún que cuando se encuentra un valor eso afecta a los demás.
 
 \subsection{Inteligencia artificial}
-La Inteligencia Artificial o IA es la combinación de diferentes algoritmos que con el tiempo se espera alcanzar o simular las capacidades del ser humano. La inteligencia artificial se puede considerar uno de los mas grandes avances de la ultima década, ya que tiene diversas aplicaciones en diferentes áreas, por ejemplo, en la industria de la música se utiliza la IA para poder identificar el estilo musical que le puede gustar a una persona, por otra parte en la industrial automotriz ya existe autos que tiene la capacidad de que se manejen solos, un claro ejemplo son los vehículos de Tesla que cada vez van agregando mejoras a su sistema.
+La Inteligencia Artificial o IA es la combinación de diferentes algoritmos que con el tiempo se espera alcanzar o simular las capacidades del ser humano. La inteligencia artificial se puede considerar uno de los más grandes avances de la última década, ya que tiene diversas aplicaciones en diferentes áreas, por ejemplo, en la industria de la música se utiliza la IA para poder identificar el estilo musical que le puede gustar a una persona, por otra parte en la industrial automotriz ya existe autos que tiene la capacidad de que se manejen solos, un claro ejemplo son los vehículos de Tesla que cada vez van agregando mejoras a su sistema.
 
 \vspace{5mm}
 Cuando se habla de inteligencia artificial entramos al sector de ciencias de computación, donde esta área abarca los conceptos de \textit{machine learning, data mining y data science}, esta división se observa en la figura \ref{fig:ia}.
-\clearpage
+
  \begin{figure}[h]
 	\centering
 	\includegraphics[width=12cm, height=7cm, ]{imagenes/ia.jpg}
@@ -490,26 +463,26 @@ Cuando se habla de inteligencia artificial entramos al sector de ciencias de com
 	\label{fig:ia}
 \end{figure}
 
-El concepto de la inteligencia artificial fue introducido en el año 1950 por Alan Turing, quien fue el primero en construir una maquina con la capacidad de pensar, la maquina que construyo se observa en la figura \ref{fig:alan}, que fue conocido como \say{La maquina Colossus}, que tenia como objetivo poder descifrar los códigos enigma que utilizaban el ejercito alemán en sus comunicaciones. También gracias a él, se creo una prueba conocida como \textit{The Turing Test}, el cual consiste en medir la capacidad que tiene una maquina en demostrar su \say{inteligencia artificial}, la prueba consiste en establecer una comunicación entre dos personas y una maquina, donde una persona no sabrá quien es la maquina o si hay una, si la persona no llega identificar a la maquina la prueba se considera como exitosa ya que fue capaz de imitar el comportamiento humano (\cite{ia2}). 
+El concepto de la inteligencia artificial fue introducido en el año 1950 por Alan Turing, quien fue el primero en construir una máquina con la capacidad de pensar, la máquina que construyo se observa en la figura \ref{fig:alan}, que fue conocido como \say{La máquina Colossus}, que tenia como objetivo poder descifrar los códigos enigma que utilizaban el ejército alemán en sus comunicaciones. También gracias a él, se creyo una prueba conocida como \textit{The Turing Test}, el cual consiste en medir la capacidad que tiene una máquina en demostrar su \say{inteligencia artificial}, la prueba consiste en establecer una comunicación entre dos personas y una máquina, donde una persona no sabrá quien es la máquina o si hay una, si la persona no llega identificar a la máquina la prueba se considera como exitosa, ya que fue capaz de imitar el comportamiento humano (\cite{ia2}). 
 
 
  \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.3]{imagenes/alan1.jpg}
-	\caption{La maquina Colossus creada por Alan Turing.}
+	\caption{La máquina Colossus creada por Alan Turing.}
 	\source{BatallasHistoricas (2016).}
 	\label{fig:alan}
 \end{figure}
 
 \subsubsection{Visión computacional}
 
-La visión computacional es un campo que va muy conectado con la inteligencia artificial, que consiste que una maquina tenga un alto nivel de comprensión de imágenes o videos. Con esta tecnología se quiere automatizar tareas que requieran un sistema visual. Ahora lograr una interpretación de imágenes al mismo nivel que el ser humano es un problema complejo. Sin embargo, en los últimos años hubo avances considerables.
+La visión computacional es un campo que va muy conectado con la inteligencia artificial, que consiste que una máquina tenga un alto nivel de comprensión de imágenes o videos. Con esta tecnología se quiere automatizar tareas que requieran un sistema visual, por ejemplo, sistemas de clasificación de imágenes. Ahora, lograr una interpretación de imágenes al mismo nivel que el ser humano es un problema complejo. Sin embargo, en los últimos años hubo avances considerables, uno de ellos son el uso de esta tecnología para el piloto automático de los automóviles.
 \subsubsection{OpenCV}
-Actualmente una de las herramienta mas usadas para el campo de visión computacional es OpenCV, ya que es libre de uso y presenta varias opciones para trabajar en diversas aplicaciones que van desde reconocimiento de objetos, calibración de cámaras, visión estera y visión robótica.
+Actualmente, una de las herramientas más usadas para el campo de visión computacional es OpenCV, ya que es libre de uso y presenta varias opciones para trabajar en diversas aplicaciones que van desde reconocimiento de objetos, calibración de cámaras, visión estereoscópica y visión robótica.
 
 \vspace{5mm}
 
-OpenCV presenta una estructura modular, el cual dependiendo de las versión puede tener algunos paquetes pero otros ya no, los paquetes principales son los siguientes:
+OpenCV presenta una estructura modular, la cual dependiendo de la versión puede variar de paquetes que lo compongan, pero los principales son los siguientes:
 
 \begin{itemize}
 	\item Procesamiento de imagen.
@@ -520,15 +493,15 @@ OpenCV presenta una estructura modular, el cual dependiendo de las versión pued
 	\item Núcleo funcional.
 \end{itemize} 
 
-\subsection{Servicios de computo en la nube}
+\subsection{Servicios de cómputo en la nube}
 
-Computación en la nube es un termino que normalmente se utiliza para denominar cualquier servicio que realice algún tipo de hospedaje a través de internet. Para contratar un servicio de este estilo se tiene que hacer por AWS (\textit{Amazon Web Service}), Microsft Azure o Google Cloud.
+Computación en la nube es un término que normalmente se utiliza para denominar cualquier servicio que realice algún tipo de trabajo a través de internet. Para contratar un servicio de este estilo se tiene que hacer por AWS (\textit{Amazon Web Service}), Microsft Azure o Google Cloud.
 
 
 
 \subsubsection{Amazon Web Service}
 
-\textit{Amazon Web Service} o AWS en sus siglas en ingles, es un servicio en la nube que ofrece más de 175 servicios de manejo de datos a nivel global, estos servicios se pueden observar en la figura de \ref{fig:aws}. Ofrece tecnologías desde infraestructura para almacenamiento, servicios de computo hasta nuevas tecnologías como ser el aprendizaje automático e inteligencia artificial. 
+\textit{Amazon Web Services} o AWS en sus siglas en ingles, es un servicio en la nube que ofrece más de 175 servicios de manejo de datos a nivel global, estos servicios se pueden observar en la figura de \ref{fig:aws}. Ofrece tecnologías desde infraestructura para almacenamiento, servicios de cómputo hasta nuevas tecnologías como ser el aprendizaje automático e inteligencia artificial. 
 
  \begin{figure}[h]
 	\centering
@@ -543,30 +516,18 @@ Ofrece tres tipos de servicios principales en la nube, el cual son: infraestruct
 
 \vspace{5mm}
 
-Se utilizo este servicio para crear una maquina en la nube que tenga las capacidades para correr el entrenamiento y que éste pueda estar encendido las 24 horas al día o por lo menos hasta que finalice el entrenamiento.
+Se utilizó este servicio para crear una máquina en la nube que tenga las capacidades para correr el entrenamiento y que éste pueda estar encendido las 24 horas al día o por lo menos hasta que finalice el entrenamiento.
 
 \vspace{5mm}
 
-Para ser mas específico el tipo de servicio que se utilizo es \textit{Amazon Elastic Compute Cloud} o EC2 por sus siglas en ingles, el cual es un servicio web que ofrece la capacidad de realizar cálculos de computo adaptable, que en otras palabras se refiere a hospedar sistemas de \textit{sotfware}. 
+Para ser más específico el tipo de servicio que se utilizó es \textit{Amazon Elastic Compute Cloud} o EC2 por sus siglas en ingles, el cual es un servicio web que ofrece la capacidad de realizar cálculos de cómputo adaptable, que en otras palabras se refiere a hospedar sistemas de \textit{sotfware} para la ejecución de aplicaciones. 
 
-\subsubsection{Google Cloud}
 
-El servicio de \textit{Google Cloud Plataform} es un servicio muy similar que el ya mencionado AWS, pero este viene de parte de google donde ofrece una suite con diversos servicios y que funcionan en una estructura similar como los servicios de YouTube o Google Search, los diferentes servicios que ofrece esta plataforma se apreciaran en la figura \ref{fig:google}.
-\clearpage
- \begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.4]{imagenes/google.png}
-	\caption{Servicios de Google Cloud.}
-	\source{Google.}
-	\label{fig:google}
-\end{figure}
-\subsubsection{Google Colab}
+\section{Google Colab}
 
-Google Colab es una plataforma de programación en Python a través de la nube, la ventaja de este servicio es que ofrece el uso de GPU para el entrenamiento de redes neuronales de manera gratuita, pero por solo 5 horas de uso. Para usar este servicio lo único que se necesita es una cuenta en Google e iniciar sesión.
+Google Colab es una plataforma de programación a través de la nube, la ventaja de este servicio es que ofrece el uso de GPU para el entrenamiento de redes neuronales de manera gratuita, pero sólo se le puede dejar 5 horas en \textit{stand by} antes de que se cierre. Para usar este servicio lo único que se necesita es una cuenta en Google e iniciar sesión.
 
-\vspace{5mm}
 
-Ya que es una plataforma dedicada al entrenamiento de redes neuronales, se lo utilizo para poder entrenar la red para el proyecto de detección de personas.
 
 
 
