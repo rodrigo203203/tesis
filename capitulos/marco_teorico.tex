@@ -78,11 +78,11 @@ Las redes neuronales convolucionales son la base de la mayoría de los proyectos
 \subsection{Redes neuronales artificiales}
 
 Las redes neuronales artificiales siguen el mismo funcionamiento que las neuronas biológicas, en el que las dendritas se encargan de captar los impulsos nerviosos que emiten otras neuronas, luego se las procesa y si es necesario se envía a otra neurona. En el caso de las neuronas artificiales, la suma de las entradas multiplicadas por el valor asociado determina el \say{impulso nervioso} que recibe la neurona. Este valor se procesa en el interior de la célula mediante una función de activación que devuelve un valor que se envía como salida de la neurona, esto se apreciará mejor en la figura \ref{fig:natu}, (\cite{open}). 
-\clearpage
+
 %poner mas ejemplos de con imagenes sobre rede neuronales
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{imagenes/natural}
+	\includegraphics[scale=0.216]{imagenes/natural}
 	\caption{Red neuronal artificial en comparación a una neurona.}
 	\source{Magiquo (2019).}
 	\label{fig:natu}
@@ -103,7 +103,7 @@ La palabra red, en el término \say{red neuronal artificial} se refiere a las in
 \subsubsection{Capas}
 
 Para empezar una red neuronal es un conjunto de capas, y una capa se puede considerar como un conjunto de neuronas, en el cual sólo serán contadas a partir de la primera capa que sería la entrada.
-Como se observa en la figura \ref{fig:capa}, esa red neuronal tiene 3 capas, que son: la de entrada, la oculta y la de salida, pero en realidad sólo habría dos capas porque se descarta la capa de entrada. A simple vista, uno podría notar que las capas envían múltiples datos a la siguiente pero no es el caso, ya que dependiendo de la situación sólo una neurona enviará la información a la próxima y así sucesivamente hasta llegar a la salida.
+Como se observa en la figura \ref{fig:capa}, esa red neuronal tiene 3 capas, que son: la de entrada, la oculta y la de salida, pero en realidad sólo habría dos capas porque se descarta la capa de entrada. A simple vista, uno podría notar que las capas envían múltiples datos a la siguiente pero no es el caso, ya que dependiendo de la situación sólo una neurona enviará la información a la siguiente sección y de esa sección solo en una pasara la información, este procedimiento se repite hasta llegar a la salida.
 
 \begin{figure}[h]
 	\centering
@@ -149,29 +149,6 @@ Los algoritmos mas habituales al usar aprendizaje supervisado son:
     \item Support Vector Machines (SVM).
     \item Métodos \say{Ensemble} (Conjuntos de clasificadores).
  \end{itemize}
-\subsubsection{Aprendizaje no supervisado}
-
-Por otra parte, el aprendizaje no supervisado, no necesita conocer la respuesta correcta en la base de datos para realizar un entrenamiento. Ya que la finalidad de este método no es el dé reproducir algún resultado conocido, sino el de encontrar nuevos resultados o patrones,  (\cite{AprendizajeSup}).
- 
-\vspace{5mm}
-
-Este tipo de aprendizaje puede sonar complicado en comparación del anterior método, ya que se espera que este modelo pueda aprender sin decirle qué es lo que tiene que encontrar. El problema más habitual que uno se puede encontrar es el \textit{clustering}, que se entenderá mejor el concepto observando la figura: \ref{fig:clust}.
-\\
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=7cm, height=5.1cm]{imagenes/clustering1.png}
-	\caption{Agrupación por \textit{clustering}.}
-	\source{DiegoDat (2018).}
-	\label{fig:clust}
-\end{figure}
-
- Se conoce como \textit{clustering} a la tarea de agrupar diferentes elementos que no están etiquetados y formar sub-grupos de elementos que presenten las mismas características pero diferentes a otros sub-grupos, esta acción se puede complicar y demorar al momento realizarse, (\cite{cluster}).
- \\
- 
-  Este método puede ser útil para conocer información, que al principio no sean útiles, pero para otro tipo de proceso podría llegar a serlo. Por ejemplo, en una tienda la agrupación de clientes puede llevar a diferencias entre los clientes fieles o de conveniencia. Descubriendo al mismo tiempo otras categorías de estos que se desconocían previamente. Estos nuevos grupos se pueden utilizar posteriormente para realizar campañas especificas al poder identificar sus intereses y preferencias comunes.
-Al explorar los datos sin un objetivo definido, se pueden encontrar correlaciones espureas curiosas, pero poco prácticas.
-
 
 \subsubsection{Aprendizaje reforzado}
 El objetivo del aprendizaje reforzado, consiste que el mismo sistema pueda aprender y tomar decisiones por su misma experiencia. Es decir, dependiendo a la situación determinada el sistema va a seleccionar la opción optima, para así ejecutar un proceso. Esta respuesta mejorará con el tiempo médiate un procedimiento de prueba y error, que continuará hasta alcanzar al objetivo deseado (\cite{refor}).
@@ -291,45 +268,50 @@ La función de \textit{Softmax} se caracteriza por las siguientes razones:
 	\label{fig:soft}
 \end{figure}
 
-\subsection{YOLO}
+\subsection{Inteligencia artificial}
+La Inteligencia Artificial o IA es la combinación de diferentes algoritmos que con el tiempo se espera alcanzar o simular las capacidades del ser humano. La inteligencia artificial se puede considerar uno de los más grandes avances de la última década, ya que tiene diversas aplicaciones en diferentes áreas, por ejemplo, en la industria de la música se utiliza la IA para poder identificar el estilo musical que le puede gustar a una persona, por otra parte en la industrial automotriz ya existe autos que tiene la capacidad de que se manejen solos, un claro ejemplo son los vehículos de Tesla que cada vez van agregando mejoras a su sistema.
 
-YOLO (\textit{You Only Look Once}, \say{sólo se ve una vez}) es un algoritmo de visión artificial que detecta y clasifica objetos en tiempo real, que permite detectar diferentes objetos que se pueden presentar en una imagen y poder enmarcarlos con un cuadro alrededor de los objetos encontrados figura \ref{fig:yolo1}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.8]{imagenes/yolo1.png}
-	\caption{Detección múltiple realizada por YOLO.}
-	\source{YOLO (2018).}
-	\label{fig:yolo1}
-\end{figure}
-
-La principal innovación que YOLO trajo consigo a este campo, fue el hecho de que es capaz de realizar múltiples detecciones de una sola vez, lo cual realiza este proceso bastante rápido y eficiente.
-El procesamiento de imágenes con YOLO es simple y directo, por ejemplo, teniendo una imagen de entrada de un tamaño de 448x448ppx, esto se aprecia en la figura \ref{fig:yolo2}, ejecuta una red convolucional a la imagen que llegaría a cambiar de tamaño y así limitar los resultantes de las detecciones confiando en el modelo que se usó para entrenar la red neuronal. 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.8]{imagenes/yolo2.png}
-	\caption{Aplicación de YOLO en una imagen.}
-	\source{YOLO (2018).}
-	\label{fig:yolo2}
-\end{figure}
-
-Entrando más a detalle, YOLO primeramente empieza a cuadricular la imagen que se está usando para la detección, seguido de eso va dibujando unas \say{cajas delimitadoras} mediante la guía del modelo entrenado, este modelo puede tener diversas etiquetas para la identificación de objetos y determinará cuando lleguen a un porcentaje de confianza definido, todos esos pasos se pueden apreciar en la figura \ref{fig:yolo4}. 
+\vspace{5mm}
+Cuando se habla de inteligencia artificial entramos al sector de ciencias de computación, donde esta área abarca los conceptos de \textit{machine learning, data mining y data science}, esta división se observa en la figura \ref{fig:ia}.
+\clearpage
 
  \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{imagenes/yolo3.png}
-	\caption{Proceso que realiza YOLO para generar una detección de uno o varios objetos dentro de una imagen.}
-	\source{YOLO (2018).}
-	\label{fig:yolo4}
+	\includegraphics[width=12cm, height=7cm, ]{imagenes/ia.jpg}
+	\caption{División de los sectores en ciencias de computación.}
+	\source{Machine learning and IA for Healthcare (2019).}
+	\label{fig:ia}
 \end{figure}
 
-\subsubsection{Darknet}
+El concepto de la inteligencia artificial fue introducido en el año 1950 por Alan Turing, quien fue el primero en construir una máquina con la capacidad de pensar, la máquina que construyo se observa en la figura \ref{fig:alan}, que fue conocido como \say{La máquina Colossus}, que tenia como objetivo poder descifrar los códigos enigma que utilizaban el ejército alemán en sus comunicaciones. También gracias a él, se creyo una prueba conocida como \textit{The Turing Test}, el cual consiste en medir la capacidad que tiene una máquina en demostrar su \say{inteligencia artificial}, la prueba consiste en establecer una comunicación entre dos personas y una máquina, donde una persona no sabrá quien es la máquina o si hay una, si la persona no llega identificar a la máquina la prueba se considera como exitosa, ya que fue capaz de imitar el comportamiento humano (\cite{ia2}). 
 
-Darknet es un \textit{framework} de \textit{open source} (código abierto) que permite entrenar a una red neuronal, este \textit{framework} esta escrita en C/CUDA. La finalidad de utilizar Darknet es poder implementar YOLO en un proyecto, lo que significa es que usando este framework nos permite establecer la arquitectura de la red.
-\subsubsection{Darkflow}
 
-Darkflow es una herramienta muy similar a Darknet, pero con la diferencia de que Darkflow utiliza Tensorflow como motor para la red neuronal, lo cual provoca que para usar esta red se tiene que realizar en un entorno que reconozca el lenguaje Python.
+ \begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{imagenes/alan1.jpg}
+	\caption{La máquina Colossus creada por Alan Turing.}
+	\source{BatallasHistoricas (2016).}
+	\label{fig:alan}
+\end{figure}
+
+\subsubsection{Visión computacional}
+
+La visión computacional es un campo que va muy conectado con la inteligencia artificial, que consiste que una máquina tenga un alto nivel de comprensión de imágenes o videos. Con esta tecnología se quiere automatizar tareas que requieran un sistema visual, por ejemplo, sistemas de clasificación de imágenes. Ahora, lograr una interpretación de imágenes al mismo nivel que el ser humano es un problema complejo. Sin embargo, en los últimos años hubo avances considerables, uno de ellos son el uso de esta tecnología para el piloto automático de los automóviles.
+\subsubsection{OpenCV}
+Actualmente, una de las herramientas más usadas para el campo de visión computacional es OpenCV, ya que es libre de uso y presenta varias opciones para trabajar en diversas aplicaciones que van desde reconocimiento de objetos, calibración de cámaras, visión estereoscópica y visión robótica.
+
+\vspace{5mm}
+
+OpenCV presenta una estructura modular, la cual dependiendo de la versión puede variar de paquetes que lo compongan, pero los principales son los siguientes:
+
+\begin{itemize}
+	\item Procesamiento de imagen.
+	\item Análisis de videos.
+	\item Calibración de cámara y reconstrucción 3D.
+	\item Detección de objetos.
+	\item Video I/O.
+	\item Núcleo funcional.
+\end{itemize} 
 
 \subsection{Machine Learning}
 
@@ -341,7 +323,7 @@ El problema más común para el cual se utiliza \textit{machine learning}, es pa
 
 
 Tensorflow, es una biblioteca de software de código abierto para la computación numérica, esta herramienta fue desarrollado por Google. Tensorflow se creó para poder construir y entrenar redes neuronales, las cuales permite detectar, descifrar patrones y correlaciones en los datos que se están estudiando. En los últimos años, el interés por esta biblioteca que creó Google fue creciendo tal como se muestra en la figura \ref{fig:datosT}, ya que es una herramienta muy útil para proyectos que tengan el uso de \textit{Machine learning}.
-\clearpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.35]{imagenes/tensor2323.png}
@@ -359,7 +341,7 @@ La plataforma tuvo sus inicios en el 2011 por parte del equipo Google Brain, que
 	\source{Google.}
 	\label{fig:google22}
 \end{figure}
-
+\clearpage
 Para el año 2016, Google anunció una nueva función con el nombre de TPU o unidad de procesamiento de tensor, el cual es una construcción de un circuito integrado de aplicación específica o ASIC por sus siglas en ingles. Este circuito permite realizar un aprendizaje automática y que se adapta para Tensorflow. Esta implementación del TPU es un acelerador programable, con el fin de conseguir un alto \textit{throughput} (número de mensajes recibidos con éxito), y para correr modelos más rápidos al generar un entrenamiento. 
 
 \subsubsection{Gráficos de cómputo}
@@ -413,7 +395,7 @@ Algunas ventajas al usar esta herramienta son las siguientes:
 
 Uno de los elementos principales al momento de crear una red neuronal son las capas que lo componen, éstas tienen como función de extraer la información del conjunto de datos que se están utilizando. Hay que tomar en cuenta que esa información extraída no siempre será útil para el problema que se quiere solucionar.
 
-\vspace{5mm}
+\clearpage
 
 Al crear estas capas con Keras se necesita iniciar con el siguiente comando “tf.keras.layers.Flatten” si se quiere trabajar con análisis de imágenes, que consiste en transformar una imagen en un formato adecuado para que se pueda trabajar, con esto quiero decir que por ejemplo teniendo una imagen de un tamaño de 75x75 pixeles, al ejecutar el comando esta imagen se transformaría en 5625 pixeles (75 * 75 = 5625). Esta acción de “aplanar” los píxeles es el trabajo de la primera capa que se utiliza, con esta capa no comenzara con él aprendizaje sólo adecuará los sets de datos.
 
@@ -429,7 +411,7 @@ Para la siguiente etapa se tiene que aplicar una nueva capa con 2 diferentes con
 	\source{Elaboración propia.}
 	\label{fig:keras2}
 \end{figure}
- 
+
 \subsection{Deep Learning}
 
 Como su nombre indica \textit{Deep learning} es la parte profunda del aprendizaje de una inteligencia artificial, esto se entenderá mejor en la observando la figura \ref{fig:deep1}. Entre mayor sea la cantidad de capas relacionado a un modelo de se lo conoce como \textit{\say{deep}} (\cite{deep23}).
@@ -442,6 +424,7 @@ Como su nombre indica \textit{Deep learning} es la parte profunda del aprendizaj
 	\label{fig:deep1}
 \end{figure}
 
+\clearpage
 Los datos de entrada que almacena una capa se lo conocen como \say{weights}, que en esencia son un montón de números. En términos más técnicos \say{weights} se lo conoce como parámetros de una capa.
 
 \vspace{5mm}
@@ -449,49 +432,49 @@ Los datos de entrada que almacena una capa se lo conocen como \say{weights}, que
  Así que este aprendizaje consiste en encontrar valores que satisfagan a los parámetros establecido en el \say{weights} de la red neuronal. 
  Pero estos parámetros pueden ser mas de  un millón, así que encontrar un valor que satisfaga a cada parámetro puede parecer tedioso, más aún que cuando se encuentra un valor eso afecta a los demás.
 
-\subsection{Inteligencia artificial}
-La Inteligencia Artificial o IA es la combinación de diferentes algoritmos que con el tiempo se espera alcanzar o simular las capacidades del ser humano. La inteligencia artificial se puede considerar uno de los más grandes avances de la última década, ya que tiene diversas aplicaciones en diferentes áreas, por ejemplo, en la industria de la música se utiliza la IA para poder identificar el estilo musical que le puede gustar a una persona, por otra parte en la industrial automotriz ya existe autos que tiene la capacidad de que se manejen solos, un claro ejemplo son los vehículos de Tesla que cada vez van agregando mejoras a su sistema.
 
-\vspace{5mm}
-Cuando se habla de inteligencia artificial entramos al sector de ciencias de computación, donde esta área abarca los conceptos de \textit{machine learning, data mining y data science}, esta división se observa en la figura \ref{fig:ia}.
+\subsection{YOLO}
+
+YOLO (\textit{You Only Look Once}, \say{sólo se ve una vez}) es un algoritmo de visión artificial que detecta y clasifica objetos en tiempo real, que permite detectar diferentes objetos que se pueden presentar en una imagen y poder enmarcarlos con un cuadro alrededor de los objetos encontrados figura \ref{fig:yolo1}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{imagenes/yolo1.png}
+	\caption{Detección múltiple realizada por YOLO.}
+	\source{YOLO (2018).}
+	\label{fig:yolo1}
+\end{figure}
+
+La principal innovación que YOLO trajo consigo a este campo, fue el hecho de que es capaz de realizar múltiples detecciones de una sola vez, lo cual realiza este proceso bastante rápido y eficiente.
+El procesamiento de imágenes con YOLO es simple y directo, por ejemplo, teniendo una imagen de entrada de un tamaño de 448x448ppx, esto se aprecia en la figura \ref{fig:yolo2}, ejecuta una red convolucional a la imagen que llegaría a cambiar de tamaño y así limitar los resultantes de las detecciones confiando en el modelo que se usó para entrenar la red neuronal. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.8]{imagenes/yolo2.png}
+	\caption{Aplicación de YOLO en una imagen.}
+	\source{YOLO (2018).}
+	\label{fig:yolo2}
+\end{figure}
+
+Entrando más a detalle, YOLO primeramente empieza a cuadricular la imagen que se está usando para la detección, seguido de eso va dibujando unas \say{cajas delimitadoras} mediante la guía del modelo entrenado, este modelo puede tener diversas etiquetas para la identificación de objetos y determinará cuando lleguen a un porcentaje de confianza definido, todos esos pasos se pueden apreciar en la figura \ref{fig:yolo4}. 
 
  \begin{figure}[h]
 	\centering
-	\includegraphics[width=12cm, height=7cm, ]{imagenes/ia.jpg}
-	\caption{División de los sectores en ciencias de computación.}
-	\source{Machine learning and IA for Healthcare (2019).}
-	\label{fig:ia}
+	\includegraphics[scale=0.6]{imagenes/yolo3.png}
+	\caption{Proceso que realiza YOLO para generar una detección de uno o varios objetos dentro de una imagen.}
+	\source{YOLO (2018).}
+	\label{fig:yolo4}
 \end{figure}
 
-El concepto de la inteligencia artificial fue introducido en el año 1950 por Alan Turing, quien fue el primero en construir una máquina con la capacidad de pensar, la máquina que construyo se observa en la figura \ref{fig:alan}, que fue conocido como \say{La máquina Colossus}, que tenia como objetivo poder descifrar los códigos enigma que utilizaban el ejército alemán en sus comunicaciones. También gracias a él, se creyo una prueba conocida como \textit{The Turing Test}, el cual consiste en medir la capacidad que tiene una máquina en demostrar su \say{inteligencia artificial}, la prueba consiste en establecer una comunicación entre dos personas y una máquina, donde una persona no sabrá quien es la máquina o si hay una, si la persona no llega identificar a la máquina la prueba se considera como exitosa, ya que fue capaz de imitar el comportamiento humano (\cite{ia2}). 
+\subsubsection{Darknet}
 
+Darknet es un \textit{framework} de \textit{open source} (código abierto) que permite entrenar a una red neuronal, este \textit{framework} esta escrita en C/CUDA. La finalidad de utilizar Darknet es poder implementar YOLO en un proyecto, lo que significa es que usando este framework nos permite establecer la arquitectura de la red.
+\subsubsection{Darkflow}
 
- \begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.3]{imagenes/alan1.jpg}
-	\caption{La máquina Colossus creada por Alan Turing.}
-	\source{BatallasHistoricas (2016).}
-	\label{fig:alan}
-\end{figure}
+Darkflow es una herramienta muy similar a Darknet, pero con la diferencia de que Darkflow utiliza Tensorflow como motor para la red neuronal, lo cual provoca que para usar esta red se tiene que realizar en un entorno que reconozca el lenguaje Python.
 
-\subsubsection{Visión computacional}
+ 
 
-La visión computacional es un campo que va muy conectado con la inteligencia artificial, que consiste que una máquina tenga un alto nivel de comprensión de imágenes o videos. Con esta tecnología se quiere automatizar tareas que requieran un sistema visual, por ejemplo, sistemas de clasificación de imágenes. Ahora, lograr una interpretación de imágenes al mismo nivel que el ser humano es un problema complejo. Sin embargo, en los últimos años hubo avances considerables, uno de ellos son el uso de esta tecnología para el piloto automático de los automóviles.
-\subsubsection{OpenCV}
-Actualmente, una de las herramientas más usadas para el campo de visión computacional es OpenCV, ya que es libre de uso y presenta varias opciones para trabajar en diversas aplicaciones que van desde reconocimiento de objetos, calibración de cámaras, visión estereoscópica y visión robótica.
-
-\vspace{5mm}
-
-OpenCV presenta una estructura modular, la cual dependiendo de la versión puede variar de paquetes que lo compongan, pero los principales son los siguientes:
-
-\begin{itemize}
-	\item Procesamiento de imagen.
-	\item Análisis de videos.
-	\item Calibración de cámara y reconstrucción 3D.
-	\item Detección de objetos.
-	\item Video I/O.
-	\item Núcleo funcional.
-\end{itemize} 
 
 \subsection{Servicios de cómputo en la nube}
 

@@ -102,7 +102,7 @@ Con estos resultados se modificara el archivo \say{yolov4-tiny.cfg}, y los datos
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{imagenes/persona6.png}
-	\caption{Datos a modificar en yolov4-tiny.cfg.}
+	\caption{Se define el learning rate.}
 	\source{Elaboración propia}
 	\label{fig:labeling6}
 \end{figure}
@@ -137,7 +137,7 @@ Con eso finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falt
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{imagenes/persona8.png}
-	\caption{Se especifica el nombre y la cantidad de las clases.}
+	\caption{Se detalla la cantidad de clases y nombres que se usarán para entrenar la red neuronal.}
 	\source{Elaboración propia}
 	\label{fig:labeling45}
 \end{figure}
@@ -192,10 +192,10 @@ Esta es la pantalla principal de la aplicación, en el cual se observa las detec
 
 Esta pantalla solo aparecerá cuando la alarma se active, lo que significa, es que se llegó a sobrepasar el tiempo máximo de espera de una persona en la fila, el diseño de esta pantalla se puede ver en la figura \ref{fig:labeling31}.
 
-\clearpage
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{imagenes/imagen2.png}
+	\includegraphics[scale=0.4]{imagenes/imagen2.png}
 	\caption{Mockup de la pantalla de alerta.}
 	\source{Elaboración propia}
 	\label{fig:labeling31}
@@ -203,7 +203,7 @@ Esta pantalla solo aparecerá cuando la alarma se active, lo que significa, es q
 
 \section{Diagrama de flujo}
 En este apartado se mostrará un diagrama de flujo en el que se representa los principales procesos de este proyecto, cuales son detectar a personas y dependiendo del tiempo de espera notificar con una alerta, este diagrama se observa en la figura \ref{fig:labeling33}.
-\clearpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.6]{imagenes/NeoVision.png}
@@ -214,10 +214,11 @@ En este apartado se mostrará un diagrama de flujo en el que se representa los p
 
 \section{Diagrama C4Model}
 En este apartado se dará conocer un esquema siguiendo el modelo C4Model, el cual se va explicando de manera general hasta llegar a lo mas específico, empezando por el contexto de la situación, sus contenedores, componentes y por último un diagrama de todas las clases.
+\clearpage
 \subsection{Contexto}
 En este apartado se observará las diferentes interacciones que tiene la aplicación, esto se apreciará mejor en la figura \ref{fig:labeling32}.
 
-\clearpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/contexto.png}
