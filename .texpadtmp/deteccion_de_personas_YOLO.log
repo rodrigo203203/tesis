@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.16)  16 NOV 2020 22:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.16)  16 NOV 2020 23:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -647,12 +647,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
-
-Underfull \hbox (badness 6236) in paragraph at lines 92--93
-[]\OT1/ptm/b/n/12 DOCENTE DE TA-LLER
- []
-
-[3] (./capitulos/agredecimientos.tex
+ [3] (./capitulos/agredecimientos.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--3
 []\OT1/ptm/b/n/17.28 AGRADECIMIENTOS|
  []
@@ -662,7 +657,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.121 \clearpage
+l.130 \clearpage
                  [4
 
 ] (./capitulos/resumen.tex
@@ -690,7 +685,7 @@ LaTeX Info: Redefining \% on input line 1.
  [8]pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.133 \lstlistoflistings
+l.142 \lstlistoflistings
                          [8
 
 ] (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.lol)
@@ -700,13 +695,13 @@ l.133 \lstlistoflistings
  [9]pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 \clearpage
+l.144 \clearpage
                  [9
 
 ] (./capitulos/acronimos.tex) [10]pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.139 \tableofcontents
+l.148 \tableofcontents
                        [10
 
 ] (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.toc
@@ -719,11 +714,32 @@ LaTeX Info: Redefining \% on input line 1.
  [12]pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.149 \chapter
+l.158 \chapter
               {INTRODUCCIÓN} [12
 
 ]
 Cap\'{\i }tulo 1.
+./deteccion_de_personas_YOLO.tex:158: Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.158 \chapter{INTRODUCCIÓN}
+                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./deteccion_de_personas_YOLO.tex:158: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.158 \chapter{INTRODUCCIÓN}
+                             
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 (./capitulos/marco_referencial.tex
 <imagenes/huawei.png, id=543, 2216.28pt x 1246.6575pt>
 File: imagenes/huawei.png Graphic file (type png)
@@ -784,11 +800,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--90
 )pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.152 \chapter
+l.161 \chapter
               {MARCO TEÓRICO} [5
 
 ]
 Cap\'{\i }tulo 2.
+./deteccion_de_personas_YOLO.tex:161: Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.161 \chapter{MARCO TEÓRICO}
+                              
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./deteccion_de_personas_YOLO.tex:161: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.161 \chapter{MARCO TEÓRICO}
+                              
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 (./capitulos/marco_teorico.tex
 <imagenes/pegly.jpg, id=584, 723.45282pt x 578.16pt>
 File: imagenes/pegly.jpg Graphic file (type jpg)
@@ -1042,6 +1079,27 @@ Package pdftex.def Info: imagenes/ama23.png  used on input line 491.
 (pdftex.def)             Requested size: 341.43475pt x 199.16978pt.
  [26 <./imagenes/ama23.png>]) [27]
 Cap\'{\i }tulo 3.
+./deteccion_de_personas_YOLO.tex:164: Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.164 \chapter{MARCO PRÁCTICO}
+                               
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./deteccion_de_personas_YOLO.tex:164: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.164 \chapter{MARCO PRÁCTICO}
+                               
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 (./capitulos/marco_practico.tex
 <imagenes/persona9.png, id=852, 492.84125pt x 389.455pt>
 File: imagenes/persona9.png Graphic file (type png)
@@ -1278,15 +1336,78 @@ Overfull \hbox (34.36087pt too wide) in paragraph at lines 448--449
 
 ]
 Cap\'{\i }tulo 4.
+./deteccion_de_personas_YOLO.tex:167: Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.167 \chapter{Conclusiones}
+                            
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./deteccion_de_personas_YOLO.tex:167: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.167 \chapter{Conclusiones}
+                            
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 (./capitulos/conclusion.tex) [47
 
 ]
 Cap\'{\i }tulo 5.
+./deteccion_de_personas_YOLO.tex:170: Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.170 \chapter{Recomendaciones}
+                               
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./deteccion_de_personas_YOLO.tex:170: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.170 \chapter{Recomendaciones}
+                               
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 (./capitulos/recomendaciones.tex) (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.bbl [48
 
 ]
+/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.bbl:1: Missing number, treated as zero.
+<to be read again> 
+                   \vskip 
+l.1 \begin{thebibliography}{32}
+                               
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.bbl:1: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \vskip 
+l.1 \begin{thebibliography}{32}
+                               
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 41.
- (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmtt.fd
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Underfull \hbox (badness 10000) in paragraph at lines 38--43
@@ -1336,29 +1457,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--136
  []
 
 [50])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 168.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
  [51]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 168.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
  (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 168.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 168.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
 Package rerunfilecheck Info: File `deteccion_de_personas_YOLO.out' has not changed.
 (rerunfilecheck)             Checksum: 75441E4B183F40C35394FCCB18475D82;4822.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 168.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
  ) 
 Here is how much of TeX's memory you used:
  13392 strings out of 480608
  211271 string characters out of 5903629
- 781875 words of memory out of 5000000
+ 781883 words of memory out of 5000000
  28661 multiletter control sequences out of 15000+600000
  568992 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,45p,978b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.pdf (68 pages, 30695289 bytes).
+Output written on /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.pdf (68 pages, 30695462 bytes).
 PDF statistics:
  1199 PDF objects out of 1200 (max. 8388607)
  997 compressed objects within 10 object streams
