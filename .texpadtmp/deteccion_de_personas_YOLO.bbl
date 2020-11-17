@@ -21,25 +21,11 @@ A.~{Bochkovskiy}, C.-Y. {Wang}, and H.-Y.~M. {Liao}.
 D.~Calvo.
 \newblock Función de activación - redes neuronales, 7 de Diciembre de 2018.
 
-\bibitem[Chebat and Filiatrault(1993)]{enjoy1}
-J.-C. Chebat and P.~Filiatrault.
-\newblock The impact of waiting in line on consumers.
-\newblock \emph{International Journal of Bank Marketing}, 11:\penalty0 35--40,
-  12 1993.
-\newblock \doi{10.1108/02652329310025938}.
-
 \bibitem[Chollet(Diciembre del 2017)]{deep23}
 F.~Chollet.
 \newblock \emph{Deep Learning with Python}.
 \newblock O'Reilly Media, Inc., Diciembre del 2017.
 \newblock ISBN 97816117294433.
-
-\bibitem[Covert et~al.(2016)Covert, Massarella, and Golding]{ama}
-J.~Covert, L.~Massarella, and B.~Golding.
-\newblock Amazon introduces next major job killer to face americans.
-\newblock
-  \url{https://nypost.com/2016/12/05/amazon-introduces-next-major-job-killer-to-face-americans/},
-  Diciembre 2016.
 
 \bibitem[Fiore(2008)]{enjoy3}
 A.~Fiore.
@@ -79,9 +65,9 @@ W.~{Huang} and J.~{Tang}.
   Intelligence and Intelligent Agent Technology (WI-IAT)}, volume~3, pages
   118--121, 2015.
 
-\bibitem[j.~Arnold et~al.(2005)j.~Arnold, Reynolds, Ponder, and
-  Lueg]{shoppingExp}
-M.~j.~Arnold, K.~E. Reynolds, N.~Ponder, and J.~E. Lueg.
+\bibitem[j.~Arnold~y Kristy E.~Reynolds et~al.(2005)j.~Arnold~y Kristy
+  E.~Reynolds, Ponder, and Lueg]{shoppingExp}
+M.~j.~Arnold~y Kristy E.~Reynolds, N.~Ponder, and J.~E. Lueg.
 \newblock Customer delight in a retail context: investigating delightful and
   terrible shopping experiences.
 \newblock pages 1132--1145, 2005.
@@ -93,12 +79,6 @@ S.~{Jing}, C.~{Hu}, C.~{Wang}, G.~{Zhou}, and J.~{Yu}.
   networks.
 \newblock In \emph{2019 Chinese Automation Congress (CAC)}, pages 5149--5152,
   2019.
-
-\bibitem[Kaehler and Bradski(2017)]{open}
-A.~Kaehler and G.~Bradski.
-\newblock \emph{Learning OpenCV 3}.
-\newblock O'Reilly Media, Inc., 2017.
-\newblock ISBN 978-1-491-93799-0.
 
 \bibitem[Kosman(2017)]{ama2}
 J.~Kosman.
@@ -140,12 +120,6 @@ W.~McCulloch and W.~Pitts.
 \newblock \emph{Bulletin of Mathematical Biophysics}, 5:\penalty0 115--133,
   1943.
 
-\bibitem[Muller and Guido(Octubre del 2016)]{machine}
-A.~C. Muller and S.~Guido.
-\newblock \emph{Introduction to Machine Learning with Python}.
-\newblock O'Reilly Media, Inc., Octubre del 2016.
-\newblock ISBN 9781449369880.
-
 \bibitem[Olazaran(1996)]{neur2}
 M.~Olazaran.
 \newblock A sociological study of the official history of the perceptrons
@@ -169,8 +143,8 @@ A.~Panesar.
 \newblock O'Reilly Media, Inc., Febrero del 2019.
 \newblock ISBN 9781484237991.
 
-\bibitem[Redmon et~al.(2015)Redmon, Divvala, Girshick, and Farhadi]{yolo}
-J.~Redmon, S.~K. Divvala, R.~B. Girshick, and A.~Farhadi.
+\bibitem[Redmon and y~Ross B. Girshick~y Ali~Farhadi(2015)]{yolo}
+J.~Redmon and S.~K.~D. y~Ross B. Girshick~y Ali~Farhadi.
 \newblock You only look once: Unified, real-time object detection.
 \newblock \emph{CoRR}, abs/1506.02640, 2015.
 \newblock URL \url{http://arxiv.org/abs/1506.02640}.
@@ -194,17 +168,43 @@ H.~Singh.
 \newblock Apress, 2019.
 \newblock ISBN 978-1-4842-4149-3.
 
-\bibitem[Sutton and Barto(2018)]{refor}
-R.~S. Sutton and A.~G. Barto.
-\newblock \emph{Reinforcement Learning: An Introduction}.
-\newblock The MIT Press, 2018.
-\newblock ISBN 9780262039246.
-
 \bibitem[{Wenjie} et~al.(2015){Wenjie}, {Senbiao}, and {Lihong}]{cola2323}
 X.~{Wenjie}, L.~{Senbiao}, and H.~{Lihong}.
 \newblock Simulation model of supermarket queuing system.
 \newblock In \emph{2015 34th Chinese Control Conference (CCC)}, pages
   8819--8823, 2015.
+
+\bibitem[y~Andrew G.~Barto(2018)]{refor}
+R.~S.~S. y~Andrew G.~Barto.
+\newblock \emph{Reinforcement Learning: An Introduction}.
+\newblock The MIT Press, 2018.
+\newblock ISBN 9780262039246.
+
+\bibitem[y~Filiatrault~Pierre(1993)]{enjoy1}
+J.-C. y~Filiatrault~Pierre.
+\newblock The impact of waiting in line on consumers.
+\newblock \emph{International Journal of Bank Marketing}, 11:\penalty0 35--40,
+  12 1993.
+\newblock \doi{10.1108/02652329310025938}.
+
+\bibitem[y~Gary~Bradski(2017)]{open}
+A.~K. y~Gary~Bradski.
+\newblock \emph{Learning OpenCV 3}.
+\newblock O'Reilly Media, Inc., 2017.
+\newblock ISBN 978-1-491-93799-0.
+
+\bibitem[y~Linda Massarella~y Bruce~Golding(2016)]{ama}
+J.~C. y~Linda Massarella~y Bruce~Golding.
+\newblock Amazon introduces next major job killer to face americans.
+\newblock
+  \url{https://nypost.com/2016/12/05/amazon-introduces-next-major-job-killer-to-face-americans/},
+  Diciembre 2016.
+
+\bibitem[y~Sarah~Guido(Octubre del 2016)]{machine}
+A.~C.~M. y~Sarah~Guido.
+\newblock \emph{Introduction to Machine Learning with Python}.
+\newblock O'Reilly Media, Inc., Octubre del 2016.
+\newblock ISBN 9781449369880.
 
 \bibitem[Zeithaml et~al.(1996)Zeithaml, Berry, and Parasuraman]{enjoy2}
 V.~A. Zeithaml, L.~L. Berry, and A.~Parasuraman.

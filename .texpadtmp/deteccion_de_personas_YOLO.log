@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.16)  16 NOV 2020 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.16)  17 NOV 2020 18:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,6 +325,17 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidth=\dimen162
 \titlewidthlast=\dimen163
 \titlewidthfirst=\dimen164
+) (/usr/local/texlive/2020/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
  (/usr/local/texlive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
@@ -507,23 +518,23 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `deteccion_de_personas_YOLO.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
-LaTeX Font Info:    ... okay on input line 71.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 71.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 75.
+LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 75.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -545,14 +556,14 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Info: Redefining \. on input line 71.
-LaTeX Info: Redefining \% on input line 71.
+LaTeX Info: Redefining \. on input line 75.
+LaTeX Info: Redefining \% on input line 75.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box103
-Package hyperref Info: Link coloring OFF on input line 71.
+Package hyperref Info: Link coloring OFF on input line 75.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -562,9 +573,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 71.
-LaTeX Info: Redefining \pageref on input line 71.
-LaTeX Info: Redefining \nameref on input line 71.
+LaTeX Info: Redefining \ref on input line 75.
+LaTeX Info: Redefining \pageref on input line 75.
+LaTeX Info: Redefining \nameref on input line 75.
  (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.out) (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.out)
 \@outlinefile=\write3
 \openout3 = `deteccion_de_personas_YOLO.out'.
@@ -608,30 +619,30 @@ LaTeX Info: Redefining \nameref on input line 71.
 <imagenes/LogoCatolica.png, id=264, 311.1625pt x 570.13pt>
 File: imagenes/LogoCatolica.png Graphic file (type png)
 <use imagenes/LogoCatolica.png>
-Package pdftex.def Info: imagenes/LogoCatolica.png  used on input line 75.
+Package pdftex.def Info: imagenes/LogoCatolica.png  used on input line 79.
 (pdftex.def)             Requested size: 124.46278pt x 228.04796pt.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 75.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 79.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 75.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 79.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 75.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 79.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 75.
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 79.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 75.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 
 
 LaTeX Warning: No \author given.
@@ -642,35 +653,20 @@ LaTeX Warning: No \author given.
 
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 89.
- [3] (./capitulos/agredecimientos.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
-[]\OT1/ptm/b/n/17.28 AGRADECIMIENTOS|
- []
-
-) [4
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 92.
+ [3] (./capitulos/agredecimientos.tex) [4
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.130 \clearpage
+l.133 \clearpage
                  [4
 
-] (./capitulos/resumen.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--3
-[]\OT1/ptm/b/n/17.28 RESUMEN|
- []
-
-) [5] (./capitulos/abstract.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--2
-[]\OT1/ptm/b/n/17.28 ABSTRACT|
- []
-
-) [6
+] (./capitulos/resumen.tex) [5] (./capitulos/abstract.tex) [6
 
 ] (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.lof
 LaTeX Info: Redefining \. on input line 1.
@@ -685,7 +681,7 @@ LaTeX Info: Redefining \% on input line 1.
  [8]pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.142 \lstlistoflistings
+l.145 \lstlistoflistings
                          [8
 
 ] (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.lol)
@@ -695,13 +691,13 @@ l.142 \lstlistoflistings
  [9]pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.144 \clearpage
+l.147 \clearpage
                  [9
 
 ] (./capitulos/acronimos.tex) [10]pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.148 \tableofcontents
+l.151 \tableofcontents
                        [10
 
 ] (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.toc
@@ -714,44 +710,19 @@ LaTeX Info: Redefining \% on input line 1.
  [12]pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \chapter
+l.161 \chapter
               {INTRODUCCIÓN} [12
 
 ]
 Cap\'{\i }tulo 1.
-./deteccion_de_personas_YOLO.tex:158: Missing number, treated as zero.
-<to be read again> 
-                   \vskip 
-l.158 \chapter{INTRODUCCIÓN}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./deteccion_de_personas_YOLO.tex:158: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \vskip 
-l.158 \chapter{INTRODUCCIÓN}
-                             
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 (./capitulos/marco_referencial.tex
-<imagenes/huawei.png, id=543, 2216.28pt x 1246.6575pt>
+<imagenes/huawei.png, id=547, 2216.28pt x 1246.6575pt>
 File: imagenes/huawei.png Graphic file (type png)
 <use imagenes/huawei.png>
 Package pdftex.def Info: imagenes/huawei.png  used on input line 10.
 (pdftex.def)             Requested size: 199.15224pt x 145.10315pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.15 \clearpage
-                [1 <./imagenes/huawei.png>]
-<imagenes/tesla.jpg, id=553, 1204.5pt x 677.53125pt>
+ [13 <./imagenes/huawei.png>]
+<imagenes/tesla.jpg, id=557, 1204.5pt x 677.53125pt>
 File: imagenes/tesla.jpg Graphic file (type jpg)
 <use imagenes/tesla.jpg>
 Package pdftex.def Info: imagenes/tesla.jpg  used on input line 20.
@@ -761,7 +732,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-<imagenes/person_detection.png, id=557, 602.25pt x 339.51843pt>
+<imagenes/person_detection.png, id=561, 602.25pt x 339.51843pt>
 File: imagenes/person_detection.png Graphic file (type png)
 <use imagenes/person_detection.png>
 Package pdftex.def Info: imagenes/person_detection.png  used on input line 32.
@@ -770,73 +741,32 @@ Package pdftex.def Info: imagenes/person_detection.png  used on input line 32.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6300) has occurred while \output is active []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.44 
-      [2
+ [14
 
  <./imagenes/tesla.jpg>]
-<imagenes/fila_larga.png, id=569, 444.15938pt x 150.5625pt>
+<imagenes/fila_larga.png, id=574, 444.15938pt x 150.5625pt>
 File: imagenes/fila_larga.png Graphic file (type png)
 <use imagenes/fila_larga.png>
 Package pdftex.def Info: imagenes/fila_larga.png  used on input line 53.
 (pdftex.def)             Requested size: 310.90944pt x 105.39302pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.70 
-      [3 <./imagenes/person_detection.png> <./imagenes/fila_larga.png>]pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.85 ...lizar un sistema de fila única.\clearpage
-                                                   [4]
+ [15 <./imagenes/person_detection.png> <./imagenes/fila_larga.png>] [16]
 Underfull \hbox (badness 10000) in paragraph at lines 88--90
 
  []
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.161 \chapter
-              {MARCO TEÓRICO} [5
+) [17
 
 ]
 Cap\'{\i }tulo 2.
-./deteccion_de_personas_YOLO.tex:161: Missing number, treated as zero.
-<to be read again> 
-                   \vskip 
-l.161 \chapter{MARCO TEÓRICO}
-                              
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./deteccion_de_personas_YOLO.tex:161: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \vskip 
-l.161 \chapter{MARCO TEÓRICO}
-                              
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 (./capitulos/marco_teorico.tex
-<imagenes/pegly.jpg, id=584, 723.45282pt x 578.16pt>
+<imagenes/pegly.jpg, id=592, 723.45282pt x 578.16pt>
 File: imagenes/pegly.jpg Graphic file (type jpg)
 <use imagenes/pegly.jpg>
 Package pdftex.def Info: imagenes/pegly.jpg  used on input line 7.
 (pdftex.def)             Requested size: 217.03752pt x 173.44933pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.15 \clearpage
-                [6
+ [18
 
  <./imagenes/pegly.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
@@ -848,77 +778,54 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-<imagenes/amago.jpg, id=604, 963.6pt x 542.025pt>
+<imagenes/amago.jpg, id=613, 963.6pt x 542.025pt>
 File: imagenes/amago.jpg Graphic file (type jpg)
 <use imagenes/amago.jpg>
 Package pdftex.def Info: imagenes/amago.jpg  used on input line 23.
 (pdftex.def)             Requested size: 289.08223pt x 162.60875pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.30 \clearpage
-                [7
+[19
 
  <./imagenes/amago.jpg>]
-<imagenes/gato.png, id=629, 2017.5375pt x 610.28pt>
+<imagenes/gato.png, id=639, 2017.5375pt x 610.28pt>
 File: imagenes/gato.png Graphic file (type png)
 <use imagenes/gato.png>
 Package pdftex.def Info: imagenes/gato.png  used on input line 42.
 (pdftex.def)             Requested size: 403.50035pt x 122.05383pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.48 \clearpage
-                [8
+ [20
 
  <./imagenes/gato.png>]
-<imagenes/convu2.png, id=647, 792.9625pt x 407.5225pt>
+<imagenes/convu2.png, id=658, 792.9625pt x 407.5225pt>
 File: imagenes/convu2.png Graphic file (type png)
 <use imagenes/convu2.png>
 Package pdftex.def Info: imagenes/convu2.png  used on input line 51.
 (pdftex.def)             Requested size: 317.17938pt x 163.0061pt.
-<imagenes/convu3.png, id=648, 792.9625pt x 211.79124pt>
+<imagenes/convu3.png, id=659, 792.9625pt x 211.79124pt>
 File: imagenes/convu3.png Graphic file (type png)
 <use imagenes/convu3.png>
 Package pdftex.def Info: imagenes/convu3.png  used on input line 59.
 (pdftex.def)             Requested size: 317.17938pt x 84.715pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.9}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.66  \clearpage
-                 [9
+ [21
 
  <./imagenes/convu2.png> <./imagenes/convu3.png>]
-<imagenes/image.png, id=667, 1751.54375pt x 1091.07625pt>
+<imagenes/image.png, id=680, 1751.54375pt x 1091.07625pt>
 File: imagenes/image.png Graphic file (type png)
 <use imagenes/image.png>
 Package pdftex.def Info: imagenes/image.png  used on input line 69.
 (pdftex.def)             Requested size: 350.30255pt x 218.21138pt.
-<imagenes/natural.png, id=671, 1066.98625pt x 652.4375pt>
+<imagenes/natural.png, id=684, 1066.98625pt x 652.4375pt>
 File: imagenes/natural.png Graphic file (type png)
 <use imagenes/natural.png>
 Package pdftex.def Info: imagenes/natural.png  used on input line 85.
 (pdftex.def)             Requested size: 230.4721pt x 140.92838pt.
+ [22
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<imagenes/ela1.png, id=673, 450.68375pt x 436.63126pt>
+ <./imagenes/image.png> <./imagenes/natural.png>]
+<imagenes/ela1.png, id=693, 450.68375pt x 436.63126pt>
 File: imagenes/ela1.png Graphic file (type png)
 <use imagenes/ela1.png>
 Package pdftex.def Info: imagenes/ela1.png  used on input line 97.
 (pdftex.def)             Requested size: 157.74167pt x 152.82323pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.10}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.107 
-       [10
-
- <./imagenes/image.png>]
-<imagenes/capa.png, id=680, 441.65pt x 333.245pt>
+<imagenes/capa.png, id=695, 441.65pt x 333.245pt>
 File: imagenes/capa.png Graphic file (type png)
 <use imagenes/capa.png>
 Package pdftex.def Info: imagenes/capa.png  used on input line 110.
@@ -927,22 +834,14 @@ Package pdftex.def Info: imagenes/capa.png  used on input line 110.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.129     \item
-                Problemas de clasificación (identificación de dígitos, di... [11 <./imagenes/natural.png> <./imagenes/ela1.png>]
-<imagenes/aprendizaje_supervisado.png, id=689, 513.92pt x 285.065pt>
+[23 <./imagenes/ela1.png>]
+<imagenes/aprendizaje_supervisado.png, id=704, 513.92pt x 285.065pt>
 File: imagenes/aprendizaje_supervisado.png Graphic file (type png)
 <use imagenes/aprendizaje_supervisado.png>
 Package pdftex.def Info: imagenes/aprendizaje_supervisado.png  used on input line 135.
 (pdftex.def)             Requested size: 359.74153pt x 199.54413pt.
-pdfTeX warning (ext4): destination with the same identifier (name{page.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.142 
-       [12 <./imagenes/capa.png> <./imagenes/aprendizaje_supervisado.png>]
-<imagenes/apreRefor.png, id=698, 714.67pt x 334.24875pt>
+ [24 <./imagenes/capa.png> <./imagenes/aprendizaje_supervisado.png>]
+<imagenes/apreRefor.png, id=715, 714.67pt x 334.24875pt>
 File: imagenes/apreRefor.png Graphic file (type png)
 <use imagenes/apreRefor.png>
 Package pdftex.def Info: imagenes/apreRefor.png  used on input line 161.
@@ -952,175 +851,154 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--170
 
  []
 
-[13 <./imagenes/apreRefor.png>] [14]
-<imagenes/save.png, id=720, 521.95pt x 321.2pt>
+[25 <./imagenes/apreRefor.png>] [26]
+<imagenes/save.png, id=737, 521.95pt x 321.2pt>
 File: imagenes/save.png Graphic file (type png)
 <use imagenes/save.png>
 Package pdftex.def Info: imagenes/save.png  used on input line 190.
 (pdftex.def)             Requested size: 260.97435pt x 160.59961pt.
-<imagenes/tange.png, id=724, 1204.5pt x 663.47874pt>
+<imagenes/tange.png, id=742, 1204.5pt x 663.47874pt>
 File: imagenes/tange.png Graphic file (type png)
 <use imagenes/tange.png>
-Package pdftex.def Info: imagenes/tange.png  used on input line 214.
+Package pdftex.def Info: imagenes/tange.png  used on input line 215.
 (pdftex.def)             Requested size: 180.6672pt x 99.51752pt.
- [15
+ [27
 
  <./imagenes/save.png> <./imagenes/tange.png>]
-<imagenes/relu.png, id=735, 259.97125pt x 194.7275pt>
+<imagenes/relu.png, id=754, 259.97125pt x 194.7275pt>
 File: imagenes/relu.png Graphic file (type png)
 <use imagenes/relu.png>
-Package pdftex.def Info: imagenes/relu.png  used on input line 241.
+Package pdftex.def Info: imagenes/relu.png  used on input line 243.
 (pdftex.def)             Requested size: 256.07516pt x 167.87538pt.
- [16 <./imagenes/relu.png>]
-<imagenes/Softmax.png, id=749, 770.88pt x 578.16pt>
+ [28 <./imagenes/relu.png>]
+<imagenes/Softmax.png, id=769, 770.88pt x 578.16pt>
 File: imagenes/Softmax.png Graphic file (type png)
 <use imagenes/Softmax.png>
-Package pdftex.def Info: imagenes/Softmax.png  used on input line 265.
+Package pdftex.def Info: imagenes/Softmax.png  used on input line 268.
 (pdftex.def)             Requested size: 256.07324pt x 199.16547pt.
- [17 <./imagenes/Softmax.png>]
-<imagenes/ia.jpg, id=756, 1430.34375pt x 639.38875pt>
+ [29 <./imagenes/Softmax.png>]
+<imagenes/ia.jpg, id=777, 1430.34375pt x 639.38875pt>
 File: imagenes/ia.jpg Graphic file (type jpg)
 <use imagenes/ia.jpg>
-Package pdftex.def Info: imagenes/ia.jpg  used on input line 280.
+Package pdftex.def Info: imagenes/ia.jpg  used on input line 283.
 (pdftex.def)             Requested size: 341.43437pt x 199.16457pt.
-<imagenes/alan1.jpg, id=760, 1027.84pt x 578.16pt>
+<imagenes/alan1.jpg, id=781, 1027.84pt x 578.16pt>
 File: imagenes/alan1.jpg Graphic file (type jpg)
 <use imagenes/alan1.jpg>
-Package pdftex.def Info: imagenes/alan1.jpg  used on input line 291.
+Package pdftex.def Info: imagenes/alan1.jpg  used on input line 294.
 (pdftex.def)             Requested size: 308.35437pt x 173.44933pt.
- [18
+ [30
 
- <./imagenes/ia.jpg> <./imagenes/alan1.jpg>] [19]
-<imagenes/tensor2323.png, id=775, 1262.7175pt x 388.45125pt>
+ <./imagenes/ia.jpg> <./imagenes/alan1.jpg>] [31]
+<imagenes/tensor2323.png, id=795, 1262.7175pt x 388.45125pt>
 File: imagenes/tensor2323.png Graphic file (type png)
 <use imagenes/tensor2323.png>
-Package pdftex.def Info: imagenes/tensor2323.png  used on input line 329.
+Package pdftex.def Info: imagenes/tensor2323.png  used on input line 332.
 (pdftex.def)             Requested size: 441.95775pt x 135.95996pt.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 335.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 338.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-<imagenes/googleTeam.png, id=777, 642.4pt x 184.69pt>
+<imagenes/googleTeam.png, id=797, 642.4pt x 184.69pt>
 File: imagenes/googleTeam.png Graphic file (type png)
 <use imagenes/googleTeam.png>
-Package pdftex.def Info: imagenes/googleTeam.png  used on input line 339.
+Package pdftex.def Info: imagenes/googleTeam.png  used on input line 342.
 (pdftex.def)             Requested size: 256.95544pt x 73.87468pt.
- [20 <./imagenes/tensor2323.png> <./imagenes/googleTeam.png>]
-<imagenes/capas1.png, id=790, 203.76125pt x 105.39375pt>
+ [32 <./imagenes/tensor2323.png> <./imagenes/googleTeam.png>]
+<imagenes/capas1.png, id=810, 203.76125pt x 105.39375pt>
 File: imagenes/capas1.png Graphic file (type png)
 <use imagenes/capas1.png>
-Package pdftex.def Info: imagenes/capas1.png  used on input line 356.
+Package pdftex.def Info: imagenes/capas1.png  used on input line 359.
 (pdftex.def)             Requested size: 142.6319pt x 73.7751pt.
-<imagenes/capas2.png, id=792, 203.76125pt x 105.39375pt>
+<imagenes/capas2.png, id=812, 203.76125pt x 105.39375pt>
 File: imagenes/capas2.png Graphic file (type png)
 <use imagenes/capas2.png>
-Package pdftex.def Info: imagenes/capas2.png  used on input line 367.
+Package pdftex.def Info: imagenes/capas2.png  used on input line 370.
 (pdftex.def)             Requested size: 142.6319pt x 73.7751pt.
-<imagenes/capa3.png, id=794, 153.2124pt x 112.0185pt>
+<imagenes/capa3.png, id=814, 153.2124pt x 112.0185pt>
 File: imagenes/capa3.png Graphic file (type png)
 <use imagenes/capa3.png>
-Package pdftex.def Info: imagenes/capa3.png  used on input line 377.
+Package pdftex.def Info: imagenes/capa3.png  used on input line 380.
 (pdftex.def)             Requested size: 153.212pt x 112.0182pt.
- [21
+ [33
 
- <./imagenes/capas1.png> <./imagenes/capas2.png>] [22 <./imagenes/capa3.png>]
-Overfull \hbox (29.78708pt too wide) in paragraph at lines 400--401
+ <./imagenes/capas1.png> <./imagenes/capas2.png>] [34 <./imagenes/capa3.png>]
+Overfull \hbox (29.78708pt too wide) in paragraph at lines 403--404
 []\OT1/ptm/m/n/12 Al crear es-tas ca-pas con Ke-ras se ne-ce-si-ta ini-ciar con el si-guien-te co-man-do \tf.keras.layers.Flatten"
  []
 
-<imagenes/keras2.png, id=808, 428.60126pt x 128.48pt>
+<imagenes/keras2.png, id=828, 428.60126pt x 128.48pt>
 File: imagenes/keras2.png Graphic file (type png)
 <use imagenes/keras2.png>
-Package pdftex.def Info: imagenes/keras2.png  used on input line 409.
+Package pdftex.def Info: imagenes/keras2.png  used on input line 412.
 (pdftex.def)             Requested size: 300.01883pt x 89.93538pt.
-<imagenes/deep2.jpg, id=812, 199.947pt x 134.904pt>
+<imagenes/deep2.jpg, id=832, 199.947pt x 134.904pt>
 File: imagenes/deep2.jpg Graphic file (type jpg)
 <use imagenes/deep2.jpg>
-Package pdftex.def Info: imagenes/deep2.jpg  used on input line 421.
+Package pdftex.def Info: imagenes/deep2.jpg  used on input line 424.
 (pdftex.def)             Requested size: 199.9465pt x 134.90367pt.
-[23
+[35
 
  <./imagenes/keras2.png> <./imagenes/deep2.jpg>]
-<imagenes/yolo1.png, id=821, 223.83624pt x 168.63pt>
+<imagenes/yolo1.png, id=841, 223.83624pt x 168.63pt>
 File: imagenes/yolo1.png Graphic file (type png)
 <use imagenes/yolo1.png>
-Package pdftex.def Info: imagenes/yolo1.png  used on input line 442.
+Package pdftex.def Info: imagenes/yolo1.png  used on input line 445.
 (pdftex.def)             Requested size: 179.06923pt x 134.90417pt.
-<imagenes/yolo2.png, id=823, 406.51875pt x 116.435pt>
+<imagenes/yolo2.png, id=843, 406.51875pt x 116.435pt>
 File: imagenes/yolo2.png Graphic file (type png)
 <use imagenes/yolo2.png>
-Package pdftex.def Info: imagenes/yolo2.png  used on input line 453.
+Package pdftex.def Info: imagenes/yolo2.png  used on input line 456.
 (pdftex.def)             Requested size: 325.21542pt x 93.14812pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagenes/yolo3.png, id=825, 514.92375pt x 335.2525pt>
+<imagenes/yolo3.png, id=845, 514.92375pt x 335.2525pt>
 File: imagenes/yolo3.png Graphic file (type png)
 <use imagenes/yolo3.png>
-Package pdftex.def Info: imagenes/yolo3.png  used on input line 463.
+Package pdftex.def Info: imagenes/yolo3.png  used on input line 466.
 (pdftex.def)             Requested size: 308.95662pt x 201.15305pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \vbox (badness 1048) has occurred while \output is active []
+Underfull \vbox (badness 1057) has occurred while \output is active []
 
- [24
+ [36
 
  <./imagenes/yolo1.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./imagenes/yolo2.png> <./imagenes/yolo3.png>]
-<imagenes/ama23.png, id=838, 1199.48125pt x 440.64626pt>
+ [37 <./imagenes/yolo2.png> <./imagenes/yolo3.png>]
+<imagenes/ama23.png, id=858, 1199.48125pt x 440.64626pt>
 File: imagenes/ama23.png Graphic file (type png)
 <use imagenes/ama23.png>
-Package pdftex.def Info: imagenes/ama23.png  used on input line 491.
+Package pdftex.def Info: imagenes/ama23.png  used on input line 494.
 (pdftex.def)             Requested size: 341.43475pt x 199.16978pt.
- [26 <./imagenes/ama23.png>]) [27]
+ [38 <./imagenes/ama23.png>]) [39]
 Cap\'{\i }tulo 3.
-./deteccion_de_personas_YOLO.tex:164: Missing number, treated as zero.
-<to be read again> 
-                   \vskip 
-l.164 \chapter{MARCO PRÁCTICO}
-                               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./deteccion_de_personas_YOLO.tex:164: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \vskip 
-l.164 \chapter{MARCO PRÁCTICO}
-                               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 (./capitulos/marco_practico.tex
-<imagenes/persona9.png, id=852, 492.84125pt x 389.455pt>
+<imagenes/persona9.png, id=872, 492.84125pt x 389.455pt>
 File: imagenes/persona9.png Graphic file (type png)
 <use imagenes/persona9.png>
 Package pdftex.def Info: imagenes/persona9.png  used on input line 6.
 (pdftex.def)             Requested size: 295.70702pt x 233.67479pt.
- [28
+ [40
 
  <./imagenes/persona9.png>]
-<imagenes/persona1.png, id=860, 1277.77374pt x 736.7525pt>
+<imagenes/persona1.png, id=880, 1277.77374pt x 736.7525pt>
 File: imagenes/persona1.png Graphic file (type png)
 <use imagenes/persona1.png>
 Package pdftex.def Info: imagenes/persona1.png  used on input line 24.
 (pdftex.def)             Requested size: 319.44266pt x 184.18767pt.
- [29 <./imagenes/persona1.png>]
-<imagenes/persona2.png, id=867, 644.4075pt x 392.46625pt>
+ [41 <./imagenes/persona1.png>]
+<imagenes/persona2.png, id=888, 644.4075pt x 392.46625pt>
 File: imagenes/persona2.png Graphic file (type png)
 <use imagenes/persona2.png>
 Package pdftex.def Info: imagenes/persona2.png  used on input line 36.
 (pdftex.def)             Requested size: 193.32373pt x 117.74077pt.
-<imagenes/persona5.png, id=869, 1271.75125pt x 594.22pt>
+<imagenes/persona5.png, id=890, 1271.75125pt x 594.22pt>
 File: imagenes/persona5.png Graphic file (type png)
 <use imagenes/persona5.png>
 Package pdftex.def Info: imagenes/persona5.png  used on input line 48.
@@ -1130,51 +1008,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--59
 
  []
 
-[30
+[42
 
  <./imagenes/persona2.png> <./imagenes/persona5.png>]
-<imagenes/persona3.png, id=876, 312.16624pt x 243.91125pt>
+<imagenes/persona3.png, id=897, 312.16624pt x 243.91125pt>
 File: imagenes/persona3.png Graphic file (type png)
 <use imagenes/persona3.png>
 Package pdftex.def Info: imagenes/persona3.png  used on input line 66.
 (pdftex.def)             Requested size: 156.08273pt x 121.95532pt.
-<imagenes/persona4.png, id=879, 318.18875pt x 100.375pt>
+<imagenes/persona4.png, id=900, 318.18875pt x 100.375pt>
 File: imagenes/persona4.png Graphic file (type png)
 <use imagenes/persona4.png>
 Package pdftex.def Info: imagenes/persona4.png  used on input line 76.
 (pdftex.def)             Requested size: 159.09398pt x 50.18736pt.
- [31
+ [43
 
  <./imagenes/persona3.png> <./imagenes/persona4.png>]
-<imagenes/persona10.png, id=888, 346.29375pt x 124.465pt>
+<imagenes/persona10.png, id=908, 346.29375pt x 124.465pt>
 File: imagenes/persona10.png Graphic file (type png)
 <use imagenes/persona10.png>
 Package pdftex.def Info: imagenes/persona10.png  used on input line 94.
 (pdftex.def)             Requested size: 173.14644pt x 62.23235pt.
-<imagenes/persona6.png, id=890, 284.06125pt x 131.49126pt>
+<imagenes/persona6.png, id=910, 284.06125pt x 131.49126pt>
 File: imagenes/persona6.png Graphic file (type png)
 <use imagenes/persona6.png>
 Package pdftex.def Info: imagenes/persona6.png  used on input line 104.
 (pdftex.def)             Requested size: 113.62247pt x 52.59557pt.
-<imagenes/persona7.png, id=892, 664.4825pt x 193.72375pt>
+<imagenes/persona7.png, id=912, 664.4825pt x 193.72375pt>
 File: imagenes/persona7.png Graphic file (type png)
 <use imagenes/persona7.png>
 Package pdftex.def Info: imagenes/persona7.png  used on input line 122.
 (pdftex.def)             Requested size: 265.78828pt x 77.48811pt.
- [32
+ [44
 
  <./imagenes/persona10.png> <./imagenes/persona6.png> <./imagenes/persona7.png>]
-<imagenes/persona8.png, id=903, 693.59125pt x 266.9975pt>
+<imagenes/persona8.png, id=923, 693.59125pt x 266.9975pt>
 File: imagenes/persona8.png Graphic file (type png)
 <use imagenes/persona8.png>
 Package pdftex.def Info: imagenes/persona8.png  used on input line 139.
 (pdftex.def)             Requested size: 277.43158pt x 106.79709pt.
-<imagenes/persona11.png, id=905, 541.02126pt x 109.40875pt>
+<imagenes/persona11.png, id=925, 541.02126pt x 109.40875pt>
 File: imagenes/persona11.png Graphic file (type png)
 <use imagenes/persona11.png>
 Package pdftex.def Info: imagenes/persona11.png  used on input line 151.
 (pdftex.def)             Requested size: 216.40466pt x 43.76271pt.
-<imagenes/persona12.png, id=907, 898.35625pt x 61.22874pt>
+<imagenes/persona12.png, id=927, 898.35625pt x 61.22874pt>
 File: imagenes/persona12.png Graphic file (type png)
 <use imagenes/persona12.png>
 Package pdftex.def Info: imagenes/persona12.png  used on input line 161.
@@ -1183,7 +1061,7 @@ Package pdftex.def Info: imagenes/persona12.png  used on input line 161.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagenes/persona14.png, id=909, 872.25874pt x 534.99875pt>
+<imagenes/persona14.png, id=929, 872.25874pt x 534.99875pt>
 File: imagenes/persona14.png Graphic file (type png)
 <use imagenes/persona14.png>
 Package pdftex.def Info: imagenes/persona14.png  used on input line 171.
@@ -1191,298 +1069,237 @@ Package pdftex.def Info: imagenes/persona14.png  used on input line 171.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[33 <./imagenes/persona8.png> <./imagenes/persona11.png>] [34 <./imagenes/persona12.png> <./imagenes/persona14.png>]
-<imagenes/imagen1.png, id=924, 451.6875pt x 401.5pt>
+[45 <./imagenes/persona8.png> <./imagenes/persona11.png>] [46 <./imagenes/persona12.png> <./imagenes/persona14.png>]
+<imagenes/imagen1.png, id=944, 451.6875pt x 401.5pt>
 File: imagenes/imagen1.png Graphic file (type png)
 <use imagenes/imagen1.png>
 Package pdftex.def Info: imagenes/imagen1.png  used on input line 185.
 (pdftex.def)             Requested size: 271.01459pt x 240.90184pt.
-<imagenes/imagen2.png, id=926, 451.6875pt x 401.5pt>
+<imagenes/imagen2.png, id=946, 451.6875pt x 401.5pt>
 File: imagenes/imagen2.png Graphic file (type png)
 <use imagenes/imagen2.png>
 Package pdftex.def Info: imagenes/imagen2.png  used on input line 198.
 (pdftex.def)             Requested size: 180.67178pt x 160.59715pt.
 
-Underfull \vbox (badness 3199) has occurred while \output is active []
+Underfull \vbox (badness 3471) has occurred while \output is active []
 
- [35
+ [47
 
  <./imagenes/imagen1.png> <./imagenes/imagen2.png>]
-<imagenes/NeoVision.png, id=934, 439.94362pt x 513.5687pt>
-File: imagenes/NeoVision.png Graphic file (type png)
-<use imagenes/NeoVision.png>
-Package pdftex.def Info: imagenes/NeoVision.png  used on input line 209.
-(pdftex.def)             Requested size: 263.9682pt x 308.14359pt.
- [36 <./imagenes/NeoVision.png>]
-<imagenes/contexto.png, id=940, 810.02625pt x 525.965pt>
-File: imagenes/contexto.png Graphic file (type png)
-<use imagenes/contexto.png>
-Package pdftex.def Info: imagenes/contexto.png  used on input line 224.
-(pdftex.def)             Requested size: 405.01213pt x 262.98184pt.
- [37
+<imagenes/NeoVision3.png, id=954, 439.8834pt x 545.1567pt>
+File: imagenes/NeoVision3.png Graphic file (type png)
+<use imagenes/NeoVision3.png>
+Package pdftex.def Info: imagenes/NeoVision3.png  used on input line 209.
+(pdftex.def)             Requested size: 263.93207pt x 327.09653pt.
+ [48 <./imagenes/NeoVision3.png>]
+<imagenes/contenido2.png, id=960, 834.11626pt x 824.07875pt>
+File: imagenes/contenido2.png Graphic file (type png)
+<use imagenes/contenido2.png>
+Package pdftex.def Info: imagenes/contenido2.png  used on input line 224.
+(pdftex.def)             Requested size: 417.05711pt x 412.03836pt.
+ [49
 
- <./imagenes/contexto.png>]
-<imagenes/contenedor.png, id=947, 804.00375pt x 462.72874pt>
-File: imagenes/contenedor.png Graphic file (type png)
-<use imagenes/contenedor.png>
-Package pdftex.def Info: imagenes/contenedor.png  used on input line 236.
-(pdftex.def)             Requested size: 402.0009pt x 231.3638pt.
-<imagenes/persona15.png, id=949, 559.08875pt x 99.37125pt>
+ <./imagenes/contenido2.png>]
+<imagenes/contenedor3.png, id=967, 834.11626pt x 502.87875pt>
+File: imagenes/contenedor3.png Graphic file (type png)
+<use imagenes/contenedor3.png>
+Package pdftex.def Info: imagenes/contenedor3.png  used on input line 236.
+(pdftex.def)             Requested size: 417.05711pt x 251.43875pt.
+<imagenes/persona15.png, id=969, 559.08875pt x 99.37125pt>
 File: imagenes/persona15.png Graphic file (type png)
 <use imagenes/persona15.png>
-Package pdftex.def Info: imagenes/persona15.png  used on input line 252.
+Package pdftex.def Info: imagenes/persona15.png  used on input line 253.
 (pdftex.def)             Requested size: 279.54369pt x 49.6855pt.
-<imagenes/persona16.png, id=951, 1012.78375pt x 51.19125pt>
+ [50
+
+ <./imagenes/contenedor3.png> <./imagenes/persona15.png>]
+<imagenes/persona16.png, id=978, 1012.78375pt x 51.19125pt>
 File: imagenes/persona16.png Graphic file (type png)
 <use imagenes/persona16.png>
-Package pdftex.def Info: imagenes/persona16.png  used on input line 264.
+Package pdftex.def Info: imagenes/persona16.png  used on input line 265.
 (pdftex.def)             Requested size: 506.39064pt x 25.59555pt.
 
-Overfull \hbox (51.14653pt too wide) in paragraph at lines 264--265
+Overfull \hbox (51.14653pt too wide) in paragraph at lines 265--266
  [][] 
  []
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 273.
+<imagenes/deteccionvstracker.png, id=981, 1002.74625pt x 480.79625pt>
+File: imagenes/deteccionvstracker.png Graphic file (type png)
+<use imagenes/deteccionvstracker.png>
+Package pdftex.def Info: imagenes/deteccionvstracker.png  used on input line 291.
+(pdftex.def)             Requested size: 300.82619pt x 144.23997pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(/usr/local/texlive/2020/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) [38
-
- <./imagenes/contenedor.png> <./imagenes/persona15.png>]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 272.
-<imagenes/deteccionvstracker.png, id=961, 1002.74625pt x 480.79625pt>
-File: imagenes/deteccionvstracker.png Graphic file (type png)
-<use imagenes/deteccionvstracker.png>
-Package pdftex.def Info: imagenes/deteccionvstracker.png  used on input line 290.
-(pdftex.def)             Requested size: 300.82619pt x 144.23997pt.
- [39 <./imagenes/persona16.png> <./imagenes/deteccionvstracker.png>]
-<imagenes/deteccionvstracker2.png, id=974, 1002.74625pt x 480.79625pt>
+[51 <./imagenes/persona16.png>] [52 <./imagenes/deteccionvstracker.png>]
+<imagenes/deteccionvstracker2.png, id=998, 1002.74625pt x 480.79625pt>
 File: imagenes/deteccionvstracker2.png Graphic file (type png)
 <use imagenes/deteccionvstracker2.png>
-Package pdftex.def Info: imagenes/deteccionvstracker2.png  used on input line 301.
+Package pdftex.def Info: imagenes/deteccionvstracker2.png  used on input line 302.
 (pdftex.def)             Requested size: 300.82619pt x 144.23997pt.
-<imagenes/persona19.png, id=976, 493.845pt x 306.14375pt>
+<imagenes/persona19.png, id=1000, 493.845pt x 306.14375pt>
 File: imagenes/persona19.png Graphic file (type png)
 <use imagenes/persona19.png>
-Package pdftex.def Info: imagenes/persona19.png  used on input line 318.
+Package pdftex.def Info: imagenes/persona19.png  used on input line 319.
 (pdftex.def)             Requested size: 172.84833pt x 107.1519pt.
- [40
+ [53
 
  <./imagenes/deteccionvstracker2.png> <./imagenes/persona19.png>]
-<imagenes/persona20.png, id=984, 860.21375pt x 484.81125pt>
+<imagenes/persona20.png, id=1009, 860.21375pt x 484.81125pt>
 File: imagenes/persona20.png Graphic file (type png)
 <use imagenes/persona20.png>
-Package pdftex.def Info: imagenes/persona20.png  used on input line 329.
+Package pdftex.def Info: imagenes/persona20.png  used on input line 330.
 (pdftex.def)             Requested size: 344.07939pt x 193.92105pt.
- [41 <./imagenes/persona20.png>]
-<imagenes/persona21.png, id=991, 879.285pt x 250.9375pt>
+ [54 <./imagenes/persona20.png>]
+<imagenes/persona21.png, id=1016, 879.285pt x 250.9375pt>
 File: imagenes/persona21.png Graphic file (type png)
 <use imagenes/persona21.png>
-Package pdftex.def Info: imagenes/persona21.png  used on input line 345.
+Package pdftex.def Info: imagenes/persona21.png  used on input line 346.
 (pdftex.def)             Requested size: 439.64143pt x 125.46843pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--354
+Underfull \hbox (badness 10000) in paragraph at lines 352--355
 
  []
 
-<imagenes/persona22.png, id=993, 515.9275pt x 307.1475pt>
+<imagenes/persona22.png, id=1018, 515.9275pt x 307.1475pt>
 File: imagenes/persona22.png Graphic file (type png)
 <use imagenes/persona22.png>
-Package pdftex.def Info: imagenes/persona22.png  used on input line 359.
+Package pdftex.def Info: imagenes/persona22.png  used on input line 360.
 (pdftex.def)             Requested size: 257.96312pt x 153.57336pt.
-[42
+[55
 
  <./imagenes/persona21.png> <./imagenes/persona22.png>]
-<imagenes/mongodc.png, id=1001, 411.5375pt x 75.28125pt>
+<imagenes/mongodc.png, id=1026, 411.5375pt x 75.28125pt>
 File: imagenes/mongodc.png Graphic file (type png)
 <use imagenes/mongodc.png>
-Package pdftex.def Info: imagenes/mongodc.png  used on input line 376.
+Package pdftex.def Info: imagenes/mongodc.png  used on input line 377.
 (pdftex.def)             Requested size: 226.34633pt x 41.4048pt.
-LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 384.
+LaTeX Font Info:    Trying to load font information for OMS+ptm on input line 385.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 384.
-<imagenes/persona25.png, id=1004, 524.96124pt x 164.615pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 385.
+<imagenes/persona25.png, id=1029, 524.96124pt x 164.615pt>
 File: imagenes/persona25.png Graphic file (type png)
 <use imagenes/persona25.png>
-Package pdftex.def Info: imagenes/persona25.png  used on input line 394.
+Package pdftex.def Info: imagenes/persona25.png  used on input line 395.
 (pdftex.def)             Requested size: 262.47998pt x 82.3073pt.
- [43
+ [56
 
  <./imagenes/mongodc.png> <./imagenes/persona25.png>]
-<imagenes/persona26.png, id=1017, 857.2025pt x 176.66pt>
+<imagenes/persona26.png, id=1042, 857.2025pt x 176.66pt>
 File: imagenes/persona26.png Graphic file (type png)
 <use imagenes/persona26.png>
-Package pdftex.def Info: imagenes/persona26.png  used on input line 411.
+Package pdftex.def Info: imagenes/persona26.png  used on input line 412.
 (pdftex.def)             Requested size: 426.79518pt x 128.03882pt.
- [44 <./imagenes/persona26.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 432.
+ [57 <./imagenes/persona26.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 433.
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
-Overfull \hbox (19.96072pt too wide) in paragraph at lines 434--435
+Overfull \hbox (19.96072pt too wide) in paragraph at lines 435--436
 [][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (34.36087pt too wide) in paragraph at lines 448--449
+Overfull \hbox (34.36087pt too wide) in paragraph at lines 449--450
 [][][][][][][][][][][][][][][][][] 
  []
 
-[45]) [46
+[58]) [59
 
 ]
 Cap\'{\i }tulo 4.
-./deteccion_de_personas_YOLO.tex:167: Missing number, treated as zero.
-<to be read again> 
-                   \vskip 
-l.167 \chapter{Conclusiones}
-                            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./deteccion_de_personas_YOLO.tex:167: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \vskip 
-l.167 \chapter{Conclusiones}
-                            
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-(./capitulos/conclusion.tex) [47
+(./capitulos/conclusion.tex) [60
 
 ]
 Cap\'{\i }tulo 5.
-./deteccion_de_personas_YOLO.tex:170: Missing number, treated as zero.
-<to be read again> 
-                   \vskip 
-l.170 \chapter{Recomendaciones}
-                               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./deteccion_de_personas_YOLO.tex:170: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \vskip 
-l.170 \chapter{Recomendaciones}
-                               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-(./capitulos/recomendaciones.tex) (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.bbl [48
+(./capitulos/recomendaciones.tex) (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.bbl [61
 
 ]
-/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.bbl:1: Missing number, treated as zero.
-<to be read again> 
-                   \vskip 
-l.1 \begin{thebibliography}{32}
-                               
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.bbl:1: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \vskip 
-l.1 \begin{thebibliography}{32}
-                               
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 41.
-(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmtt.fd
+ (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Underfull \hbox (badness 10000) in paragraph at lines 38--43
-[]\OT1/ptm/m/n/12 J. Co-vert, L. Mas-sa-re-lla, and B. Gol-ding.  Ama-zon in-tro-du-ces next ma-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--43
-\OT1/ptm/m/n/12 jor job ki-ller to fa-ce ame-ri-cans.  []$\OT1/lmtt/m/n/12 https : / / nypost . com / 2016 / 12 / 05 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--43
-\OT1/lmtt/m/n/12 amazon-[]introduces-[]next-[]major-[]job-[]killer-[]to-[]face-[]americans/$[]\OT1/ptm/m/n/12 , Di-ciem-bre
- []
-
-[49
+) [62
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 104--110
+Underfull \hbox (badness 10000) in paragraph at lines 84--90
 []\OT1/ptm/m/n/12 J. Kos-man.  In-si-de ama-zon's robot-run su-per-mar-ket that needs
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--110
+Underfull \hbox (badness 10000) in paragraph at lines 84--90
 \OT1/ptm/m/n/12 just 3 hu-man wor-kers.  []$\OT1/lmtt/m/n/12 https : / / nypost . com / 2017 / 02 / 05 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--110
+Underfull \hbox (badness 10000) in paragraph at lines 84--90
 \OT1/lmtt/m/n/12 inside-[]amazons-[]robot-[]run-[]supermarket-[]that-[]needs-[]just-[]3-[]human-[]workers/$[]\OT1/ptm/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--136
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
 []\OT1/ptm/m/n/12 B. Marr.  The ama-zing ways tes-la is using ar-ti-fi-cial in-te-lli-gen-ce and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--136
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
 \OT1/ptm/m/n/12 big da-ta.  []$\OT1/lmtt/m/n/12 https : / / www . forbes . com / sites / bernardmarr / 2018 / 01 / 08 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--136
+Underfull \hbox (badness 10000) in paragraph at lines 111--116
 \OT1/lmtt/m/n/12 the-[]amazing-[]ways-[]tesla-[]is-[]using-[]artificial-[]intelligence-[]and-[]big-[]data /
  []
 
-[50])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
- [51]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 197--202
+[]\OT1/ptm/m/n/12 J. C. y Lin-da Mas-sa-re-lla y Bru-ce Gol-ding.  Ama-zon in-tro-du-ces next ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--202
+\OT1/ptm/m/n/12 jor job ki-ller to fa-ce ame-ri-cans.  []$\OT1/lmtt/m/n/12 https : / / nypost . com / 2016 / 12 / 05 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--202
+\OT1/lmtt/m/n/12 amazon-[]introduces-[]next-[]major-[]job-[]killer-[]to-[]face-[]americans/$[]\OT1/ptm/m/n/12 , Di-ciem-bre
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
+ [64]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `deteccion_de_personas_YOLO.out' has not changed.
-(rerunfilecheck)             Checksum: 75441E4B183F40C35394FCCB18475D82;4822.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
+(rerunfilecheck)             Checksum: E4E384B9661713169E14604EBF953676;4822.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 13392 strings out of 480608
- 211271 string characters out of 5903629
- 781883 words of memory out of 5000000
- 28661 multiletter control sequences out of 15000+600000
- 568992 words of font info for 98 fonts, out of 8000000 for 9000
+ 13497 strings out of 480608
+ 212711 string characters out of 5903629
+ 782299 words of memory out of 5000000
+ 28745 multiletter control sequences out of 15000+600000
+ 570099 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,12n,45p,978b,1869s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.pdf (68 pages, 30695462 bytes).
+Output written on /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.pdf (69 pages, 30657940 bytes).
 PDF statistics:
- 1199 PDF objects out of 1200 (max. 8388607)
- 997 compressed objects within 10 object streams
- 261 named destinations out of 1000 (max. 500000)
+ 1227 PDF objects out of 1440 (max. 8388607)
+ 1022 compressed objects within 11 object streams
+ 277 named destinations out of 1000 (max. 500000)
  831 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,66 +1,66 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}INTRODUCCIÓN}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Planteamiento del Problema}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objetivos}{4}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Objetivo General}{4}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Objetivos Específicos}{4}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Motivación}{4}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Justificación}{5}{section.1.4}%
-\contentsline {section}{\numberline {1.5}Delimitación}{5}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Límites}{5}{subsection.1.5.1}%
-\contentsline {subsection}{\numberline {1.5.2}Alcances}{5}{subsection.1.5.2}%
-\contentsline {chapter}{\numberline {2}MARCO TEÓRICO}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Estado del Arte}{6}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Evolución de los Sistemas de filas de un supermercado}{6}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Innovación en las redes neuronales}{8}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Fundamentos Teóricos}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Redes neuronales artificiales}{10}{subsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Capas}{10}{subsubsection.2.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Métodos de aprendizaje}{11}{subsubsection.2.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.2.1.3}Aprendizaje supervisado}{11}{subsubsection.2.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.2.1.4}Aprendizaje reforzado}{13}{subsubsection.2.2.1.4}%
-\contentsline {subsection}{\numberline {2.2.2}Función de activación}{14}{subsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Sigmoid/Sigmoide}{14}{subsubsection.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}Tangente hiperbólica(Tanh)}{15}{subsubsection.2.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.3}Relu}{16}{subsubsection.2.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.2.4}Softmax}{16}{subsubsection.2.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.3}Inteligencia artificial}{17}{subsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}Visión computacional}{19}{subsubsection.2.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.2.3.2}OpenCV}{19}{subsubsection.2.2.3.2}%
-\contentsline {subsection}{\numberline {2.2.4}Machine Learning}{19}{subsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.4.1}Tensorflow}{20}{subsubsection.2.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.2.4.2}Gráficos de cómputo}{21}{subsubsection.2.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.2.4.3}Keras}{22}{subsubsection.2.2.4.3}%
-\contentsline {subsubsection}{\numberline {2.2.4.4}Configuración de capas iniciales}{22}{subsubsection.2.2.4.4}%
-\contentsline {subsection}{\numberline {2.2.5}Deep Learning}{23}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}YOLO}{24}{subsection.2.2.6}%
-\contentsline {subsubsection}{\numberline {2.2.6.1}Darknet}{25}{subsubsection.2.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.2.6.2}Darkflow}{25}{subsubsection.2.2.6.2}%
-\contentsline {subsection}{\numberline {2.2.7}Servicios de cómputo en la nube}{26}{subsection.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.7.1}Amazon Web Service}{26}{subsubsection.2.2.7.1}%
-\contentsline {section}{\numberline {2.3}Google Colab}{27}{section.2.3}%
-\contentsline {chapter}{\numberline {3}MARCO PRÁCTICO}{28}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Elección de una red neuronal}{28}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Entrenamiento de la red neuronal}{29}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Base de datos}{29}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Preparación del ambiente}{30}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Personalizar una red neuronal}{31}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Inicio de entrenamiento}{33}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Diseño de la interfaz}{34}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Detección de personas}{34}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Pantalla de alerta}{35}{subsection.3.3.2}%
-\contentsline {section}{\numberline {3.4}Diagrama de flujo}{36}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Diagrama C4Model}{36}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Contexto}{37}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Contenedores}{37}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}Descripción de la aplicación}{38}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Agregar el tracker a la detección}{39}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Agregar contador y límite de detección}{40}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Alarma al superar el tiempo máximo}{41}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Crear una base de datos}{43}{subsection.3.6.4}%
-\contentsline {section}{\numberline {3.7}Funcionamiento de la aplicación}{44}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Proceso de iniciar la aplicación}{44}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Proceso de detección y cálculo de tiempo de espera promedio}{44}{subsection.3.7.2}%
-\contentsline {chapter}{\numberline {4}Conclusiones}{47}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Recomendaciones}{48}{chapter.5}%
-\contentsline {chapter}{Bibliografia}{48}{chapter.5}%
+\contentsline {chapter}{\numberline {1}INTRODUCCIÓN}{13}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Planteamiento del Problema}{15}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{16}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Objetivo General}{16}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objetivos Específicos}{16}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Motivación}{16}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Justificación}{17}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Delimitación}{17}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Límites}{17}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Alcances}{17}{subsection.1.5.2}%
+\contentsline {chapter}{\numberline {2}MARCO TEÓRICO}{18}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estado del Arte}{18}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Evolución de los Sistemas de filas de un supermercado}{18}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Innovación en las redes neuronales}{20}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Fundamentos Teóricos}{22}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Redes neuronales artificiales}{22}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Capas}{23}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Métodos de aprendizaje}{23}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Aprendizaje supervisado}{23}{subsubsection.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.2.1.4}Aprendizaje reforzado}{25}{subsubsection.2.2.1.4}%
+\contentsline {subsection}{\numberline {2.2.2}Función de activación}{26}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Sigmoid/Sigmoide}{26}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Tangente hiperbólica(Tanh)}{27}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}Relu}{28}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}Softmax}{28}{subsubsection.2.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.3}Inteligencia artificial}{29}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Visión computacional}{31}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}OpenCV}{31}{subsubsection.2.2.3.2}%
+\contentsline {subsection}{\numberline {2.2.4}Machine Learning}{31}{subsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Tensorflow}{32}{subsubsection.2.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}Gráficos de cómputo}{33}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.3}Keras}{34}{subsubsection.2.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.2.4.4}Configuración de capas iniciales}{34}{subsubsection.2.2.4.4}%
+\contentsline {subsection}{\numberline {2.2.5}Deep Learning}{35}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}YOLO}{36}{subsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.6.1}Darknet}{37}{subsubsection.2.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.2.6.2}Darkflow}{37}{subsubsection.2.2.6.2}%
+\contentsline {subsection}{\numberline {2.2.7}Servicios de cómputo en la nube}{38}{subsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.7.1}Amazon Web Service}{38}{subsubsection.2.2.7.1}%
+\contentsline {section}{\numberline {2.3}Google Colab}{39}{section.2.3}%
+\contentsline {chapter}{\numberline {3}MARCO PRÁCTICO}{40}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Elección de una red neuronal}{40}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Entrenamiento de la red neuronal}{41}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Base de datos}{41}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Preparación del ambiente}{42}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Personalizar una red neuronal}{43}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Inicio de entrenamiento}{45}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Diseño de la interfaz}{46}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detección de personas}{46}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Pantalla de alerta}{47}{subsection.3.3.2}%
+\contentsline {section}{\numberline {3.4}Diagrama de flujo}{48}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Diagrama C4Model}{48}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Contexto}{49}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Contenedores}{49}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}Descripción de la aplicación}{50}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Agregar el tracker a la detección}{51}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Agregar contador y límite de detección}{53}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Alarma al superar el tiempo máximo}{54}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Crear una base de datos}{56}{subsection.3.6.4}%
+\contentsline {section}{\numberline {3.7}Funcionamiento de la aplicación}{57}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Proceso de iniciar la aplicación}{57}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Proceso de detección y cálculo de tiempo de espera promedio}{57}{subsection.3.7.2}%
+\contentsline {chapter}{\numberline {4}CONCLUSIONES}{60}{chapter.4}%
+\contentsline {chapter}{\numberline {5}RECOMENDACIONES}{61}{chapter.5}%
+\contentsline {chapter}{Bibliografia}{61}{chapter.5}%

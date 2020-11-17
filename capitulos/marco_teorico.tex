@@ -11,12 +11,12 @@ El primer supermercado se inauguró en el año 1916 en Tennessee, Estados Unidos
 \end{figure}
 
 La gran innovación surgió cuando se incorporó el concepto de la teoría de colas, que fue introducido por Agner Kraup Erlang,  cuyo articulo estaba enfocado en las llamadas telefónicas. 
-Teniendo los conceptos ya establecidos, se fueron probando diferentes sistemas para agilizar la atención, ya que cada vez mas gente realizaba sus compras en las tiendas. Estos modelos son: FIFO, LIFO y SJF, (\cite{fifo}). 
+Teniendo los conceptos ya establecidos, se fueron probando diferentes sistemas para agilizar la atención, ya que cada vez mas gente realizaba sus compras en las tiendas. Estos modelos son: FIFO, LIFO y SJF (\cite{fifo}). 
 \clearpage
 
-La búsqueda de mejoras para agilizar la atención en las cajas es un hecho, ya que estudios demuestran la importancia sobre generar una gran experiencia de compra, porque eso aumenta la probabilidad que el cliente vuelva a comprar en el mismo lugar, y un punto clave son  las filas, (\cite{enjoy1}), (\cite{enjoy2}), (\cite{shoppingExp}), (\cite{enjoy3}).\\ 
+La búsqueda de mejoras para agilizar la atención en las cajas es un hecho, ya que estudios demuestran la importancia sobre generar una gran experiencia de compra, porque eso aumenta la probabilidad que el cliente vuelva a comprar en el mismo lugar, y un punto clave son  las filas, (\cite{enjoy1}); (\cite{enjoy2}); (\cite{shoppingExp}); (\cite{enjoy3}).\\ 
 
-Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió locales en el que no existen cajas, como se observa en la Figura \ref{fig:amago}. Este nuevo sistema que utiliza Amazon realiza el cobro mediante el uso de  cámaras con visión computacional para así detectar que productos selecciona el cliente, esos productos seleccionados se agregan directamente a un carrito virtual en la aplicación de Amazon, el cobro se realiza cuando el cliente sale del local (\cite{ama}), (\cite{ama2}).\\
+Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió locales en el que no existen cajas, como se observa en la Figura \ref{fig:amago}. Este nuevo sistema que utiliza Amazon realiza el cobro mediante el uso de  cámaras con visión computacional para así detectar que productos selecciona el cliente, esos productos seleccionados se agregan directamente a un carrito virtual en la aplicación de Amazon, el cobro se realiza cuando el cliente sale del local (\cite{ama}); (\cite{ama2}).\\
 
 \begin{figure}[h]
 	\centering
@@ -26,11 +26,11 @@ Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió loca
 	\label{fig:amago}
 \end{figure}
 
-Otra innovación viene de los supermercados de China, donde implementaron un sistema de pago con la aplicación WeChat, en el cual las personas escanean ellos mismo los productos que están comprando y su lista de compra genera un código QR, donde el cajero solo escanea ese código y se registra la compra, los pagos se realizan mediante el método de pago que tiene la aplicación WeChat, (\cite{wechat}), así de esa manera agilizan la atención y se genera menos filas. 
+Otra innovación viene de los supermercados de China, donde implementaron un sistema de pago con la aplicación WeChat, en el cual las personas escanean ellos mismo los productos que están comprando y su lista de compra genera un código QR, donde el cajero solo escanea ese código y se registra la compra, los pagos se realizan mediante el método de pago que tiene la aplicación WeChat (\cite{wechat}), así de esa manera agilizan la atención y se genera menos filas. 
 \clearpage
 \subsection{Innovación en las redes neuronales}
 
- El concepto de las redes neuronales artificiales fue introducido por primera vez en 1943 por el matemático Walter Pitts y el neurólogo Warren McCulloch, mediante un articulo con el nombre \say{\textit{A Logical Calculus of Ideas Immanent in Nervous Activity}}, (\cite{neu1}), en el cual se plantea un modelo computacional simplificado de como las neuronas biológicas podrían trabajar juntas, para poder realizar cálculos complejos utilizando modelos de lógica proposicional (\cite{neural}).
+ El concepto de las redes neuronales artificiales fue introducido por primera vez en 1943 por el matemático Walter Pitts y el neurólogo Warren McCulloch, mediante un articulo con el nombre \say{\textit{A Logical Calculus of Ideas Immanent in Nervous Activity}} (\cite{neu1}), en el cual se plantea un modelo computacional simplificado de como las neuronas biológicas podrían trabajar juntas, para poder realizar cálculos complejos utilizando modelos de lógica proposicional (\cite{neural}).
  
  El siguiente salto viene de la mano del psicólogo  Frank Rosenblatt, que por el año 1960 introdujo un nuevo concepto conocido como \say{perceptron} (\cite{neur2}), que permitía usar las redes neuronales como un clasificador binario (\cite{neu3}). Al principio solo podía representar funciones \textit{AND} y \textit{OR} pero en los siguientes años se pudo combinar varias redes neuronales que permitían representar más funciones lógicas.
  \vspace{5mm}
@@ -40,11 +40,11 @@ El dato sustancial para este proyecto es la introducción de las redes neuronale
  \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.2]{imagenes/gato.png}
-	\caption{Aplicación de redes neuronales convolucionales para clasificación.}
+	\caption{Aplicación de redes neuronales convolucionales para la clasificación de imágenes.}
 	\source{Hamilton Chang (2019).}
 	\label{fig:gato}
 \end{figure}
-En el proceso de la convulución se pasa por diferentes procedimientos, uno de ellos es la multiplicación con un \textit{kernel}, este proceso se apreciará mejor en la Figura \ref{fig:conv24}. En la Figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila y primera y última columna se les ha asignado el valor original (\cite{conv2323}).
+En el proceso de la convulución se pasa por diferentes procedimientos, uno de ellos es la multiplicación con un \textit{kernel}, este proceso se apreciará mejor en la Figura \ref{fig:conv24}. En la Figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila, y la primera y última columna se les ha asignado el valor original (\cite{conv2323}).
 \clearpage
  \begin{figure}[h]
 	\centering
@@ -171,7 +171,7 @@ Para realizar este entrenamiento se necesita de un “agente” en un estado det
 Existen varias funciones de activación que actúan de diferente manera y eso nos permite adecuar las capas de las neuronas, estas funciones son (\cite{funAc}):
 \subsubsection{Sigmoid/Sigmoide}
 
-Esta función se encarga de transformar los valores introducidos a una escala de (0,1), la Ecuación \ref{eq:sigmoideq} tómara los valores de alto rango y lo transformara de manera asintomática a 1 y los valores bajos tienden de manera contraria acercándose al 0, (\cite{activa2}), la gráfica de la función se apreciará en la Figura \ref{fig:sigmoid}.
+Esta función se encarga de transformar los valores introducidos a una escala de una décima (0,1), la Ecuación (\ref{eq:sigmoideq}) tomará los valores de alto rango y lo transformara de manera asintomática a 1 y los valores bajos tienden de manera contraria acercándose al 0 (\cite{activa2}), la gráfica de la función se apreciará en la Figura \ref{fig:sigmoid}.
 
 \begin{equation}
 \label{eq:sigmoideq}
@@ -195,8 +195,9 @@ Esta función se caracteriza en los siguientes factores :
 
 \subsubsection{Tangente hiperbólica(Tanh)}
 
-Esta función tangencial consiste en transformar los valores de entrada en una escala (-1,1), donde los valores altos tenderán de manera asintomática a 1 y los valores de bajo nivel tenderán a 0, (\cite{activa2}). La gráfica de esta función se representará en Figura \ref{fig:tange}.
+Esta función tangencial consiste en transformar los valores de entrada en una escala (-1,1), donde los valores altos tenderán de manera asintomática a 1 y los valores de bajo nivel tenderán a 0, (\cite{activa2}). La gráfica de esta función se representará en Figura \ref{fig:tange}, la cual se obtiene con la Ecuación (\ref{eq:tangente}).
 \begin{equation}
+\label{eq:tangente}
 	f\left( x\right) =\frac {2}{1+e^{-2x}}-1
 \end{equation}
 
@@ -219,9 +220,10 @@ Las características de esta función son las siguientes:
 
 \subsubsection{Relu}
 
-Esta función consiste en transformar todos los valores negativos a 0 y mantiene solo los positivos. Esta función de activación es la más utilizada a pesar de que existen otras más recientes, (\cite{activa2}). La representación gráfica de esta función se encuentra en la Figura \ref{fig:relu}.
+Esta función consiste en transformar todos los valores negativos a 0 y mantiene solo los positivos. Esta función de activación es la más utilizada a pesar de que existen otras más recientes (\cite{activa2}). La representación gráfica de esta función se encuentra en la Figura \ref{fig:relu} y se lo obtiene mediante la Ecuación (\ref{eq:relus}).
 
 \begin{equation}
+\label{eq:relus}
 	F\left( x\right) =max\left( 0,x\right) =\begin{cases}0 para <0\\
 x para\geq 0\end{cases}
 \end{equation}
@@ -248,9 +250,10 @@ Algunas de las características de esta función son las siguientes:
 
 \subsubsection{Softmax}
 
-La función Softmax consiste en calcular las probabilidades de un evento sobre \say{n} eventos diferentes. Es decir que esta función calculara las probabilidades de cada clase de objeto sobre todas las diferentes clases de objetivos posibles. El rango de esta función será de (0,1), y todas las sumas de las probabilidades serán igual a uno. Esta función se utiliza más que todo para obtener la probabilidad de modelos de multi clasificación, (\cite{activa2}). La representación gráfica de la función está en la Figura \ref{fig:soft}.
+La función Softmax consiste en calcular las probabilidades de un evento sobre \say{n} eventos diferentes. Es decir que esta función calculara las probabilidades de cada clase de objeto sobre todas las diferentes clases de objetivos posibles. El rango de esta función será de (0,1), y todas las sumas de las probabilidades serán igual a uno. Esta función se utiliza más que todo para obtener la probabilidad de modelos de multi clasificación (\cite{activa2}). La representación gráfica de la función está en la Figura \ref{fig:soft} y se la obtiene con la Ecuación (\ref{eq:softmax}).
 
 \begin{equation}
+\label{eq:softmax}
 	f\left( z\right) _{j}=\frac {e^{zj}}{\sum ^{k}_{k=1}e^{z}k}
 \end{equation}
 \vspace{5mm}
@@ -347,7 +350,7 @@ Para el año 2016, Google anunció una nueva función con el nombre de TPU o uni
 \subsubsection{Gráficos de cómputo}
 
 Usando Tensorflow nos permite crear algoritmos de aprendizaje que puedan interactuar entre sí, y estas interacciones se los llega a conocer como grafo computacional.
-Al referirse a un grafo en este tema, se quiere decir a un conjunto de nodos conectados entre sí, estos nodos normalmente tienen entrada y salida al mismo tiempo, cada nodo tiene a dentro alguna función aritmética, desde las más simples como ser sumas y multiplicaciones hasta las más complejas, (\cite{tensor1}).
+Al referirse a un grafo en este tema, se quiere decir a un conjunto de nodos conectados entre sí, estos nodos normalmente tienen entrada y salida al mismo tiempo, cada nodo tiene a dentro alguna función aritmética, desde las más simples como ser sumas y multiplicaciones hasta las más complejas (\cite{tensor1}).
 
 Para la creación de un grafo se usará un ejemplo básico del libro \textit{Learning Tensorflow} (\cite{tensor1}), Para empezar, se importará la librería al editor mediante el primer comando que se aprecia en la Figura \ref{fig:capa1}, siguiendo de eso se crearan unos 3 nodos con diferente valor.
 

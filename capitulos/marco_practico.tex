@@ -1,5 +1,5 @@
 \section{Elección de una red neuronal}
-Para la elección de la red neuronal se tomará en cuenta un estudio realizado por el equipo de YOLO, (\cite{persona}), este equipo realizo pruebas con diferentes redes neuronales, para poder demostrar el gran rendimiento que tiene la red YOLO, estas pruebas fueron echas en la misma computadora, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3} que da como ganador la red neuronal YOLO.
+Para la elección de la red neuronal se tomará en cuenta un estudio realizado por el equipo de YOLO (\cite{persona}), este equipo realizo pruebas con diferentes redes neuronales, para poder demostrar el gran rendimiento que tiene la red YOLO, estas pruebas fueron echas en la misma computadora, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3} que da como ganador la red neuronal YOLO.
 
 \begin{figure}[h]
 	\centering
@@ -82,7 +82,7 @@ Colab es un editor de texto online, que te permite escribir tu código y probarl
 
 \subsection{Personalizar una red neuronal}
 
-En esta etapa, se tiene que modificar diferentes archivos para que la red pueda detectar a personas. Estos archivos por modificar son los parámetros que definen la red neuronal, en Darknet existen 2 redes principales que son Yolo y Tiny-Yolo. La gran diferencia entre estos son la cantidad de capas que poseen, esto llega a afectar el rendimiento en una detección. 
+En esta etapa, se debe modificar diferentes archivos para que la red pueda detectar a personas. Estos archivos por modificar son los parámetros que definen la red neuronal, en Darknet existen 2 redes principales que son Yolo y Tiny-Yolo. La gran diferencia entre estos son la cantidad de capas que poseen, esto llega a afectar el rendimiento en una detección. 
 \vspace{5mm}
 
 Por eso mismo se decidió usar Tiny-Yolo, ya que con pruebas realizadas dio un mejor rendimiento en el apartado de frames por segundo (fps), al momento de trabajar con videos, esto es muy importante porque la detección se realizará en tiempo real. Los resultados de la prueba se apreciará mejor en la Figura \ref{fig:labeling4}.
@@ -109,7 +109,7 @@ Con estos resultados se modificara el archivo \say{yolov4-tiny.cfg}, y los datos
 
 El dato marcado \textit{learning rate} es el que determina el ritmo de aprendizaje, este dato entre más bajo podría aprender mas pero  eso alarga el periodo de entrenamiento y aumenta la probabilidad de que se detenga el entrenamiento por un error, en este apartado no hay que exagerar porque un dato muy bajo simplemente lo hará mas lento y no ayudara en el entrenamiento ya que ni se podría realizar.
 
-El siguiente es \textit{max batches}, el quese encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}. En \textit{step} se tómara el 80\% y 90\% de \say{max batches} respectivamente.
+El siguiente es \textit{max batches}, el quese encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}. En \textit{step} se tomará el 80\% y 90\% de \say{max batches} respectivamente.
 
 \begin{equation}
 	max\_batches = \#\operatorname{clases} * 2000
@@ -144,7 +144,7 @@ Con eso finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falt
 
 \subsection{Inicio de entrenamiento}
 
-Para esta etapa ya se tiene todos los archivos necesarios para iniciar el entrenamiento dentro del ambiente de Google Colab, el cual facilita este procedimiento. Para comenzar se tiene que ejecutar los siguientes scripts que apareceén en la Figura \ref{fig:labeling46}, el cual creará unos archivos basados con la cantidad de clases por el cual vamos a entrenar y la cantidad de imágenes con el cual entrenara.
+Para esta etapa, una vez concluido con todas las actividades necesarias para iniciar el entrenamiento dentro del ambiente de Google Colab, el cual facilita este procedimiento. Se procede a ejecutar los siguientes scripts que aparecén en la Figura \ref{fig:labeling46}, el cual creará unos archivos basados con la cantidad de clases por el cual vamos a entrenar y la cantidad de imágenes con el cual entrenara.
 
 \begin{figure}[h]
 	\centering
@@ -206,7 +206,7 @@ En este apartado se mostrará un diagrama de flujo en el que se representa los p
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{imagenes/NeoVision.png}
+	\includegraphics[scale=0.6]{imagenes/NeoVision3.png}
 	\caption{Diagrama de flujo explicativo sobre la función de la aplicación NeoVision.}
 	\source{Elaboración propia}
 	\label{fig:labeling33}
@@ -221,30 +221,31 @@ En este apartado se observará las diferentes interacciones que tiene la aplicac
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{imagenes/contexto.png}
+	\includegraphics[scale=0.5]{imagenes/contenido2.png}
 	\caption{Diagrama de contexto que representa las interacciones del sistema.}
 	\source{Elaboración propia}
 	\label{fig:labeling32}
 \end{figure}
-
+Con este diagrama se puede mostrar cuáles son las interacciones que realiza la aplicación, como ser el personal de sistemas es el que inicia la aplicación y si es necesario configura ciertos parámetros, por otra parte, la aplicación interactúa con el personal de seguridad mediante avisos que ejecutara cuando el tiempo de espera de una persona sobrepase el tiempo configurado.
 \subsection{Contenedores}
 
 En esta sección se observa mas a detalle los sistemas usados para que la aplicación funcione, esto se ve en la Figura \ref{fig:labeling34}.
 \clearpage
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{imagenes/contenedor.png}
+	\includegraphics[scale=0.5]{imagenes/contenedor3.png}
 	\caption{Diagrama de contenedores que representa las diferentes funciones de los sistemas.}
 	\source{Elaboración propia}
 	\label{fig:labeling34}
 \end{figure}
 
+Con este diagrama conocemos cuáles son las funciones de los diferentes sistemas que tiene la aplicación, por ejemplo, Darknet es el encargado de realizar las detecciones en las imágenes que le envía la aplicación principal. Por otra parte, Deepsort es el que recibe los resultados de Darknet y este aplica un ID único a cada detección, esta información es recibida por NeoVision, la cual le permite realizar los cálculos para determinar si es necesario abrir una nueva caja. 
 
 \section{Descripción de la aplicación}
 
 
 
-Para comenzar el desarrollo de la aplicación primeramente se tiene que crear una ambiente virtual de python en la computadora, ya que se necesita instalar ciertos paquetes que podrían entrar en conflicto con algunas aplicaciones ya instaladas y también genera un mayor orden.
+Para comenzar el desarrollo de la aplicación primeramente se tiene que crear una ambiente virtual de Python en la computadora, ya que se necesita instalar ciertos paquetes que podrían entrar en conflicto con algunas aplicaciones ya instaladas y también genera un mayor orden.
 La herramienta ideal para realizar esto es VirtualenvWrapper, ya que es fácil de instalar y sobre todo es simple de ingresar al ambiente virtual, sobre todo cuando se compara con otras herramientas. Esta diferencia aprecia mejor en la Figura \ref{fig:labeling9}.
 
 \begin{figure}[h]
@@ -268,7 +269,7 @@ Con el ambiente virtual se procede a instalar los diversos paquetes necesarios, 
 \end{figure}
 
  Para realizar la aplicación se hará uso del editor PyCharm, porque es gratis y tiene una interfaz intuitiva al momento de usarlo.
- El primer paso al comenzar la aplicación es comenzar a importar todos los paquetes que se necesitará para que funcione, la manera en la que se importa los paquetes se podrá observar en el siguiente código \ref{23}.
+ El primer paso al comenzar la aplicación es comenzar a importar todos los paquetes que se necesitará para que funcione, la manera en la que se importa los paquetes se podrá observar en el siguiente Código \ref{23}.
 \begin{lstlisting}[language=Python,caption={Manera en la que se importan los diferentes paquetes al programa.},captionpos=b,label=23]
 	import os 
 	import subprocess
@@ -379,7 +380,7 @@ En este caso como aplicación fue probada en un MacBook Pro 2014, la instalació
 	\label{fig:labeling18}
 \end{figure}
 
-El dato que se guardará es la hora en la que la alarma se active, esto se logra con los siguientes comandos que aparecen en el siguiente codigo \ref{24}, estos tienen que estar dentro de la aplicación creada.
+El dato que se guardará es la hora en la que la alarma se active, esto se logra con los siguientes comandos que aparecen en el siguiente Código \ref{24}, estos tienen que estar dentro de la aplicación creada.
  \begin{lstlisting}[language=Python,caption={Comando para guardar información en la base de datos.},captionpos=b,label=24]
 post = {"data": datetime.now()}
 alarms = db.alarms
@@ -423,7 +424,7 @@ Ahora, cuando llega a detectar una persona guardara los siguientes datos: la hor
 \vspace{5mm}
 
 Paralela a la acción anterior, también comienza a ejecutarse continuamente 2 funciones que calcularán el tiempo promedio de espera de un cliente.
-Una función ira calculando el tiempo promedio de espera dependiendo de la cantidad de personas que están haciendo fila, esto se realiza gracias a los datos que se almacenan en una lista, esta lista se observa en la Figura \ref{fig:labeling16}. Esta función que se puede ver en el siguiente código \ref{25}, realiza un procedimiento de crear una lista en el que se suman la diferencia del tiempo en el que fueron detectados los objetos.
+Una función ira calculando el tiempo promedio de espera dependiendo de la cantidad de personas que están haciendo fila, esto se realiza gracias a los datos que se almacenan en una lista, esta lista se observa en la Figura \ref{fig:labeling16}. Esta función que se puede ver en el siguiente Código \ref{25}, realiza un procedimiento de crear una lista en el que se suman la diferencia del tiempo en el que fueron detectados los objetos.
 \begin{lstlisting}[language=Python,caption={Función que suma la diferencia de tiempo entre cada detección en segundos.},captionpos=b,label=25]
 def calculate_average_waiting_time_in_seconds():
     datetime_diff_in_seconds = []
@@ -435,7 +436,7 @@ def calculate_average_waiting_time_in_seconds():
     return sum(datetime_diff_in_seconds)
 \end{lstlisting}
 
-Teniendo este dato, se procede a calcular el tiempo promedio de espera, para ello se ejecutara diversos cálculos para poder obtenerlo, esto se aprecia en el siguiente código \ref{26}.
+Teniendo este dato, se procede a calcular el tiempo promedio de espera, para ello se ejecutara diversos cálculos para poder obtenerlo, esto se aprecia en el siguiente Código \ref{26}.
 \begin{lstlisting}[language=Python,caption={Calculo para la obtención del tiempo promedio de espera.},captionpos=b,label=26]
         if DETECTION_EVENTS:
             waiting_time_in_seconds = 
@@ -465,7 +466,7 @@ def create_list_of_closest_person_detected():
 \end{lstlisting}
 \clearpage
 
-Con el anterior código \ref{27}, se llega a saber cual es la persona que este al frente de la fila y con ellos determinar si se tarda mucho en ser atendido, ya que eso se sabe cuando cruza el límite establecido.
+Con el anterior Código \ref{27}, se llega a saber cual es la persona que este al frente de la fila y con ellos determinar si se tarda mucho en ser atendido, ya que eso se sabe cuando cruza el límite establecido.
 
 
 Los cálculos de estas funciones serán reniciadas cada vez que salte la alarma o cuando sea atendida una persona.

@@ -9,8 +9,15 @@ This project consists of building an application, which will be able to calculat
 This application uses technologies such as computer vision and artificial neural networks, which can be used in object detection, which in this case will be people. 
 
 \vspace{5mm}
-In the case of the neural network, it was decided to use YOLO (You Only Look Once), which according to several reports is one of the best when talking about object detection in real time, to being able to detect people first had to train this neural network through a large number of images where people appear.
+In the case of the neural network, it was decided to use YOLO (You Only Look Once), which according to several reports is one of the best when talking about object detection in real-time, since it performs multiple detections that accelerate the process of finding people in this case. To be able to detect people, first of all, this neural network had to be trained to employ a great number of images where people appear. These images, to be useful to train a neural network, have to go through a tagging process.
+
+\vspace{5mm}
+This application also makes use of a tracker, which allows us to track the detections made, which gives us more accurate results and more information which is useful to calculate the average waiting time.
 
 \vspace{5mm}
 This work can be used in any store that uses a single-queue system, since it was designed to solve a problem that arises, which is how many couters should be open in different periods during service hours.
+
+\vspace{30mm}
+
+\textbf{Keywords:} Detection. Tracking. Tagging.
 

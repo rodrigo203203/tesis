@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
 The style file: abbrvnat.bst
-Illegal, another \bibstyle command---line 270 of file /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
+Illegal, another \bibstyle command---line 273 of file /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
@@ -32,34 +32,34 @@ Warning--empty journal in shoppingExp
 Warning--empty journal in AprendizajeSup
 You've used 32 entries,
             2773 wiz_defined-function locations,
-            794 strings with 9643 characters,
-and the built_in function-call counts, 14089 in all, are:
-= -- 1263
-> -- 693
-< -- 29
-+ -- 239
-- -- 207
-* -- 1020
-:= -- 2137
+            794 strings with 9616 characters,
+and the built_in function-call counts, 13564 in all, are:
+= -- 1223
+> -- 602
+< -- 31
++ -- 212
+- -- 180
+* -- 946
+:= -- 2056
 add.period$ -- 119
 call.type$ -- 32
-change.case$ -- 155
+change.case$ -- 146
 chr.to.int$ -- 32
 cite$ -- 66
-duplicate$ -- 723
-empty$ -- 1220
-format.name$ -- 255
-if$ -- 3046
+duplicate$ -- 721
+empty$ -- 1218
+format.name$ -- 222
+if$ -- 2942
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 39
 newline$ -- 190
 num.names$ -- 128
-pop$ -- 361
+pop$ -- 348
 preamble$ -- 1
-purify$ -- 133
+purify$ -- 124
 quote$ -- 0
-skip$ -- 563
+skip$ -- 548
 stack$ -- 0
 substring$ -- 432
 swap$ -- 122

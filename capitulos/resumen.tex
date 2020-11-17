@@ -9,7 +9,20 @@ Este proyecto consiste en construir una aplicación, el cual podrá calcular el 
 Para realizar esta aplicación se está usando las tecnologías de visión computacional y redes neuronales artificiales, con las que se puede obtener la detección de objetos, que en este caso serán personas. 
 
 \vspace{5mm}
-En el caso de la red neuronal, se decidió usar YOLO (You Only Look Once), la cual según varios informes es una de las mejores al momento de hablar de detección de objetos en tiempo real. Para poder detectar personas, primeramente, se tuvo que entrenar esta red neuronal mediante una gran cantidad de imágenes donde aparecen personas.
+En el caso de la red neuronal, se decidió usar YOLO (You Only Look Once), la cual según varios informes es una de las mejores al momento de hablar de detección de objetos en tiempo real, ya que realiza una multiple detección el cual acelera el proceso de encontrar a personas en este caso. Para poder detectar a personas, primeramente, se tuvo que entrenar esta red neuronal mediante una gran cantidad de imágenes donde aparecen personas. Estas imágenes para que sean útiles para entrenar una red neuronal tiene que pasar por un proceso de etiquetado.
 
 \vspace{5mm}
-El presente trabajo podrá ser utilizado en cualquier comercio que utilice un sistema de fila única, ya que fue diseñado para resolver un problema que surge, el cual consiste en cuantas cajas tienen que estar abiertas en los diferentes periodos en la atención.
+Esta aplicación hace uso también de un \textit{tracker}, el cual permite realizar un rastreó de las detecciones  hechas, lo cual nos entrega  resultados más precisos y mayor información el cual será útil para calcular el tiempo promedio de espera. 
+
+\vspace{5mm}
+El presente trabajo podrá ser utilizado en cualquier comercio que utilice un sistema de fila única, ya que fue diseñado para resolver un problema que surge, el cual consiste en cuantas cajas tienen que estar abiertas en los diferentes periodos en la atención para así evitar que se genere largas filas de espera.
+
+
+\vspace{30mm}
+
+
+
+
+
+
+\textbf{Palabras-clave:} Detección. Rastreo. Etiquetado.
