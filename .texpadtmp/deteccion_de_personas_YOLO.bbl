@@ -1,0 +1,216 @@
+\begin{thebibliography}{32}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Abdul Qayyum} et~al.(2019){Abdul Qayyum}, {Arefeen}, and
+  {Shahnaz}]{neu7}
+A.~B. {Abdul Qayyum}, A.~{Arefeen}, and C.~{Shahnaz}.
+\newblock Convolutional neural network (cnn) based speech-emotion recognition.
+\newblock In \emph{2019 IEEE International Conference on Signal Processing,
+  Information, Communication Systems (SPICSCON)}, pages 122--125, 2019.
+
+\bibitem[{Bochkovskiy} et~al.(2020){Bochkovskiy}, {Wang}, and {Liao}]{persona}
+A.~{Bochkovskiy}, C.-Y. {Wang}, and H.-Y.~M. {Liao}.
+\newblock {YOLOv4: Optimal Speed and Accuracy of Object Detection}.
+\newblock \emph{arXiv e-prints}, art. arXiv:2004.10934, Apr. 2020.
+
+\bibitem[Calvo(7 de Diciembre de 2018)]{funAc}
+D.~Calvo.
+\newblock Función de activación - redes neuronales, 7 de Diciembre de 2018.
+
+\bibitem[Chebat and Filiatrault(1993)]{enjoy1}
+J.-C. Chebat and P.~Filiatrault.
+\newblock The impact of waiting in line on consumers.
+\newblock \emph{International Journal of Bank Marketing}, 11:\penalty0 35--40,
+  12 1993.
+\newblock \doi{10.1108/02652329310025938}.
+
+\bibitem[Chollet(Diciembre del 2017)]{deep23}
+F.~Chollet.
+\newblock \emph{Deep Learning with Python}.
+\newblock O'Reilly Media, Inc., Diciembre del 2017.
+\newblock ISBN 97816117294433.
+
+\bibitem[Covert et~al.(2016)Covert, Massarella, and Golding]{ama}
+J.~Covert, L.~Massarella, and B.~Golding.
+\newblock Amazon introduces next major job killer to face americans.
+\newblock
+  \url{https://nypost.com/2016/12/05/amazon-introduces-next-major-job-killer-to-face-americans/},
+  Diciembre 2016.
+
+\bibitem[Fiore(2008)]{enjoy3}
+A.~Fiore.
+\newblock The shopping experience.
+\newblock \emph{Product Experience}, pages 629--648, 12 2008.
+\newblock \doi{10.1016/B978-008045089-6.50030-7}.
+
+\bibitem[Gross et~al.(2011)Gross, Shortle, Thompson, and Harris]{fifo}
+D.~Gross, J.~Shortle, J.~Thompson, and C.~Harris.
+\newblock \emph{Fundamentals of Queueing Theory}.
+\newblock Wiley Series in Probability and Statistics. Wiley, 2011.
+\newblock ISBN 9781118211649.
+\newblock URL \url{https://books.google.com.bo/books?id=K3lQGeCtAJgC}.
+
+\bibitem[Géron(2018)]{neural}
+A.~Géron.
+\newblock \emph{Neural networks and deep learning}.
+\newblock O'Reilly Media, Inc., 2018.
+\newblock ISBN 9781492037347.
+
+\bibitem[Haykin(1998)]{activa2}
+S.~Haykin.
+\newblock \emph{Neural Networks: A Comprehensive Foundation}.
+\newblock Prentice Hall PTR, USA, 2nd edition, 1998.
+\newblock ISBN 0132733501.
+
+\bibitem[Hope et~al.(Agosto del 2017)Hope, S., and Lieder]{tensor1}
+T.~Hope, Y.~S., and I.~Lieder.
+\newblock \emph{Learning Tensorflow}.
+\newblock O'Reilly Media, Inc., Agosto del 2017.
+\newblock ISBN 9781491978511.
+
+\bibitem[{Huang} and {Tang}(2015)]{wechat}
+W.~{Huang} and J.~{Tang}.
+\newblock Explore the development of wechat payment from user behavior.
+\newblock In \emph{2015 IEEE/WIC/ACM International Conference on Web
+  Intelligence and Intelligent Agent Technology (WI-IAT)}, volume~3, pages
+  118--121, 2015.
+
+\bibitem[j.~Arnold et~al.(2005)j.~Arnold, Reynolds, Ponder, and
+  Lueg]{shoppingExp}
+M.~j.~Arnold, K.~E. Reynolds, N.~Ponder, and J.~E. Lueg.
+\newblock Customer delight in a retail context: investigating delightful and
+  terrible shopping experiences.
+\newblock pages 1132--1145, 2005.
+\newblock URL \url{url = {http://doi.acm.org/10.1145/1177080.1177100},}.
+
+\bibitem[{Jing} et~al.(2019){Jing}, {Hu}, {Wang}, {Zhou}, and {Yu}]{neu8}
+S.~{Jing}, C.~{Hu}, C.~{Wang}, G.~{Zhou}, and J.~{Yu}.
+\newblock Vehicle face detection based on cascaded convolutional neural
+  networks.
+\newblock In \emph{2019 Chinese Automation Congress (CAC)}, pages 5149--5152,
+  2019.
+
+\bibitem[Kaehler and Bradski(2017)]{open}
+A.~Kaehler and G.~Bradski.
+\newblock \emph{Learning OpenCV 3}.
+\newblock O'Reilly Media, Inc., 2017.
+\newblock ISBN 978-1-491-93799-0.
+
+\bibitem[Kosman(2017)]{ama2}
+J.~Kosman.
+\newblock Inside amazon’s robot-run supermarket that needs just 3 human
+  workers.
+\newblock
+  \url{https://nypost.com/2017/02/05/inside-amazons-robot-run-supermarket-that-needs-just-3-human-workers/},
+  Febrero 2017.
+
+\bibitem[LeCun and Bengio(1998)]{neu4}
+Y.~LeCun and Y.~Bengio.
+\newblock \emph{Convolutional Networks for Images, Speech, and Time Series},
+  page 255–258.
+\newblock MIT Press, Cambridge, MA, USA, 1998.
+\newblock ISBN 0262511029.
+
+\bibitem[LeCun et~al.(2015)LeCun, Bengio, and Hinton]{neu5}
+Y.~LeCun, Y.~Bengio, and G.~Hinton.
+\newblock Deep learning.
+\newblock \emph{Nature}, 521:\penalty0 436--44, 05 2015.
+\newblock \doi{10.1038/nature14539}.
+
+\bibitem[{Lou} and {Shi}(2020)]{neu6}
+G.~{Lou} and H.~{Shi}.
+\newblock Face image recognition based on convolutional neural network.
+\newblock \emph{China Communications}, 17\penalty0 (2):\penalty0 117--124,
+  2020.
+
+\bibitem[Marr(2018)]{tes}
+B.~Marr.
+\newblock The amazing ways tesla is using artificial intelligence and big data.
+\newblock
+  \url{https://www.forbes.com/sites/bernardmarr/2018/01/08/the-amazing-ways-tesla-is-using-artificial-intelligence-and-big-data/#45fa75454270},
+  Enero 2018.
+
+\bibitem[McCulloch and Pitts(1943)]{neu1}
+W.~McCulloch and W.~Pitts.
+\newblock A logical calculus of ideas immanent in nervous activity.
+\newblock \emph{Bulletin of Mathematical Biophysics}, 5:\penalty0 115--133,
+  1943.
+
+\bibitem[Muller and Guido(Octubre del 2016)]{machine}
+A.~C. Muller and S.~Guido.
+\newblock \emph{Introduction to Machine Learning with Python}.
+\newblock O'Reilly Media, Inc., Octubre del 2016.
+\newblock ISBN 9781449369880.
+
+\bibitem[Olazaran(1996)]{neur2}
+M.~Olazaran.
+\newblock A sociological study of the official history of the perceptrons
+  controversy.
+\newblock \emph{Social Studies of Science}, 26\penalty0 (3):\penalty0 611--659,
+  1996.
+\newblock \doi{10.1177/030631296026003005}.
+\newblock URL \url{https://doi.org/10.1177/030631296026003005}.
+
+\bibitem[Palomares et~al.(2016)Palomares, Serrá, and Martínez]{conv2323}
+F.~G. Palomares, J.~A.~M. Serrá, and E.~A. Martínez.
+\newblock Aplicación de la convolución de matrices al filtrado de imágenes.
+\newblock \emph{Modelling in Science Education and Learning}, 9\penalty0
+  (1):\penalty0 97--108, 2016.
+\newblock ISSN 1988-3145.
+
+\bibitem[Panesar(Febrero del 2019)]{ia2}
+A.~Panesar.
+\newblock \emph{Machine Learning and AI for Healthcare: Big Data for Improved
+  Health Outcomes}.
+\newblock O'Reilly Media, Inc., Febrero del 2019.
+\newblock ISBN 9781484237991.
+
+\bibitem[Redmon et~al.(2015)Redmon, Divvala, Girshick, and Farhadi]{yolo}
+J.~Redmon, S.~K. Divvala, R.~B. Girshick, and A.~Farhadi.
+\newblock You only look once: Unified, real-time object detection.
+\newblock \emph{CoRR}, abs/1506.02640, 2015.
+\newblock URL \url{http://arxiv.org/abs/1506.02640}.
+
+\bibitem[{Rosenblatt}(1960)]{neu3}
+F.~{Rosenblatt}.
+\newblock Perceptron simulation experiments.
+\newblock \emph{Proceedings of the IRE}, 48\penalty0 (3):\penalty0 301--309,
+  1960.
+
+\bibitem[Simeone(2018)]{AprendizajeSup}
+O.~Simeone.
+\newblock A very brief introduction to machine learning with applications to
+  communication systems.
+\newblock 2018.
+\newblock URL \url{url = {https://arxiv.org/pdf/1808.02342.pdf},}.
+
+\bibitem[Singh(2019)]{image2}
+H.~Singh.
+\newblock \emph{Practical Machine Learning and Image Processing}.
+\newblock Apress, 2019.
+\newblock ISBN 978-1-4842-4149-3.
+
+\bibitem[Sutton and Barto(2018)]{refor}
+R.~S. Sutton and A.~G. Barto.
+\newblock \emph{Reinforcement Learning: An Introduction}.
+\newblock The MIT Press, 2018.
+\newblock ISBN 9780262039246.
+
+\bibitem[{Wenjie} et~al.(2015){Wenjie}, {Senbiao}, and {Lihong}]{cola2323}
+X.~{Wenjie}, L.~{Senbiao}, and H.~{Lihong}.
+\newblock Simulation model of supermarket queuing system.
+\newblock In \emph{2015 34th Chinese Control Conference (CCC)}, pages
+  8819--8823, 2015.
+
+\bibitem[Zeithaml et~al.(1996)Zeithaml, Berry, and Parasuraman]{enjoy2}
+V.~A. Zeithaml, L.~L. Berry, and A.~Parasuraman.
+\newblock The behavioral consequences of service quality.
+\newblock \emph{Journal of Marketing}, 60\penalty0 (2):\penalty0 31--46, 1996.
+\newblock \doi{10.1177/002224299606000203}.
+\newblock URL \url{https://doi.org/10.1177/002224299606000203}.
+
+\end{thebibliography}

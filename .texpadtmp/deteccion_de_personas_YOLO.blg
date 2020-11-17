@@ -1,0 +1,74 @@
+This is BibTeX, Version 0.99d (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
+The style file: abbrvnat.bst
+Illegal, another \bibstyle command---line 270 of file /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+Database file #1: ../capitulos/bibliography.bib
+Warning--entry type for "funAc" isn't style-file defined
+--line 69 of file ../capitulos/bibliography.bib
+I was expecting a `,' or a `}'---line 73 of file ../capitulos/bibliography.bib
+ :   
+ :   url = {https://www.diegocalvo.es/funcion-de-activacion-redes-neuronales/}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 167 of file ../capitulos/bibliography.bib
+ : 
+ : @book{fifo,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 242 of file ../capitulos/bibliography.bib
+ : 
+ : @ARTICLE{neu3,  author={F. {Rosenblatt}},  journal={Proceedings of the IRE},   title={Perceptron Simulation Experiments},   year={1960},  volume={48},  number={3},  pages={301-309},}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 308 of file ../capitulos/bibliography.bib
+ :  issn = {1988-3145}, pages = {97--108} 
+ :                                        doi = {10.4995/msel.2016.4524},
+I'm skipping whatever remains of this entry
+Warning--empty journal in shoppingExp
+Warning--empty journal in AprendizajeSup
+You've used 32 entries,
+            2773 wiz_defined-function locations,
+            794 strings with 9643 characters,
+and the built_in function-call counts, 14089 in all, are:
+= -- 1263
+> -- 693
+< -- 29
++ -- 239
+- -- 207
+* -- 1020
+:= -- 2137
+add.period$ -- 119
+call.type$ -- 32
+change.case$ -- 155
+chr.to.int$ -- 32
+cite$ -- 66
+duplicate$ -- 723
+empty$ -- 1220
+format.name$ -- 255
+if$ -- 3046
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 39
+newline$ -- 190
+num.names$ -- 128
+pop$ -- 361
+preamble$ -- 1
+purify$ -- 133
+quote$ -- 0
+skip$ -- 563
+stack$ -- 0
+substring$ -- 432
+swap$ -- 122
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 297
+warning$ -- 2
+while$ -- 119
+width$ -- 0
+write$ -- 455
+(There were 5 error messages)

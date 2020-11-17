@@ -7,20 +7,39 @@
 
 \usepackage[hidelinks]{hyperref}
 \usepackage{afterpage}
+\usepackage{calc}
+\usepackage{lmodern}
+\usepackage{lipsum}
+\usepackage[explicit]{titlesec}
+\newcommand{\hsp}{\hspace{4pt}}
 %\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage[a4paper, left=20mm, right=30mm, top=30mm,bottom=20mm]{geometry}
 \usepackage{dirtytalk}
 \usepackage{mathptmx}
 \usepackage{multicol}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
 \usepackage{url}
 \usepackage{fancyhdr}
 \usepackage{caption}
+\usepackage[labelsep=quad]{caption}
+\captionsetup{labelsep=period}
+%\renewcommand\thefigure{\thechapter.\arabic{figure}.}
 \captionsetup[figure]{labelfont={bf}}
 \newcommand{\source}[1]{\caption*{\textbf{Fuente:} {#1}} }
+\newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{listings}
+\renewcommand{\lstlistingname}{Código}% Listing -> Algorithm
+\renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}% List of Listings -> List of Algorithms
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 \onehalfspacing
+
 
 %Import the natbib package and sets a bibliography  and citation styles
 \usepackage{natbib}
@@ -97,7 +116,6 @@
 	\end{center}
 	
 \clearpage
-
 \input{capitulos/agredecimientos}
 
 \clearpage
@@ -109,25 +127,24 @@
 \input{capitulos/abstract}
 
 \clearpage
-\begin{center}
-	\section*{Abreviaciones y acrónimos}
-\end{center}
-\vspace{15mm}
-\textbf{Bokeh} =  Desenfoque.\\
-\textbf{YOLO} = You Only Look Once.\\
-\textbf{FIFO} = Primero en entrar, primero en salir (First in, First out).\\
-\textbf{LIFO} = Último en entrar, primero en salir (Last in, First out).\\
-\textbf{LSF} = Primero el trabajo más corto (Least Stack First).\\
-\textbf{CNN} = Convolution Neural Network.\\
-\textbf{Sinapsis} = Región de comunicación entre la neurita o prolongación citoplasmática de una neurona.\\
-\textbf{Correlaciones Espureas} = Reelación matemática en la cual dos acontecimientos no tienen conexión lógica.\\
-\textbf{TPU} = Unidad de procesamiento de Tensor.
 \listoffigures
 \thispagestyle{empty}
-\tableofcontents
-\thispagestyle{empty}
+\afterpage{\blankpage}
 \lstlistoflistings
+\afterpage{\blankpage}
+\clearpage
+\afterpage{\blankpage}
 \thispagestyle{empty}
+\input{capitulos/acronimos}
+\tableofcontents
+\afterpage{\blankpage}
+\thispagestyle{empty}
+\titleformat{\chapter}[hang]
+{\filcenter}
+{\parbox{2cm}{\vrule width 10pt height 120pt}{}}
+{0pt}
+{\parbox{10cm}{\bfseries\huge\MakeUppercase{\chaptertitlename\hsp\thechapter\hsp}\\{\filleft #1}}
+{\phantom{\filleft #1}}}
 
 \chapter{INTRODUCCIÓN}
 \input{capitulos/marco_referencial}
