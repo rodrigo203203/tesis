@@ -1,4 +1,5 @@
-
+\fancypagestyle{plain}{
+\fancyfoot[R]{\thepage}}
 Las redes neuronales artificiales, hoy en día, se han convertido en un campo de estudio muy amplio en el área de las ciencias de la computación, llegándose aplicar en diversos sectores de la industria. Por otra parte, la visión computacional se encarga de reconocer y localizar objetos en un ambiente mediante el procesamiento de imágenes (\cite{image2}).
 
 
@@ -22,7 +23,7 @@ Los automoviles con piloto automático son otro ejemplo del uso de estas tecnolo
 	\source{Tesla (2019).}
 	\label{fig:tesla}
 \end{figure}
-En el sector de los supermercados no aparecieron grandes innovaciones en la ultima década para facilitar la atención, mas allá de aplicar la teoría de colas. Con el paso del tiempo surgieron ideas como el uso del sistema de fila única y el método de auto cobro de productos, que consiste que el mismo cliente escanea sus compras y realiza el pago mediante tarjeta. Pero la innovación principal es con la llegada de la inteligencia artificial y visión computacional, las cuales se hicieron más accesibles, por lo tanto se presentaron nuevas soluciones, como ser el caso de las tiendas de Amazon, que no necesitan tener cajeros (\cite{ama}), ya que la instalación de cámaras y etiquetas realizan todo el procedimiento de cobranza de los productos.
+En el sector de los supermercados no aparecieron grandes innovaciones en la ultima década para facilitar la atención, más allá de aplicar la teoría de colas. Con el paso del tiempo surgieron ideas como el uso del sistema de fila única y el método de auto cobro de productos, que consiste que el mismo cliente escanea sus compras y realiza el pago mediante tarjeta. Pero la innovación principal es con la llegada de la inteligencia artificial y visión computacional, las cuales se hicieron más accesibles, por lo tanto se presentaron nuevas soluciones, como ser el caso de las tiendas de Amazon, que no necesitan tener cajeros (\cite{ama}), ya que la instalación de cámaras y etiquetas realizan todo el procedimiento de cobranza de los productos.
 \\
 
 Teniendo en cuenta estas últimas innovaciones, se quiere realizar una aplicación con visión computacional junto a una red neuronal, con el fin de poder detectar a las personas que estén esperando en una fila y así calcular el tiempo promedio de espera actual, este tiempo obtenido se comparará con el máximo establecido, si este llega a ser mayor se procederá en abrir una nueva caja. Para desarrollar esto se pretende utilizar redes ya construidas como YOLO, cuyo funcionamiento se puede observar en la Figura \ref{fig:deyolo}, o también considerar la opción de crear una propia red mediante el uso de diferentes herramientas como Tensorflow, Keras y Pytorch. La elección del método dependerá de las exigencias del proyecto y el lenguaje de programación a escoger.

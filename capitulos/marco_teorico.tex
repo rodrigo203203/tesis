@@ -44,7 +44,7 @@ El dato sustancial para este proyecto es la introducción de las redes neuronale
 	\source{Hamilton Chang (2019).}
 	\label{fig:gato}
 \end{figure}
-En el proceso de la convulución se pasa por diferentes procedimientos, uno de ellos es la multiplicación con un \textit{kernel}, este proceso se apreciará mejor en la Figura \ref{fig:conv24}. En la Figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila, y la primera y última columna se les ha asignado el valor original (\cite{conv2323}).
+En el proceso de la convolución se pasa por diferentes procedimientos, uno de ellos es la multiplicación con un \textit{kernel}, este proceso se apreciará mejor en la Figura \ref{fig:conv24}. En la Figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila, y la primera y última columna se les ha asignado el valor original (\cite{conv2323}).
 \clearpage
  \begin{figure}[h]
 	\centering
@@ -62,7 +62,7 @@ Volume 9 (2016).}
 Volume 9(2) (2016).}
 	\label{fig:conv23}
 \end{figure}
-Las redes neuronales convolucionales son la base de la mayoría de los proyectos que utilicen reconocimiento de objetos en imágenes (\cite{neu6}), (\cite{neu7}), (\cite{neu8}), estos proyectos van desde el reconocimiento facial, clasificación de imágenes, detección de letras manuscritas y otros mas. Las mejoras de esta red están enfocadas en aumentar la velocidad de respuesta y hacer más accesibles esta tecnología a más dispositivos, ya que un problema al trabajar con videos en tiempo real es la latencia. Este problema se solucionará con YOLO, gracias a su manera de aplicar CNN (\cite{yolo}), como se muestra en la Figura \ref{fig:yo}, se obtiene unos tiempos de ejecución favorables a este nuevo método. Donde COCO es una base de datos y está medido en porcentaje de acierto.
+Las redes neuronales convolucionales son la base de la mayoría de los proyectos que utilicen reconocimiento de objetos en imágenes (\cite{neu6}), (\cite{neu7}), (\cite{neu8}), estos proyectos van desde el reconocimiento facial, clasificación de imágenes, detección de letras manuscritas y otros más. Las mejoras de esta red están enfocadas en aumentar la velocidad de respuesta y hacer más accesibles esta tecnología a más dispositivos, ya que un problema al trabajar con videos en tiempo real es la latencia. Este problema se solucionará con YOLO, gracias a su manera de aplicar CNN (\cite{yolo}), como se muestra en la Figura \ref{fig:yo}, se obtiene unos tiempos de ejecución favorables a este nuevo método. Donde COCO es una base de datos y está medido en porcentaje de acierto.
  \clearpage
  \begin{figure}[h]
 	\centering
@@ -352,26 +352,23 @@ Para el año 2016, Google anunció una nueva función con el nombre de TPU o uni
 Usando Tensorflow nos permite crear algoritmos de aprendizaje que puedan interactuar entre sí, y estas interacciones se los llega a conocer como grafo computacional.
 Al referirse a un grafo en este tema, se quiere decir a un conjunto de nodos conectados entre sí, estos nodos normalmente tienen entrada y salida al mismo tiempo, cada nodo tiene a dentro alguna función aritmética, desde las más simples como ser sumas y multiplicaciones hasta las más complejas (\cite{tensor1}).
 
-Para la creación de un grafo se usará un ejemplo básico del libro \textit{Learning Tensorflow} (\cite{tensor1}), Para empezar, se importará la librería al editor mediante el primer comando que se aprecia en la Figura \ref{fig:capa1}, siguiendo de eso se crearan unos 3 nodos con diferente valor.
+Para la creación de un grafo se usará un ejemplo básico del libro \textit{Learning Tensorflow} (\cite{tensor1}), Para empezar, se importará la librería al editor mediante el primer comando que se aprecia en el Código \ref{55}, siguiendo con esto se crearan unos 3 nodos con diferente valor.
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.7]{imagenes/capas1.png}
-	\caption{Ejemplos de los primeros pasos para crear nodos con Tensorflow.}
-	\source{Elaboración propia.}
-	\label{fig:capa1}
-\end{figure}
+ \begin{lstlisting}[language=Python,caption={Ejemplos de los primeros pasos para crear nodos con Tensorflow.},captionpos=b,label=55]
+	import tensorflow as tf
+	a = tf.constant(5)
+	b = tf.constant(2)
+	c = tf.constant(3)
+\end{lstlisting}
 
-Para la siguiente etapa se creará otros 3 nodos pero esta vez tendrán ecuaciones que se ejecuten dentro ellas y además uno de esos nodos tendrá una variable que no se definió anteriormente, la escritura del código se podrá apreciar en la Figura \ref{fig:capa2}.
+Para la siguiente etapa se creará otros 3 nodos pero esta vez tendrán ecuaciones que se ejecuten dentro ellas y además uno de esos nodos tendrá una variable que no se definió anteriormente, la escritura del código se podrá apreciar en el Código \ref{56}.
 
+ \begin{lstlisting}[language=Python,caption={Ejecución de funciones aritméticas en Tensorflow.},captionpos=b,label=56]
+	d = tf.multiply(a,b)
+	e = tf.add(c,b)
+	f = tf.subtract(d,e)
+\end{lstlisting}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.7]{imagenes/capas2.png}
-	\caption{Ejecución de funciones aritméticas en Tensorflow.}
-	\source{Elaboración propia.}
-	\label{fig:capa2}
-\end{figure}
 
 La representación gráfica de las funciones creadas mediante código se podrán ver en la Figura \ref{fig:capa3}, cómo se puede observar los nodos se conectan entre sí y por ellos mismos crean otro nodo resultante de la operación del nodo \say{e} con el \say{d}, para así crear el nodo \say{f}. 
 
@@ -404,16 +401,15 @@ Al crear estas capas con Keras se necesita iniciar con el siguiente comando “t
 
 \vspace{5mm}
 
-Para la siguiente etapa se tiene que aplicar una nueva capa con 2 diferentes configuraciones, para la primera capa se definirá con 128 nodos o neuronas y con la función de activación “relu“, par la siguiente capa solo tendrá 10 nodos y una función de activación “softmax”, estos comandos se observarán en la Figura \ref{fig:keras2}.
+Para la siguiente etapa se tiene que aplicar una nueva capa con 2 diferentes configuraciones, para la primera capa se definirá con 128 nodos o neuronas y con la función de activación “relu“, par la siguiente capa solo tendrá 10 nodos y una función de activación “softmax”, estos comandos se observarán en el Código \ref{57}.
 
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.7]{imagenes/keras2.png}
-	\caption{Configuración con Keras para trabajar con imágenes.}
-	\source{Elaboración propia.}
-	\label{fig:keras2}
-\end{figure}
+ \begin{lstlisting}[language=Python,caption={Configuración con Keras para trabajar con imágenes.},captionpos=b,label=57]
+model = keras.Sequential([
+	keras.layers.Flatten(input_shape=(75,75)),
+	keras.layers.Dense(128, activation='relu'),
+	keras.layers.Dense(10, activation='softmax')
+])
+\end{lstlisting}
 
 \subsection{Deep Learning}
 
@@ -450,7 +446,7 @@ YOLO (\textit{You Only Look Once}, \say{sólo se ve una vez}) es un algoritmo de
 
 La principal innovación que YOLO trajo consigo a este campo, fue el hecho de que es capaz de realizar múltiples detecciones de una sola vez, lo cual realiza este proceso de manera rápida y eficiente.
 El procesamiento de imágenes con YOLO es simple y directo, por ejemplo, teniendo una imagen de entrada de un tamaño de 448x448ppx, esto se aprecia en la Figura \ref{fig:yolo2}, ejecuta una red convolucional a la imagen que llegaría a cambiar de tamaño y así limitar los resultantes de las detecciones confiando en el modelo que se usó para entrenar la red neuronal. 
-
+\clearpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.8]{imagenes/yolo2.png}
@@ -459,7 +455,7 @@ El procesamiento de imágenes con YOLO es simple y directo, por ejemplo, teniend
 	\label{fig:yolo2}
 \end{figure}
 
-Entrando más a detalle, YOLO primeramente empieza a cuadricular la imagen que se está usando para la detección, seguido de eso va dibujando unas \say{cajas delimitadoras} mediante la guía del modelo entrenado, este modelo puede tener diversas etiquetas para la identificación de objetos y determinará cuando lleguen a un porcentaje de confianza definido, todos esos pasos se pueden apreciar en la Figura \ref{fig:yolo4}. 
+Entrando más a detalle, YOLO primeramente empieza a cuadricular la imagen que se está usando para la detección, seguido de eso va dibujando unas \say{cajas delimitadoras} mediante la guía del modelo entrenado, este modelo puede tener diversas etiquetas para la identificación de objetos y determinará cuando lleguen a un porcentaje de confianza definido, todos esos pasos se pueden apreciar en la Figura (\ref{fig:yolo4}). 
 
  \begin{figure}[h]
 	\centering
@@ -467,6 +463,37 @@ Entrando más a detalle, YOLO primeramente empieza a cuadricular la imagen que s
 	\caption{Proceso que realiza YOLO para generar una detección de uno o varios objetos dentro de una imagen.}
 	\source{YOLO (2018).}
 	\label{fig:yolo4}
+\end{figure}
+
+La estructura de la red neuronal YOLO esta basada en GoogLeNet, la cual es otra red neuronal que utiliza la estructura \textit{Inception}. Este tipo de estructura permite hacer uso de multiples filtros de diversos tamaños en una sola capa, con esto permite que la red se adapte mejor a los diversos casos de detección \cite{googlenet}.
+
+Internamente YOLO está compuesto por 24 capas convolucionales y por 2 capas que se encuentran completamente conectadas, La estructura completa se puede observar en la Figura \ref{fig:yolo108}.
+
+\clearpage
+
+ \begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{imagenes/yolo-interno.png}
+	\caption{Estructura interna de la red neuronal YOLO.}
+	\source{YOLO (2016).}
+	\label{fig:yolo108}
+\end{figure}
+
+Esta estructura por tener una gran cantidad de capas y filtros posee una gran detección, pero a un costo bastante en el rendimiento, sobre todo cuando se utiliza en computadoras que no poseen algún procesamiento gráfico (GPU), debido a esto surgen otras versiones de YOLO.
+
+
+\subsubsection{Tiny Yolo}
+
+Tiny Yolo es una versión reducida de YOLO, ya que su estructura esta compuesta por 7 capas convolucionales y 6 capas con la función \textit{max-pooling}, estas últimas capas tiene la función de resaltar los valores máximos encontrados en la imagen (\cite{tiny2}).
+
+Al tener menos capas está red neuronal es capaz de tener un mejor rendimiento en computadoras que no cuenten con una GPU, pero por eso mismo la red pierde precisión al momento de detectar a objetos. La estructura de esta red neuronal se observa en la Figura \ref{fig:yolo109}.
+
+ \begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{imagenes/tiny-yolo.jpg}
+	\caption{Estructura interna de la red neuronal Tiny YOLO.}
+	\source{Wei Fang (2019).}
+	\label{fig:yolo109}
 \end{figure}
 
 \subsubsection{Darknet}
@@ -513,8 +540,9 @@ Para ser más específico el tipo de servicio que se utilizó es \textit{Amazon 
 
 Google Colab es una plataforma de programación a través de la nube, la ventaja de este servicio es que ofrece el uso de GPU para el entrenamiento de redes neuronales de manera gratuita, pero sólo se le puede dejar 5 horas en \textit{stand by} antes de que se cierre. Para usar este servicio lo único que se necesita es una cuenta en Google e iniciar sesión.
 
+\section{Conclusiones del Capitulo II}
 
-
+En el presente capítulo se presentaron los fundamentos teóricos relacionados con redes neuronales convolucionales y la inteligencia artificial. Los temas que se abordaron son las diferentes maneras en la que se puede crear una red neuronal y estructura que maneja YOLO. También se explica el uso de herramientas en la nube, la cual pueden facilitar el proceso de entrenamiento de una red neuronal.
 
 
 

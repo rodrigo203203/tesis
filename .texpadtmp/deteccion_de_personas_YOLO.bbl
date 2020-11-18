@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -26,6 +26,13 @@ F.~Chollet.
 \newblock \emph{Deep Learning with Python}.
 \newblock O'Reilly Media, Inc., Diciembre del 2017.
 \newblock ISBN 97816117294433.
+
+\bibitem[Fang et~al.(2019)Fang, Wang, and Ren]{tiny2}
+W.~Fang, L.~Wang, and P.~Ren.
+\newblock Tinier-yolo: A real-time object detection method for constrained
+  environments.
+\newblock \emph{IEEE Access}, PP:\penalty0 1--1, 12 2019.
+\newblock \doi{10.1109/ACCESS.2019.2961959}.
 
 \bibitem[Fiore(2008)]{enjoy3}
 A.~Fiore.
@@ -167,6 +174,12 @@ H.~Singh.
 \newblock \emph{Practical Machine Learning and Image Processing}.
 \newblock Apress, 2019.
 \newblock ISBN 978-1-4842-4149-3.
+
+\bibitem[Szegedy et~al.(2014)Szegedy, Liu, Jia, Sermanet, Reed, Anguelov,
+  Erhan, Vanhoucke, and Rabinovich]{googlenet}
+C.~Szegedy, W.~Liu, Y.~Jia, P.~Sermanet, S.~Reed, D.~Anguelov, D.~Erhan,
+  V.~Vanhoucke, and A.~Rabinovich.
+\newblock Going deeper with convolutions, 2014.
 
 \bibitem[{Wenjie} et~al.(2015){Wenjie}, {Senbiao}, and {Lihong}]{cola2323}
 X.~{Wenjie}, L.~{Senbiao}, and H.~{Lihong}.

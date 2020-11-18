@@ -2,9 +2,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \graphicspath{imagenes/}
-\usepackage[spanish]{babel}
+\usepackage[spanish,es-tabla]{babel}
 \usepackage{float, graphicx, caption, color, amsmath}
-
 \usepackage[hidelinks]{hyperref}
 \usepackage{afterpage}
 \usepackage{calc}
@@ -14,7 +13,7 @@
 \usepackage{sectsty}
 \newcommand{\hsp}{\hspace{4pt}}
 %\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
-\usepackage[a4paper, left=20mm, right=30mm, top=30mm,bottom=20mm]{geometry}
+\usepackage[a4paper, left=30mm, right=20mm, top=30mm,bottom=20mm]{geometry}
 \usepackage{dirtytalk}
 \usepackage{mathptmx}
 \usepackage{multicol}
@@ -23,24 +22,30 @@
 \usepackage{url}
 \usepackage{fancyhdr}
 \usepackage{caption}
+\sectionfont{\large\bfseries\MakeUppercase}
+\subsectionfont{\large\bfseries}
 \usepackage[font={small}]{caption}
 \usepackage[labelsep=quad]{caption}
 \captionsetup{labelsep=period}
 
+
 %\renewcommand\thefigure{\thechapter.\arabic{figure}.}
 \captionsetup[figure]{labelfont={bf}}
+\captionsetup[table]{labelfont={bf}}
+\captionsetup[lstlisting]{labelfont={bf}}
 \newcommand{\source}[1]{\caption*{\textbf{Fuente:} {#1}} }
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{listings}
-%\chapterfont{\Large\bfseries}
+\chapterfont{\Large\bfseries\MakeUppercase}
 \subsubsectionfont{\normalfont\itshape}
+\renewcommand{\tablename}{Tabla} 
 \renewcommand{\lstlistingname}{\textbf{Código}}% Listing -> Algorithm
 \renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}% List of Listings -> List of Algorithms
 \newcommand\blankpage{%
     \null
     \thispagestyle{empty}%
-    \addtocounter{page}{-1}%
+    %\addtocounter{page}{-1}%
     \newpage}
 \onehalfspacing
 
@@ -76,7 +81,8 @@
 
 
 \maketitle
-\afterpage{\thispagestyle{empty}\null\newpage}
+\afterpage{\blankpage}
+%\afterpage{\thispagestyle{empty}\null\newpage}
 \clearpage
 \begin{center}
 	\textbf{Rodrigo Morales Rivas} \\
@@ -124,12 +130,13 @@
 	\vspace{40mm}
 	\end{center}
 	\centerline{Santa Cruz de la Sierra, noviembre del 2020}
-	\thispagestyle{empty}
+%	\thispagestyle{empty}
 
 	
 \clearpage
+\phantom{a}
+\clearpage
 \input{capitulos/agredecimientos}
-
 \clearpage
 
 \input{capitulos/resumen}
@@ -140,17 +147,18 @@
 
 \clearpage
 \listoffigures
-\thispagestyle{empty}
+%\thispagestyle{empty}
+\listoftables
 \afterpage{\blankpage}
 \lstlistoflistings
 \afterpage{\blankpage}
 \clearpage
 \afterpage{\blankpage}
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \input{capitulos/acronimos}
 \tableofcontents
 \afterpage{\blankpage}
-\thispagestyle{empty}
+%\thispagestyle{empty}
 \titleformat{\chapter}[hang]
 {\filcenter}
 {\parbox{2cm}{\vrule width 10pt height 120pt}{}}
@@ -160,18 +168,21 @@
 
 \chapter{INTRODUCCIÓN}
 \input{capitulos/marco_referencial}
-
+\afterpage{\blankpage}
 \chapter{MARCO TEÓRICO}
 \input{capitulos/marco_teorico}
-
+\afterpage{\blankpage}
 \chapter{MARCO PRÁCTICO}
 \input{capitulos/marco_practico}
+\afterpage{\blankpage}
+\chapter{FUNCIONAMIENTO DE LA APLICACIÓN}
+\input{capitulos/aplicacion}
 
-\chapter{CONCLUSIONES}
+\chapter{MARCO CONCLUSIVO}
 \input{capitulos/conclusion}
 
-\chapter{RECOMENDACIONES}
-\input{capitulos/recomendaciones.tex}
+%\chapter{RECOMENDACIONES}
+%\input{capitulos/recomendaciones.tex}
 
 \bibliographystyle{unsrt}
 \addcontentsline{toc}{chapter}{Bibliografia}

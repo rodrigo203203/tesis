@@ -1,5 +1,5 @@
 \section{Elección de una red neuronal}
-Para la elección de la red neuronal se tomará en cuenta un estudio realizado por el equipo de YOLO (\cite{persona}), este equipo realizo pruebas con diferentes redes neuronales, para poder demostrar el gran rendimiento que tiene la red YOLO, estas pruebas fueron echas en la misma computadora, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3} que da como ganador la red neuronal YOLO.
+Para la elección de la red neuronal se tomará en cuenta un estudio realizado por el equipo de YOLO (\cite{persona}), este equipo realizo pruebas con diferentes redes neuronales, para poder demostrar el gran rendimiento que tiene la red YOLO, estas pruebas fueron hechas en la misma computadora, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3} que da como ganador la red neuronal YOLO.
 
 \begin{figure}[h]
 	\centering
@@ -39,7 +39,7 @@ Este proceso se realiza con cada imagen, para así obtener un archivo que especi
 	\label{fig:labeling2}
 \end{figure}
 
-Esta recopilación de datos se puede realizar más fácil gracias a Google, facilitando esta tarea permitiéndote usar su propia base de datos donde aproximadamente tiene cuatro millones de imágenes, Figura \ref{fig:labeling5}, el cual ya fueron etiquetados varios objetos como ser personas, autos, aviones, relojes y otros mas.
+Esta recopilación de datos se puede realizar más fácil gracias a Google, facilitando esta tarea permitiéndote usar su propia base de datos donde aproximadamente tiene cuatro millones de imágenes, Figura \ref{fig:labeling5}, el cual ya fueron etiquetados varios objetos como ser personas, autos, aviones, relojes y otros más.
 
 
 
@@ -53,7 +53,7 @@ Esta recopilación de datos se puede realizar más fácil gracias a Google, faci
 
 \subsection{Preparación del ambiente}
 
-Para entrenar una red neuronal se necesita muchos recursos en una computadora sobre todo en la área del GPU, ya que todos los cálculos que realiza son procesados de manera más efectiva en esa área. 
+Para entrenar una red neuronal se necesita muchos recursos en una computadora sobre todo en el área del GPU, ya que todos los cálculos que realiza son procesados de manera más efectiva en esa área. 
 Por ese motivo se decidió usar un servicio de Google que es Colab, el cual te permite conectarse a sus servidores y poder entrenar la red de forma gratuita. 
 \\
 
@@ -85,19 +85,26 @@ Colab es un editor de texto online, que te permite escribir tu código y probarl
 En esta etapa, se debe modificar diferentes archivos para que la red pueda detectar a personas. Estos archivos por modificar son los parámetros que definen la red neuronal, en Darknet existen 2 redes principales que son Yolo y Tiny-Yolo. La gran diferencia entre estos son la cantidad de capas que poseen, esto llega a afectar el rendimiento en una detección. 
 \vspace{5mm}
 
-Por eso mismo se decidió usar Tiny-Yolo, ya que con pruebas realizadas dio un mejor rendimiento en el apartado de frames por segundo (fps), al momento de trabajar con videos, esto es muy importante porque la detección se realizará en tiempo real. Los resultados de la prueba se apreciará mejor en la Figura \ref{fig:labeling4}.
+Por eso mismo se decidió usar Tiny-Yolo, ya que con pruebas realizadas dio un mejor rendimiento en el apartado de frames por segundo (fps), al momento de trabajar con videos, esto es muy importante porque la detección se realizará en tiempo real. Los resultados de la prueba se apreciará mejor en la Tabla \ref{tab:fruta}.
 
 \clearpage
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.5]{imagenes/persona10.png}
-	\caption{Resultados de una prueba de rendimiento entre YOLO y Tyni-Yolo.}
-	\source{Elaboración propia}
-	\label{fig:labeling4}
-\end{figure}
+\begin{table}[t]
+\caption{Resultados de una prueba de rendimiento entre YOLO y Tyni-Yolo.}
+\begin{center}
+%\caption{Resultados de una prueba de rendimiento entre YOLO y Tyni-Yolo.}
+\begin{tabular}{| r | l |}
+\hline \textbf{Versión de YOLO} & \textbf{FPS} \\ \hline
+Tiny-yolo & 7-10  \\
+Yolo & 1-3 \\ \hline
+\end{tabular}
 
-Con estos resultados se modificara el archivo \say{yolov4-tiny.cfg}, y los datos a cambiar dependerán mayormente a la cantidad de clases al cual se entrenara la red neuronal, estos datos son los que están marcados en la Figura \ref{fig:labeling6}.
+\label{tab:fruta}
+\source{Elaboración propia.}
+\end{center}
+\end{table}
+
+Con estos resultados se modificará el archivo \say{yolov4-tiny.cfg}, y los datos a cambiar dependerán mayormente a la cantidad de clases al cual se entrenara la red neuronal, estos datos son los que están marcados en la Figura \ref{fig:labeling6}.
 
 \begin{figure}[h]
 	\centering
@@ -107,11 +114,12 @@ Con estos resultados se modificara el archivo \say{yolov4-tiny.cfg}, y los datos
 	\label{fig:labeling6}
 \end{figure}
 
-El dato marcado \textit{learning rate} es el que determina el ritmo de aprendizaje, este dato entre más bajo podría aprender mas pero  eso alarga el periodo de entrenamiento y aumenta la probabilidad de que se detenga el entrenamiento por un error, en este apartado no hay que exagerar porque un dato muy bajo simplemente lo hará mas lento y no ayudara en el entrenamiento ya que ni se podría realizar.
+El dato marcado \textit{learning rate} es el que determina el ritmo de aprendizaje, este dato entre más bajo podría aprender más, pero  eso alarga el periodo de entrenamiento y aumenta la probabilidad de que se detenga el entrenamiento por un error, en este apartado no hay que exagerar porque un dato muy bajo simplemente lo hará más lento y no ayudara en el entrenamiento, ya que ni se podría realizar.
 
-El siguiente es \textit{max batches}, el quese encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}. En \textit{step} se tomará el 80\% y 90\% de \say{max batches} respectivamente.
+El siguiente es \textit{max batches}, el que se encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula que se observa en la Ecuación \ref{eq:maxb}, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}. En \textit{step} se tomará el 80\% y 90\% de \say{max batches} respectivamente.
 
 \begin{equation}
+\label{eq:maxb}
 	max\_batches = \#\operatorname{clases} * 2000
 \end{equation}
 
@@ -125,14 +133,14 @@ Los otros datos por modificar son los que se aprecian en la Figura \ref{fig:labe
 	\label{fig:labeling7}
 \end{figure}
 
-Para calcular la cantidad de filtros se tendrá que usar otra fórmula simple, este dato obtenido se tendrá cambiar en todos los filtros que se encuentra en el documento \say{yolov4-tiny.cfg}.
+Para calcular la cantidad de filtros se hará uso de una fórmula simple que se puede apreciar en la Ecuación \ref{eq:clases}, este dato obtenido se tendrá cambiar en todos los filtros que se encuentra en el documento \say{yolov4-tiny.cfg}.
 
 \begin{equation}
 	filtros = (\#\operatorname{clases}+5)*3
-	\label{eq:persona}
+	\label{eq:clases}
 \end{equation}
 
-Con eso finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falta editar otros 2 archivos mas el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar y la locación de donde se guardara la red entrenada, esto se aprecia en la Figura \ref{fig:labeling45}.
+Con eso finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falta editar otros 2 archivos más el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar, la locación de donde se guardara la red entrenada y cuantas clases se usara para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}.
 
 \begin{figure}[h]
 	\centering
@@ -144,7 +152,7 @@ Con eso finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falt
 
 \subsection{Inicio de entrenamiento}
 
-Para esta etapa, una vez concluido con todas las actividades necesarias para iniciar el entrenamiento dentro del ambiente de Google Colab, el cual facilita este procedimiento. Se procede a ejecutar los siguientes scripts que aparecén en la Figura \ref{fig:labeling46}, el cual creará unos archivos basados con la cantidad de clases por el cual vamos a entrenar y la cantidad de imágenes con el cual entrenara.
+Para esta etapa, una vez concluido con todas las actividades necesarias para iniciar el entrenamiento dentro del ambiente de Google Colab, el cual facilita este procedimiento. Se procede a ejecutar los siguientes scripts que aparecen en la Figura \ref{fig:labeling46}, el cual creará unos archivos basados con la cantidad de clases por el cual vamos a entrenar y la cantidad de imágenes con el cual entrenara.
 
 \begin{figure}[h]
 	\centering
@@ -154,17 +162,17 @@ Para esta etapa, una vez concluido con todas las actividades necesarias para ini
 	\label{fig:labeling46}
 \end{figure}
 
-Con todo esto sólo queda correr otro comando el cual iniciará el entrenamiento, este se podrá ver en la Figura \ref{fig:labeling47}. Éste entrenamiento normalmente lleva entre 2 a 3 horas aproximadamente.
-
+Con los archivos generados por el anterior comando, ya se tendría todo lo necesario para iniciar el entrenamiento. Para comenzar con este proceso solo hace falta ejecutar el siguiente comando que aparece en la Figura \ref{fig:labeling47}. La duración de este entrenamiento dependerá de la cantidad de imágenes que se usará, en este caso el entrenamiento duro aproximadamente 4 horas.
+\clearpage
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{imagenes/persona12.png}
+	\includegraphics[scale=0.5]{imagenes/persona12.png}
 	\caption{Comando para iniciar el entrenamiento.}
 	\source{Elaboración propia}
 	\label{fig:labeling47}
 \end{figure}
 
-Al terminar el entrenamiento ya se tendrá una red neuronal funcional, capaz de detectar personas. Un resultado del entrenamiento se observa en la Figura \ref{fig:labeling48}, donde se ven marcadas una cantidad aceptable de personas que aparecen en la imagen.
+Al finalizar el entrenamiento ya se tendrá una red neuronal funcional, capaz de detectar personas. Un resultado del entrenamiento se observa en la Figura \ref{fig:labeling48}, donde se ven marcadas una cantidad aceptable de personas que aparecen en la imagen.
 
 \begin{figure}[h]
 	\centering
@@ -175,10 +183,11 @@ Al terminar el entrenamiento ya se tendrá una red neuronal funcional, capaz de 
 \end{figure}
 
 \section{Diseño de la interfaz}
-Para el desarrollo de interfaces se utilizó la herramienta Balsamiq Wireframes con 2 pantallas principales, el cual son: detección de personas y ventana de alarma. 
+Para el desarrollo de interfaces se utilizó la herramienta Balsamiq Wireframes, con el cual se diseñó 2 pantallas principales, los cuales son: detección de personas y ventana de alarma. 
+
 \subsection{Detección de personas}
 
-Esta es la pantalla principal de la aplicación, en el cual se observa las detecciones que se esta realizando, el límite de detección y la cantidad de personas que aparecen en el video, esto se apreciará mejor en la Figura \ref{fig:labeling30}.
+Esta es la pantalla principal de la aplicación, en el cual se observa las detecciones que se está realizando, el límite de detección y la cantidad de personas que aparecen en el video, esto se apreciará mejor en la Figura \ref{fig:labeling30}.
 \clearpage
 \begin{figure}[h]
 	\centering
@@ -190,7 +199,7 @@ Esta es la pantalla principal de la aplicación, en el cual se observa las detec
 
 \subsection{Pantalla de alerta}
 
-Esta pantalla solo aparecerá cuando la alarma se active, lo que significa, es que se llegó a sobrepasar el tiempo máximo de espera de una persona en la fila, el diseño de esta pantalla se puede ver en la Figura \ref{fig:labeling31}.
+Esta pantalla solo aparecerá cuando la alarma se active, lo que significa, que solo saldrá en ciertas ocaciones cuando se llega a sobrepasar el tiempo máximo de espera de una persona en la fila, el diseño de esta pantalla se puede ver en la Figura \ref{fig:labeling31}.
 
 
 \begin{figure}[h]
@@ -202,7 +211,7 @@ Esta pantalla solo aparecerá cuando la alarma se active, lo que significa, es q
 \end{figure}
 
 \section{Diagrama de flujo}
-En este apartado se mostrará un diagrama de flujo en el que se representa los principales procesos de este proyecto, cuales son detectar a personas y dependiendo del tiempo de espera notificar con una alerta, este diagrama se observa en la Figura \ref{fig:labeling33}.
+En este apartado se mostrará un diagrama de flujo en el que se representa los principales procesos de este proyecto, cuáles son detectar a personas y dependiendo del tiempo de espera notificar con una alerta, este diagrama se observa en la Figura \ref{fig:labeling33}.
 
 \begin{figure}[h]
 	\centering
@@ -213,7 +222,7 @@ En este apartado se mostrará un diagrama de flujo en el que se representa los p
 \end{figure}
 
 \section{Diagrama C4Model}
-En este apartado se dará conocer un esquema siguiendo el modelo C4Model, el cual se va explicando de manera general hasta llegar a lo mas específico, empezando por el contexto de la situación, sus contenedores, componentes y por último un diagrama de todas las clases.
+En este apartado se dará conocer un esquema siguiendo el modelo C4Model, el cual se va explicando de manera general hasta llegar a lo más específico, empezando por el contexto de la situación, sus contenedores, componentes y por último un diagrama de todas las clases.
 \clearpage
 \subsection{Contexto}
 En este apartado se observará las diferentes interacciones que tiene la aplicación, esto se apreciará mejor en la Figura \ref{fig:labeling32}.
@@ -229,7 +238,7 @@ En este apartado se observará las diferentes interacciones que tiene la aplicac
 Con este diagrama se puede mostrar cuáles son las interacciones que realiza la aplicación, como ser el personal de sistemas es el que inicia la aplicación y si es necesario configura ciertos parámetros, por otra parte, la aplicación interactúa con el personal de seguridad mediante avisos que ejecutara cuando el tiempo de espera de una persona sobrepase el tiempo configurado.
 \subsection{Contenedores}
 
-En esta sección se observa mas a detalle los sistemas usados para que la aplicación funcione, esto se ve en la Figura \ref{fig:labeling34}.
+En esta sección se observa más a detalle los sistemas usados para que la aplicación funcione, esto se ve en la Figura \ref{fig:labeling34}.
 \clearpage
 \begin{figure}[h]
 	\centering
@@ -256,9 +265,9 @@ La herramienta ideal para realizar esto es VirtualenvWrapper, ya que es fácil d
 	\label{fig:labeling9}
 \end{figure}
 
+\clearpage
 
-
-Con el ambiente virtual se procede a instalar los diversos paquetes necesarios, donde los principales son Tensorflow y OpenCV. Teniendo estos recursos instalados, se tendrá que convertir la red neuronal entrenada a un formato que Tensorflow soporte. Para ello usaremos un código disponible hecho por la misma comunidad, que esta hecho en Python, en la Figura \ref{fig:labeling10} se muestra el comando para convertir la red.
+Con el ambiente virtual se procede a instalar los diversos paquetes necesarios, donde los principales son Tensorflow y OpenCV. Teniendo estos recursos instalados, se tendrá que convertir la red neuronal entrenada a un formato que Tensorflow soporte. Para ello usaremos un código disponible hecho por la misma comunidad, que está hecho en Python, en la Figura \ref{fig:labeling10} se muestra el comando para convertir la red.
 
 \begin{figure}[h]
 	\centering
@@ -283,9 +292,7 @@ Con todo esto ya se puede dar comienzo para que la aplicación pueda leer los vi
 \subsection{Agregar el tracker a la detección}
 
 Por sí solas la detección que se puede hacer no brinda la información suficiente como para contar las detecciones o corregir errores que se pueden generar. Uno de estos errores es que como en un video hay objetos en movimiento simplemente puede desaparecer las detecciones, debido a que por el movimiento no se llega a reconocer al objeto, esto se puede ver en la Figura \ref{fig:labeling12}.
-
-
-
+\clearpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.3]{imagenes/deteccionvstracker.png}
@@ -294,7 +301,6 @@ Por sí solas la detección que se puede hacer no brinda la información suficie
 	\label{fig:labeling12}
 \end{figure}
 
-\clearpage
 Cómo se ve en la figura anterior, no se marca todos los objetos en el lado que no utiliza \textit{tracker}, ya que justo en ese \textit{frame} no lo identifica bien y se pierde. Pero en otra parte del mismo video se ve que en la Figura \ref{fig:labeling13}, desaparece el objeto detectado, por otra parte el que utiliza el \textit{tracker} no pierde ninguna detección.
 
 \begin{figure}[h]
@@ -309,10 +315,11 @@ Cómo se ve en la figura anterior, no se marca todos los objetos en el lado que 
 Pero el problema mas importante es que cuando una persona se sale del enfoque de la cámara o es cubierto por algún objeto, la detección se pierde y cuando vuelve a aparecer la app lo detecta como si fuera una nueva persona. 
 Esto se podrá solucionar incorporando a la detección un \textit{tracker}, mediante esto se podrá generar ID a cada detección y con eso se podrá diferenciar entre detecciones, ya que todos tendrán un identificador que permitiría contar a las personas detectadas.
 El \textit{tracker} a utilizar es DeepSort, el cual es de uso libre, para que funcione correctamente se tiene que usar una red pre-entrenada que ayuda al proceso del rastreo.
+\clearpage
 
 \subsection{Agregar contador y límite de detección}
 
-Para que se pueda contar la cantidad de personas detectas se usara una función de Deepsort el cual genera una lista de la detecciones y mediante OpenCV se podrá mostrar en la pantalla del mismo video como se ve en la Figura \ref{fig:labeling14}.
+Para que se pueda contar la cantidad de personas detectas se usara una función de Deepsort el cual genera una lista de las detecciones y mediante OpenCV se podrá mostrar en la pantalla del mismo video como se ve en la Figura \ref{fig:labeling14}.
 
 \begin{figure}[h]
 	\centering
@@ -337,9 +344,7 @@ Esto se logra gracias a OpenCV, ya que con él se dibujara una línea, el cual r
 
 \subsection{Alarma al superar el tiempo máximo}
 
-Este apartado se encarga de informar cuando se sobrepase el tiempo máximo de espera definido, para saber esto se creó una lista donde se registra la hora en la que se detectó la persona, en la Figura \ref{fig:labeling16} se observa como esta compuesta la lista, la cual guarda datos necesarios para realizar la alarma y el límite de detección.
-
-\clearpage
+Este apartado se encarga de informar cuando se sobrepase el tiempo máximo de espera definido, para saber esto se creó una lista donde se registra la hora en la que se detectó la persona, en la Figura \ref{fig:labeling16} se observa como está compuesta la lista, la cual guarda datos necesarios para realizar la alarma y el límite de detección.
 
 \begin{figure}[h]
 	\centering
@@ -350,7 +355,7 @@ Este apartado se encarga de informar cuando se sobrepase el tiempo máximo de es
 \end{figure}
 
 Teniendo esta lista podemos registrar la hora en la que fue detectado una persona y con ello al tener una lista donde se detectaron 3 personas nos permite calcular un tiempo promedio de espera y con ese dato se podrá comparar con el tiempo máximo de espera.
-Si este tiempo promedio de espera es mayor que el tiempo máximo, se procederá a notificar mediante un \say{popup} que el cliente esta esperando mucho y que se recomienda abrir una nueva caja.
+Si este tiempo promedio de espera es mayor que el tiempo máximo, se procederá a notificar mediante un \say{popup} que el cliente está esperando mucho y que se recomienda abrir una nueva caja.
 \\
 
 Otra manera en la que se puede activar la alarma es cuando por un determinado tiempo ni una persona llegó a cruzar el límite definido, de igual manera que en el anterior caso se activará un \say{popup} notificando un problema al encargado para determinar si lo ve necesario abrir una caja o no. En la Figura \ref{fig:labeling17} se observa el diseño del \say{popup} y el mensaje que da.
@@ -370,12 +375,12 @@ Otra manera en la que se puede activar la alarma es cuando por un determinado ti
 Con este apartado se está utilizando una base datos para registrar la hora exacta cuando salte una alarma. Esto sirve para poder ver cuándo son las horas críticas y así buscar una solución que mejoraría la atención.
 Para la base de datos se usa Mongodb, el cual te permite guardar los datos tanto de manera local como en la nube y es una herramienta gratuita.
 
-En este caso como aplicación fue probada en un MacBook Pro 2014, la instalación de Mongodb variaráa en una máquina Windows. Simplemente para instalar la base de datos se tendrá que correr el siguiente comando que aparece en la Figura \ref{fig:labeling18}, estos comandos se tienen que hacer correr en la terminal.
+En este caso como aplicación fue probada en un MacBook Pro 2014, la instalación de Mongodb variará en una máquina Windows. Simplemente para instalar la base de datos se tendrá que correr el siguiente comando que aparece en la Figura \ref{fig:labeling18}, estos comandos se tienen que hacer correr en la terminal.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.55]{imagenes/mongodc.png}
-	\caption{Comando de instalación en Mac de MongoDb.}
+	\caption{Comando de instalación en Mac de MongoDB.}
 	\source{Elaboración propia}
 	\label{fig:labeling18}
 \end{figure}
@@ -388,7 +393,7 @@ alarms.insert_one(post)
 DETECTION_EVENTS.clear()
 \end{lstlisting}
 
-En este caso la información de la base de datos se almacena de manera local, lo que significa que cada vez que se inicie la aplicación se tendrá que activar Mongodb, esto se logra con el siguiente comando que aparece en la Figura \ref{fig:labeling20}, de la misma manera se tendrá que desactivar cuando ya no se utilice la aplicación. 
+En este caso la información de la base de datos se almacena de manera local, lo que significa que cada vez que se inicie la aplicación se tendrá que activar MongoDB, esto se logra con el siguiente comando que aparece en la Figura \ref{fig:labeling20}, de la misma manera se tendrá que desactivar cuando ya no se utilice la aplicación. 
 
 \begin{figure}[h]
 	\centering
@@ -398,91 +403,11 @@ En este caso la información de la base de datos se almacena de manera local, lo
 	\label{fig:labeling20}
 \end{figure}
 
-
-\section{Funcionamiento de la aplicación}
-
-En este apartado se explicara el funcionamiento de la aplicación, que permitirá poder obtener datos en tiempo real de cuanto una persona en promedio espera hasta ser atendido en la caja.
-
-\subsection{Proceso de iniciar la aplicación}
-
-Para que la aplicación funcione se tiene que correr mediante terminar, utilizando el siguiente comando que aparece en la Figura \ref{fig:labeling15}, el comando  correrá el código escrito y se agregan ciertos parámetros que necesita Darknet, el cual definirán el funcionamiento.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=150mm, height=45mm]{imagenes/persona26.png}
-	\caption{Comando para que funcione la aplicación, con los parámetros necesarios.}
-	\source{Elaboración propia}
-	\label{fig:labeling15}
-\end{figure}
-
-Estos parámetros definen con qué tipo de video se trabajará, si será un video local, usar una cámara convencional o usar una cámara IP. Otro parámetro importante es definir si los resultados del análisis se guardara en un video.	
-
-\subsection{Proceso de detección y cálculo de tiempo de espera promedio}
-
-Cuando la aplicación ya está iniciada comenzara a realizar la detección en cada Frame del video esperando detectar alguna persona. 
-Ahora, cuando llega a detectar una persona guardara los siguientes datos: la hora en la que fue detectada, el número de detección, la posición del objeto detectado.
-\vspace{5mm}
-
-Paralela a la acción anterior, también comienza a ejecutarse continuamente 2 funciones que calcularán el tiempo promedio de espera de un cliente.
-Una función ira calculando el tiempo promedio de espera dependiendo de la cantidad de personas que están haciendo fila, esto se realiza gracias a los datos que se almacenan en una lista, esta lista se observa en la Figura \ref{fig:labeling16}. Esta función que se puede ver en el siguiente Código \ref{25}, realiza un procedimiento de crear una lista en el que se suman la diferencia del tiempo en el que fueron detectados los objetos.
-\begin{lstlisting}[language=Python,caption={Función que suma la diferencia de tiempo entre cada detección en segundos.},captionpos=b,label=25]
-def calculate_average_waiting_time_in_seconds():
-    datetime_diff_in_seconds = []
-    for oldest_event, newest_event in zip(DETECTION_EVENTS,
-    	 DETECTION_EVENTS[1:]):
-        diff = oldest_event['datetime_event'] - 
-        	newest_event['datetime_event']
-        datetime_diff_in_seconds.append(abs(diff.total_seconds()))
-    return sum(datetime_diff_in_seconds)
-\end{lstlisting}
-
-Teniendo este dato, se procede a calcular el tiempo promedio de espera, para ello se ejecutara diversos cálculos para poder obtenerlo, esto se aprecia en el siguiente Código \ref{26}.
-\begin{lstlisting}[language=Python,caption={Calculo para la obtención del tiempo promedio de espera.},captionpos=b,label=26]
-        if DETECTION_EVENTS:
-            waiting_time_in_seconds = 
-            	calculate_average_waiting_time_in_seconds()
-            last_number_of_people_detected =
-            	 get_last_number_of_people_detected()
-            average_waiting_time_in_seconds = 
-            	waiting_time_in_seconds / 
-            			last_number_of_people_detected
-            print("AVG: {}".format(average_waiting_time_in_seconds))
-            diff2 = DETECTION_EVENTS[0]["datetime_event"] - 
-            		datetime.now()
-            max_time = abs(diff2.total_seconds())
-\end{lstlisting}
-
-La segunda función que se encarga de activar la alarma consiste en saber cuándo un objeto llega a cruzar el limite dibujado anteriormente. Ahora, si un objeto detectado no llego a cruzar este limite en un tiempo determinado, se llega a considerar que hay un problema en la fila y activara la alarma.
-
-\begin{lstlisting}[language=Python,caption={Function para calcular el objeto mas cercado al límite.},captionpos=b,label=27]
-def create_list_of_closest_person_detected():
-    list_closest_person_detected = [0, 0]
-    for closest_detecttion in DETECTION_EVENTS:
-        person_closes = closest_detecttion[0]
-        		['detection_position', 0]
-        list_closest_person_detected.append(person_closes)
-        max_value = np.max(list_closest_person_detected)
-    return max_value
-\end{lstlisting}
 \clearpage
 
-Con el anterior Código \ref{27}, se llega a saber cual es la persona que este al frente de la fila y con ellos determinar si se tarda mucho en ser atendido, ya que eso se sabe cuando cruza el límite establecido.
+\section{Conclusiones del capitulo III}
 
-
-Los cálculos de estas funciones serán reniciadas cada vez que salte la alarma o cuando sea atendida una persona.
-La alarma suena cada vez que se supere el tiempo máximo de espera, el cual se define al comienzo de la aplicación. 
-\vspace{5mm}
-
-Al sonar la alarma se inician 2 procesos importantes, el primero se encargará de generar un \say{popup} con un mensaje avisando que es recomendable abrir una nueva caja. Por otra parte, la otra función se encarga de registrar de la hora en la que se activó la alarma, para así tener un registro para observar cuales son los periodos del día con más problemas en atender al cliente. Con esa información se puede buscar una solución permanente que mejore la experiencia del cliente al tener menos tiempo de espera.
-
-
-
-
-
-
-
-
-
+En el presente capítulo se explica la elección de la red neuronal YOLO y a su vez se desarrolla todo el procedimiento para poder entrenarlo haciendo uso de Darkflow. Con la red neuronal entrenada se procede a explicar las diferentes funciones que tendrá la aplicación y los sistemas que lo componen.
 
 
 

@@ -1,7 +1,27 @@
+\section{Conclusiones}
 \begin{itemize}
-	\item Se realizo la investigación de diferentes métodos para construir una red neuronal para la detección de objetos en imágenes, como Tensorflow, Pytorch y Keras y se concluyo que lo mejor es usar una red ya construida que esta basada en Tensorflow, el cual es Darknet este nos da resultados muy superiores que al construir una.
+	\item Se realizó la investigación de diferentes métodos para construir una red neuronal para la detección de objetos en imágenes, como Tensorflow, Pytorch y Keras y se concluyo que lo mejor es usar una red ya construida que esta basada en Tensorflow, el cual es Darknet este nos da resultados muy superiores que al construir una.
 	\item Se logró entrenar una red neuronal para que sea capaz de detectar a personas tanto en imágenes como en videos en tiempo real.
-	\item Se junto la detección con la función de rastreo, el cual elimina ciertas fallas que tiene al trabajar con sólo la detección de objetos. Para la función de rastreo se decidió utilizar Deepsort, el cual es uno de los más conocidos ya que tiene uno de los mejores rendimientos al momento de realizar un rastreo de los objetos detectados. 
+	\item Se juntó la detección con la función de rastreo, el cual elimina ciertas fallas que tiene al trabajar con solo la detección de objetos. Para la función de rastreo se decidió utilizar Deepsort, el cual es uno de los más conocidos, ya que tiene uno de los mejores rendimientos al momento de realizar un rastreo de los objetos detectados. 
 	\item Mediante el añadido del rastreo se puede obtener ID independientes de cada detección el cual permite poder contar los objetos que están siendo detectados y con ello poder sacar un tiempo promedio de espera.
 	\item Como conclusión, se llega a obtener el resultado esperado al identificar a personas y con ello poder calcular el tiempo promedio de espera, para poder notificar al encargado cuando una persona esté esperando más que el tiempo máximo definido, para así abrir una nueva caja para mejorar la velocidad de atención.
 \end{itemize}
+
+\clearpage
+
+\section{Recomendaciones}
+
+Como recomendaciones técnicas, un aspecto muy importante es contar con el hardware adecuado para este tipo de sistemas, es decir, contar con una tarjeta de video (GPU) en la computadora donde se va a ejecutar el programa. El equipo que fue utilizado para este proyecto no cuenta con una GPU, con lo que conllevo a no tener el rendimiento adecuado, ya que todos los cálculos fueron ejecutados en el CPU.
+
+Otro apartado importante es tener en cuenta el tipo de cámara que se usara, ya que dependiendo de la calidad del video la exigencia de la aplicación será mayor, es decir, que si se trabaja con videos en 720p (1280x720 pixeles) consumirá menos recursos de la computadora que al trabajar con un video en 1080p (1920x1080 pixeles), porque la imagen es más pequeño y eso genera menos información al procesarlo.
+
+\section{Trabajos futuros}
+
+Uno de los trabajos a futuros es hacer uso de una base de datos que se almacene en la nube y no de manera local, esto facilitaría poder conocer los datos registrados, ya que se podría acceder desde cualquier computadora y así uno no se limita a usar la misma computadora para poder analizar los datos.  
+
+Otro trabajo a futuro es la implementación de una aplicación móvil que se conecte con la base de datos que se encuentre en la nube, esta app notificaría a los trabajadores del supermercado cada vez que registre una alarma y con ello se podría solucionar más rápido el problema.
+
+
+
+
+
