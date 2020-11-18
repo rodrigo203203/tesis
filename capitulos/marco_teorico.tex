@@ -184,7 +184,7 @@ Esta función se caracteriza en los siguientes factores :
 	\item Tiene un gran rendimiento en la ultima capa.
 	\item Tiene buena acotación entre el 0 y 1.
 \end{itemize}
-\clearpage
+\vspace{15mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/save.png}
@@ -193,6 +193,7 @@ Esta función se caracteriza en los siguientes factores :
 	\label{fig:sigmoid}
 \end{figure}
 
+\clearpage
 \subsubsection{Tangente hiperbólica(Tanh)}
 
 Esta función tangencial consiste en transformar los valores de entrada en una escala (-1,1), donde los valores altos tenderán de manera asintomática a 1 y los valores de bajo nivel tenderán a 0, (\cite{activa2}). La gráfica de esta función se representará en Figura \ref{fig:tange}, la cual se obtiene con la Ecuación (\ref{eq:tangente}).
@@ -276,7 +277,7 @@ La Inteligencia Artificial o IA es la combinación de diferentes algoritmos que 
 
 \vspace{5mm}
 Cuando se habla de inteligencia artificial entramos al sector de ciencias de computación, donde esta área abarca los conceptos de \textit{machine learning, data mining y data science}, esta división se observa en la Figura \ref{fig:ia}.
-\clearpage
+
 
  \begin{figure}[h]
 	\centering
@@ -344,7 +345,7 @@ La plataforma tuvo sus inicios en el 2011 por parte del equipo Google Brain, que
 	\source{Google.}
 	\label{fig:google22}
 \end{figure}
-\clearpage
+
 Para el año 2016, Google anunció una nueva función con el nombre de TPU o unidad de procesamiento de tensor, el cual es una construcción de un circuito integrado de aplicación específica o ASIC por sus siglas en inglés. Este circuito permite realizar un aprendizaje automática y que se adapta para Tensorflow. Esta implementación del TPU es un acelerador programable, con el fin de conseguir un alto \textit{throughput} (número de mensajes recibidos con éxito), y para correr modelos más rápidos al generar un entrenamiento. 
 
 \subsubsection{Gráficos de cómputo}
@@ -395,7 +396,6 @@ Algunas ventajas al usar esta herramienta son las siguientes:
 
 Uno de los elementos principales al momento de crear una red neuronal son las capas que lo componen, éstas tienen como función de extraer la información del conjunto de datos que se están utilizando. Hay que tomar en cuenta que esa información extraída no siempre será útil para el problema que se quiere solucionar.
 
-\clearpage
 
 Al crear estas capas con Keras se necesita iniciar con el siguiente comando “tf.keras.layers.Flatten” si se quiere trabajar con análisis de imágenes, que consiste en transformar una imagen en un formato adecuado para que se pueda trabajar, con esto quiero decir que por ejemplo teniendo una imagen de un tamaño de 75x75 pixeles, al ejecutar el comando esta imagen se transformaría en 5625 pixeles (75 * 75 = 5625). Esta acción de “aplanar” los píxeles es el trabajo de la primera capa que se utiliza, con esta capa no comenzara con él aprendizaje sólo adecuará los sets de datos.
 
@@ -414,7 +414,7 @@ model = keras.Sequential([
 \subsection{Deep Learning}
 
 Como su nombre indica \textit{Deep learning} es la parte profunda del aprendizaje de una inteligencia artificial, esto se entenderá mejor en la observando la Figura \ref{fig:deep1}. Entre mayor sea la cantidad de capas relacionado a un modelo de se lo conoce como \textit{\say{deep}} (\cite{deep23}).
-
+\clearpage
  \begin{figure}[h]
 	\centering
 	\includegraphics[scale=1]{imagenes/deep2.jpg}
@@ -423,7 +423,6 @@ Como su nombre indica \textit{Deep learning} es la parte profunda del aprendizaj
 	\label{fig:deep1}
 \end{figure}
 
-\clearpage
 Los datos de entrada que almacena una capa se lo conocen como \say{weights}, que en esencia son un montón de números. En términos más técnicos \say{weights} se lo conoce como parámetros de una capa.
 
 \vspace{5mm}
@@ -446,7 +445,6 @@ YOLO (\textit{You Only Look Once}, \say{sólo se ve una vez}) es un algoritmo de
 
 La principal innovación que YOLO trajo consigo a este campo, fue el hecho de que es capaz de realizar múltiples detecciones de una sola vez, lo cual realiza este proceso de manera rápida y eficiente.
 El procesamiento de imágenes con YOLO es simple y directo, por ejemplo, teniendo una imagen de entrada de un tamaño de 448x448ppx, esto se aprecia en la Figura \ref{fig:yolo2}, ejecuta una red convolucional a la imagen que llegaría a cambiar de tamaño y así limitar los resultantes de las detecciones confiando en el modelo que se usó para entrenar la red neuronal. 
-\clearpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.8]{imagenes/yolo2.png}
@@ -469,7 +467,6 @@ La estructura de la red neuronal YOLO esta basada en GoogLeNet, la cual es otra 
 
 Internamente YOLO está compuesto por 24 capas convolucionales y por 2 capas que se encuentran completamente conectadas, La estructura completa se puede observar en la Figura \ref{fig:yolo108}.
 
-\clearpage
 
  \begin{figure}[h]
 	\centering
@@ -490,7 +487,7 @@ Al tener menos capas está red neuronal es capaz de tener un mejor rendimiento e
 
  \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{imagenes/tiny-yolo.jpg}
+	\includegraphics[width=13cm, height=5.2cm]{imagenes/tiny-yolo.jpg}
 	\caption{Estructura interna de la red neuronal Tiny YOLO.}
 	\source{Wei Fang (2019).}
 	\label{fig:yolo109}
