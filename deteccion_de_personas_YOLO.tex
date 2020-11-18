@@ -8,12 +8,14 @@
 \usepackage{afterpage}
 \usepackage{calc}
 \usepackage{lmodern}
+\usepackage{courier}
 \usepackage{lipsum}
 \usepackage[explicit]{titlesec}
 \usepackage{sectsty}
 \newcommand{\hsp}{\hspace{4pt}}
 %\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage[a4paper, left=30mm, right=20mm, top=30mm,bottom=20mm]{geometry}
+\fontsize{12}{14}
 \usepackage{dirtytalk}
 \usepackage{mathptmx}
 \usepackage{multicol}
@@ -22,12 +24,16 @@
 \usepackage{url}
 \usepackage{fancyhdr}
 \usepackage{caption}
-\sectionfont{\large\bfseries\MakeUppercase}
-\subsectionfont{\large\bfseries}
+\usepackage{tocloft}
+\sectionfont{\normalsize\bfseries}
+\subsectionfont{\normalsize\itshape\bfseries}
 \usepackage[font={small}]{caption}
 \usepackage[labelsep=quad]{caption}
 \captionsetup{labelsep=period}
-
+\newcommand\CentSections{
+  \titleformat{\section}
+  {\normalfont\bfseries\normalsize\centering}{\thesection}{1em}{\MakeUppercase}
+}
 
 %\renewcommand\thefigure{\thechapter.\arabic{figure}.}
 \captionsetup[figure]{labelfont={bf}}
@@ -37,19 +43,19 @@
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage{listings}
-\chapterfont{\Large\bfseries\MakeUppercase}
+\lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
+\lstset{framextopmargin=50pt,frame=bottomline}
+\chapterfont{\normalsize\bfseries\MakeUppercase}
 \subsubsectionfont{\normalfont\itshape}
 \renewcommand{\tablename}{Tabla} 
 \renewcommand{\lstlistingname}{\textbf{Código}}% Listing -> Algorithm
-\renewcommand{\lstlistlistingname}{Lista de \lstlistingname s}% List of Listings -> List of Algorithms
+\renewcommand{\lstlistlistingname}{\centerline{Lista de \lstlistingname s}}% List of Listings -> List of Algorithms
 \newcommand\blankpage{%
     \null
     \thispagestyle{empty}%
     %\addtocounter{page}{-1}%
     \newpage}
 \onehalfspacing
-
-
 %Import the natbib package and sets a bibliography  and citation styles
 \usepackage{natbib}
 \bibliographystyle{abbrvnat}
@@ -77,6 +83,13 @@
 }
 \date{\vspace{-5ex}}
 
+\renewcommand{\cfttoctitlefont}{\hspace*{\fill}\normalsize\bfseries\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\hspace*{\fill}}
+\renewcommand{\cftlottitlefont}{\hspace*{\fill}\normalsize\bfseries\MakeUppercase}
+\renewcommand{\cftafterlottitle}{\hspace*{\fill}}
+\renewcommand{\cftloftitlefont}{\hspace*{\fill}\normalsize\bfseries\MakeUppercase}
+\renewcommand{\cftafterloftitle}{\hspace*{\fill}}
+
 \begin{document}
 
 
@@ -97,7 +110,7 @@
 	\vspace{20mm}
 	\begin{tabular}{@{}p{.in}p{3in}@{}}
 	& \hrulefill \\
-	& \phantom{assassasasa}Job Ledezma, PhD. \\
+	& \phantom{assassasasa}Dr.-Ing. Job Angel Ledezma \\
 	& \phantom{assasa}\textbf{DIRECTOR DE CARRERA} \\
 	& \phantom{ass}\textbf{INGENIERÍA MECATRÓNICA}
 	\end{tabular}
@@ -120,16 +133,16 @@
 	
 	\vspace{15mm}
 
-	\begin{tabular}{@{}p{.in}p{2in}@{}}
+	\begin{tabular}{@{}p{.in}p{2.2in}@{}}
 	& \hrulefill \\
 
 	% TODO: Preguntar el nombre del docente
-	& Msc. Erik Osvaldo Pozo Irusta \\
-	& \phantom{assasasa}\textbf{INVITADO} \\
+	& MSc. Erik Osvaldo Pozo Irusta \\
+	& \phantom{assasasaa}\textbf{INVITADO} \\
 	\end{tabular}
 	\vspace{40mm}
 	\end{center}
-	\centerline{Santa Cruz de la Sierra, noviembre del 2020}
+	\centerline{Santa Cruz de la Sierra, 30 de noviembre del 2020}
 %	\thispagestyle{empty}
 
 	
@@ -144,10 +157,9 @@
 \clearpage
 
 \input{capitulos/abstract}
-
 \clearpage
 \listoffigures
-%\thispagestyle{empty}
+%\thispagestyle{empty
 \listoftables
 \afterpage{\blankpage}
 \lstlistoflistings
@@ -156,6 +168,7 @@
 \afterpage{\blankpage}
 %\thispagestyle{empty}
 \input{capitulos/acronimos}
+\clearpage
 \tableofcontents
 \afterpage{\blankpage}
 %\thispagestyle{empty}
@@ -181,11 +194,15 @@
 \chapter{MARCO CONCLUSIVO}
 \input{capitulos/conclusion}
 
-%\chapter{RECOMENDACIONES}
-%\input{capitulos/recomendaciones.tex}
+\titleformat{\chapter}[hang]
+{\filcenter}
+{\parbox{2cm}{\vrule width 10pt height 120pt}{}}
+{0pt}
+{\parbox{10cm}{\Large{\textbf{\centerline{\filleft #1}}}}
+{\phantom{\filleft #1}}}
 
 \bibliographystyle{unsrt}
-\addcontentsline{toc}{chapter}{Bibliografia}
+\addcontentsline{toc}{chapter}{BIBLIOGRAFÍA}
 \bibliography{capitulos/bibliography.bib}
 
 \end{document}
