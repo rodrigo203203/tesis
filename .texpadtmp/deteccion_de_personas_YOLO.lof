@@ -1,68 +1,68 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Funcionamiento de la cámara de Huawei.\relax }}{22}{figure.caption.5}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Detección realizada por los vehículos Tesla.\relax }}{23}{figure.caption.6}%
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Detección lograda por la red neuronal YOLO\relax }}{24}{figure.caption.7}%
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Representación de una fila larga.\relax }}{24}{figure.caption.8}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Funcionamiento de la cámara de Huawei.\relax }}{21}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Detección realizada por los vehículos Tesla.\relax }}{22}{figure.caption.6}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Detección lograda por la red neuronal YOLO\relax }}{23}{figure.caption.7}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Representación de una fila larga.\relax }}{23}{figure.caption.8}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Sistema de caja del primer supermercado.\relax }}{28}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Supermercado de Amazon que no utiliza cajas.\relax }}{29}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Aplicación de redes neuronales convolucionales para la clasificación de imágenes.\relax }}{30}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Procedimiento de convolución.\relax }}{31}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Resultado de una convolución.\relax }}{31}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Prueba de velocidad de YOLO con la base de datos COCO.\relax }}{32}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Red neuronal artificial en comparación a una neurona.\relax }}{32}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Estructura de una red neuronal artificial.\relax }}{33}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Diferentes capas conectadas de una red neuronal.\relax }}{34}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Aprendizaje supervisado.\relax }}{34}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Esquema de aprendizaje reforzado.\relax }}{35}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Representación gráfica de la función Sigmoid.\relax }}{36}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Representación gráfica de la función Tangencial.\relax }}{37}{figure.caption.21}%
-\contentsline {figure}{\numberline {2.14}{\ignorespaces Representación gráfica de la función Relu.\relax }}{38}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Representación gráfica de la función Softmax.\relax }}{39}{figure.caption.23}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces División de los sectores en ciencias de computación.\relax }}{39}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.17}{\ignorespaces La máquina Colossus creada por Alan Turing.\relax }}{40}{figure.caption.25}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Interés de búsqueda sobre Tensorflow en Google.\relax }}{41}{figure.caption.26}%
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Equipo que desarrollo Tensorflow.\relax }}{42}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Ejecución de funciones aritméticas en Tensorflow.\relax }}{43}{figure.caption.28}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Posición de Deep Learning en una inteligencia artificial.\relax }}{45}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Detección múltiple realizada por YOLO.\relax }}{45}{figure.caption.30}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Aplicación de YOLO en una imagen.\relax }}{46}{figure.caption.31}%
-\contentsline {figure}{\numberline {2.24}{\ignorespaces Proceso que realiza YOLO para generar una detección de uno o varios objetos dentro de una imagen.\relax }}{46}{figure.caption.32}%
-\contentsline {figure}{\numberline {2.25}{\ignorespaces Estructura interna de la red neuronal YOLO.\relax }}{47}{figure.caption.33}%
-\contentsline {figure}{\numberline {2.26}{\ignorespaces Estructura interna de la red neuronal Tiny YOLO.\relax }}{47}{figure.caption.34}%
-\contentsline {figure}{\numberline {2.27}{\ignorespaces Servicio que ofrece AWS.\relax }}{48}{figure.caption.35}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Sistema de caja del primer supermercado.\relax }}{27}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Supermercado de Amazon que no utiliza cajas.\relax }}{28}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Aplicación de redes neuronales convolucionales para la clasificación de imágenes.\relax }}{29}{figure.caption.11}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Procedimiento de convolución.\relax }}{30}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Resultado de una convolución.\relax }}{30}{figure.caption.13}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Prueba de velocidad de YOLO con la base de datos COCO.\relax }}{31}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Red neuronal artificial en comparación a una neurona.\relax }}{31}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Estructura de una red neuronal artificial.\relax }}{32}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Diferentes capas conectadas de una red neuronal.\relax }}{33}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Aprendizaje supervisado.\relax }}{33}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Esquema de aprendizaje reforzado.\relax }}{34}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Representación gráfica de la función Sigmoid.\relax }}{35}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Representación gráfica de la función Tangencial.\relax }}{36}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Representación gráfica de la función Relu.\relax }}{37}{figure.caption.22}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Representación gráfica de la función Softmax.\relax }}{38}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces División de los sectores en ciencias de computación.\relax }}{38}{figure.caption.24}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces La máquina Colossus creada por Alan Turing.\relax }}{39}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Interés de búsqueda sobre Tensorflow en Google.\relax }}{40}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Equipo que desarrollo Tensorflow.\relax }}{41}{figure.caption.27}%
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Ejecución de funciones aritméticas en Tensorflow.\relax }}{42}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Posición de Deep Learning en una inteligencia artificial.\relax }}{44}{figure.caption.29}%
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Detección múltiple realizada por YOLO.\relax }}{44}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Aplicación de YOLO en una imagen.\relax }}{45}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Proceso que realiza YOLO para generar una detección de uno o varios objetos dentro de una imagen.\relax }}{45}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Estructura interna de la red neuronal YOLO.\relax }}{46}{figure.caption.33}%
+\contentsline {figure}{\numberline {2.26}{\ignorespaces Estructura interna de la red neuronal Tiny YOLO.\relax }}{46}{figure.caption.34}%
+\contentsline {figure}{\numberline {2.27}{\ignorespaces Servicio que ofrece AWS.\relax }}{47}{figure.caption.35}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Comparación de YOLO y otros detectores de objetos de última generación.\relax }}{50}{figure.caption.36}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Proceso de etiquetado para generar los archivos necesarios para el entrenamiento.\relax }}{51}{figure.caption.37}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Coordenadas obtenidas por el programa LabelImg al etiquetar a un objeto.\relax }}{52}{figure.caption.38}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Base de datos de Google para el entrenamiento de redes neuronales.\relax }}{52}{figure.caption.39}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Frameworks necesarios para que funcione Darknet.\relax }}{53}{figure.caption.40}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Comando de instalación de paquetes.\relax }}{53}{figure.caption.41}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Se define el learning rate.\relax }}{54}{figure.caption.43}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Se establece la cantidad de filtros a usarse.\relax }}{55}{figure.caption.44}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Se detalla la cantidad de clases y nombres que se usarán para entrenar la red neuronal.\relax }}{55}{figure.caption.45}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comando para generar archivos que guiaran el entrenamiento.\relax }}{55}{figure.caption.46}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Comando para iniciar el entrenamiento.\relax }}{56}{figure.caption.47}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Resultado del entrenamiento realizado.\relax }}{56}{figure.caption.48}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Pantalla principal de la aplicación NeoVision.\relax }}{57}{figure.caption.49}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Mockup de la pantalla de alerta.\relax }}{57}{figure.caption.50}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama de flujo explicativo sobre la función de la aplicación NeoVision.\relax }}{58}{figure.caption.51}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama de contexto que representa las interacciones del sistema.\relax }}{59}{figure.caption.52}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de contenedores que representa las diferentes funciones de los sistemas.\relax }}{60}{figure.caption.53}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Diferencia entre iniciar un ambiente virtual de Python entre VirtualWrapper y Virtualenv.\relax }}{60}{figure.caption.54}%
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Comando para convertir la red neuronal.\relax }}{61}{figure.caption.55}%
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Comparación entre usar solo la detección y usar tracker con detección.\relax }}{62}{figure.caption.56}%
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Error al solo usar la detección en un proyecto.\relax }}{62}{figure.caption.57}%
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Contador de personas en un video.\relax }}{63}{figure.caption.58}%
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Línea que limita las detecciones en un video.\relax }}{63}{figure.caption.59}%
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Lista que guarda datos cada vez que se realiza una nueva detección.\relax }}{64}{figure.caption.60}%
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Alerta popup que se activa cuando se alcanza el tiempo máximo de espera.\relax }}{64}{figure.caption.61}%
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Comando de instalación en Mac de MongoDB.\relax }}{65}{figure.caption.62}%
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Comandos para iniciar y detener la base de datos.\relax }}{65}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Comparación de YOLO y otros detectores de objetos de última generación.\relax }}{49}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Proceso de etiquetado para generar los archivos necesarios para el entrenamiento.\relax }}{50}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Coordenadas obtenidas por el programa LabelImg al etiquetar a un objeto.\relax }}{51}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Base de datos de Google para el entrenamiento de redes neuronales.\relax }}{51}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Frameworks necesarios para que funcione Darknet.\relax }}{52}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Comando de instalación de paquetes.\relax }}{52}{figure.caption.41}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Se define el learning rate.\relax }}{53}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Se establece la cantidad de filtros a usarse.\relax }}{54}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Se detalla la cantidad de clases y nombres que se usarán para entrenar la red neuronal.\relax }}{54}{figure.caption.45}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Comando para generar archivos que guiaran el entrenamiento.\relax }}{54}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Comando para iniciar el entrenamiento.\relax }}{55}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Resultado del entrenamiento realizado.\relax }}{55}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Pantalla principal de la aplicación NeoVision.\relax }}{56}{figure.caption.49}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Mockup de la pantalla de alerta.\relax }}{56}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Diagrama de flujo explicativo sobre la función de la aplicación NeoVision.\relax }}{57}{figure.caption.51}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Diagrama de contexto que representa las interacciones del sistema.\relax }}{58}{figure.caption.52}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Diagrama de contenedores que representa las diferentes funciones de los sistemas.\relax }}{59}{figure.caption.53}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Diferencia entre iniciar un ambiente virtual de Python entre VirtualWrapper y Virtualenv.\relax }}{59}{figure.caption.54}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Comando para convertir la red neuronal.\relax }}{60}{figure.caption.55}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Comparación entre usar solo la detección y usar tracker con detección.\relax }}{61}{figure.caption.56}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Error al solo usar la detección en un proyecto.\relax }}{61}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Contador de personas en un video.\relax }}{62}{figure.caption.58}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Línea que limita las detecciones en un video.\relax }}{62}{figure.caption.59}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Lista que guarda datos cada vez que se realiza una nueva detección.\relax }}{63}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Alerta popup que se activa cuando se alcanza el tiempo máximo de espera.\relax }}{63}{figure.caption.61}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Comando de instalación en Mac de MongoDB.\relax }}{64}{figure.caption.62}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Comandos para iniciar y detener la base de datos.\relax }}{64}{figure.caption.63}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Comando para que funcione la aplicación con los parámetros necesarios.\relax }}{68}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Primer caso en el que se activa la alarma debido a la falta de movimiento en la fila.\relax }}{72}{figure.caption.66}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Segundo caso en el que se activa la alarma debido a que se superó el tiempo máximo de espera.\relax }}{72}{figure.caption.67}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Cuarto caso en el que se activa la alarma debido nuevamente a la falta de movimiento en la fila.\relax }}{73}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Comando para que funcione la aplicación con los parámetros necesarios.\relax }}{67}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Primer caso en el que se activa la alarma debido a la falta de movimiento en la fila.\relax }}{71}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Segundo caso en el que se activa la alarma debido a que se superó el tiempo máximo de espera.\relax }}{71}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Cuarto caso en el que se activa la alarma debido nuevamente a la falta de movimiento en la fila.\relax }}{72}{figure.caption.68}%
 \addvspace {10\p@ }

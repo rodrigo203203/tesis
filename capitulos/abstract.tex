@@ -3,19 +3,22 @@
 \end{center}
 
 
-This project consists of building an application, which will be able to calculate the average waiting time of a person when they are queuing in a single-file system. With this information, it will be possible to suggest when it is necessary to open a new box so that customers do not wait too long and thus generating a better experience.
+This project consists of building an application, which will calculate the average waiting time of a person when they are queuing inline in a single line system. With this information, it will be possible to suggest when it is necessary to open a new box so that customers do not wait too long and thus generate a better experience.
 
 \vspace{5mm}
-This application uses technologies such as computer vision and artificial neural networks, which can be used in object detection, which in this case will be people. 
+This application uses technologies such as computer vision and artificial neural networks, which can be used in object detection, which in this case will be people.  
 
 \vspace{5mm}
-In the case of the neural network, it was decided to use YOLO (You Only Look Once), which according to several reports is one of the best when talking about object detection in real-time, since it performs multiple detections that accelerate the process of finding people in this case. To be able to detect people, first of all, this neural network had to be trained to employ a great number of images where people appear. These images, to be useful to train a neural network, have to go through a tagging process.
+In the case of the neural network, will be used YOLO (You Only Look Once), which according to several documents, is one of the best when talking about object detection in real-time, since it performs multiple detections that accelerates the process of finding people in this case, but when using this method the neural network consumes many resources of a computer, that is why we are using a reduced version of YOLO, this version is well-known as Tiny-Yolo. This network has a less complex internal structure with fewer layers and filters, this causes that the workload for the CPU and GPU of the computer is not very severe, which causes better performance in real-time detection.
 
 \vspace{5mm}
-This application also makes use of a tracker, which allows us to track the detections made, which gives us more accurate results and more information which is useful to calculate the average waiting time.
+For the neural network to be capable to detect people, first, the respective training was carried out, using 400 images where people appear, which went through a labeling process where the location of the person in the image is indicated. This application also works with a tracker, which allows tracking of the detections made, that is, this generates a unique identifier for each detection and generates more information which will be useful for the calculations of waiting time. 
 
 \vspace{5mm}
-This work can be used in any store that uses a single-queue system, since it was designed to solve a problem that arises, which is how many couters should be open in different periods during service hours.
+For the computational vision section, we are using the OpenCV library, which allows us to work with images and videos, i.e., with the library, we can extract each frame of the video to be analyzed by YOLO.
+
+\vspace{5mm}
+With these technologies, an application was developed which can be used in any store that uses a single-row system, as it was designed to solve a problem that arises, which is how many boxes have to be open in the different periods in the attention to avoid generating long waiting lines.
 
 \vspace{30mm}
 
