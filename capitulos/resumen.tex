@@ -9,10 +9,16 @@ Este proyecto consiste en construir una aplicación, el cual podrá calcular el 
 Para realizar esta aplicación se está usando las tecnologías de visión computacional y redes neuronales artificiales, con las que se puede obtener la detección de objetos, que en este caso serán personas. 
 
 \vspace{5mm}
-En el caso de la red neuronal, se decidió usar YOLO (You Only Look Once), la cual según varios informes es una de las mejores al momento de hablar de detección de objetos en tiempo real, ya que realiza una multiple detección el cual acelera el proceso de encontrar a personas en este caso. Para poder detectar a personas, primeramente, se tuvo que entrenar esta red neuronal mediante una gran cantidad de imágenes donde aparecen personas. Estas imágenes para que sean útiles para entrenar una red neuronal tiene que pasar por un proceso de etiquetado.
+En el caso de la red neuronal, se decidió usar YOLO (You Only Look Once), la cual según varios informes es una de las mejores al momento de hablar de detección de objetos en tiempo real, ya que realiza una múltiple detección el cual acelera el proceso de encontrar a personas en este caso, pero al usar este método la red neuronal consume muchos recursos de una computadora, por eso mismo se esta usando una versión reducida de YOLO, esta versión es conocida como Tiny-Yolo. Esta red posee una estructura interna menos compleja con menos capas y filtros, esto ocasiona que la carga de trabajo para el CPU y GPU de la computadora no sea muy severa, lo que provoca tener un mejor rendimiento en la detección en tiempo real.
 
 \vspace{5mm}
-Esta aplicación hace uso también de un \textit{tracker}, el cual permite realizar un rastreó de las detecciones  hechas, lo cual nos entrega  resultados más precisos y mayor información el cual será útil para calcular el tiempo promedio de espera. 
+Para que la red neuronal pueda detectar a personas, primeramente, se realizo el entrenamiento respectivo, para ello se utilizo como 400 imágenes donde aparecen personas, el cual pasaron por un proceso de etiquetado donde se señala la ubicación de la persona en la imagen. 
+
+\vspace{5mm}
+Para el apartado de visión computacional, se esta utilizando la librería OpenCV, el cual nos permite trabajar con imágenes y videos, es decir, que con la librería se podrá extraer cada frame del video para poder ser analizado por YOLO.
+
+\vspace{5mm}
+Esta aplicación también trabaja con un \textit{tracker}, el cual permite realizar un rastreó de las detecciones  hechas, es decir, con esto se genera un identificador único para cada detección y mayor información el cual será útil para calcular el tiempo promedio de espera. 
 
 \vspace{5mm}
 El presente trabajo podrá ser utilizado en cualquier comercio que utilice un sistema de fila única, ya que fue diseñado para resolver un problema que surge, el cual consiste en cuantas cajas tienen que estar abiertas en los diferentes periodos en la atención para así evitar que se genere largas filas de espera.
