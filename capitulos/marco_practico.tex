@@ -1,5 +1,5 @@
 \section{Elección de una red neuronal}
-Para la elección de la red neuronal se tomará en cuenta un estudio realizado por el equipo de YOLO (\cite{persona}), este equipo realizo pruebas con diferentes redes neuronales, para poder demostrar el gran rendimiento que tiene la red YOLO, estas pruebas fueron hechas en la misma computadora, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3} que da como ganador la red neuronal YOLO.
+Para la elección de la red neuronal se tomó en cuenta un estudio realizado por el equipo de YOLO (\cite{persona}), este equipo realizo pruebas con diferentes redes neuronales para poder demostrar el gran rendimiento que tiene la red YOLO, estas pruebas fueron hechas en la misma computadora, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3} que da como ganador la red neuronal YOLO.
 
 \begin{figure}[h]
 	\centering
@@ -9,16 +9,13 @@ Para la elección de la red neuronal se tomará en cuenta un estudio realizado p
 	\label{fig:labeling3}
 \end{figure}
 
-Estas pruebas fueron realizadas haciendo el uso de la base de datos \say{coco}, que recopila una gran base de datos que facilitan la detección de diferentes objetos. Con estos resultados nos muestran que la red neuronal YOLO es la mejor opción, ya que detecta los objetos con mayor velocidad y con un mayor porcentaje de acierto. 
+Estas pruebas fueron realizadas haciendo el uso de la base de datos \say{coco}, que recopila una gran información que facilita la detección de diferentes objetos. Con estos resultados nos muestran que la red neuronal YOLO es la mejor opción, ya que cuenta con una gran velocidad sin perder mucha precisión al momento de detectar los diferentes objetos. Otra red que tiene resultados muy buenos es YOLOv3, es algo lento pero tiene una gran precisión y dependiendo de la aplicación podría ser una buena elección.
 
 \section{Entrenamiento de la red neuronal}
-En este capítulo se desarrollarán los diferentes pasos para lograr entrenar una red neuronal, para que sea capaz de detectar personas ya ser en imágenes o en videos tanto grabados como en tiempo real.
+En este capítulo se ira desarrollando los diferentes pasos para lograr un buen entrenamiento de una red neuronal, en este caso el objetivo del entrenamiento es que sea capaz de detectar personas.
 
  \subsection{Base de datos}
-Uno de los primeros pasos para entrenar una red neuronal es tener una base de datos, la cual está compuesta por imágenes (donde aparezca el objeto a detectar) y un archivo que indique la posición del objeto a detectar en la imagen.
-\\ Para ello se consiguió 400 imágenes donde aparezcan personas y con ellos realizar un procedimiento de etiquetado, en la Figura \ref{fig:labeling} se observa este proceso. Esto se logra mediante el programa LabelImg que te permite etiquetar la posición de una persona en una imagen.
-
-
+ Para lograr el entrenamiento de la red neuronal, primeramente se tiene que construir una base de datos, esta base tiene que estar compuesta por imágenes donde aparezcan personas. Posteriormente, comienza un proceso de \say{etiquetado}, en el cual se tiene que señalar donde se encuentra la persona en las diferentes imágenes, este procedimiento se realiza con la aplicación LabelImg, este proceso se observa en la Figura \ref{fig:labeling}.
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.25]{imagenes/persona1.png}
@@ -27,7 +24,7 @@ Uno de los primeros pasos para entrenar una red neuronal es tener una base de da
 	\label{fig:labeling}
 \end{figure}
 
-Este proceso se realiza con cada imagen, para así obtener un archivo que especifica la posición de dónde se encuentra la \say{persona} en este caso. En la Figura \ref{fig:labeling2} se observa la manera en la que se guardan esos datos. 
+Este proceso se tiene que realizar con cada imagen, para así obtener un archivo que especifica la posición de dónde se encuentra la \say{persona} en la imagen. En la Figura \ref{fig:labeling2} se observa la manera en la que se guardan esos datos. De esta manera se obtiene una base de datos que sirve para entrenar la red neruonal YOLO, la cual debe estar compuesta por lo menos con 400 imágenes. 
 
 \clearpage
 
@@ -39,9 +36,7 @@ Este proceso se realiza con cada imagen, para así obtener un archivo que especi
 	\label{fig:labeling2}
 \end{figure}
 
-Esta recopilación de datos se puede realizar más fácil gracias a Google, facilitando esta tarea permitiéndote usar su propia base de datos donde aproximadamente tiene cuatro millones de imágenes, Figura \ref{fig:labeling5}, el cual ya fueron etiquetados varios objetos como ser personas, autos, aviones, relojes y otros más.
-
-
+Este procedimiento se puede realizar mas rápido gracias a la base de datos de Google, el cual tiene una gran cantidad de imágenes ya etiquetadas lo que facilita el proceso de realizar un entrenamiento, esto se observa mejor en la Figura \ref{fig:labeling5}. El único inconveniente de esta herramienta es que la base de datos esta en un formato que Darknet no lo reconoce, pero ya existen otras herramientas que permiten convertir a un formato con la cual se puede trabajar.
 
 \begin{figure}[h]
 	\centering
@@ -53,14 +48,15 @@ Esta recopilación de datos se puede realizar más fácil gracias a Google, faci
 
 \subsection{Preparación del ambiente}
 
-Para entrenar una red neuronal se necesita muchos recursos en una computadora sobre todo en el área del GPU, ya que todos los cálculos que realiza son procesados de manera más efectiva en esa área. 
-Por ese motivo se decidió usar un servicio de Google que es Colab, el cual te permite conectarse a sus servidores y poder entrenar la red de forma gratuita. 
+Al momento de entrenar una red neuronal se utiliza muchos recursos de la computadora, sobre todo en el apartado del GPU, ya que la mayoría de los cálculos se realizan de mejor manera en esa parte. Esto resulto ser un problema ya que mi computadora no cuenta con una GPU dedicada y los entrenamientos se realizaban de manera muy lenta, por ese motivo se opto por usar Colab, el cual es un servicio de Google que te permite realizar entrenamientos de redes neuronales ya que te deja usar los GPU's de sus servidores.
 \\
 
 Colab es un editor de texto online, que te permite escribir tu código y probarlo sin la necesidad de instalar programas en tu computadora, pero será necesarios instalarlos en tu editor online. El primer paso es instalar Darknet, el cual te permite trabajar con YOLO.
 
 \clearpage
 
+Para qué Darknet funcione correctamente necesita diferentes frameworks, en la Figura \ref{fig:labeling42} se puede observa una lista con los frameworks necesarios. Para poder instalarlos se utiliza el comando \say{pip}, el cual es un sistema de gestión de paquetes de Python. La mayoría de estos frameworks ya vienen instalados por defecto en Colab por ser muy utilizados.
+ 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/persona3.png}
@@ -68,17 +64,6 @@ Colab es un editor de texto online, que te permite escribir tu código y probarl
 	\source{Elaboración propia}
 	\label{fig:labeling42}
 \end{figure}
-
- Como se observa en la Figura \ref{fig:labeling42}, Darknet necesita diferentes frameworks para que funcione. Estos se instalan con la ayuda del comando \textit{pip}, el cual es un sistema de gestión de paquetes de Python. Se procederá a instalar estos paquetes mediante el comando que se aprecia en la Figura \ref{fig:labeling43}, ya que estos requisitos están guardados en un archivo \say{.txt} en el mismo Darknet.
- 
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.5]{imagenes/persona4.png}
-	\caption{Comando de instalación de paquetes.}
-	\source{Elaboración propia}
-	\label{fig:labeling43}
-\end{figure}
-
 
 \subsection{Personalizar una red neuronal}
 
