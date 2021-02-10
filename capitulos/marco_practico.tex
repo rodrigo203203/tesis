@@ -67,8 +67,10 @@ Para qué Darknet funcione correctamente necesita diferentes frameworks, en la F
 
 \subsection{Personalizar una red neuronal}
 
-En esta etapa, se debe modificar diferentes archivos para que la red pueda detectar a personas. Estos archivos por modificar son los parámetros que definen la red neuronal, en Darknet existen 2 redes principales que son Yolo y Tiny-Yolo. La gran diferencia entre estos son la cantidad de capas que poseen, esto llega a afectar el rendimiento en una detección. 
-\vspace{5mm}
+La red neuronal YOLO y Tiny-Yolo viene por defecto entrenada con varias clases que le permite detectar diferentes objetos, pero ninguna se podía ajustar a las necesidades del proyecto y por eso mismo se tuvo que realizar un entrenamiento con una base de datos propia.
+
+Antes de modificar los paramatros, se decidio usar la Tyin-Yolo debido a que es una red neuronal mas liviana (con menos capas), lo que ocaciones que sea menos exigente cuando se procesa las detecciones, lo que permite que corra en mi computadora.
+
 
 Por eso mismo se decidió usar Tiny-Yolo, ya que con pruebas realizadas dio un mejor rendimiento en el apartado de frames por segundo (fps), al momento de trabajar con videos, esto es muy importante porque la detección se realizará en tiempo real. Los resultados de la prueba se apreciará mejor en la Tabla \ref{tab:fruta}.
 
