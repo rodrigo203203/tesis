@@ -39,7 +39,7 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Base de datos de Google para el entrenamiento de redes neuronales.\relax }}{51}{figure.caption.39}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Frameworks necesarios para que funcione Darknet.\relax }}{52}{figure.caption.40}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Se define el learning rate.\relax }}{53}{figure.caption.42}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Se establece la cantidad de filtros a usarse.\relax }}{54}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Se establece la cantidad de filtros a usarse.\relax }}{53}{figure.caption.43}%
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Se detalla la cantidad de clases y nombres que se usarán para entrenar la red neuronal.\relax }}{54}{figure.caption.44}%
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Comando para generar archivos que guiaran el entrenamiento.\relax }}{54}{figure.caption.45}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Comando para iniciar el entrenamiento.\relax }}{55}{figure.caption.46}%

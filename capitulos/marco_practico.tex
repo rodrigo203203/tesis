@@ -69,15 +69,12 @@ Para qué Darknet funcione correctamente necesita diferentes frameworks, en la F
 
 La red neuronal YOLO y Tiny-Yolo viene por defecto entrenada con varias clases que le permite detectar diferentes objetos, pero ninguna se podía ajustar a las necesidades del proyecto y por eso mismo se tuvo que realizar un entrenamiento con una base de datos propia.
 
-Antes de modificar los paramatros, se decidio usar la Tyin-Yolo debido a que es una red neuronal mas liviana (con menos capas), lo que ocaciones que sea menos exigente cuando se procesa las detecciones, lo que permite que corra en mi computadora.
+Antes de modificar los paramatros, se decidio usar la Tyin-Yolo debido a que es una red neuronal mas liviana (con menos capas), lo que ocaciones que sea menos exigente cuando se tiene que procesar las detecciones, lo que permite que funcione de mejor manera en mi computadora.
 
+La diferencia de rendimiento se podrá ver de mejor manera en la Tabla \ref{tab:fruta}, el cual da cómo mejor opción Tiny-Yolo teniendo un mejor rendimiento que al usar YOLO. El único problema de usar Tiny-Yolo es que se pierde un poco de precisión al momento de realizar las detecciones.
 
-Por eso mismo se decidió usar Tiny-Yolo, ya que con pruebas realizadas dio un mejor rendimiento en el apartado de frames por segundo (fps), al momento de trabajar con videos, esto es muy importante porque la detección se realizará en tiempo real. Los resultados de la prueba se apreciará mejor en la Tabla \ref{tab:fruta}.
-
-\clearpage
-
-\begin{table}[t]
-\caption{Resultados de una prueba de rendimiento entre YOLO y Tyni-Yolo.}
+\begin{table}[h]
+\caption{Resultados de una prueba de rendimiento entre YOLO y Tiny-Yolo.}
 \begin{center}
 %\caption{Resultados de una prueba de rendimiento entre YOLO y Tyni-Yolo.}
 \begin{tabular}{| l | c |}
@@ -91,7 +88,7 @@ Yolo & 1-3 \\ \hline
 \end{center}
 \end{table}
 
-Con estos resultados se modificará el archivo \say{yolov4-tiny.cfg}, y los datos a cambiar dependerán mayormente a la cantidad de clases al cual se entrenara la red neuronal, estos datos son los que están marcados en la Figura \ref{fig:labeling6}.
+Estos resultados demuestran que la mejor opción es trabajar con Tiny-Yolo, por lo cual se modificara el archivo \say{yolov4-tiny.cfg}, en el cual se cambiaran ciertos parámetros para que la red neuronal al momento de entrenar se adapte a los requerimientos del proyecto. los parámetros que se modificaron están señaladas en la Figura \ref{fig:labeling6}.
 
 \begin{figure}[h]
 	\centering

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.16)  9 FEB 2021 22:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.16)  15 FEB 2021 16:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1042,46 +1042,48 @@ File: imagenes/persona3.png Graphic file (type png)
 <use imagenes/persona3.png>
 Package pdftex.def Info: imagenes/persona3.png  used on input line 62.
 (pdftex.def)             Requested size: 156.08273pt x 121.95532pt.
- [52
-
- <./imagenes/persona3.png>]
-<imagenes/persona6.png, id=1000, 284.06125pt x 131.49126pt>
+<imagenes/persona6.png, id=995, 284.06125pt x 131.49126pt>
 File: imagenes/persona6.png Graphic file (type png)
 <use imagenes/persona6.png>
-Package pdftex.def Info: imagenes/persona6.png  used on input line 98.
+Package pdftex.def Info: imagenes/persona6.png  used on input line 95.
 (pdftex.def)             Requested size: 113.62247pt x 52.59557pt.
-<imagenes/persona7.png, id=1003, 664.4825pt x 193.72375pt>
-File: imagenes/persona7.png Graphic file (type png)
-<use imagenes/persona7.png>
-Package pdftex.def Info: imagenes/persona7.png  used on input line 117.
-(pdftex.def)             Requested size: 265.78828pt x 77.48811pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[53
+[52
 
- <./imagenes/persona6.png>]
-<imagenes/persona8.png, id=1014, 693.59125pt x 266.9975pt>
+ <./imagenes/persona3.png>]
+<imagenes/persona7.png, id=1003, 664.4825pt x 193.72375pt>
+File: imagenes/persona7.png Graphic file (type png)
+<use imagenes/persona7.png>
+Package pdftex.def Info: imagenes/persona7.png  used on input line 114.
+(pdftex.def)             Requested size: 265.78828pt x 77.48811pt.
+<imagenes/persona8.png, id=1006, 693.59125pt x 266.9975pt>
 File: imagenes/persona8.png Graphic file (type png)
 <use imagenes/persona8.png>
-Package pdftex.def Info: imagenes/persona8.png  used on input line 134.
+Package pdftex.def Info: imagenes/persona8.png  used on input line 131.
 (pdftex.def)             Requested size: 277.43158pt x 106.79709pt.
-<imagenes/persona11.png, id=1016, 541.02126pt x 109.40875pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[53 <./imagenes/persona6.png> <./imagenes/persona7.png>]
+<imagenes/persona11.png, id=1017, 541.02126pt x 109.40875pt>
 File: imagenes/persona11.png Graphic file (type png)
 <use imagenes/persona11.png>
-Package pdftex.def Info: imagenes/persona11.png  used on input line 146.
+Package pdftex.def Info: imagenes/persona11.png  used on input line 143.
 (pdftex.def)             Requested size: 216.40466pt x 43.76271pt.
- [54 <./imagenes/persona7.png> <./imagenes/persona8.png> <./imagenes/persona11.png>]
+ [54 <./imagenes/persona8.png> <./imagenes/persona11.png>]
 <imagenes/persona12.png, id=1025, 898.35625pt x 61.22874pt>
 File: imagenes/persona12.png Graphic file (type png)
 <use imagenes/persona12.png>
-Package pdftex.def Info: imagenes/persona12.png  used on input line 156.
+Package pdftex.def Info: imagenes/persona12.png  used on input line 153.
 (pdftex.def)             Requested size: 449.17702pt x 30.61429pt.
 <imagenes/persona14.png, id=1027, 872.25874pt x 534.99875pt>
 File: imagenes/persona14.png Graphic file (type png)
 <use imagenes/persona14.png>
-Package pdftex.def Info: imagenes/persona14.png  used on input line 166.
+Package pdftex.def Info: imagenes/persona14.png  used on input line 163.
 (pdftex.def)             Requested size: 348.89731pt x 213.9957pt.
  [55
 
@@ -1089,12 +1091,12 @@ Package pdftex.def Info: imagenes/persona14.png  used on input line 166.
 <imagenes/imagen1.png, id=1036, 451.6875pt x 401.5pt>
 File: imagenes/imagen1.png Graphic file (type png)
 <use imagenes/imagen1.png>
-Package pdftex.def Info: imagenes/imagen1.png  used on input line 181.
+Package pdftex.def Info: imagenes/imagen1.png  used on input line 178.
 (pdftex.def)             Requested size: 271.01459pt x 240.90184pt.
 <imagenes/imagen2.png, id=1038, 451.6875pt x 401.5pt>
 File: imagenes/imagen2.png Graphic file (type png)
 <use imagenes/imagen2.png>
-Package pdftex.def Info: imagenes/imagen2.png  used on input line 194.
+Package pdftex.def Info: imagenes/imagen2.png  used on input line 191.
 (pdftex.def)             Requested size: 180.67178pt x 160.59715pt.
 
 Underfull \vbox (badness 4279) has occurred while \output is active []
@@ -1105,13 +1107,13 @@ Underfull \vbox (badness 4279) has occurred while \output is active []
 <imagenes/NeoVision3.png, id=1046, 439.8834pt x 545.1567pt>
 File: imagenes/NeoVision3.png Graphic file (type png)
 <use imagenes/NeoVision3.png>
-Package pdftex.def Info: imagenes/NeoVision3.png  used on input line 205.
+Package pdftex.def Info: imagenes/NeoVision3.png  used on input line 202.
 (pdftex.def)             Requested size: 263.93207pt x 327.09653pt.
  [57 <./imagenes/NeoVision3.png>]
 <imagenes/contenido2.png, id=1052, 834.11626pt x 824.07875pt>
 File: imagenes/contenido2.png Graphic file (type png)
 <use imagenes/contenido2.png>
-Package pdftex.def Info: imagenes/contenido2.png  used on input line 220.
+Package pdftex.def Info: imagenes/contenido2.png  used on input line 217.
 (pdftex.def)             Requested size: 417.05711pt x 412.03836pt.
  [58
 
@@ -1119,12 +1121,12 @@ Package pdftex.def Info: imagenes/contenido2.png  used on input line 220.
 <imagenes/contenedor3.png, id=1059, 834.11626pt x 502.87875pt>
 File: imagenes/contenedor3.png Graphic file (type png)
 <use imagenes/contenedor3.png>
-Package pdftex.def Info: imagenes/contenedor3.png  used on input line 232.
+Package pdftex.def Info: imagenes/contenedor3.png  used on input line 229.
 (pdftex.def)             Requested size: 417.05711pt x 251.43875pt.
 <imagenes/persona15.png, id=1061, 559.08875pt x 99.37125pt>
 File: imagenes/persona15.png Graphic file (type png)
 <use imagenes/persona15.png>
-Package pdftex.def Info: imagenes/persona15.png  used on input line 249.
+Package pdftex.def Info: imagenes/persona15.png  used on input line 246.
 (pdftex.def)             Requested size: 279.54369pt x 49.6855pt.
  [59
 
@@ -1132,10 +1134,10 @@ Package pdftex.def Info: imagenes/persona15.png  used on input line 249.
 <imagenes/convertir_yolo.png, id=1069, 694.595pt x 32.12pt>
 File: imagenes/convertir_yolo.png Graphic file (type png)
 <use imagenes/convertir_yolo.png>
-Package pdftex.def Info: imagenes/convertir_yolo.png  used on input line 261.
+Package pdftex.def Info: imagenes/convertir_yolo.png  used on input line 258.
 (pdftex.def)             Requested size: 486.21318pt x 22.48383pt.
 
-Overfull \hbox (30.96907pt too wide) in paragraph at lines 261--262
+Overfull \hbox (30.96907pt too wide) in paragraph at lines 258--259
  [][] 
  []
 
@@ -1145,12 +1147,12 @@ Overfull \hbox (30.96907pt too wide) in paragraph at lines 261--262
 <imagenes/deteccionvstracker.png, id=1082, 1002.74625pt x 480.79625pt>
 File: imagenes/deteccionvstracker.png Graphic file (type png)
 <use imagenes/deteccionvstracker.png>
-Package pdftex.def Info: imagenes/deteccionvstracker.png  used on input line 285.
+Package pdftex.def Info: imagenes/deteccionvstracker.png  used on input line 282.
 (pdftex.def)             Requested size: 300.82619pt x 144.23997pt.
 <imagenes/deteccionvstracker2.png, id=1084, 1002.74625pt x 480.79625pt>
 File: imagenes/deteccionvstracker2.png Graphic file (type png)
 <use imagenes/deteccionvstracker2.png>
-Package pdftex.def Info: imagenes/deteccionvstracker2.png  used on input line 295.
+Package pdftex.def Info: imagenes/deteccionvstracker2.png  used on input line 292.
 (pdftex.def)             Requested size: 300.82619pt x 144.23997pt.
  [61
 
@@ -1158,12 +1160,12 @@ Package pdftex.def Info: imagenes/deteccionvstracker2.png  used on input line 29
 <imagenes/persona19.png, id=1093, 493.845pt x 306.14375pt>
 File: imagenes/persona19.png Graphic file (type png)
 <use imagenes/persona19.png>
-Package pdftex.def Info: imagenes/persona19.png  used on input line 313.
+Package pdftex.def Info: imagenes/persona19.png  used on input line 310.
 (pdftex.def)             Requested size: 172.84833pt x 107.1519pt.
 <imagenes/persona20.png, id=1095, 860.21375pt x 484.81125pt>
 File: imagenes/persona20.png Graphic file (type png)
 <use imagenes/persona20.png>
-Package pdftex.def Info: imagenes/persona20.png  used on input line 324.
+Package pdftex.def Info: imagenes/persona20.png  used on input line 321.
 (pdftex.def)             Requested size: 344.07939pt x 193.92105pt.
  [62
 
@@ -1171,28 +1173,28 @@ Package pdftex.def Info: imagenes/persona20.png  used on input line 324.
 <imagenes/persona21.png, id=1103, 879.285pt x 250.9375pt>
 File: imagenes/persona21.png Graphic file (type png)
 <use imagenes/persona21.png>
-Package pdftex.def Info: imagenes/persona21.png  used on input line 338.
+Package pdftex.def Info: imagenes/persona21.png  used on input line 335.
 (pdftex.def)             Requested size: 439.64143pt x 125.46843pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 344--347
+Underfull \hbox (badness 10000) in paragraph at lines 341--344
 
  []
 
 <imagenes/persona22.png, id=1105, 515.9275pt x 307.1475pt>
 File: imagenes/persona22.png Graphic file (type png)
 <use imagenes/persona22.png>
-Package pdftex.def Info: imagenes/persona22.png  used on input line 352.
+Package pdftex.def Info: imagenes/persona22.png  used on input line 349.
 (pdftex.def)             Requested size: 257.96312pt x 153.57336pt.
 [63 <./imagenes/persona21.png> <./imagenes/persona22.png>]
 <imagenes/mongodc.png, id=1113, 411.5375pt x 75.28125pt>
 File: imagenes/mongodc.png Graphic file (type png)
 <use imagenes/mongodc.png>
-Package pdftex.def Info: imagenes/mongodc.png  used on input line 369.
+Package pdftex.def Info: imagenes/mongodc.png  used on input line 366.
 (pdftex.def)             Requested size: 226.34633pt x 41.4048pt.
 <imagenes/persona25.png, id=1116, 524.96124pt x 164.615pt>
 File: imagenes/persona25.png Graphic file (type png)
 <use imagenes/persona25.png>
-Package pdftex.def Info: imagenes/persona25.png  used on input line 387.
+Package pdftex.def Info: imagenes/persona25.png  used on input line 384.
 (pdftex.def)             Requested size: 262.47998pt x 82.3073pt.
  [64
 
@@ -1310,7 +1312,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  41i,12n,45p,978b,1320s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.pdf (77 pages, 33811889 bytes).
+Output written on /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.pdf (77 pages, 33812033 bytes).
 PDF statistics:
  1374 PDF objects out of 1440 (max. 8388607)
  1159 compressed objects within 12 object streams
