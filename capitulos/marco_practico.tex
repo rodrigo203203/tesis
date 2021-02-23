@@ -98,16 +98,15 @@ Estos resultados demuestran que la mejor opción es trabajar con Tiny-Yolo, por 
 	\label{fig:labeling6}
 \end{figure}
 
-El dato marcado \textit{learning rate} es el que determina el ritmo de aprendizaje, este dato entre más bajo podría aprender más, pero  eso alarga el periodo de entrenamiento y aumenta la probabilidad de que se detenga el entrenamiento por un error, en este apartado no hay que exagerar porque un dato muy bajo simplemente lo hará más lento y no ayudara en el entrenamiento, ya que ni se podría realizar.
-
-El siguiente es \textit{max batches}, el que se encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula que se observa en la Ecuación \ref{eq:maxb}, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}. En \textit{step} se tomará el 80\% y 90\% de \say{max batches} respectivamente.
+El dato marcado \textit{learning rate} es el que determina el ritmo de aprendizaje, entre mas bajo sea este valor aumentara el ritmo de aprendizaje pero esto alarga el entrenamiento. Un valor muy bajo no es muy útil ya que no mejoraría el entrenamiento pero si demoraría mas tiempo en terminar y aumenta la probabilidad de que se detenga el entrenamiento por un error.
+El siguiente es \textit{max batches}, el que se encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula que se observa en la Ecuación \ref{eq:maxb}, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}, como es en este caso. En \textit{step} se tomará el 80\% y 90\% de \say{max batches} respectivamente.
 
 \begin{equation}
 \label{eq:maxb}
 	max\_batches = \#\operatorname{clases} * 2000
 \end{equation}
 
-Los otros datos por modificar son los que se aprecian en la Figura \ref{fig:labeling7}, que consiste la cantidad de filtros y especificar cuántas clases tendrá que aprender la red neuronal.
+Otros parametros que se tienen que modificar son los datos marcadsos que aparecen en la Figura \ref{fig:labeling7}, que consiste en definir la cantidad de filtros y especificar cuántas clases tendrá que aprender la red neuronal.
 
 \begin{figure}[h]
 	\centering
@@ -124,7 +123,7 @@ Para calcular la cantidad de filtros se hará uso de una fórmula simple que se 
 	\label{eq:clases}
 \end{equation}
 
-Con eso finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falta editar otros 2 archivos más el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar, la locación de donde se guardara la red entrenada y cuantas clases se usara para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}.
+Con esto se finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falta editar otros 2 archivos más el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar, la locación de donde se guardara la red entrenada y cuantas clases se usara para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}.
 
 \begin{figure}[h]
 	\centering
@@ -136,7 +135,7 @@ Con eso finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falt
 
 \subsection{Inicio de entrenamiento}
 
-Para esta etapa, una vez concluido con todas las actividades necesarias para iniciar el entrenamiento dentro del ambiente de Google Colab, el cual facilita este procedimiento. Se procede a ejecutar los siguientes scripts que aparecen en la Figura \ref{fig:labeling46}, el cual creará unos archivos basados con la cantidad de clases por el cual vamos a entrenar y la cantidad de imágenes con el cual entrenara.
+Para iniciar el entrenamiento se tiene que preparar todos los archivos en el ambiente Colab, primeramente, se tiene que cargar todas las imágenes ya etiquetadas y de ahí se procedería a ejecutar los siguientes comandos que se observan en la Figura \ref{fig:labeling46}, el cual creará unos archivos basados con la cantidad de clases por el cual se entrenara.
 
 \begin{figure}[h]
 	\centering
@@ -146,8 +145,8 @@ Para esta etapa, una vez concluido con todas las actividades necesarias para ini
 	\label{fig:labeling46}
 \end{figure}
 
-Con los archivos generados por el anterior comando, ya se tendría todo lo necesario para iniciar el entrenamiento. Para comenzar con este proceso solo hace falta ejecutar el siguiente comando que aparece en la Figura \ref{fig:labeling47}. La duración de este entrenamiento dependerá de la cantidad de imágenes que se usará, en este caso el entrenamiento duro aproximadamente 4 horas.
-\clearpage
+Una vez teniendo los archivos generados se procede a iniciar el entrenamiento mediante el siguiente comando que aparece en la Figura \ref{fig:labeling47}. La duración de este entrenamiento dependerá de la cantidad de imágenes que se esta usando para realizar el entrenamiento, en este caso el entrenamiento duro aproximadamente 4 horas, pero se repitió 2 veces para mejorar los resultados obtenidos.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/persona12.png}
@@ -156,7 +155,7 @@ Con los archivos generados por el anterior comando, ya se tendría todo lo neces
 	\label{fig:labeling47}
 \end{figure}
 
-Al finalizar el entrenamiento ya se tendrá una red neuronal funcional, capaz de detectar personas. Un resultado del entrenamiento se observa en la Figura \ref{fig:labeling48}, donde se ven marcadas una cantidad aceptable de personas que aparecen en la imagen.
+Al finalizar el entrenamiento ya se obtendrá una red neuronal funcional, capaz de detectar personas. Un resultado de este entrenamiento se observa en la Figura \ref{fig:labeling48}, donde se ven marcadas una cantidad aceptable de personas que aparecen en la imagen, cada recuadro que marca a una personas viene con un numero el cual indica el porcentaje de seguridad de detención realizada por la red neuronal.
 
 \begin{figure}[h]
 	\centering
