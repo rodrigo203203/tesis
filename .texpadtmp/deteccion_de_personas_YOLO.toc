@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {2.2.5}Deep Learning}{43}{subsection.2.2.5}%
 \contentsline {subsection}{\numberline {2.2.6}YOLO}{44}{subsection.2.2.6}%
 \contentsline {subsubsection}{\numberline {2.2.6.1}Tiny Yolo}{46}{subsubsection.2.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.2.6.2}Darknet}{47}{subsubsection.2.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.2.6.2}Darknet}{46}{subsubsection.2.2.6.2}%
 \contentsline {subsubsection}{\numberline {2.2.6.3}Darkflow}{47}{subsubsection.2.2.6.3}%
 \contentsline {subsection}{\numberline {2.2.7}Servicios de cómputo en la nube}{47}{subsection.2.2.7}%
 \contentsline {subsubsection}{\numberline {2.2.7.1}Amazon Web Service}{47}{subsubsection.2.2.7.1}%
@@ -66,8 +66,8 @@
 \contentsline {section}{\numberline {4.2}Configuración de parámetros}{68}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Proceso de detección y cálculo de tiempo de espera promedio}{68}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Prueba de la aplicación}{70}{section.4.4}%
-\contentsline {chapter}{\numberline {5}MARCO CONCLUSIVO}{73}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{73}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recomendaciones}{74}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Trabajos futuros}{74}{section.5.3}%
-\contentsline {chapter}{BIBLIOGRAFÍA}{74}{section.5.3}%
+\contentsline {chapter}{\numberline {5}MARCO CONCLUSIVO}{74}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{74}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recomendaciones}{75}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Trabajos futuros}{75}{section.5.3}%
+\contentsline {chapter}{BIBLIOGRAFÍA}{75}{section.5.3}%

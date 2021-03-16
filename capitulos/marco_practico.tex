@@ -84,7 +84,7 @@ Yolo & 1-3 \\ \hline
 \end{tabular}
 
 \label{tab:fruta}
-\source{Elaboración propia.}
+\sources{Elaboración propia.}
 \end{center}
 \end{table}
 
@@ -263,6 +263,8 @@ Con el ambiente virtual se procede a instalar los diversos paquetes necesarios, 
 
  Para realizar la aplicación se hará uso del editor PyCharm, porque es gratis y tiene una interfaz intuitiva al momento de usarlo.
  El primer paso al comenzar la aplicación es comenzar a importar todos los paquetes que se necesitará para que funcione, la manera en la que se importa los paquetes se podrá observar en el siguiente Código \ref{23}.
+ \vspace{5mm}
+
 \begin{lstlisting}[language=Python,caption={Manera en la que se importan los diferentes paquetes al programa.},captionpos=b,label=23]
 	import os 
 	import subprocess
@@ -270,6 +272,7 @@ Con el ambiente virtual se procede a instalar los diversos paquetes necesarios, 
 	import tensorflow as tf
 	import time
 \end{lstlisting}
+\vspace{5mm}
 
 Con todo esto ya se puede dar comienzo para que la aplicación pueda leer los videos mediante OpenCV y así iniciar el detector para que encuentre las personas de un video.
 
@@ -287,6 +290,7 @@ Por sí solas la detección que se puede hacer no brinda la información suficie
 
 Cómo se ve en la figura anterior, no se marca todos los objetos en el lado que no utiliza \textit{tracker}, ya que justo en ese \textit{frame} no lo identifica bien y se pierde. Pero en otra parte del mismo video se ve que en la Figura \ref{fig:labeling13}, desaparece el objeto detectado, por otra parte el que utiliza el \textit{tracker} no pierde ninguna detección.
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.3]{imagenes/deteccionvstracker2.png}
@@ -294,7 +298,7 @@ Cómo se ve en la figura anterior, no se marca todos los objetos en el lado que 
 	\source{Elaboración propia.}
 	\label{fig:labeling13}
 \end{figure}
-
+\vspace{5mm}
 
 Pero el problema mas importante es que cuando una persona se sale del enfoque de la cámara o es cubierto por algún objeto, la detección se pierde y cuando vuelve a aparecer la app lo detecta como si fuera una nueva persona. 
 Esto se podrá solucionar incorporando a la detección un \textit{tracker}, mediante esto se podrá generar ID a cada detección y con eso se podrá diferenciar entre detecciones, ya que todos tendrán un identificador que permitiría contar a las personas detectadas.
@@ -330,6 +334,7 @@ Esto se logra gracias a OpenCV, ya que con él se dibujara una línea, el cual r
 
 Este apartado se encarga de informar cuando se sobrepase el tiempo máximo de espera definido, para saber esto se creó una lista donde se registra la hora en la que se detectó la persona, en la Figura \ref{fig:labeling16} se observa como está compuesta la lista, la cual guarda datos necesarios para realizar la alarma y el límite de detección.
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/persona21.png}
@@ -337,6 +342,7 @@ Este apartado se encarga de informar cuando se sobrepase el tiempo máximo de es
 	\source{Elaboración propia}
 	\label{fig:labeling16}
 \end{figure}
+\vspace{5mm}
 
 Teniendo esta lista podemos registrar la hora en la que fue detectado una persona y con ello al tener una lista donde se detectaron 3 personas nos permite calcular un tiempo promedio de espera y con ese dato se podrá comparar con el tiempo máximo de espera.
 Si este tiempo promedio de espera es mayor que el tiempo máximo, se procederá a notificar mediante un \say{popup} que el cliente está esperando mucho y que se recomienda abrir una nueva caja.
@@ -344,9 +350,10 @@ Si este tiempo promedio de espera es mayor que el tiempo máximo, se procederá 
 
 Otra manera en la que se puede activar la alarma es cuando por un determinado tiempo ni una persona llegó a cruzar el límite definido, de igual manera que en el anterior caso se activará un \say{popup} notificando un problema al encargado para determinar si lo ve necesario abrir una caja o no. En la Figura \ref{fig:labeling17} se observa el diseño del \say{popup} y el mensaje que da.
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{imagenes/persona22.png}
+	\includegraphics[scale=0.45]{imagenes/persona22.png}
 	\caption{Alerta popup que se activa cuando se alcanza el tiempo máximo de espera.}
 	\source{Elaboración propia}
 	\label{fig:labeling17}
@@ -361,6 +368,7 @@ Para la base de datos se usa Mongodb, el cual te permite guardar los datos tanto
 
 En este caso como aplicación fue probada en un MacBook Pro 2014, la instalación de Mongodb variará en una máquina Windows. Simplemente para instalar la base de datos se tendrá que correr el siguiente comando que aparece en la Figura \ref{fig:labeling18}, estos comandos se tienen que hacer correr en la terminal.
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.55]{imagenes/mongodc.png}
@@ -370,15 +378,19 @@ En este caso como aplicación fue probada en un MacBook Pro 2014, la instalació
 \end{figure}
 
 El dato que se guardará es la hora en la que la alarma se active, esto se logra con los siguientes comandos que aparecen en el siguiente Código \ref{24}, estos tienen que estar dentro de la aplicación creada.
+\vspace{5mm}
+
  \begin{lstlisting}[language=Python,caption={Comando para guardar información en la base de datos.},captionpos=b,label=24]
 post = {"data": datetime.now()}
 alarms = db.alarms
 alarms.insert_one(post)
 DETECTION_EVENTS.clear()
 \end{lstlisting}
+\vspace{5mm}
 
 En este caso la información de la base de datos se almacena de manera local, lo que significa que cada vez que se inicie la aplicación se tendrá que activar MongoDB, esto se logra con el siguiente comando que aparece en la Figura \ref{fig:labeling20}, de la misma manera se tendrá que desactivar cuando ya no se utilice la aplicación. 
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/persona25.png}

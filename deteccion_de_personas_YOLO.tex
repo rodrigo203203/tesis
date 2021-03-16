@@ -13,7 +13,6 @@
 \usepackage[explicit]{titlesec}
 \usepackage{sectsty}
 \newcommand{\hsp}{\hspace{4pt}}
-%\usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
 \usepackage[a4paper, left=30mm, right=20mm, top=30mm,bottom=20mm]{geometry}
 \fontsize{12}{14}
 \usepackage{dirtytalk}
@@ -23,7 +22,9 @@
 \setcounter{secnumdepth}{3}
 \usepackage{url}
 \usepackage{fancyhdr}
+\usepackage{setspace}
 \usepackage{caption}
+%\captionsetup[figure]{font={stretch=0}}
 \usepackage{tocloft}
 \sectionfont{\normalsize\bfseries}
 \subsectionfont{\normalsize\itshape\bfseries}
@@ -39,15 +40,15 @@
 \captionsetup[figure]{labelfont={bf}}
 \captionsetup[table]{labelfont={bf}}
 \captionsetup[lstlisting]{labelfont={bf}}
-\newcommand{\source}[1]{\caption*{\textbf{Fuente:} {#1}} }
-\usepackage{setspace}
+\newcommand{\source}[1]{\vspace{-4mm} \caption*{\textbf{Fuente:} {#1}} }
+\newcommand{\sources}[1]{\caption*{\textbf{Fuente:} {#1}} }
 \usepackage{enumitem}
 \usepackage{listings}
 \lstset{basicstyle=\footnotesize\ttfamily,breaklines=true}
 \chapterfont{\normalsize\bfseries\MakeUppercase}
 \subsubsectionfont{\normalfont\itshape}
 \renewcommand{\tablename}{Tabla} 
-\renewcommand{\lstlistingname}{\textbf{Código}}% Listing -> Algorithm
+\renewcommand{\lstlistingname}{\textbf{Código}}
 \renewcommand{\lstlistlistingname}{\centerline{Lista de \lstlistingname s}}% List of Listings -> List of Algorithms
 \newcommand\blankpage{%
     \null
@@ -55,7 +56,7 @@
     %\addtocounter{page}{-1}%
     \newpage}
 \onehalfspacing
-%Import the natbib package and sets a bibliography  and citation styles
+
 \usepackage{natbib}
 \bibliographystyle{abbrvnat}
 \setcitestyle{authoryear,open={(},close={)}}
@@ -100,16 +101,16 @@
 	\textbf{Rodrigo Morales Rivas} \\
     \vspace{5mm}	
 	\textbf{RECONOCIMIENTO DE PERSONAS MEDIANTE REDES NEURONALES CONVOLUCIONALES YOLO PARA LA OPTIMIZACIÓN DE FILAS DE LOS SUPERMERCADOS}
-	
-	\vspace{10mm}
-	
+\end{center}	
+	\vspace{8mm}
+	\noindent
 	 El presente proyecto de grado fue evaluado y aprobado por una banca de jurados compuesta por los siguientes miembros: \\
 	% TODO: Preguntar si tienen que estar las tres opciones...
-	
+	\begin{center}
 	\vspace{20mm}
 	\begin{tabular}{@{}p{.in}p{3in}@{}}
 	& \hrulefill \\
-	& \phantom{assassasasa}Dr.-Ing. Job Angel Ledezma \\
+	& \phantom{assassa}Dr.-Ing. Job Angel Ledezma \\
 	& \phantom{assasa}\textbf{DIRECTOR DE CARRERA} \\
 	& \phantom{ass}\textbf{INGENIERÍA MECATRÓNICA}
 	\end{tabular}
@@ -139,7 +140,7 @@
 	& MSc. Erik Osvaldo Pozo Irusta \\
 	& \phantom{assasasaa}\textbf{INVITADO} \\
 	\end{tabular}
-	\vspace{40mm}
+	\vspace{35mm}
 	\end{center}
 	\centerline{Santa Cruz de la Sierra, 30 de noviembre del 2020}
 %	\thispagestyle{empty}

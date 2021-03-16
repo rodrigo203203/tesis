@@ -2,6 +2,7 @@
 \subsection{Evolución de los Sistemas de filas de un supermercado}
 El primer supermercado se inauguró en el año 1916 en Tennessee, Estados Unidos, con el nombre Pegly Wiggly, pero presentaba un sistema de cajas que se concentraban más en facilitar y agilizar el trabajo del cajero, sin darle mucha importancia al cliente, ya que las personas no tenían mucho espacio de maniobra, como se puede observar en la Figura \ref{fig:qw}.
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.3]{imagenes/pegly.jpg}
@@ -16,8 +17,9 @@ Teniendo los conceptos ya establecidos, se fueron probando diferentes sistemas p
 
 La búsqueda de mejoras para agilizar la atención en las cajas es un hecho, ya que estudios demuestran la importancia de generar una gran experiencia de compra, porque eso aumenta la probabilidad que el cliente vuelva al local a realizar otra compra, (\cite{enjoy1}); (\cite{enjoy2}); (\cite{shoppingExp}); (\cite{enjoy3}).\\ 
 
-Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió locales en el que no existen cajas, como se observa en la Figura \ref{fig:amago}. Este nuevo sistema que utiliza Amazon realiza un cobro mediante el uso de  cámaras con visión computacional para así detectar que productos selecciona el cliente, esos productos seleccionados se agregan directamente a un carrito virtual en la aplicación de Amazon, el cobro se realiza cuando el cliente sale del local (\cite{ama}); (\cite{ama2}).\\
+Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió locales en el que no existen cajas, como se observa en la Figura \ref{fig:amago}. Este nuevo sistema que utiliza Amazon realiza un cobro mediante el uso de  cámaras con visión computacional para así detectar que productos selecciona el cliente, esos productos seleccionados se agregan directamente a un carrito virtual en la aplicación de Amazon, el cobro se realiza cuando el cliente sale del local (\cite{ama}); (\cite{ama2}).
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.3]{imagenes/amago.jpg}
@@ -37,6 +39,7 @@ Otra innovación viene de los supermercados de China, donde implementaron un sis
  
 El dato sustancial para este proyecto es la introducción de las redes neuronales convolucionales o CNN (\textit{Convolutional Neural Network}) por sus siglas en inglés. El concepto viene por la investigación de Yann LeCun que permite trabajar con imágenes (\cite{neu4}); (\cite{neu5}). La manera en la que se usa estas redes se observa en la Figura \ref{fig:gato}. Este estudio genero muchas posibilidades de mejorar diversos sectores de la industria.
  
+ \vspace{5mm}
  \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.2]{imagenes/gato.png}
@@ -79,7 +82,7 @@ Las redes neuronales convolucionales son la base de la mayoría de los proyectos
 
 Las redes neuronales artificiales siguen el mismo funcionamiento que las neuronas biológicas, en el que las dendritas se encargan de captar los impulsos nerviosos que emiten otras neuronas, luego se las procesa y si es necesario se envía a otra neurona. En el caso de las neuronas artificiales, la suma de las entradas multiplicadas por el valor asociado determina el \say{impulso nervioso} que recibe la neurona. Este valor se procesa en el interior de la célula mediante una función de activación que devuelve un valor que se envía como salida de la neurona, esto se apreciará mejor en la Figura \ref{fig:natu} (\cite{open}). 
 
-%poner mas ejemplos de con imagenes sobre rede neuronales
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.216]{imagenes/natural}
@@ -87,11 +90,11 @@ Las redes neuronales artificiales siguen el mismo funcionamiento que las neurona
 	\source{Magiquo (2019).}
 	\label{fig:natu}
 \end{figure}
-
-\vspace{5mm}
+\vspace{4mm}
 
 La palabra red, en el término \say{red neuronal artificial} se refiere a las interconexiones entre las neuronas en las diferentes capas de cada sistema. Una configuración ejemplar tiene tres capas. La primera posee neuronas de entrada que envían datos a través de las sinapsis a la segunda capa, y luego a través de más sinapsis a la tercera capa de salida. Los sistemas más complejos tendrán mayor número capas. Como se observa en la Figura \ref{fig:redneu} se presenta un ejemplo de cómo una neurona artificial tiene diferentes capas y cómo se conectan entre ellas.
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.35]{imagenes/ela1}
@@ -130,6 +133,7 @@ El aprendizaje supervisado se suele usar en:
     \item Problemas de regresión (predicciones meteorológicas, de expectativa de vida, de crecimiento, etc).
 \end{itemize}
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.7]{imagenes/aprendizaje_supervisado.png}
@@ -137,6 +141,7 @@ El aprendizaje supervisado se suele usar en:
 	\source{Diego Calvo (2016).}
 	\label{fig:AprenSup}
 \end{figure}
+\clearpage
 
 Estos dos tipos principales de aprendizaje supervisado, clasificación y regresión, se distinguen por el tipo de variable objetivo. En los casos de clasificación, es de tipo categórico, mientras que, en los casos de regresión, la variable objetivo es de tipo numérico.
 
@@ -156,6 +161,7 @@ El objetivo del aprendizaje reforzado, consiste que el mismo sistema pueda apren
 \vspace{5mm}
 
 Para realizar este entrenamiento se necesita de un “agente” en un estado determinado dentro de un ambiente, esta configuración se observa en la Figura \ref{fig:aprRefor}. Este método necesita una recompensa cada vez que alcance un objetivo, también se le dará una recompensa cuando alcance escenarios no deseados.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/apreRefor.png}
@@ -173,10 +179,12 @@ Existen varias funciones de activación que actúan de diferente manera y eso no
 
 Esta función se encarga de transformar los valores introducidos a una escala de una décima (0,1), la Ecuación (\ref{eq:sigmoideq}) tomará los valores de alto rango y lo transformara de manera asintomática a 1 y los valores bajos tienden de manera contraria acercándose al 0 (\cite{activa2}), la gráfica de la función se apreciará en la Figura \ref{fig:sigmoid}.
 
+\vspace{5mm}
 \begin{equation}
 \label{eq:sigmoideq}
 	f(x)=\frac{1}{(1-e^{-x})}
 \end{equation}
+\vspace{5mm}
 
 Esta función se caracteriza en los siguientes factores :
 \begin{itemize}
@@ -211,6 +219,7 @@ Las características de esta función son las siguientes:
 	\item Tiene un gran rendimiento en redes recurrentes.
 \end{itemize}
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.15]{imagenes/tange.png}
@@ -223,12 +232,12 @@ Las características de esta función son las siguientes:
 
 Esta función consiste en transformar todos los valores negativos a 0 y mantiene solo los positivos. Esta función de activación es la más utilizada a pesar de que existen otras más recientes (\cite{activa2}). La representación gráfica de esta función se encuentra en la Figura \ref{fig:relu} y se lo obtiene mediante la Ecuación (\ref{eq:relus}).
 
+\vspace{5mm}
 \begin{equation}
 \label{eq:relus}
 	F\left( x\right) =max\left( 0,x\right) =\begin{cases}0 para <0\\
 x para\geq 0\end{cases}
 \end{equation}
-
 \vspace{5mm}
 
 Algunas de las características de esta función son las siguientes:
@@ -253,11 +262,13 @@ Algunas de las características de esta función son las siguientes:
 
 La función Softmax consiste en calcular las probabilidades de un evento sobre \say{n} eventos diferentes. Es decir que esta función calculara las probabilidades de cada clase de objeto sobre todas las diferentes clases de objetivos posibles. El rango de esta función será de (0,1), y todas las sumas de las probabilidades serán igual a uno. Esta función se utiliza más que todo para obtener la probabilidad de modelos de multi clasificación (\cite{activa2}). La representación gráfica de la función está en la Figura \ref{fig:soft} y se la obtiene con la Ecuación (\ref{eq:softmax}).
 
+\vspace{5mm}
 \begin{equation}
 \label{eq:softmax}
 	f\left( z\right) _{j}=\frac {e^{zj}}{\sum ^{k}_{k=1}e^{z}k}
 \end{equation}
 \vspace{5mm}
+
 La función de \textit{Softmax} se caracteriza por las siguientes razones:
 \begin{itemize}
 	\item Se utiliza cuando se quiere una respuesta en probabilidades.
@@ -278,7 +289,7 @@ La Inteligencia Artificial o IA es la combinación de diferentes algoritmos que 
 \vspace{5mm}
 Cuando se habla de inteligencia artificial entramos al sector de ciencias de computación, donde esta área abarca los conceptos de \textit{machine learning, data mining y data science}, esta división se observa en la Figura \ref{fig:ia}.
 
-
+\vspace{5mm}
  \begin{figure}[h]
 	\centering
 	\includegraphics[width=12cm, height=7cm, ]{imagenes/ia.jpg}
@@ -286,10 +297,11 @@ Cuando se habla de inteligencia artificial entramos al sector de ciencias de com
 	\source{Machine learning and IA for Healthcare (2019).}
 	\label{fig:ia}
 \end{figure}
+\vspace{5mm}
 
 El concepto de la inteligencia artificial fue introducido en el año 1950 por Alan Turing, quien fue el primero en construir una máquina con la capacidad de pensar, la máquina que construyo se observa en la Figura \ref{fig:alan}, que fue conocido como \say{La máquina Colossus}, que tenia como objetivo poder descifrar los códigos enigma que utilizaban el ejército alemán en sus comunicaciones. También gracias a él, se creó una prueba conocida como \textit{The Turing Test}, el cual consiste en medir la capacidad que tiene una máquina en demostrar su \say{inteligencia artificial}, la prueba consiste en establecer una comunicación entre dos personas y una máquina, donde una persona no sabrá quien es la máquina o si hay una, si la persona no llega identificar a la máquina la prueba se considera como exitosa, ya que fue capaz de imitar el comportamiento humano (\cite{ia2}). 
 
-
+\vspace{5mm}
  \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.3]{imagenes/alan1.jpg}
@@ -338,6 +350,7 @@ Tensorflow, es una biblioteca de software de código abierto para la computació
 
 La plataforma tuvo sus inicios en el 2011 por parte del equipo Google Brain, que su lema se aprecia en la Figura \ref{fig:google22}, la primera versión de la plataforma era conocido con el nombre de DistBelief. Por el año 2014 el proyecto fue creciendo y tomando forma, así que se le cambió el nombre y ahí fue que le conoció como Tensorflow. Google liberó este software en su segunda versión el 9 de noviembre del 2015. Al pasar el tiempo esta herramienta se convirtió el más usado en el campo de Deep Learning, y eso se debe por la filosofía de Google: «código primero, código siempre».
 
+\vspace{5mm}
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{imagenes/googleTeam.png}
@@ -355,6 +368,7 @@ Al referirse a un grafo en este tema, se quiere decir a un conjunto de nodos con
 
 Para la creación de un grafo se usará un ejemplo básico del libro \textit{Learning Tensorflow} (\cite{tensor1}), Para empezar, se importará la librería al editor mediante el primer comando que se aprecia en el Código \ref{55}, siguiendo con esto se crearan unos 3 nodos con diferente valor.
 
+\vspace{5mm}
  \begin{lstlisting}[language=Python,caption={Ejemplos de los primeros pasos para crear nodos con Tensorflow.},captionpos=b,label=55]
 	import tensorflow as tf
 	a = tf.constant(5)
