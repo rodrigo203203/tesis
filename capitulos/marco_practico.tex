@@ -199,15 +199,16 @@ En este apartado se mostrará un diagrama de flujo en el que se representa los p
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{imagenes/NeoVision3.png}
+	\includegraphics[scale=1]{imagenes/NeoVision3.png}
 	\caption{Diagrama de flujo explicativo sobre la función de la aplicación NeoVision.}
 	\source{Elaboración propia}
 	\label{fig:labeling33}
 \end{figure}
 
+\clearpage
 \section{Diagrama C4Model}
 En este apartado se dará conocer un esquema siguiendo el modelo C4Model, el cual se va explicando de manera general hasta llegar a lo más específico, empezando por el contexto de la situación, sus contenedores, componentes y por último un diagrama de todas las clases.
-\clearpage
+
 \subsection{Contexto}
 En este apartado se observará las diferentes interacciones que tiene la aplicación, esto se apreciará mejor en la Figura \ref{fig:labeling32}.
 
@@ -223,7 +224,7 @@ Con este diagrama se puede mostrar cuáles son las interacciones que realiza la 
 \subsection{Contenedores}
 
 En esta sección se observa más a detalle los sistemas usados para que la aplicación funcione, esto se ve en la Figura \ref{fig:labeling34}.
-\clearpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/contenedor3.png}
@@ -241,6 +242,7 @@ Con este diagrama conocemos cuáles son las funciones de los diferentes sistemas
 Para comenzar el desarrollo de la aplicación primeramente se tiene que crear una ambiente virtual de Python en la computadora, ya que se necesita instalar ciertos paquetes que podrían entrar en conflicto con algunas aplicaciones ya instaladas y también genera un mayor orden.
 La herramienta ideal para realizar esto es VirtualenvWrapper, ya que es fácil de instalar y sobre todo es simple de ingresar al ambiente virtual, sobre todo cuando se compara con otras herramientas. Esta diferencia aprecia mejor en la Figura \ref{fig:labeling9}.
 
+\clearpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/persona15.png}
@@ -249,7 +251,6 @@ La herramienta ideal para realizar esto es VirtualenvWrapper, ya que es fácil d
 	\label{fig:labeling9}
 \end{figure}
 
-\clearpage
 
 Con el ambiente virtual se procede a instalar los diversos paquetes necesarios, donde los principales son Tensorflow y OpenCV. Teniendo estos recursos instalados, se procede a convertir la red neuronal entrenada que se encuentra en un formato \say{.weights}, a un formato que Tensorflow soporte. Para ello usaremos un código disponible hecho por la misma comunidad, que está hecho en Python, en la Figura \ref{fig:labeling10} se muestra el comando para convertir la red.
 
@@ -311,7 +312,7 @@ Para que se pueda contar la cantidad de personas detectas se usara una función 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.35]{imagenes/persona19.png}
+	\includegraphics[scale=0.6]{imagenes/persona19.png}
 	\caption{Contador de personas en un video.}
 	\source{Elaboración propia}
 	\label{fig:labeling14}
@@ -328,6 +329,7 @@ El límite se encargará de reiniciar el contador y los cálculos de tiempo máx
 	\label{fig:labeling35}
 \end{figure}
 
+\clearpage
 Esto se logra gracias a OpenCV, ya que con él se dibujara una línea, el cual representa el límite para la detección y cuando un objeto cruce la línea ya no será tomando en cuenta. Esto funciona porque por cada detección genera unas coordenadas de la posición del objeto, teniendo esto se sabe cuándo cruza la línea.
 
 \subsection{Alarma al superar el tiempo máximo}
@@ -359,7 +361,6 @@ Otra manera en la que se puede activar la alarma es cuando por un determinado ti
 	\label{fig:labeling17}
 \end{figure}
 
-\clearpage
 
 \subsection{Crear una base de datos}
 
@@ -399,11 +400,14 @@ En este caso la información de la base de datos se almacena de manera local, lo
 	\label{fig:labeling20}
 \end{figure}
 
-\clearpage
 
 \section{Conclusiones del capitulo III}
 
-En el presente capítulo se explica la elección de la red neuronal YOLO y a su vez se desarrolla todo el procedimiento para poder entrenarlo haciendo uso de Darkflow. Con la red neuronal entrenada se procede a explicar las diferentes funciones que tendrá la aplicación y los sistemas que lo componen.
+En el presente capítulo se explico el motivo de la elección de la red neuronal, la cual es YOLO. Teniendo echa la elección se decidio realizar pruebas para saber que version de YOLO se adapta mejor al proyecto y con esos resultados se opto por Tiny-Yolo.
+\\
+Con la red neuronal seleccionada se procedió a realizar el respectivo entrenamiento para que pueda detectar a personas y así poder utilizar la información obtenida para calcular el tiempo promedio de espera de las personas que están esperando en una fila. Posteriormente, se explico el funcionamiento de la aplicación y cómo el usuario puede interactuar con la interfaz.
+
+   
 
 
 

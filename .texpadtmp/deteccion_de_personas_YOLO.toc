@@ -52,14 +52,14 @@
 \contentsline {subsection}{\numberline {3.3.1}Detección de personas}{55}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Pantalla de alerta}{56}{subsection.3.3.2}%
 \contentsline {section}{\numberline {3.4}Diagrama de flujo}{56}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Diagrama C4Model}{57}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Diagrama C4Model}{58}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}Contexto}{58}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Contenedores}{58}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.2}Contenedores}{59}{subsection.3.5.2}%
 \contentsline {section}{\numberline {3.6}Descripción de la aplicación}{59}{section.3.6}%
 \contentsline {subsection}{\numberline {3.6.1}Agregar el tracker a la detección}{60}{subsection.3.6.1}%
 \contentsline {subsection}{\numberline {3.6.2}Agregar contador y límite de detección}{62}{subsection.3.6.2}%
 \contentsline {subsection}{\numberline {3.6.3}Alarma al superar el tiempo máximo}{63}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Crear una base de datos}{64}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.4}Crear una base de datos}{63}{subsection.3.6.4}%
 \contentsline {section}{\numberline {3.7}Conclusiones del capitulo III}{65}{section.3.7}%
 \contentsline {chapter}{\numberline {4}FUNCIONAMIENTO DE LA APLICACIÓN}{67}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Proceso de iniciar la aplicación}{67}{section.4.1}%

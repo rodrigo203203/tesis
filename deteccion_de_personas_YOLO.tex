@@ -24,7 +24,6 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{caption}
-%\captionsetup[figure]{font={stretch=0}}
 \usepackage{tocloft}
 \sectionfont{\normalsize\bfseries}
 \subsectionfont{\normalsize\itshape\bfseries}
@@ -36,7 +35,6 @@
   {\normalfont\bfseries\normalsize\centering}{\thesection}{1em}{\MakeUppercase}
 }
 
-%\renewcommand\thefigure{\thechapter.\arabic{figure}.}
 \captionsetup[figure]{labelfont={bf}}
 \captionsetup[table]{labelfont={bf}}
 \captionsetup[lstlisting]{labelfont={bf}}
@@ -50,6 +48,7 @@
 \renewcommand{\tablename}{Tabla} 
 \renewcommand{\lstlistingname}{\textbf{Código}}
 \renewcommand{\lstlistlistingname}{\centerline{Lista de \lstlistingname s}}% List of Listings -> List of Algorithms
+%\renewcommand{\lstlistoflistings}{}
 \newcommand\blankpage{%
     \null
     \thispagestyle{empty}%
@@ -91,7 +90,6 @@
 \renewcommand{\cftafterloftitle}{\hspace*{\fill}}
 
 \begin{document}
-
 
 \maketitle
 \afterpage{\blankpage}
@@ -157,21 +155,18 @@
 \clearpage
 
 \input{capitulos/abstract}
-\clearpage
+
 \listoffigures
-%\thispagestyle{empty
 \listoftables
 \afterpage{\blankpage}
 \lstlistoflistings
 \afterpage{\blankpage}
 \clearpage
 \afterpage{\blankpage}
-%\thispagestyle{empty}
 \input{capitulos/acronimos}
 \clearpage
 \tableofcontents
 \afterpage{\blankpage}
-%\thispagestyle{empty}
 \titleformat{\chapter}[hang]
 {\filcenter}
 {\parbox{2cm}{\vrule width 10pt height 120pt}{}}
