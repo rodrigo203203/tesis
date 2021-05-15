@@ -165,6 +165,24 @@ Al finalizar el entrenamiento ya se obtendrá una red neuronal funcional, capaz 
 	\label{fig:labeling48}
 \end{figure}
 
+\section{Prueba de rendimiento}
+
+Una vez entrenada la red neuronal se procede a realizar unas diversas pruebas para así poder calcular el rendimiento y sobre todo la precisión de esta red construida. Para estas pruebas se está usando la documentación que proporciona la pagina de desarrolladores de Google, donde se detalla la manera en la que se tiene que realizar estas pruebas para calcular la precision.
+
+Para estas pruebas se está usando un video de vigilancia que fue proporcionado por el supermercado Makro, la posición de la cámara permite capturar bien la fila que se genera en el supermercado. Este video será analizado por la red neuronal y así calcular cuantas personas fueron detectadas para así realizar una comprobación que permita confirmar si la cantidad de personas detectadas es la correcta.  
+
+Una vez procesado el video por la red neuronal se extrajo 44 imágenes, con estas imágenes se procedió a realizar el análisis el cual permitiría medir la precisión de esta red neuronal. Para ellos las diferentes detecciones se dividió en 3 diferentes categorías, estas categorías son: verdadero positivo (VP), falso positivo (FP) y falso negativo (FN).
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.4]{imagenes/VPFPFN.png}
+	\caption{Pantalla principal de la aplicación NeoVision.}
+	\source{Elaboración propia}
+	\label{fig:labeling30}
+\end{figure}
+
 \section{Diseño de la interfaz}
 Para el diseño de la interfaz se utilizo la herramienta Balsamiq Wireframes, el cual permite planificar cómo se vera la interfaz de alguna aplicación. Con esta herramienta se diseño 2 pantallas para así determinar el diseño que tendrá la aplicación.
 
