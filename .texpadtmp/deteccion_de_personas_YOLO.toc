@@ -49,26 +49,26 @@
 \contentsline {subsection}{\numberline {3.2.3}Personalizar una red neuronal}{52}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Inicio de entrenamiento}{54}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Prueba de rendimiento}{55}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Diseño de la interfaz}{55}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Detección de personas}{56}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Pantalla de alerta}{57}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Diagrama de flujo}{57}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Diagrama C4Model}{59}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Contexto}{59}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Contenedores}{60}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Descripción de la aplicación}{60}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Agregar el tracker a la detección}{61}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Agregar contador y límite de detección}{63}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Alarma al superar el tiempo máximo}{64}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Crear una base de datos}{64}{subsection.3.7.4}%
-\contentsline {section}{\numberline {3.8}Conclusiones del capitulo III}{66}{section.3.8}%
-\contentsline {chapter}{\numberline {4}FUNCIONAMIENTO DE LA APLICACIÓN}{68}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Proceso de iniciar la aplicación}{68}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Configuración de parámetros}{69}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Proceso de detección y cálculo de tiempo de espera promedio}{69}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Prueba de la aplicación}{71}{section.4.4}%
-\contentsline {chapter}{\numberline {5}MARCO CONCLUSIVO}{75}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{75}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recomendaciones}{76}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Trabajos futuros}{76}{section.5.3}%
-\contentsline {chapter}{BIBLIOGRAFÍA}{76}{section.5.3}%
+\contentsline {section}{\numberline {3.4}Diseño de la interfaz}{56}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detección de personas}{57}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Pantalla de alerta}{58}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Diagrama de flujo}{58}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Diagrama C4Model}{60}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Contexto}{60}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Contenedores}{61}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Descripción de la aplicación}{61}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Agregar el tracker a la detección}{62}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Agregar contador y límite de detección}{64}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Alarma al superar el tiempo máximo}{65}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Crear una base de datos}{65}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Conclusiones del capitulo III}{67}{section.3.8}%
+\contentsline {chapter}{\numberline {4}FUNCIONAMIENTO DE LA APLICACIÓN}{69}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Proceso de iniciar la aplicación}{69}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Configuración de parámetros}{70}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Proceso de detección y cálculo de tiempo de espera promedio}{70}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Prueba de la aplicación}{72}{section.4.4}%
+\contentsline {chapter}{\numberline {5}MARCO CONCLUSIVO}{76}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{76}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recomendaciones}{77}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Trabajos futuros}{77}{section.5.3}%
+\contentsline {chapter}{BIBLIOGRAFÍA}{77}{section.5.3}%

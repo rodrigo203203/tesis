@@ -173,15 +173,36 @@ Para estas pruebas se está usando un video de vigilancia que fue proporcionado 
 
 Una vez procesado el video por la red neuronal se extrajo 44 imágenes, con estas imágenes se procedió a realizar el análisis el cual permitiría medir la precisión de esta red neuronal. Para ellos las diferentes detecciones se dividió en 3 diferentes categorías, estas categorías son: verdadero positivo (VP), falso positivo (FP) y falso negativo (FN).
 
+Para una detección sea considerado como VP, debe tener un 70\% de confiabilidad en la detección y también tiene que encerrar casi por completo al objeto detectado. Por otra parte, para que la detección sea considerada como FP debe tener una confiabilidad menor a 70\% o que enmarque una detección errónea y para que pertenezca al grupo de FN el objeto no tiene que ser detectado por la red neuronal. Esto se podrá entender mejor en la Figura \ref{fig:FN} 
 
+\clearpage
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{imagenes/VPFPFN.png}
-	\caption{Pantalla principal de la aplicación NeoVision.}
+	\caption{Clasificación de las diferentes detecciones obtenidas.}
 	\source{Elaboración propia}
-	\label{fig:labeling30}
+	\label{fig:FN}
 \end{figure}
+
+Todas las imágenes obtenidas fueron clasificadas mediante la explicación anterior, con lo cual se obtuvo en total de 219 VP, 45 FP y 39 FN. En la tabla, se observa cómo se clasifico las detecciones y los tiempos en la cual se obtuvo la imagen para ser analizados. 
+
+\begin{table}[h]
+\begin{tabular}{llll}
+Tiempo & Verdaderos Positivos & Falsos Positivos & Verdaderos Negativos \\
+00:13  & 6  & 2  & 2  \\
+00:21  & 0  & 0  & 1  \\
+00:28  & 8  & 0  & 2  \\
+00:38  & 5  & 0  & 3  \\
+00:48  & 7  & 0  & 2  \\
+00:58  & 0  & 0  & 1  \\
+01:11  & 5  & 0  & 3                   
+\end{tabular}
+\end{table}
+
+Cómo se puede observar en la tabla anterior, todos los datos fueron repartidos respectivamente en las diferentes categorías. Con estos datos y la siguiente ecuación se podrá calcular la precisión de la red neuronal. 
+
+Utilizando la anterior ecuación obtenemos una precisión del 80\%, la cual es bastante alto y demuestra una confiabilidad de los resultados que podrá obtener la red neuronal. Pero para poder demostrar el rendimiento se tiene utilizar la gráfica ROC, para poder obtener esta gráfica será necesario utilizar los siguientes parámetros: tasa de verdaderos positivos y tasa de falsos positivos. Para obtener estos datos se hará uso de la siguiente ecuación.
 
 \section{Diseño de la interfaz}
 Para el diseño de la interfaz se utilizo la herramienta Balsamiq Wireframes, el cual permite planificar cómo se vera la interfaz de alguna aplicación. Con esta herramienta se diseño 2 pantallas para así determinar el diseño que tendrá la aplicación.
