@@ -3,7 +3,10 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Resultados de una prueba de rendimiento entre YOLO y Tiny-Yolo.\relax }}{52}{table.caption.41}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Datos obtenidos mediante el análisis realizado de las detecciones de la red neuronal.\relax }}{56}{table.caption.49}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Sumatoria Progresiva de los datos anteriores.\relax }}{57}{table.caption.50}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Tasa de Verdaderos Positivos y Falsos Positivos\relax }}{57}{table.caption.51}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Datos guardados en la base de datos mediante MongoDB.\relax }}{72}{table.caption.66}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Datos guardados en la base de datos.\relax }}{75}{table.caption.70}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Datos guardados en la base de datos mediante MongoDB.\relax }}{72}{table.caption.69}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Datos guardados en la base de datos.\relax }}{74}{table.caption.73}%
 \addvspace {10\p@ }

@@ -185,24 +185,102 @@ Para una detección sea considerado como VP, debe tener un 70\% de confiabilidad
 	\label{fig:FN}
 \end{figure}
 
-Todas las imágenes obtenidas fueron clasificadas mediante la explicación anterior, con lo cual se obtuvo en total de 219 VP, 45 FP y 39 FN. En la tabla, se observa cómo se clasifico las detecciones y los tiempos en la cual se obtuvo la imagen para ser analizados. 
+Todas las imágenes obtenidas fueron clasificadas mediante la explicación anterior, con lo cual se obtuvo en total de 219 VP, 45 FP y 39 FN. En la Tabla \ref{tab:FP}, se observa cómo se clasifico las detecciones y los tiempos en la cual se obtuvo la imagen para ser analizados. 
 
 \begin{table}[h]
-\begin{tabular}{llll}
-Tiempo & Verdaderos Positivos & Falsos Positivos & Verdaderos Negativos \\
+\begin{center}
+	\caption{Datos obtenidos mediante el análisis realizado de las detecciones de la red neuronal.}
+\begin{tabular}{| c | c | c | c |}
+\hline \textbf{Tiempo} & \textbf{Verdadero Positivo} & \textbf{Falso Positivo} & \textbf{Falso Negativo} \\ \hline
 00:13  & 6  & 2  & 2  \\
 00:21  & 0  & 0  & 1  \\
 00:28  & 8  & 0  & 2  \\
 00:38  & 5  & 0  & 3  \\
 00:48  & 7  & 0  & 2  \\
 00:58  & 0  & 0  & 1  \\
-01:11  & 5  & 0  & 3                   
+01:11  & 5  & 0  & 3   \\ \hline
 \end{tabular}
+%\caption{Datos guardados en la base de datos mediante MongoDB.}
+\label{tab:FP}
+\sources{Elaboración propia.}
+\end{center}
 \end{table}
 
-Cómo se puede observar en la tabla anterior, todos los datos fueron repartidos respectivamente en las diferentes categorías. Con estos datos y la siguiente ecuación se podrá calcular la precisión de la red neuronal. 
+Cómo se puede observar en la tabla anterior, todos los datos fueron repartidos respectivamente en las diferentes categorías. Con estos datos y la siguiente Ecuación \ref{eq:vpvf}, se podrá calcular la precisión de la red neuronal. 
 
-Utilizando la anterior ecuación obtenemos una precisión del 80\%, la cual es bastante alto y demuestra una confiabilidad de los resultados que podrá obtener la red neuronal. Pero para poder demostrar el rendimiento se tiene utilizar la gráfica ROC, para poder obtener esta gráfica será necesario utilizar los siguientes parámetros: tasa de verdaderos positivos y tasa de falsos positivos. Para obtener estos datos se hará uso de la siguiente ecuación.
+\begin{equation}
+\label{eq:vpvf}
+	Precision=\frac{VP}{VP + VF} 
+\end{equation}
+
+
+Utilizando la anterior ecuación obtenemos una precisión del 80\%, la cual es bastante alto y demuestra una confiabilidad de los resultados que podrá obtener la red neuronal. Pero para poder demostrar el rendimiento se tiene utilizar la gráfica ROC, para poder obtener esta gráfica será necesario utilizar los siguientes parámetros: tasa de verdaderos positivos y tasa de falsos positivos. Pero para poder obtener esos datos primeramente los datos obtenidos sen la tabla se irán sumando el dato actual con el anterior. Realizando este procedimiento se obtiene la siguiente Tabla \ref{tab:tiempo}.
+
+\clearpage
+
+\begin{table}[h]
+\begin{center}
+	\caption{Sumatoria Progresiva de los datos anteriores.}
+\begin{tabular}{| c | c | c |}
+\hline \textbf{Verdadero Positivo} & \textbf{Falso Positivo} & \textbf{Falso Negativo} \\ \hline
+0 & 0  & 2 \\
+6 & 2  & 0 \\
+6 & 2  & 0 \\
+14 & 2  & 0\\
+19 & 2  & 0\\
+26 & 2  & 0 \\
+26 & 2  & 0    \\ \hline
+\end{tabular}
+\label{tab:tiempo}
+\sources{Elaboración propia.}
+\end{center}
+\end{table}
+
+Utilizando estos se podrá calcular la tasa de VP y FP con lo que se podrá obtener la gráfica de rendimiento de la red neuronal, para ellos se aplicará la siguiente Ecuación \ref{eq:tvpvf}. 
+ 
+\begin{equation}
+\label{eq:tvpvf}
+	TVP = \frac{1-Vp1}{ VPt } 
+\end{equation}
+
+Aplicando la anterior ecuación se obtuvo la siguiente Tabla \ref{tab:TVFTFV}, la cual permite obtener la gráfica ROC. 
+
+\begin{table}[h]
+\centering
+\caption{Tasa de Verdaderos Positivos y Falsos Positivos}
+\begin{tabular}{| c | c |} 
+\hline
+\textbf{Tasa de VP} & \textbf{Tasa de FP}  \\ 
+\hline
+1          & 1           \\ 
+\hline
+1          & 1           \\ 
+\hline
+0.97260274 & 0.95555556  \\ 
+\hline
+0.97260274 & 0.95555556  \\ 
+\hline
+0.93607306 & 0.95555556  \\ 
+\hline
+0.91324201 & 0.95555556  \\
+\hline
+\end{tabular}
+\label{tab:TVFTFV}
+\sources{Elaboración propia.}
+\end{table}
+
+
+Con estos datos y aplicando el grafico de línea se obtiene el rendimiento que posee la red neuronal entrenada. Esto se podrá observar en la Figura \ref{fig:FROC}, Los datos de las tablas anteriores no está completas ya que se analizaron varios objetos, por eso mismo las tablas completas se podrá observar en el apartado de los anexos del documento. 
+
+\clearpage
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.7]{imagenes/curvaROC.png}
+	\caption{Gráfica de rendimiento de la red neuronal entrenada.}
+	\source{Elaboración propia}
+	\label{fig:FROC}
+\end{figure}
 
 \section{Diseño de la interfaz}
 Para el diseño de la interfaz se utilizo la herramienta Balsamiq Wireframes, el cual permite planificar cómo se vera la interfaz de alguna aplicación. Con esta herramienta se diseño 2 pantallas para así determinar el diseño que tendrá la aplicación.
@@ -211,7 +289,6 @@ Para el diseño de la interfaz se utilizo la herramienta Balsamiq Wireframes, el
 
 Esta es la pantalla principal de la aplicación, donde se  indica la información de cuántas personas están siendo detectadas en ese momento, de igual manera se muestra en tiempo real el video obtenido por la cámara de seguridad. Otra información importante que se indica en la interfaz es el limite de detección, el cual ayuda a visualizar mejor los datos de esta pantalla, esto se apreciará mejor en la Figura \ref{fig:labeling30}. 
 
-\clearpage
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{imagenes/imagen1.png}
@@ -227,7 +304,7 @@ Esto es una pantalla de alerta que solo aparecerá cuando se pase el limite de t
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{imagenes/imagen2.png}
+	\includegraphics[scale=0.6]{imagenes/imagen2.png}
 	\caption{Mockup de la pantalla de alerta.}
 	\source{Elaboración propia}
 	\label{fig:labeling31}
@@ -442,9 +519,11 @@ En este caso la información de la base de datos se almacena de manera local, lo
 
 \section{Conclusiones del capitulo III}
 
-En el presente capítulo se explico el motivo de la elección de la red neuronal, la cual es YOLO. Teniendo echa la elección se decidio realizar pruebas para saber que version de YOLO se adapta mejor al proyecto y con esos resultados se opto por Tiny-Yolo.
-\\
-Con la red neuronal seleccionada se procedió a realizar el respectivo entrenamiento para que pueda detectar a personas y así poder utilizar la información obtenida para calcular el tiempo promedio de espera de las personas que están esperando en una fila. Posteriormente, se explico el funcionamiento de la aplicación y cómo el usuario puede interactuar con la interfaz.
+En el presente capítulo se explicó el motivo de la elección de la red neuronal, la cual es YOLO. Teniendo echa la elección se decidió realizar pruebas para saber que versión de YOLO se adapta mejor al proyecto y con esos resultados se optó por Tiny-Yolo. 
+\\ 
+Con la red neuronal seleccionada se procedió a realizar el respectivo entrenamiento para que pueda detectar a personas y así poder utilizar la información obtenida para calcular el tiempo promedio de espera de las personas que están esperando en una fila. Posteriormente, se explicó el funcionamiento de la aplicación y cómo el usuario puede interactuar con la interfaz. 
+
+En el siguiente capítulo se explicará el funcionamiento de la aplicación y las diversas funciones claves que permiten realizar los cálculos dependiendo de las detecciones realizadas, por otra parte, se verá un ejemplo de un caso de uso de la aplicación y se analizara los datos que se consiguen con esa prueba. 
 
    
 
