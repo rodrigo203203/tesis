@@ -1,5 +1,5 @@
 \section{Elección de una red neuronal}
-Para la elección de la red neuronal se tomó en cuenta un estudio realizado por el equipo de YOLO (\cite{persona}), este equipo realizo pruebas con diferentes redes neuronales para poder demostrar el gran rendimiento que tiene la red YOLO, estas pruebas fueron hechas en la misma computadora, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3} que da como ganador la red neuronal YOLO.
+Para la elección de la red neuronal se tomó en cuenta un estudio realizado por el equipo de YOLO (\cite{persona}), este equipo realizo pruebas con diferentes redes neuronales para poder demostrar el gran rendimiento que tiene la red YOLO, estas pruebas fueron hechas en la misma computadora, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3}.
 
 \begin{figure}[h]
 	\centering
@@ -9,13 +9,15 @@ Para la elección de la red neuronal se tomó en cuenta un estudio realizado por
 	\label{fig:labeling3}
 \end{figure}
 
-Estas pruebas fueron realizadas haciendo el uso de la base de datos \say{coco}, que recopila una gran información que facilita la detección de diferentes objetos. Con estos resultados nos muestran que la red neuronal YOLO es la mejor opción, ya que cuenta con una gran velocidad sin perder mucha precisión al momento de detectar los diferentes objetos. Otra red que tiene resultados muy buenos es YOLOv3, es algo lento pero tiene una gran precisión y dependiendo de la aplicación podría ser una buena elección.
+Estas pruebas fueron realizadas haciendo el uso de la base de datos \say{COCO}, que es una recopilación de cientos de miles de imágenes con millones de objetos ya etiquetados que ya están preparados para realizar un entrenamiento, lo cual facilita a realizar pruebas de las diferentes redes neuronales. Con estos resultados nos muestran que la red neuronal YOLO es la mejor opción, ya que cuenta con una gran velocidad sin perder mucha precisión al momento de detectar los diferentes objetos. Por otra parte, la red YOLOv3 presenta resultados interesantes, ya que tiene una gran velocidad pero a un gran costo en su precision y dependiendo de la aplicación podría ser una buena elección.
 
-\section{Entrenamiento de la red neuronal}
-En este capítulo se ira desarrollando los diferentes pasos para lograr un buen entrenamiento de una red neuronal, en este caso el objetivo del entrenamiento es que sea capaz de detectar personas.
+\section{Entrenamiento de la red neuronal} 
 
- \subsection{Base de datos}
- Para lograr el entrenamiento de la red neuronal, primeramente se tiene que construir una base de datos, esta base tiene que estar compuesta por imágenes donde aparezcan personas. Posteriormente, comienza un proceso de \say{etiquetado}, en el cual se tiene que señalar donde se encuentra la persona en las diferentes imágenes, este procedimiento se realiza con la aplicación LabelImg, este proceso se observa en la Figura \ref{fig:labeling}.
+En este capítulo se irá desarrollando los diferentes pasos para lograr un buen entrenamiento de una red neuronal, en este caso el objetivo del entrenamiento es que sea capaz de detectar personas.  
+
+\subsection{Base de datos} 
+
+Para lograr el entrenamiento de la red neuronal, primeramente, se tiene que construir una base de datos, esta base tiene que estar compuesta por imágenes donde aparezcan personas. Posteriormente, comienza un proceso de \say{etiquetado}, en el cual se tiene que señalar donde se encuentra la persona en las diferentes imágenes, este procedimiento se realiza con la aplicación LabelImg, este proceso se observa en la Figura \ref{fig:labeling}. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.25]{imagenes/persona1.png}
@@ -24,7 +26,7 @@ En este capítulo se ira desarrollando los diferentes pasos para lograr un buen 
 	\label{fig:labeling}
 \end{figure}
 
-Este proceso se tiene que realizar con cada imagen, para así obtener un archivo que especifica la posición de dónde se encuentra la \say{persona} en la imagen. En la Figura \ref{fig:labeling2} se observa la manera en la que se guardan esos datos. De esta manera se obtiene una base de datos que sirve para entrenar la red neruonal YOLO, la cual debe estar compuesta por lo menos con 400 imágenes. 
+Este proceso se tiene que realizar con cada imagen, para así obtener un archivo que especifica la posición de dónde se encuentra la \say{persona} en la imagen. En la Figura \ref{fig:labeling2} se observa la manera en la que se guardan esos datos. De esta manera se obtiene una base de datos que sirve para entrenar la red neuronal YOLO, la cual debe estar compuesta por lo menos con 400 imágenes. 
 
 \clearpage
 
@@ -36,8 +38,7 @@ Este proceso se tiene que realizar con cada imagen, para así obtener un archivo
 	\label{fig:labeling2}
 \end{figure}
 
-Este procedimiento se puede realizar mas rápido gracias a la base de datos de Google, el cual tiene una gran cantidad de imágenes ya etiquetadas lo que facilita el proceso de realizar un entrenamiento, esto se observa mejor en la Figura \ref{fig:labeling5}. El único inconveniente de esta herramienta es que la base de datos esta en un formato que Darknet no lo reconoce, pero ya existen otras herramientas que permiten convertir a un formato con la cual se puede trabajar.
-
+Este procedimiento se puede realizar más rápido gracias a la base de datos de Google, el cual tiene una gran cantidad de imágenes ya etiquetadas lo que facilita el proceso de realizar un entrenamiento, esto se observa mejor en la Figura \ref{fig:labeling5}. El único inconveniente de esta herramienta es que la base de datos está en un formato que Darknet no lo reconoce, pero ya existen otras herramientas que permiten convertir a un formato con la cual se puede trabajar. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.2]{imagenes/persona5.png}
@@ -48,47 +49,49 @@ Este procedimiento se puede realizar mas rápido gracias a la base de datos de G
 
 \subsection{Preparación del ambiente}
 
-Al momento de entrenar una red neuronal se utiliza muchos recursos de la computadora, sobre todo en el apartado del GPU, ya que la mayoría de los cálculos se realizan de mejor manera en esa parte. Esto resulto ser un problema ya que mi computadora no cuenta con una GPU dedicada y los entrenamientos se realizaban de manera muy lenta, por ese motivo se opto por usar Colab, el cual es un servicio de Google que te permite realizar entrenamientos de redes neuronales ya que te deja usar los GPU's de sus servidores.
-\\
+Al momento de entrenar una red neuronal se utiliza muchos recursos de la computadora, sobre todo en el apartado del GPU, ya que la mayoría de los cálculos se realizan de mejor manera en esa parte. Esto resulto ser un problema ya que mi computadora no cuenta con una GPU dedicada y los entrenamientos se realizaban de manera muy lenta, por ese motivo se optó por usar Colab, el cual es un servicio de Google que te permite realizar entrenamientos de redes neuronales ya que te deja usar los GPU's de sus servidores. 
+\\ 
 
-Colab es un editor de texto online, que te permite escribir tu código y probarlo sin la necesidad de instalar programas en tu computadora, pero será necesarios instalarlos en tu editor online. El primer paso es instalar Darknet, el cual te permite trabajar con YOLO.
+Colab es un editor de texto online, que te permite escribir tu código y probarlo sin la necesidad de instalar programas en tu computadora, pero será necesarios instalarlos en tu editor online. El primer paso es instalar Darknet, el cual te permite trabajar con YOLO.  
 
-\clearpage
+\clearpage 
 
-Para qué Darknet funcione correctamente necesita diferentes frameworks, en la Figura \ref{fig:labeling42} se puede observa una lista con los frameworks necesarios. Para poder instalarlos se utiliza el comando \say{pip}, el cual es un sistema de gestión de paquetes de Python. La mayoría de estos frameworks ya vienen instalados por defecto en Colab por ser muy utilizados.
+Para qué Darknet funcione correctamente necesita diferentes frameworks, en la Figura \ref{fig:labeling42} se puede observar una lista con los frameworks necesarios. Para poder instalarlos se utiliza el comando \say{pip}, el cual es un sistema de gestión de paquetes de Python. La mayoría de estos frameworks ya vienen instalados por defecto en Colab por ser muy utilizados. 
  
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/persona3.png}
-	\caption{Frameworks necesarios para que funcione Darknet.}
+	\caption{Dependencias necesarias para que funcione Darknet.}
 	\source{Elaboración propia}
 	\label{fig:labeling42}
 \end{figure}
 
 \subsection{Personalizar una red neuronal}
 
-La red neuronal YOLO y Tiny-Yolo viene por defecto entrenada con varias clases que le permite detectar diferentes objetos, pero ninguna se podía ajustar a las necesidades del proyecto y por eso mismo se tuvo que realizar un entrenamiento con una base de datos propia.
+La red neuronal YOLO y Tiny-Yolo viene por defecto entrenada con varias clases que le permite detectar diferentes objetos, pero ninguna se podía ajustar a las necesidades del proyecto y por eso mismo se tuvo que realizar un entrenamiento con una base de datos propia. 
 
-Antes de modificar los paramatros, se decidio usar la Tyin-Yolo debido a que es una red neuronal mas liviana (con menos capas), lo que ocaciones que sea menos exigente cuando se tiene que procesar las detecciones, lo que permite que funcione de mejor manera en mi computadora.
+Antes de modificar los parámetros, se decidió usar la Tiny-Yolo debido a que es una red neuronal más liviana (con menos capas), lo que ocasiona que sea menos exigente cuando se tiene que procesar las detecciones, lo que permite que funcione de mejor manera en mi computadora. 
 
-La diferencia de rendimiento se podrá ver de mejor manera en la Tabla \ref{tab:fruta}, el cual da cómo mejor opción Tiny-Yolo teniendo un mejor rendimiento que al usar YOLO. El único problema de usar Tiny-Yolo es que se pierde un poco de precisión al momento de realizar las detecciones.
+La diferencia de rendimiento se podrá ver de mejor manera en la Tabla \ref{tab:fruta}, el cual da cómo mejor opción Tiny-Yolo teniendo un mejor rendimiento que al usar YOLO. El único problema de usar Tiny-Yolo es que se pierde un poco de precisión al momento de realizar las detecciones. 
 
 \begin{table}[h]
 \caption{Resultados de una prueba de rendimiento entre YOLO y Tiny-Yolo.}
 \begin{center}
-%\caption{Resultados de una prueba de rendimiento entre YOLO y Tyni-Yolo.}
-\begin{tabular}{| l | c |}
-\hline \textbf{Versión de YOLO} & \textbf{FPS} \\ \hline
-Tiny-yolo & 7-10  \\
-Yolo & 1-3 \\ \hline
+\begin{tabular}{cc} 
+\hline
+\textbf{Versión de Yolo} & \textbf{FPS}  \\ 
+\hline
+Tiny-yolo                & 7-10          \\
+YOLO                     & 1-3           \\
+\hline
 \end{tabular}
-
 \label{tab:fruta}
+\vspace{3mm}
 \sources{Elaboración propia.}
 \end{center}
 \end{table}
 
-Estos resultados demuestran que la mejor opción es trabajar con Tiny-Yolo, por lo cual se modificara el archivo \say{yolov4-tiny.cfg}, en el cual se cambiaran ciertos parámetros para que la red neuronal al momento de entrenar se adapte a los requerimientos del proyecto. los parámetros que se modificaron están señaladas en la Figura \ref{fig:labeling6}.
+Estos resultados demuestran que la mejor opción es trabajar con Tiny-Yolo, por lo cual se modificara el archivo \say{yolov4-tiny.cfg}, en el cual se cambiaran ciertos parámetros para que la red neuronal al momento de entrenar se adapte a los requerimientos del proyecto. los parámetros que se modificaron están señalados en la Figura \ref{fig:labeling6}. 
 
 \begin{figure}[h]
 	\centering
@@ -98,15 +101,16 @@ Estos resultados demuestran que la mejor opción es trabajar con Tiny-Yolo, por 
 	\label{fig:labeling6}
 \end{figure}
 
-El dato marcado \textit{learning rate} es el que determina el ritmo de aprendizaje, entre mas bajo sea este valor aumentara el ritmo de aprendizaje pero esto alarga el entrenamiento. Un valor muy bajo no es muy útil ya que no mejoraría el entrenamiento pero si demoraría mas tiempo en terminar y aumenta la probabilidad de que se detenga el entrenamiento por un error.
-El siguiente es \textit{max batches}, el que se encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula que se observa en la Ecuación \ref{eq:maxb}, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}, como es en este caso. En \textit{step} se tomará el 80\% y 90\% de \say{max batches} respectivamente.
+El dato marcado \textit{learning rate} es una ponderación que se asigna a la nueva información que ingresa a la red, este valor entre más bajo sea aumentara la duración del entrenamiento pero se podrá conseguir una predicción menos volátil. Un valor muy bajo no es muy útil ya que no aplicaría ninguna mejora al entrenamiento, pero sí alargaría el tiempo de finalización.
+
+El siguiente es \textit{max batches}, el que se encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula que se observa en la Ecuación \ref{eq:maxb}, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}, como es en este caso. En \textit{step} se tomará el 80\% y 90\% de \say{max batches} respectivamente. 
 
 \begin{equation}
 \label{eq:maxb}
 	max\_batches = \#\operatorname{clases} * 2000
 \end{equation}
 
-Otros parametros que se tienen que modificar son los datos marcadsos que aparecen en la Figura \ref{fig:labeling7}, que consiste en definir la cantidad de filtros y especificar cuántas clases tendrá que aprender la red neuronal.
+Otros parámetros que se tienen que modificar son los datos marcados que aparecen en la Figura \ref{fig:labeling7}, que consiste en definir la cantidad de filtros y especificar cuántas clases tendrá que aprender la red neuronal. 
 
 \begin{figure}[h]
 	\centering
@@ -123,7 +127,7 @@ Para calcular la cantidad de filtros se hará uso de una fórmula simple que se 
 	\label{eq:clases}
 \end{equation}
 
-Con esto se finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falta editar otros 2 archivos más el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar, la locación de donde se guardara la red entrenada y cuantas clases se usara para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}.
+Con esto se finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falta editar otros 2 archivos más el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar, la locación de donde se guardará la red entrenada y cuantas clases se usará para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}. 
 
 \begin{figure}[h]
 	\centering
@@ -145,7 +149,7 @@ Para iniciar el entrenamiento se tiene que preparar todos los archivos en el amb
 	\label{fig:labeling46}
 \end{figure}
 
-Una vez teniendo los archivos generados se procede a iniciar el entrenamiento mediante el siguiente comando que aparece en la Figura \ref{fig:labeling47}. La duración de este entrenamiento dependerá de la cantidad de imágenes que se esta usando para realizar el entrenamiento, en este caso el entrenamiento duro aproximadamente 4 horas, pero se repitió 2 veces para mejorar los resultados obtenidos.
+Una vez teniendo los archivos generados se procede a iniciar el entrenamiento mediante el siguiente comando que aparece en la Figura \ref{fig:labeling47}. La duración de este entrenamiento dependerá de la cantidad de imágenes que se está usando para realizar el entrenamiento, en este caso el entrenamiento duro aproximadamente 4 horas, pero se repitió 2 veces para mejorar los resultados obtenidos. 
 
 \begin{figure}[h]
 	\centering
@@ -155,7 +159,7 @@ Una vez teniendo los archivos generados se procede a iniciar el entrenamiento me
 	\label{fig:labeling47}
 \end{figure}
 
-Al finalizar el entrenamiento ya se obtendrá una red neuronal funcional, capaz de detectar personas. Un resultado de este entrenamiento se observa en la Figura \ref{fig:labeling48}, donde se ven marcadas una cantidad aceptable de personas que aparecen en la imagen, cada recuadro que marca a una personas viene con un numero el cual indica el porcentaje de seguridad de detención realizada por la red neuronal.
+Al finalizar el entrenamiento ya se obtendrá una red neuronal funcional, capaz de detectar personas. Un resultado de este entrenamiento se observa en la Figura \ref{fig:labeling48}, donde se ven marcadas una cantidad aceptable de personas que aparecen en la imagen, cada recuadro que marca a una persona viene con un numero el cual indica el porcentaje de seguridad de detención realizada por la red neuronal. 
 
 \begin{figure}[h]
 	\centering
@@ -167,11 +171,11 @@ Al finalizar el entrenamiento ya se obtendrá una red neuronal funcional, capaz 
 
 \section{Prueba de rendimiento}
 
-Una vez entrenada la red neuronal se procede a realizar unas diversas pruebas para así poder calcular el rendimiento y sobre todo la precisión de esta red construida. Para estas pruebas se está usando la documentación que proporciona la pagina de desarrolladores de Google, donde se detalla la manera en la que se tiene que realizar estas pruebas para calcular la precision.
+Una vez entrenada la red neuronal se procede a realizar unas diversas pruebas para así poder calcular el rendimiento y sobre todo la precisión de esta red construida. Para estas pruebas se está usando la documentación que proporciona la página de desarrolladores de Google, donde se detalla la manera en la que se tiene que realizar estas pruebas para calcular la precisión. 
 
-Para estas pruebas se está usando un video de vigilancia que fue proporcionado por el supermercado Makro, la posición de la cámara permite capturar bien la fila que se genera en el supermercado. Este video será analizado por la red neuronal y así calcular cuantas personas fueron detectadas para así realizar una comprobación que permita confirmar si la cantidad de personas detectadas es la correcta.  
+Para estas pruebas se está usando un video de vigilancia que fue proporcionado por el supermercado Makro, la posición de la cámara permite capturar bien la fila que se genera en el supermercado. Este video será analizado por la red neuronal y así calcular cuantas personas fueron detectadas para así realizar una comprobación que permita confirmar si la cantidad de personas detectadas es la correcta.   
 
-Una vez procesado el video por la red neuronal se extrajo 44 imágenes, con estas imágenes se procedió a realizar el análisis el cual permitiría medir la precisión de esta red neuronal. Para ellos las diferentes detecciones se dividió en 3 diferentes categorías, estas categorías son: verdadero positivo (VP), falso positivo (FP) y falso negativo (FN).
+Una vez procesado el video por la red neuronal se extrajo 44 imágenes, con estas imágenes se procedió a realizar el análisis el cual permitiría medir la precisión de esta red neuronal. Para ellos las diferentes detecciones se dividió en 3 diferentes categorías, estas categorías son: verdadero positivo (VP), falso positivo (FP) y falso negativo (FN). 
 
 Para una detección sea considerado como VP, debe tener un 70\% de confiabilidad en la detección y también tiene que encerrar casi por completo al objeto detectado. Por otra parte, para que la detección sea considerada como FP debe tener una confiabilidad menor a 70\% o que enmarque una detección errónea y para que pertenezca al grupo de FN el objeto no tiene que ser detectado por la red neuronal. Esto se podrá entender mejor en la Figura \ref{fig:FN} 
 
@@ -185,25 +189,27 @@ Para una detección sea considerado como VP, debe tener un 70\% de confiabilidad
 	\label{fig:FN}
 \end{figure}
 
-Todas las imágenes obtenidas fueron clasificadas mediante la explicación anterior, con lo cual se obtuvo en total de 219 VP, 45 FP y 39 FN. En la Tabla \ref{tab:FP}, se observa cómo se clasifico las detecciones y los tiempos en la cual se obtuvo la imagen para ser analizados. 
+Todas las imágenes obtenidas fueron clasificadas mediante la explicación anterior, con lo cual se obtuvo en total de 182 VP, 73 FP, 68 FN y 64 VN. En la Tabla \ref{tab:FP}, se observa cómo se clasifico las detecciones y los tiempos en la cual se obtuvo la imagen para ser analizados. 
 
 \begin{table}[h]
-\begin{center}
-	\caption{Datos obtenidos mediante el análisis realizado de las detecciones de la red neuronal.}
-\begin{tabular}{| c | c | c | c |}
-\hline \textbf{Tiempo} & \textbf{Verdadero Positivo} & \textbf{Falso Positivo} & \textbf{Falso Negativo} \\ \hline
-00:13  & 6  & 2  & 2  \\
-00:21  & 0  & 0  & 1  \\
-00:28  & 8  & 0  & 2  \\
-00:38  & 5  & 0  & 3  \\
-00:48  & 7  & 0  & 2  \\
-00:58  & 0  & 0  & 1  \\
-01:11  & 5  & 0  & 3   \\ \hline
+\centering
+\caption{Datos obtenidos mediante el análisis realizado de las detecciones de la red neuronal.}
+\begin{tabular}{ccccc} 
+\hline
+\multicolumn{1}{c}{TIEMPO} & \multicolumn{1}{c}{\textbf{Verdadero Positivo}} & \multicolumn{1}{c}{\textbf{Falso Positivo}} & \multicolumn{1}{c}{\textbf{Falso Negativo}} & \multicolumn{1}{c}{\textbf{Verdadero Negativo}}  \\ 
+\hline
+0:18                       & 3                                               & 4                                           & 2                                           & 2                                                \\
+0:28                       & 4                                               & 3                                           & 2                                           & 2                                                \\
+0:38                       & 2                                               & 4                                           & 3                                           & 3                                                \\
+0:48                       & 7                                               & 0                                           & 2                                           & 2                                                \\
+0:59                       & 4                                               & 1                                           & 1                                           & 1                                                \\
+1:11                       & 3                                               & 1                                           & 2                                           & 1                                                \\
+1:21                       & 3                                               & 1                                           & 1                                           & 1                                                \\
+\hline
 \end{tabular}
-%\caption{Datos guardados en la base de datos mediante MongoDB.}
 \label{tab:FP}
+\vspace{3mm}
 \sources{Elaboración propia.}
-\end{center}
 \end{table}
 
 Cómo se puede observar en la tabla anterior, todos los datos fueron repartidos respectivamente en las diferentes categorías. Con estos datos y la siguiente Ecuación \ref{eq:vpvf}, se podrá calcular la precisión de la red neuronal. 
@@ -213,81 +219,91 @@ Cómo se puede observar en la tabla anterior, todos los datos fueron repartidos 
 	Precision=\frac{VP}{VP + VF} 
 \end{equation}
 
-
-Utilizando la anterior ecuación obtenemos una precisión del 80\%, la cual es bastante alto y demuestra una confiabilidad de los resultados que podrá obtener la red neuronal. Pero para poder demostrar el rendimiento se tiene utilizar la gráfica ROC, para poder obtener esta gráfica será necesario utilizar los siguientes parámetros: tasa de verdaderos positivos y tasa de falsos positivos. Pero para poder obtener esos datos primeramente los datos obtenidos sen la tabla se irán sumando el dato actual con el anterior. Realizando este procedimiento se obtiene la siguiente Tabla \ref{tab:tiempo}.
-
-\clearpage
-
-\begin{table}[h]
 \begin{center}
-	\caption{Sumatoria Progresiva de los datos anteriores.}
-\begin{tabular}{| c | c | c |}
-\hline \textbf{Verdadero Positivo} & \textbf{Falso Positivo} & \textbf{Falso Negativo} \\ \hline
-0 & 0  & 2 \\
-6 & 2  & 0 \\
-6 & 2  & 0 \\
-14 & 2  & 0\\
-19 & 2  & 0\\
-26 & 2  & 0 \\
-26 & 2  & 0    \\ \hline
-\end{tabular}
-\label{tab:tiempo}
-\sources{Elaboración propia.}
+\begin{list}{}{}
+	\item \textbf{VP} = Sumatoria total de verdaderos positivos.
+	\item \textbf{VF} = Sumatoria total de falsos positivos.
+\end{list}
 \end{center}
-\end{table}
 
-Utilizando estos se podrá calcular la tasa de VP y FP con lo que se podrá obtener la gráfica de rendimiento de la red neuronal, para ellos se aplicará la siguiente Ecuación \ref{eq:tvpvf}. 
- 
+Utilizando la anterior ecuación obtenemos una precisión del 71\%, la cual es bastante alto y demuestra una confiabilidad de los resultados que podrá obtener la red neuronal. Pero para poder demostrar el rendimiento se tiene que obtener la curva ROC, para poder obtener esta gráfica será necesario obtener la tasa de verdaderos positivos y la tasa de falsos positivos.\ref{tab:tiempo}. 
+
+Para poder obtener la tasa de verdaderos positivos se hara uso de la Ecuacion \ref{eq:vpvfss} y para tasa de falsos positivos se usara la Ecuacion \ref{eq:vpvfws}.
+
 \begin{equation}
-\label{eq:tvpvf}
-	TVP = \frac{1-Vp1}{ VPt } 
+\label{eq:vpvfss}
+	\text{Tasa de verdaderos positivos (TVP)} =\frac{VP}{VP + VN} 
 \end{equation}
 
-Aplicando la anterior ecuación se obtuvo la siguiente Tabla \ref{tab:TVFTFV}, la cual permite obtener la gráfica ROC. 
+\begin{center}
+\begin{list}{}{}
+	\item \textbf{VP} = Verdadero positivo.
+	\item \textbf{VN} = Falso positivo.
+\end{list}
+\end{center}
+
+\begin{equation}
+\label{eq:vpvfws}
+	\text{Tasa de falsos positivos (TFP)} =\frac{FP}{FP + VN} 
+\end{equation}
+
+\begin{center}
+\begin{list}{}{}
+	\item \textbf{FP} = Falso positivo.
+	\item \textbf{VN} = Verdadero negativo.
+\end{list}
+\end{center}
+
+Una vez utilizando estas ecuaciones en los datos de la Tabla \ref{tab:FP} se obtendrá las datos necesarios para poder obtener la curva ROC, estos datos se podrán observar en la Tabla \ref{tab:TVFTFV}. 
 
 \begin{table}[h]
 \centering
-\caption{Tasa de Verdaderos Positivos y Falsos Positivos}
-\begin{tabular}{| c | c |} 
+\caption{Datos necesarios para obtener la curva ROC que indica el rendimiento de la red neuronal.}
+\begin{tabular}{cc} 
 \hline
-\textbf{Tasa de VP} & \textbf{Tasa de FP}  \\ 
+\textbf{TFP} & \textbf{TVP}  \\ 
 \hline
-1          & 1           \\ 
-\hline
-1          & 1           \\ 
-\hline
-0.97260274 & 0.95555556  \\ 
-\hline
-0.97260274 & 0.95555556  \\ 
-\hline
-0.93607306 & 0.95555556  \\ 
-\hline
-0.91324201 & 0.95555556  \\
+0.666667     & 0.6           \\
+0.6          & 0.666667      \\
+0.571429     & 0.4           \\
+0            & 0.777778      \\
+0.5          & 0.8           \\
+0.5          & 0.75          \\
+0.5          & 0.75          \\
 \hline
 \end{tabular}
+\vspace{3mm}
 \label{tab:TVFTFV}
 \sources{Elaboración propia.}
 \end{table}
 
+Con la tabla anterior ya se tiene todos los datos para obtener la curva ROC, pero para poder graficarlo es necesario que cada dato de la TFP reste a 1, como se indica en la Ecuación \ref{eq:v1}. Una vez realizado esto los datos tendrán que ser ordenados de forma ascendente.
 
-Con estos datos y aplicando el grafico de línea se obtiene el rendimiento que posee la red neuronal entrenada. Esto se podrá observar en la Figura \ref{fig:FROC}, Los datos de las tablas anteriores no está completas ya que se analizaron varios objetos, por eso mismo las tablas completas se podrá observar en el apartado de los anexos del documento. 
+\begin{equation}
+\label{eq:v1}
+		1 - TFP  
+\end{equation}
+ 
+Con estos datos se obtiene la curva ROC, que indica el rendimiento que posee la red neuronal entrenada. Esto se podrá observar en la Figura \ref{fig:FROC}, Los datos de las tablas anteriores no está completas ya que se analizaron varios objetos, por eso mismo las tablas completas se podrá observar en el apartado de los anexos del documento. 
 
 \clearpage
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.7]{imagenes/curvaROC.png}
+	\includegraphics[scale=0.7]{imagenes/roc23.png}
 	\caption{Gráfica de rendimiento de la red neuronal entrenada.}
 	\source{Elaboración propia}
 	\label{fig:FROC}
 \end{figure}
 
-\section{Diseño de la interfaz}
-Para el diseño de la interfaz se utilizo la herramienta Balsamiq Wireframes, el cual permite planificar cómo se vera la interfaz de alguna aplicación. Con esta herramienta se diseño 2 pantallas para así determinar el diseño que tendrá la aplicación.
+\section{Diseño de la interfaz} 
 
-\subsection{Detección de personas}
+Para el diseño de la interfaz se utilizó la herramienta Balsamiq Wireframes, el cual permite planificar cómo se vera la interfaz de alguna aplicación. Con esta herramienta se diseñó 2 pantallas para así determinar el diseño que tendrá la aplicación. 
 
-Esta es la pantalla principal de la aplicación, donde se  indica la información de cuántas personas están siendo detectadas en ese momento, de igual manera se muestra en tiempo real el video obtenido por la cámara de seguridad. Otra información importante que se indica en la interfaz es el limite de detección, el cual ayuda a visualizar mejor los datos de esta pantalla, esto se apreciará mejor en la Figura \ref{fig:labeling30}. 
+\subsection{Detección de personas} 
+
+Esta es la pantalla principal de la aplicación, donde se indica la información de cuántas personas están siendo detectadas en ese momento, de igual manera se muestra en tiempo real el video obtenido por la cámara de seguridad. Otra información importante que se indica en la interfaz es el límite de detección, el cual ayuda a visualizar mejor los datos de esta pantalla, esto se apreciará mejor en la Figura \ref{fig:labeling30}. 
+
 
 \begin{figure}[h]
 	\centering
@@ -299,12 +315,12 @@ Esta es la pantalla principal de la aplicación, donde se  indica la informació
 
 \subsection{Pantalla de alerta}
 
-Esto es una pantalla de alerta que solo aparecerá cuando se pase el limite de tiempo de espera de una persona en la fila del supermercado. Esta pantalla tendrá una imagen de alerta para así poder captar la atención de las personas y se aconsejara abrir una nueva caja para poder acelerar el proceso de atención, el diseño de esta pantalla se puede ver en la Figura \ref{fig:labeling31}.
+Esto es una pantalla de alerta que solo aparecerá cuando se pase el límite de tiempo de espera de una persona en la fila del supermercado. Esta pantalla tendrá una imagen de alerta para así poder captar la atención de las personas y se aconsejará abrir una nueva caja para poder acelerar el proceso de atención, el diseño de esta pantalla se puede ver en la Figura \ref{fig:labeling31}. 
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.6]{imagenes/imagen2.png}
+	\includegraphics[scale=0.4]{imagenes/imagen2.png}
 	\caption{Mockup de la pantalla de alerta.}
 	\source{Elaboración propia}
 	\label{fig:labeling31}
@@ -349,14 +365,13 @@ En esta sección se observa más a detalle los sistemas usados para que la aplic
 	\label{fig:labeling34}
 \end{figure}
 
-Con este diagrama conocemos cuáles son las funciones de los diferentes sistemas que tiene la aplicación, por ejemplo, Darknet es el encargado de realizar las detecciones en las imágenes que le envía la aplicación principal. Por otra parte, Deepsort es el que recibe los resultados de Darknet y este aplica un ID único a cada detección, esta información es recibida por NeoVision, la cual le permite realizar los cálculos para determinar si es necesario abrir una nueva caja. 
+Con este diagrama conocemos cuáles son las funciones de los diferentes sistemas que tiene la aplicación, por ejemplo, Darknet es el encargado de realizar las detecciones en las imágenes que le envía la aplicación principal. Por otra parte, Deepsort es el que recibe los resultados de Darknet y este aplica un ID único a cada detección, esta información es recibida por NeoVision, la cual le permite realizar los cálculos para determinar si es necesario abrir una nueva caja.  
 
-\section{Descripción de la aplicación}
+\section{Descripción de la aplicación} 
 
+Para comenzar el desarrollo de la aplicación primeramente se tiene que crear un ambiente virtual de Python en la computadora, ya que se necesita instalar ciertos paquetes que podrían entrar en conflicto con algunas aplicaciones ya instaladas y también genera un mayor orden. 
 
-
-Para comenzar el desarrollo de la aplicación primeramente se tiene que crear una ambiente virtual de Python en la computadora, ya que se necesita instalar ciertos paquetes que podrían entrar en conflicto con algunas aplicaciones ya instaladas y también genera un mayor orden.
-La herramienta ideal para realizar esto es VirtualenvWrapper, ya que es fácil de instalar y sobre todo es simple de ingresar al ambiente virtual, sobre todo cuando se compara con otras herramientas. Esta diferencia aprecia mejor en la Figura \ref{fig:labeling9}.
+La herramienta ideal para realizar esto es VirtualenvWrapper, ya que es fácil de instalar y sobre todo es simple de ingresar al ambiente virtual, sobre todo cuando se compara con otras herramientas. Esta diferencia aprecia mejor en la Figura \ref{fig:labeling9}. 
 
 \clearpage
 \begin{figure}[h]
@@ -405,7 +420,7 @@ Por sí solas la detección que se puede hacer no brinda la información suficie
 	\label{fig:labeling12}
 \end{figure}
 
-Cómo se ve en la figura anterior, no se marca todos los objetos en el lado que no utiliza \textit{tracker}, ya que justo en ese \textit{frame} no lo identifica bien y se pierde. Pero en otra parte del mismo video se ve que en la Figura \ref{fig:labeling13}, desaparece el objeto detectado, por otra parte el que utiliza el \textit{tracker} no pierde ninguna detección.
+Cómo se ve en la figura anterior, no se marca todos los objetos en el lado que no utiliza \textit{tracker}, ya que justo en ese \textit{frame} no lo identifica bien y se pierde. Pero en otra parte del mismo video se ve que en la Figura \ref{fig:labeling13}, desaparece el objeto detectado, por otra parte, el que utiliza el \textit{tracker} no pierde ninguna detección. 
 
 \vspace{5mm}
 \begin{figure}[h]
@@ -417,11 +432,13 @@ Cómo se ve en la figura anterior, no se marca todos los objetos en el lado que 
 \end{figure}
 \vspace{5mm}
 
-Pero el problema mas importante es que cuando una persona se sale del enfoque de la cámara o es cubierto por algún objeto, la detección se pierde y cuando vuelve a aparecer la app lo detecta como si fuera una nueva persona. 
-Esto se podrá solucionar incorporando a la detección un \textit{tracker}, mediante esto se podrá generar ID a cada detección y con eso se podrá diferenciar entre detecciones, ya que todos tendrán un identificador que permitiría contar a las personas detectadas.
-El \textit{tracker} a utilizar es DeepSort, el cual es de uso libre, para que funcione correctamente se tiene que usar una red pre-entrenada que ayuda al proceso del rastreo.
-\clearpage
+Pero el problema más importante es que cuando una persona se sale del enfoque de la cámara o es cubierto por algún objeto, la detección se pierde y cuando vuelve a aparecer la app lo detecta como si fuera una nueva persona.  
 
+Esto se podrá solucionar incorporando a la detección un \textit{tracker}, mediante esto se podrá generar ID a cada detección y con eso se podrá diferenciar entre detecciones, ya que todos tendrán un identificador que permitiría contar a las personas detectadas. 
+
+El \textit{tracker} a utilizar es DeepSort, el cual es de uso libre, para que funcione correctamente se tiene que usar una red pre-entrenada que ayuda al proceso del rastreo. 
+
+\clearpage 
 \subsection{Agregar contador y límite de detección}
 
 Para que se pueda contar la cantidad de personas detectas se usara una función de Deepsort el cual genera una lista de las detecciones y mediante OpenCV se podrá mostrar en la pantalla del mismo video como se ve en la Figura \ref{fig:labeling14}.
@@ -446,11 +463,11 @@ El límite se encargará de reiniciar el contador y los cálculos de tiempo máx
 \end{figure}
 
 \clearpage
-Esto se logra gracias a OpenCV, ya que con él se dibujara una línea, el cual representa el límite para la detección y cuando un objeto cruce la línea ya no será tomando en cuenta. Esto funciona porque por cada detección genera unas coordenadas de la posición del objeto, teniendo esto se sabe cuándo cruza la línea.
+Esto se logra gracias a OpenCV, ya que con él se dibujará una línea, el cual representa el límite para la detección y cuando un objeto cruce la línea ya no será tomando en cuenta. Esto funciona porque por cada detección genera unas coordenadas de la posición del objeto, teniendo esto se sabe cuándo cruza la línea. 
 
-\subsection{Alarma al superar el tiempo máximo}
+\subsection{Alarma al superar el tiempo máximo} 
 
-Este apartado se encarga de informar cuando se sobrepase el tiempo máximo de espera definido, para saber esto se creó una lista donde se registra la hora en la que se detectó la persona, en la Figura \ref{fig:labeling16} se observa como está compuesta la lista, la cual guarda datos necesarios para realizar la alarma y el límite de detección.
+Este apartado se encarga de informar cuando se sobrepase el tiempo máximo de espera definido, para saber esto se creó una lista donde se registra la hora en la que se detectó la persona, en la Figura \ref{fig:labeling16} se observa cómo está compuesta la lista, la cual guarda datos necesarios para realizar la alarma y el límite de detección. 
 
 \vspace{5mm}
 \begin{figure}[h]
@@ -480,10 +497,11 @@ Otra manera en la que se puede activar la alarma es cuando por un determinado ti
 
 \subsection{Crear una base de datos}
 
-Con este apartado se está utilizando una base datos para registrar la hora exacta cuando salte una alarma. Esto sirve para poder ver cuándo son las horas críticas y así buscar una solución que mejoraría la atención.
-Para la base de datos se usa Mongodb, el cual te permite guardar los datos tanto de manera local como en la nube y es una herramienta gratuita.
+Con este apartado se está utilizando una base datos para registrar la hora exacta cuando salte una alarma. Esto sirve para poder ver cuándo son las horas críticas y así buscar una solución que mejoraría la atención. 
 
-En este caso como aplicación fue probada en un MacBook Pro 2014, la instalación de Mongodb variará en una máquina Windows. Simplemente para instalar la base de datos se tendrá que correr el siguiente comando que aparece en la Figura \ref{fig:labeling18}, estos comandos se tienen que hacer correr en la terminal.
+Para la base de datos se usa Mongodb, el cual te permite guardar los datos tanto de manera local como en la nube y es una herramienta gratuita. 
+
+En este caso como aplicación fue probada en un MacBook Pro-2014, la instalación de Mongodb variará en una máquina Windows. Simplemente para instalar la base de datos se tendrá que correr el siguiente comando que aparece en la Figura \ref{fig:labeling18}, estos comandos se tienen que hacer correr en la terminal. 
 
 \vspace{5mm}
 \begin{figure}[h]

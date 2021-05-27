@@ -1,26 +1,25 @@
 \begin{center}
-	\section*{ABSTRACT}
+	\textbf{ABSTRACT}
 \end{center}
-
-
-This project consists of building an application, which will calculate the average waiting time of a person when they are queuing inline in a single line system. With this information, it will be possible to suggest when it is necessary to open a new box so that customers do not wait too long and thus generate a better experience.
-
-\vspace{5mm}
-This application uses technologies such as computer vision and artificial neural networks, which can be used in object detection, which in this case will be people.  
+\vspace{-10mm}
+This project consists of building an application, which will calculate the average waiting time of a person when they are queuing inline in a single line system. With this information, it will be possible to suggest when it is necessary to open a new counter so that customers do not wait too long and thus generating a better experience.
 
 \vspace{5mm}
-In the case of the neural network, will be used YOLO (You Only Look Once), which according to several documents, is one of the best when talking about object detection in real-time, since it performs multiple detections that accelerates the process of finding people in this case, but when using this method the neural network consumes many resources of a computer, that is why we are using a reduced version of YOLO, this version is well-known as Tiny-Yolo. This network has a less complex internal structure with fewer layers and filters, this causes that the workload for the CPU and GPU of the computer is not very severe, which causes better performance in real-time detection.
+This application uses technologies such as computer vision and artificial neural networks, which can be used in object detection, which in this case it will detect people.  
 
 \vspace{5mm}
-For the neural network to be capable to detect people, first, the respective training was carried out, using 400 images where people appear, which went through a labeling process where the location of the person in the image is indicated. This application also works with a tracker, which allows tracking of the detections made, that is, this generates a unique identifier for each detection and generates more information which will be useful for the calculations of waiting time. 
+In the case of the neural network, will be used YOLO (You Only Look Once), which according to several documents, is one of the best when it comes to real-time object detection, since it performs multiple detections that accelerate the process of finding people. When using this method the neural network consumes many resources of a computer, which is why we are using a reduced version of YOLO. This version is well-known as Tiny-Yolo. This network has a less complex internal structure with fewer layers and filters, this causes the workload for the CPU and GPU of the computer to not be very severe, which causes better performance in real-time detection.
 
 \vspace{5mm}
-For the computational vision section, we are using the OpenCV library, which allows us to work with images and videos, i.e., with the library, we can extract each frame of the video to be analyzed by YOLO.
+For the neural network to be capable to detect people, firstly, the respective training was carried out, using 400 images in which people appear, which went through a labeling process where the location of the person in the image is indicated. This application also works with a tracker, which allows tracking of the detections made, that is, it generates a unique identifier for each detection and generates more information which will be useful for the calculations of waiting time. 
 
 \vspace{5mm}
-With these technologies, an application was developed which can be used in any store that uses a single-row system, as it was designed to solve a problem that arises, which is how many boxes have to be open in the different periods in the attention to avoid generating long waiting lines.
+For the computational vision section, we are using the OpenCV library, which allows us to work with images and videos, i.e., with the library, we can extract every frame of the video to be analyzed by YOLO.
 
-\vspace{10mm}
+\vspace{5mm}
+With these technologies, an application was developed which can be used in any store that uses a single-row system, as it was designed to solve a problem that arises, which is how many counter have to be open in the different periods in the attention to avoid generating long waiting lines.
+
+\vspace{8mm}
 
 \textbf{Keywords:} Detection. Tracking. Tagging.
 

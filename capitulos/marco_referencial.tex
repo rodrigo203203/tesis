@@ -1,9 +1,8 @@
 \fancypagestyle{plain}{
 \fancyfoot[R]{\thepage}}
-Las redes neuronales artificiales, hoy en día, se han convertido en un campo de estudio muy amplio en el área de las ciencias de la computación, llegándose aplicar en diversos sectores de la industria. Por otra parte, la visión computacional se encarga de reconocer y localizar objetos en un ambiente mediante el procesamiento de imágenes (\cite{image2}).
+Las redes neuronales artificiales, hoy en día, se han convertido en un campo de estudio muy amplio en el área de las ciencias de la computación, llegándose aplicar en diversos sectores de la industria. Por otra parte, la visión computacional se encarga de reconocer y localizar objetos en un ambiente mediante el procesamiento de imágenes (\cite{image2}). 
 
-
-En la actualidad existen varias aplicaciones que usan visión computacional junto con inteligencia artificial, brindándoles la capacidad de identificar objetos que se puedan apreciar mediante una cámara o imágenes guardadas en el dispositivo. Un claro ejemplo es Huawei, que en sus últimos teléfonos agrego una nueva función a la aplicación de su cámara, que le permite detectar al objeto que se le tomará una fotografía, dependiendo del objeto, la aplicación usará diferentes efectos en la foto para que se logre visualizar mejor. Este proceso se puede observar en la Figura \ref{fig:huawei}, donde el teléfono decide que lo correcto es usar el efecto \textit{Bokeh} (desenfoque), también conocido como modo retrato.
+ En la actualidad existen varias aplicaciones que usan visión computacional junto con inteligencia artificial, brindándoles la capacidad de identificar objetos que se puedan apreciar mediante una cámara o imágenes guardadas en el dispositivo. Un claro ejemplo es Huawei, que en sus últimos teléfonos agrego una nueva función a la aplicación de su cámara, que le permite detectar al objeto que se le tomará una fotografía, dependiendo del objeto, la aplicación usará diferentes efectos en la foto para que se logre visualizar mejor. Este proceso se puede observar en la Figura \ref{fig:huawei}, donde el teléfono decide que lo correcto es usar el efecto \textit{Bokeh} (desenfoque), también conocido como modo retrato. 
 \vspace{5mm}
 
 \begin{figure}[h]
@@ -14,7 +13,7 @@ En la actualidad existen varias aplicaciones que usan visión computacional junt
 	\label{fig:huawei}
 \end{figure}
 \clearpage
-Los automóviles con piloto automático son otro ejemplo del uso de estas tecnologías, como ser el caso de los vehículos de Tesla (\cite{tes}). Mediante el uso de esta tecnología y una serie de cámaras pueden llegar a detectar diferentes objetos que lo rodean, esto se puede apreciar en la Figura \ref{fig:tesla}, dándoles así la  capacidad de poder reconocer señales de tránsito, personas y objetos, lo cual brinda la información necesaria para que el vehículo tenga una especie de piloto automático.
+Los automóviles con piloto automático son otro ejemplo del uso de estas tecnologías, como ser el caso de los vehículos de Tesla (\cite{tes}). Mediante el uso de esta tecnología y una serie de cámaras pueden llegar a detectar diferentes objetos que lo rodean, esto se puede apreciar en la Figura \ref{fig:tesla}, dándoles así la capacidad de poder reconocer señales de tránsito, personas y objetos, lo cual brinda la información necesaria para que el vehículo tenga una especie de piloto automático. 
 
 \vspace{5mm}
 \begin{figure}[h]
@@ -25,10 +24,10 @@ Los automóviles con piloto automático son otro ejemplo del uso de estas tecnol
 	\label{fig:tesla}
 \end{figure}
 
-En el sector de los supermercados no aparecieron grandes innovaciones en la ultima década para facilitar la atención, más allá de aplicar la teoría de colas. Con el paso del tiempo surgieron ideas como el uso del sistema de fila única y el método de auto cobro de productos, que consiste que el mismo cliente escanea sus compras y realiza el pago mediante tarjeta. Pero la innovación principal es con la llegada de la inteligencia artificial y visión computacional, las cuales se hicieron más accesibles, debido a eso surgieron nuevas soluciones, como ser el caso de las tiendas de Amazon, que no necesitan tener cajeros (\cite{ama}), ya que un sistema de camaras y unas etiquetas especiales en los productos permiten realizar todo el proceso de cobranza de los productos.
-\\
+En el sector de los supermercados no aparecieron grandes innovaciones en la última década para facilitar la atención, más allá de aplicar la teoría de colas. Con el paso del tiempo surgieron ideas como el uso del sistema de fila única y el método de auto cobro de productos, que consiste que el mismo cliente escanea sus compras y realiza el pago mediante tarjeta. Pero la innovación principal es con la llegada de la inteligencia artificial y visión computacional, las cuales se hicieron más accesibles, debido a eso surgieron nuevas soluciones, como ser el caso de las tiendas de Amazon, que no necesitan tener cajeros (\cite{ama}), ya que un sistema de cámaras y unas etiquetas especiales en los productos permiten realizar todo el proceso de cobranza de los productos. 
+\\ 
 
-Teniendo en cuenta estas últimas innovaciones, se quiere realizar una aplicación con visión computacional junto a una red neuronal, con el fin de poder detectar a las personas que estén esperando en una fila y así calcular el tiempo promedio de espera actual, este tiempo obtenido se comparará con el máximo establecido, si este llega a ser mayor se procederá en abrir una nueva caja. Para desarrollar esto se pretende utilizar redes ya construidas como YOLO, cuyo funcionamiento se puede observar en la Figura \ref{fig:deyolo}, o también considerar la opción de crear una propia red mediante el uso de diferentes herramientas como Tensorflow, Keras y Pytorch. La elección del método dependerá de las exigencias del proyecto y el lenguaje de programación a escoger.
+Teniendo en cuenta estas últimas innovaciones, se quiere realizar una aplicación con visión computacional junto a una red neuronal, con el fin de poder detectar a las personas que estén esperando en una fila y así calcular el tiempo promedio de espera actual, este tiempo obtenido se comparará con el máximo establecido, si este llega a ser mayor se procederá en abrir una nueva caja. Para desarrollar esto se pretende utilizar redes ya construidas como YOLO, cuyo funcionamiento se puede observar en la Figura \ref{fig:deyolo}, o también considerar la opción de crear una propia red mediante el uso de diferentes herramientas como Tensorflow, Keras y Pytorch. La elección del método dependerá de las exigencias del proyecto y el lenguaje de programación a escoger. 
  
 \begin{figure}[h]
 	\centering
@@ -43,10 +42,11 @@ Teniendo en cuenta estas últimas innovaciones, se quiere realizar una aplicaci�
 \section{Planteamiento del Problema}
 
 
-Actualmente, las tiendas están muy conscientes sobre la importancia de mantener una experiencia placentera al momento de atender a un cliente, ya que un cliente bien atendido aumenta las probabilidades de que la persona decida volver al local y eso generaría más beneficios para tienda. De acuerdo con un estudio realizado por la revista \textit{Journal of  Business Research} (\cite{shoppingExp}), el  factor más influyente al momento de tomar una decisión son las filas largas que se generan, un ejemplo de esto se puede observar en la Figura \ref{fig:longF}.
+Actualmente, las tiendas están muy conscientes sobre la importancia de mantener una experiencia placentera al momento de atender a un cliente, ya que un cliente bien atendido aumenta las probabilidades de que la persona decida volver al local y eso generaría más beneficios para tienda. De acuerdo con un estudio realizado por la revista \textit{Journal of  Business Research} (\cite{shoppingExp}), el factor más influyente al momento de tomar una decisión son las filas largas que se generan, un ejemplo de esto se puede observar en la Figura \ref{fig:longF}. 
 
-\vspace{5mm}
- Una de las soluciones que normalmente se aplica es el generar una fila única con varias cajas (\cite{cola2323}), para así lograr una atención efectiva, pero el éxito de este método es saber cuantas cajas tendrán que estar disponibles para atender, porque teniendo todas las cajas abiertas en todo momento no es muy eficiente para el supermercado, ya que habría cajas vacías y eso ocasiona tener personal que no este realizando ninguna actividad, por otra parte, teniendo poco personal atendiendo las cajas ocasionaría largas filas y eso conlleva a generar una mala experiencia al cliente. 
+\vspace{5mm} 
+
+Una de las soluciones que normalmente se aplica es el generar una fila única con varias cajas (\cite{cola2323}), para así lograr una atención efectiva, pero el éxito de este método es saber cuántas cajas tendrán que estar disponibles para atender, porque teniendo todas las cajas abiertas en todo momento no es muy eficiente para el supermercado, ya que habría cajas vacías y eso ocasiona tener personal que no esté realizando ninguna actividad, por otra parte, teniendo poco personal atendiendo las cajas ocasionaría largas filas y eso conlleva a generar una mala experiencia al cliente. 
  
 
 \vspace{5mm}
@@ -80,13 +80,14 @@ Desarrollar una aplicación utilizando YOLO para detectar personas y así poder 
 
 \section{Motivación}
 
-En los últimos años la inteligencia artificial junto con la visión computacional son tecnologías que están siendo usadas en diversos campos en la industria, que van  desde el sector automotriz, financiero, educativo y hasta sistemas de seguridad. Tomando en cuenta esto, desarrollar aplicaciones que utilicen estas herramientas tendrán un gran impacto al mercado local, ya que no hay muchas soluciones que utilicen estas tecnologías y como ser algo nuevo seguirá creciendo hasta llegar a solucionar problemas mas cotidianos. Como en este caso al utilizar estas herramientas para solucionar un problema que surge en los supermercados al utilizar un sistema de fila única.\clearpage
-\section{Justificación}
+En los últimos años la inteligencia artificial junto con la visión computacional son tecnologías que están siendo usadas en diversos campos en la industria, que van desde el sector automotriz, financiero, educativo y hasta sistemas de seguridad. Tomando en cuenta esto, desarrollar aplicaciones que utilicen estas herramientas tendrán un gran impacto al mercado local, ya que no hay muchas soluciones que utilicen estas tecnologías y como es algo nuevo seguirá creciendo hasta llegar a solucionar problemas más cotidianos, como en este caso al utilizar estas herramientas para solucionar un problema que surge en los supermercados al utilizar un sistema de fila única.\clearpage 
 
- Un tiempo de espera elevado afectan tanto al cliente (más tiempo de espera) como al supermercado (cajeros muy ocupados). Reducir la espera de un comprador habilitando más cajas para la atención, podría mejorar la experiencia de compra y con ello aumentar las probabilidades de retorno del cliente al local. Por tanto, este proyecto se lleva a cabo para ayudar a determinar cuántas cajas tienen que estar abiertas en un sistema de fila única.
- \\
- 
-Con esta información el supermercado puede determinar en qué momento necesitará mayor personal para mejorar la atención y cuándo no, con esto podrá tomar la decisión si es necesario reducir la cantidad de empleados en los periodos que no son necesitados.
+\section{Justificación} 
+
+Una fila muy larga en la atención de las cajas afecta tanto al cliente (más tiempo de espera) como al supermercado (clientes que se retiran sin terminar su compra). Reducir el tiempo de  espera de un comprador habilitando más cajas para la atención, podría mejorar la experiencia de compra y con ello aumentar las probabilidades de retorno del cliente al local. Por tanto, este proyecto se lleva a cabo para ayudar a determinar cuántas cajas tienen que estar abiertas en un sistema de fila única. 
+\\  
+
+Con esta información el supermercado puede determinar en qué momento necesitará mayor personal para mejorar la atención y cuándo no, con esto podrá tomar la decisión si es necesario reducir la cantidad de empleados en los periodos que no son necesitados. 
 
 \section{Delimitación}
 Los límites y alcances del proyecto, se resumen en los siguientes puntos: 
