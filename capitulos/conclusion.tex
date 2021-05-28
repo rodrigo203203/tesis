@@ -5,6 +5,9 @@
 	\item Se realizó la investigación de diferentes métodos para construir una red neuronal para la detección de objetos en imágenes, como Tensorflow, Pytorch y Keras y se concluyó que lo mejor es usar una red ya construida que está basada en Tensorflow, el cual es Darknet este nos da resultados muy superiores que al construir una. 
 
 	\item Se logró entrenar una red neuronal para que sea capaz de detectar a personas tanto en imágenes como en videos en tiempo real. 
+	
+	\item La red entrenado demostró tener una precisión bastante aceptable teniendo una valor del 70\%, pero con un rendimiento bajo, lo que dificulta al entregar resultados óptimos.
+
 
 	\item Se juntó la detección con la función de rastreo, el cual elimina ciertas fallas que tiene al trabajar con solo la detección de objetos. Para la función de rastreo se decidió utilizar Deepsort, el cual es uno de los más conocidos, ya que tiene uno de los mejores rendimientos al momento de realizar un rastreo de los objetos detectados.  
 
@@ -22,7 +25,9 @@
 
 Como recomendaciones técnicas, un aspecto muy importante es contar con el hardware adecuado para este tipo de sistemas, es decir, contar con una tarjeta de video (GPU) en la computadora donde se va a ejecutar el programa. El equipo que fue utilizado para este proyecto no cuenta con una GPU, con lo que conllevo a no tener el rendimiento adecuado, ya que todos los cálculos fueron ejecutados en el CPU. 
 
-Otro apartado importante es tener en cuenta el tipo de cámara que se usará, ya que dependiendo de la calidad del video la exigencia de la aplicación será mayor, es decir, que si se trabaja con videos en 720p (1280x720 pixeles) consumirá menos recursos de la computadora que al trabajar con un video en 1080p (1920x1080 pixeles), porque la imagen es más pequeña y eso genera menos información al procesarlo. 
+Otro apartado importante es tener en cuenta el tipo de cámara que se usará, ya que dependiendo de la calidad del video la exigencia de la aplicación será mayor, es decir, que si se trabaja con videos en 720p (1280x720 pixeles) consumirá menos recursos de la computadora que al trabajar con un video en 1080p (1920x1080 pixeles), porque la imagen es más pequeña y eso genera menos información al procesarlo.
+
+Un apartado muy importante es definir bien la posición de la cámara de donde se sacará el video, ya que el lugar donde se coloque la cámara podría ayudar o perjudicar bastante al momento que la red neuronal realice las detecciones. 
 
 \section{Trabajos futuros} 
 

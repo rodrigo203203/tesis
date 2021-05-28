@@ -49,34 +49,34 @@
 \contentsline {subsection}{\numberline {3.2.3}Personalizar una red neuronal}{52}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Inicio de entrenamiento}{54}{subsection.3.2.4}%
 \contentsline {section}{\numberline {3.3}Prueba de rendimiento}{55}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Diseño de la interfaz}{58}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Detección de personas}{58}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Pantalla de alerta}{58}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Diagrama de flujo}{59}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Diagrama C4Model}{61}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Contexto}{61}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Contenedores}{62}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Descripción de la aplicación}{62}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Agregar el tracker a la detección}{63}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Agregar contador y límite de detección}{65}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Alarma al superar el tiempo máximo}{66}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Crear una base de datos}{66}{subsection.3.7.4}%
-\contentsline {section}{\numberline {3.8}Conclusiones del capitulo III}{68}{section.3.8}%
-\contentsline {chapter}{\numberline {4}FUNCIONAMIENTO DE LA APLICACIÓN}{69}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Proceso de iniciar la aplicación}{69}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Configuración de parámetros}{70}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Proceso de detección y cálculo de tiempo de espera promedio}{70}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Prueba de la aplicación}{72}{section.4.4}%
-\contentsline {chapter}{\numberline {5}MARCO CONCLUSIVO}{75}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{75}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recomendaciones}{76}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Trabajos futuros}{76}{section.5.3}%
-\contentsline {chapter}{BIBLIOGRAFÍA}{76}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anexos}{80}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Tablas}{80}{section.Alph1.1}%
-\contentsline {subsection}{\numberline {A.1.1}Datos obtenidos mediante el análisis de las detecciones.}{80}{subsection.Alph1.1.1}%
-\contentsline {subsection}{\numberline {A.1.2}Tasa de verdaderos positivos y tasa de falsos positivos.}{81}{subsection.Alph1.1.2}%
-\contentsline {subsection}{\numberline {A.1.3}Tabla ordenada y lista para graficar la curva ROC.}{82}{subsection.Alph1.1.3}%
-\contentsline {section}{\numberline {A.2}Código}{84}{section.Alph1.2}%
-\contentsline {subsection}{\numberline {A.2.1}Código general de la aplicación NeoVision.}{84}{subsection.Alph1.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Código que genera la ventana de alerta.}{92}{subsection.Alph1.2.2}%
+\contentsline {section}{\numberline {3.4}Diseño de la interfaz}{59}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detección de personas}{59}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Pantalla de alerta}{60}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Diagrama de flujo}{60}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Diagrama C4Model}{62}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Contexto}{62}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Contenedores}{63}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Descripción de la aplicación}{63}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Agregar el tracker a la detección}{64}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Agregar contador y límite de detección}{66}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Alarma al superar el tiempo máximo}{67}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Crear una base de datos}{67}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Conclusiones del capitulo III}{69}{section.3.8}%
+\contentsline {chapter}{\numberline {4}FUNCIONAMIENTO DE LA APLICACIÓN}{70}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Proceso de iniciar la aplicación}{70}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Configuración de parámetros}{71}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Proceso de detección y cálculo de tiempo de espera promedio}{71}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Prueba de la aplicación}{73}{section.4.4}%
+\contentsline {chapter}{\numberline {5}MARCO CONCLUSIVO}{76}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{76}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recomendaciones}{77}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Trabajos futuros}{77}{section.5.3}%
+\contentsline {chapter}{BIBLIOGRAFÍA}{77}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anexos}{81}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Tablas}{81}{section.Alph1.1}%
+\contentsline {subsection}{\numberline {A.1.1}Datos obtenidos mediante el análisis de las detecciones.}{81}{subsection.Alph1.1.1}%
+\contentsline {subsection}{\numberline {A.1.2}Tasa de verdaderos positivos y tasa de falsos positivos.}{82}{subsection.Alph1.1.2}%
+\contentsline {subsection}{\numberline {A.1.3}Tabla ordenada y lista para graficar la curva ROC.}{83}{subsection.Alph1.1.3}%
+\contentsline {section}{\numberline {A.2}Código}{85}{section.Alph1.2}%
+\contentsline {subsection}{\numberline {A.2.1}Código general de la aplicación NeoVision.}{85}{subsection.Alph1.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Código que genera la ventana de alerta.}{93}{subsection.Alph1.2.2}%

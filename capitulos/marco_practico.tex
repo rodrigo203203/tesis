@@ -296,6 +296,34 @@ Con estos datos se obtiene la curva ROC, que indica el rendimiento que posee la 
 	\label{fig:FROC}
 \end{figure}
 
+Teniendo la gráfica se procede a calcular el area bajo la curva o AUC por sus siglas en ingles, con este dato se podrá definir si esta red entrenada tiene un buen rendimiento, para calcular el AUC se usara los datos de la Tabla \ref{tab:TVFTFV} y se aplicara la siguiente Ecuación \ref{eq:auc}, posteriormente, se usara la sumatoria de todos los datos obtenidos para así tener el AUC de la curva ROC.
+
+\begin{equation}
+\label{eq:auc}
+	AUC=\frac{TVP_{n}+TVP_{n+1}}{2*(TFP_{n+1}-TFP_{n})}
+\end{equation}
+\begin{center}
+\begin{list}{}{}
+	\item \textbf{TVPn} = Dato en la posición n en la tabla de tasas de verdaderos positivos.
+	\item \textbf{TFPn} = Dato en la posición n+1 en la tabla de tasas de falsos positivos.
+\end{list}
+\end{center}
+
+Aplicando la ecuación anterior se obtuvo un valor de 0.58, lo que indica que el rendimiento de la red no es bueno, para que una red entrenada tenga un rendimiento óptimo deberá tener un valor superior a 0.7. 
+
+Este valor de 0.58 podría mejorar realizando entrenamientos más largos a la red neuronal, tanto en la cantidad de iteraciones que tendría que dar como la cantidad de imágenes con la cual entrena, estas imágenes en su preferencia deberán ser más variadas.  
+
+
+Un factor que podría ocasionar un bajo rendimiento a la red es la posición de la cámara de donde se obtuvo el video y se realizaron las pruebas. Como se ve en la figura cuando hay una fila larga las personas están muy apegadas entre sí y eso no le permite identificar bien a las personas. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.3]{imagenes/pruebared.png}
+	\caption{Imagen del video donde se realizo las pruebas de rendimiento.}
+	\source{Elaboración propia}
+	\label{fig:FROC}
+\end{figure}
+
 \section{Diseño de la interfaz} 
 
 Para el diseño de la interfaz se utilizó la herramienta Balsamiq Wireframes, el cual permite planificar cómo se vera la interfaz de alguna aplicación. Con esta herramienta se diseñó 2 pantallas para así determinar el diseño que tendrá la aplicación. 
