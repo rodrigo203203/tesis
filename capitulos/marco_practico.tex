@@ -183,7 +183,7 @@ Para una detección sea considerado como VP, debe tener un 70\% de confiabilidad
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{imagenes/VPFPFN.png}
+	\includegraphics[scale=0.5]{imagenes/verdaderonega.png}
 	\caption{Clasificación de las diferentes detecciones obtenidas.}
 	\source{Elaboración propia}
 	\label{fig:FN}
@@ -216,13 +216,13 @@ Cómo se puede observar en la tabla anterior, todos los datos fueron repartidos 
 
 \begin{equation}
 \label{eq:vpvf}
-	Precision=\frac{VP}{VP + VF} 
+	Precision=\frac{VP}{VP + FP} 
 \end{equation}
 
 \begin{center}
 \begin{list}{}{}
 	\item \textbf{VP} = Sumatoria total de verdaderos positivos.
-	\item \textbf{VF} = Sumatoria total de falsos positivos.
+	\item \textbf{FP} = Sumatoria total de falsos positivos.
 \end{list}
 \end{center}
 
@@ -232,13 +232,13 @@ Para poder obtener la tasa de verdaderos positivos se hara uso de la Ecuacion \r
 
 \begin{equation}
 \label{eq:vpvfss}
-	\text{Tasa de verdaderos positivos (TVP)} =\frac{VP}{VP + VN} 
+	\text{Tasa de verdaderos positivos (TVP)} =\frac{VP}{VP + FN} 
 \end{equation}
 
 \begin{center}
 \begin{list}{}{}
 	\item \textbf{VP} = Verdadero positivo.
-	\item \textbf{VN} = Falso positivo.
+	\item \textbf{FN} = Falso negativo.
 \end{list}
 \end{center}
 
@@ -261,15 +261,15 @@ Una vez utilizando estas ecuaciones en los datos de la Tabla \ref{tab:FP} se obt
 \caption{Datos necesarios para obtener la curva ROC que indica el rendimiento de la red neuronal.}
 \begin{tabular}{cc} 
 \hline
-\textbf{TFP} & \textbf{TVP}  \\ 
+\multicolumn{1}{c}{\textbf{TVP}} & \multicolumn{1}{c}{\textbf{TFP}}  \\ 
 \hline
-0.666667     & 0.6           \\
-0.6          & 0.666667      \\
-0.571429     & 0.4           \\
-0            & 0.777778      \\
-0.5          & 0.8           \\
-0.5          & 0.75          \\
-0.5          & 0.75          \\
+0,6                              & 0,666667                          \\
+0,666667                         & 0,6                               \\
+0,4                              & 0,571429                          \\
+0,777778                         & 0                                 \\
+0,8                              & 0,5                               \\
+0,6                              & 0,5                               \\
+0,75                             & 0,5                               \\
 \hline
 \end{tabular}
 \vspace{3mm}
@@ -290,7 +290,7 @@ Con estos datos se obtiene la curva ROC, que indica el rendimiento que posee la 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.7]{imagenes/roc23.png}
+	\includegraphics[scale=0.7]{imagenes/rocsi.png}
 	\caption{Gráfica de rendimiento de la red neuronal entrenada.}
 	\source{Elaboración propia}
 	\label{fig:FROC}
@@ -309,9 +309,9 @@ Teniendo la gráfica se procede a calcular el area bajo la curva o AUC por sus s
 \end{list}
 \end{center}
 
-Aplicando la ecuación anterior se obtuvo un valor de 0.58, lo que indica que el rendimiento de la red no es bueno, para que una red entrenada tenga un rendimiento óptimo deberá tener un valor superior a 0.7. 
+Aplicando la ecuación anterior se obtuvo un valor de 0.63, lo que indica que el rendimiento de la red no es bueno, para que una red entrenada tenga un rendimiento óptimo deberá tener un valor superior a 0.7. 
 
-Este valor de 0.58 podría mejorar realizando entrenamientos más largos a la red neuronal, tanto en la cantidad de iteraciones que tendría que dar como la cantidad de imágenes con la cual entrena, estas imágenes en su preferencia deberán ser más variadas.  
+Este valor de 0.63 podría mejorar realizando entrenamientos más largos a la red neuronal, tanto en la cantidad de iteraciones que tendría que dar como la cantidad de imágenes con la cual entrena, estas imágenes en su preferencia deberán ser más variadas.  
 
 
 Un factor que podría ocasionar un bajo rendimiento a la red es la posición de la cámara de donde se obtuvo el video y se realizaron las pruebas. Como se ve en la figura cuando hay una fila larga las personas están muy apegadas entre sí y eso no le permite identificar bien a las personas. 

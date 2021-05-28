@@ -11,23 +11,23 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Procedimiento de convolución.\relax }}{30}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Resultado de una convolución.\relax }}{30}{figure.caption.12}%
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Prueba de velocidad de YOLO con la base de datos COCO.\relax }}{31}{figure.caption.13}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Red neuronal artificial en comparación a una neurona.\relax }}{31}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Red neuronal artificial en comparación a una neurona.\relax }}{32}{figure.caption.14}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces Estructura de una red neuronal artificial.\relax }}{32}{figure.caption.15}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces Diferentes capas conectadas de una red neuronal.\relax }}{33}{figure.caption.16}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Aprendizaje supervisado.\relax }}{33}{figure.caption.17}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Esquema de aprendizaje reforzado.\relax }}{34}{figure.caption.18}%
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Representación gráfica de la función Sigmoid.\relax }}{35}{figure.caption.19}%
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Representación gráfica de la función Tangencial.\relax }}{36}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Aprendizaje supervisado.\relax }}{34}{figure.caption.17}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Esquema de aprendizaje reforzado.\relax }}{35}{figure.caption.18}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Representación gráfica de la función Sigmoid.\relax }}{36}{figure.caption.19}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Representación gráfica de la función Tangencial.\relax }}{37}{figure.caption.20}%
 \contentsline {figure}{\numberline {2.14}{\ignorespaces Representación gráfica de la función Relu.\relax }}{37}{figure.caption.21}%
 \contentsline {figure}{\numberline {2.15}{\ignorespaces Representación gráfica de la función Softmax.\relax }}{38}{figure.caption.22}%
-\contentsline {figure}{\numberline {2.16}{\ignorespaces División de los sectores en ciencias de computación.\relax }}{38}{figure.caption.23}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces División de los sectores en ciencias de computación.\relax }}{39}{figure.caption.23}%
 \contentsline {figure}{\numberline {2.17}{\ignorespaces La máquina Colossus creada por Alan Turing.\relax }}{39}{figure.caption.24}%
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Interés de búsqueda sobre Tensorflow en Google.\relax }}{40}{figure.caption.25}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Interés de búsqueda sobre Tensorflow en Google.\relax }}{41}{figure.caption.25}%
 \contentsline {figure}{\numberline {2.19}{\ignorespaces Ejecución de funciones aritméticas en Tensorflow.\relax }}{42}{figure.caption.26}%
 \contentsline {figure}{\numberline {2.20}{\ignorespaces Detección múltiple realizada por YOLO.\relax }}{44}{figure.caption.27}%
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Aplicación de YOLO en una imagen.\relax }}{44}{figure.caption.28}%
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Aplicación de YOLO en una imagen.\relax }}{45}{figure.caption.28}%
 \contentsline {figure}{\numberline {2.22}{\ignorespaces Proceso que realiza YOLO para generar una detección de uno o varios objetos dentro de una imagen.\relax }}{45}{figure.caption.29}%
-\contentsline {figure}{\numberline {2.23}{\ignorespaces Estructura interna de la red neuronal YOLO.\relax }}{45}{figure.caption.30}%
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Estructura interna de la red neuronal YOLO.\relax }}{46}{figure.caption.30}%
 \contentsline {figure}{\numberline {2.24}{\ignorespaces Estructura interna de la red neuronal Tiny YOLO.\relax }}{46}{figure.caption.31}%
 \contentsline {figure}{\numberline {2.25}{\ignorespaces Servicio que ofrece AWS.\relax }}{47}{figure.caption.32}%
 \addvspace {10\p@ }

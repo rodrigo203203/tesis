@@ -1,5 +1,5 @@
-\contentsline {lstlisting}{\numberline {2.1}Ejemplos de los primeros pasos para crear nodos con Tensorflow.}{41}{lstlisting.2.1}%
-\contentsline {lstlisting}{\numberline {2.2}Ejecución de funciones aritméticas en Tensorflow.}{41}{lstlisting.2.2}%
+\contentsline {lstlisting}{\numberline {2.1}Ejemplos de los primeros pasos para crear nodos con Tensorflow.}{42}{lstlisting.2.1}%
+\contentsline {lstlisting}{\numberline {2.2}Ejecución de funciones aritméticas en Tensorflow.}{42}{lstlisting.2.2}%
 \contentsline {lstlisting}{\numberline {2.3}Configuración con Keras para trabajar con imágenes.}{43}{lstlisting.2.3}%
 \contentsline {lstlisting}{\numberline {3.1}Manera en la que se importan los diferentes paquetes al programa.}{64}{lstlisting.3.1}%
 \contentsline {lstlisting}{\numberline {3.2}Comando para guardar información en la base de datos.}{68}{lstlisting.3.2}%
