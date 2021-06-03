@@ -156,15 +156,30 @@
 
 \input{capitulos/abstract}
 
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[RO]{\thepage} %RO=right odd, RE=right even
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
 \listoffigures
 \listoftables
 \afterpage{\blankpage}
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[RO]{\thepage} %RO=right odd, RE=right even
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
 \lstlistoflistings
 \afterpage{\blankpage}
 \clearpage
 \afterpage{\blankpage}
 \input{capitulos/acronimos}
 \clearpage
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[RO]{\thepage} %RO=right odd, RE=right even
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}}
 \tableofcontents
 \afterpage{\blankpage}
 \titleformat{\chapter}[hang]

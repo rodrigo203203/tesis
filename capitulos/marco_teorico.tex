@@ -417,7 +417,7 @@ Algunas ventajas al usar esta herramienta son las siguientes:
 
 Uno de los elementos principales al momento de crear una red neuronal son las capas que lo componen, éstas tienen como función de extraer la información del conjunto de datos que se están utilizando. Hay que tomar en cuenta que esa información extraída no siempre será útil para el problema que se quiere solucionar. 
 
- Para crear capas utilizando Keras es necesario hacer uso del siguiente comando “tf.keras.layers.Flatten” si se quiere trabajar con análisis de imágenes, que consiste en transformar una imagen en un formato adecuado para que se pueda trabajar, con esto quiero decir que por ejemplo teniendo una imagen de un tamaño de 75x75 pixeles, al ejecutar el comando esta imagen se transformaría en 5625 pixeles (75 * 75 = 5625). Esta acción de “aplanar” los píxeles es el trabajo de la primera capa que se utiliza, con esta capa no comenzará con él aprendizaje sólo adecuará los sets de datos. 
+ Para crear capas utilizando Keras es necesario hacer uso del siguiente comando \hphantom{5mmmmm} “tf.keras.layers.Flatten” si se quiere trabajar con análisis de imágenes, que consiste en transformar una imagen en un formato adecuado para que se pueda trabajar, con esto quiero decir que por ejemplo teniendo una imagen de un tamaño de 75x75 pixeles, al ejecutar el comando esta imagen se transformaría en 5625 pixeles (75 * 75 = 5625). Esta acción de “aplanar” los píxeles es el trabajo de la primera capa que se utiliza, con esta capa no comenzará con él aprendizaje sólo adecuará los sets de datos. 
 
 \vspace{5mm} 
 
@@ -461,7 +461,7 @@ La principal innovación que YOLO trajo consigo a este campo, fue el hecho de qu
 El procesamiento de imágenes con YOLO es simple y directo, por ejemplo, teniendo una imagen de entrada de un tamaño de 448x448ppx, esto se aprecia en la Figura \ref{fig:yolo2}, ejecuta una red convolucional a la imagen que llegaría a cambiar de tamaño y así limitar los resultantes de las detecciones confiando en el modelo que se usó para entrenar la red neuronal. 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.8]{imagenes/yolo2.png}
+	\includegraphics[width=15cm, height=5cm]{imagenes/yolo31.png}
 	\caption{Aplicación de YOLO en una imagen.}
 	\source{YOLO (2018).}
 	\label{fig:yolo2}
@@ -502,7 +502,7 @@ Al tener menos capas está red neuronal es capaz de tener un mejor rendimiento e
 
  \begin{figure}[h]
 	\centering
-	\includegraphics[width=13cm, height=5.2cm]{imagenes/tiny-yolo.jpg}
+	\includegraphics[width=13cm, height=5cm]{imagenes/entrada_salida.png}
 	\caption{Estructura interna de la red neuronal Tiny YOLO.}
 	\source{Wei Fang (2019).}
 	\label{fig:yolo109}
@@ -536,7 +536,7 @@ Computación en la nube es un término que normalmente se utiliza para denominar
 
 Ofrece tres tipos de servicios principales en la nube, el cual son: infraestructura como servicio, plataforma como servicio y software como servicio. Cada tipo de servicio tiene diferentes niveles de control. 
 
- \vspace{5mm} 
+ \clearpage
 
 Se utilizó este servicio para crear una máquina en la nube que tenga las capacidades para correr el entrenamiento y que éste pueda estar encendido las 24 horas al día o por lo menos hasta que finalice el entrenamiento. 
 
