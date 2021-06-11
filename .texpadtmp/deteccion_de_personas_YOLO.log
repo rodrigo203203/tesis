@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.16)  3 JUN 2021 18:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.11.16)  10 JUN 2021 22:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -558,7 +558,10 @@ LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 
 
-LaTeX Warning: Label `fig:FROC' multiply defined.
+LaTeX Warning: Label `23' multiply defined.
+
+
+LaTeX Warning: Label `70' multiply defined.
 
 
 LaTeX Warning: Label `26' multiply defined.
@@ -667,7 +670,7 @@ LaTeX Info: Redefining \nameref on input line 92.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \c@lstlisting=\count312
-<imagenes/LogoCatolica.png, id=328, 311.1625pt x 570.13pt>
+<imagenes/LogoCatolica.png, id=336, 311.1625pt x 570.13pt>
 File: imagenes/LogoCatolica.png Graphic file (type png)
 <use imagenes/LogoCatolica.png>
 Package pdftex.def Info: imagenes/LogoCatolica.png  used on input line 95.
@@ -735,7 +738,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1281) has occurred while \output is active []
 
  [10])
 \tf@lot=\write5
@@ -766,13 +769,13 @@ Underfull \vbox (badness 1082) has occurred while \output is active []
 ]
 Cap\'{\i }tulo 1.
 (./capitulos/marco_referencial.tex
-<imagenes/huawei.png, id=670, 2216.28pt x 1246.6575pt>
+<imagenes/huawei.png, id=687, 2216.28pt x 1246.6575pt>
 File: imagenes/huawei.png Graphic file (type png)
 <use imagenes/huawei.png>
 Package pdftex.def Info: imagenes/huawei.png  used on input line 10.
 (pdftex.def)             Requested size: 199.15224pt x 145.10315pt.
  [21 <./imagenes/huawei.png>]
-<imagenes/tesla.jpg, id=681, 1204.5pt x 677.53125pt>
+<imagenes/tesla.jpg, id=697, 1204.5pt x 677.53125pt>
 File: imagenes/tesla.jpg Graphic file (type jpg)
 <use imagenes/tesla.jpg>
 Package pdftex.def Info: imagenes/tesla.jpg  used on input line 21.
@@ -782,7 +785,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
 
-<imagenes/person_detection.png, id=685, 602.25pt x 339.51843pt>
+<imagenes/person_detection.png, id=701, 602.25pt x 339.51843pt>
 File: imagenes/person_detection.png Graphic file (type png)
 <use imagenes/person_detection.png>
 Package pdftex.def Info: imagenes/person_detection.png  used on input line 34.
@@ -793,7 +796,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [22
 
  <./imagenes/tesla.jpg>]
-<imagenes/fila_larga.png, id=697, 444.15938pt x 150.5625pt>
+<imagenes/fila_larga.png, id=713, 444.15938pt x 150.5625pt>
 File: imagenes/fila_larga.png Graphic file (type png)
 <use imagenes/fila_larga.png>
 Package pdftex.def Info: imagenes/fila_larga.png  used on input line 55.
@@ -813,7 +816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--89
 ]
 Cap\'{\i }tulo 2.
 (./capitulos/marco_teorico.tex
-<imagenes/pegly.jpg, id=721, 723.45282pt x 578.16pt>
+<imagenes/pegly.jpg, id=737, 723.45282pt x 578.16pt>
 File: imagenes/pegly.jpg Graphic file (type jpg)
 <use imagenes/pegly.jpg>
 Package pdftex.def Info: imagenes/pegly.jpg  used on input line 8.
@@ -823,7 +826,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<imagenes/amago.jpg, id=742, 963.6pt x 542.025pt>
+<imagenes/amago.jpg, id=758, 963.6pt x 542.025pt>
 File: imagenes/amago.jpg Graphic file (type jpg)
 <use imagenes/amago.jpg>
 Package pdftex.def Info: imagenes/amago.jpg  used on input line 31.
@@ -831,7 +834,7 @@ Package pdftex.def Info: imagenes/amago.jpg  used on input line 31.
 [28
 
  <./imagenes/amago.jpg>]
-<imagenes/gato.png, id=767, 2017.5375pt x 610.28pt>
+<imagenes/gato.png, id=783, 2017.5375pt x 610.28pt>
 File: imagenes/gato.png Graphic file (type png)
 <use imagenes/gato.png>
 Package pdftex.def Info: imagenes/gato.png  used on input line 58.
@@ -839,12 +842,12 @@ Package pdftex.def Info: imagenes/gato.png  used on input line 58.
  [29
 
  <./imagenes/gato.png>]
-<imagenes/convu2.png, id=784, 792.9625pt x 407.5225pt>
+<imagenes/convu2.png, id=801, 792.9625pt x 407.5225pt>
 File: imagenes/convu2.png Graphic file (type png)
 <use imagenes/convu2.png>
 Package pdftex.def Info: imagenes/convu2.png  used on input line 67.
 (pdftex.def)             Requested size: 396.48027pt x 203.76074pt.
-<imagenes/convu3.png, id=785, 792.9625pt x 211.79124pt>
+<imagenes/convu3.png, id=802, 792.9625pt x 211.79124pt>
 File: imagenes/convu3.png Graphic file (type png)
 <use imagenes/convu3.png>
 Package pdftex.def Info: imagenes/convu3.png  used on input line 75.
@@ -852,12 +855,12 @@ Package pdftex.def Info: imagenes/convu3.png  used on input line 75.
  [30
 
  <./imagenes/convu2.png> <./imagenes/convu3.png>]
-<imagenes/image.png, id=807, 1751.54375pt x 1091.07625pt>
+<imagenes/image.png, id=823, 1751.54375pt x 1091.07625pt>
 File: imagenes/image.png Graphic file (type png)
 <use imagenes/image.png>
 Package pdftex.def Info: imagenes/image.png  used on input line 85.
 (pdftex.def)             Requested size: 350.30255pt x 218.21138pt.
-<imagenes/natural.png, id=812, 1066.98625pt x 652.4375pt>
+<imagenes/natural.png, id=828, 1066.98625pt x 652.4375pt>
 File: imagenes/natural.png Graphic file (type png)
 <use imagenes/natural.png>
 Package pdftex.def Info: imagenes/natural.png  used on input line 104.
@@ -870,7 +873,7 @@ Overfull \hbox (78.24771pt too wide) in paragraph at lines 104--105
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagenes/ela1.png, id=813, 450.68375pt x 436.63126pt>
+<imagenes/ela1.png, id=829, 450.68375pt x 436.63126pt>
 File: imagenes/ela1.png Graphic file (type png)
 <use imagenes/ela1.png>
 Package pdftex.def Info: imagenes/ela1.png  used on input line 114.
@@ -881,7 +884,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [31
 
  <./imagenes/image.png>] [32 <./imagenes/natural.png> <./imagenes/ela1.png>]
-<imagenes/capa.png, id=828, 441.65pt x 333.245pt>
+<imagenes/capa.png, id=844, 441.65pt x 333.245pt>
 File: imagenes/capa.png Graphic file (type png)
 <use imagenes/capa.png>
 Package pdftex.def Info: imagenes/capa.png  used on input line 129.
@@ -889,13 +892,13 @@ Package pdftex.def Info: imagenes/capa.png  used on input line 129.
  [33
 
  <./imagenes/capa.png>]
-<imagenes/aprendizaje_supervisado.png, id=838, 513.92pt x 285.065pt>
+<imagenes/aprendizaje_supervisado.png, id=854, 513.92pt x 285.065pt>
 File: imagenes/aprendizaje_supervisado.png Graphic file (type png)
 <use imagenes/aprendizaje_supervisado.png>
 Package pdftex.def Info: imagenes/aprendizaje_supervisado.png  used on input line 155.
 (pdftex.def)             Requested size: 359.74153pt x 199.54413pt.
  [34 <./imagenes/aprendizaje_supervisado.png>]
-<imagenes/apreRefor.png, id=848, 714.67pt x 334.24875pt>
+<imagenes/apreRefor.png, id=864, 714.67pt x 334.24875pt>
 File: imagenes/apreRefor.png Graphic file (type png)
 <use imagenes/apreRefor.png>
 Package pdftex.def Info: imagenes/apreRefor.png  used on input line 182.
@@ -906,12 +909,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--191
  []
 
 [35 <./imagenes/apreRefor.png>]
-<imagenes/save.png, id=864, 521.95pt x 321.2pt>
+<imagenes/save.png, id=880, 521.95pt x 321.2pt>
 File: imagenes/save.png Graphic file (type png)
 <use imagenes/save.png>
 Package pdftex.def Info: imagenes/save.png  used on input line 213.
 (pdftex.def)             Requested size: 260.97435pt x 160.59961pt.
-<imagenes/tange.png, id=869, 1204.5pt x 663.47874pt>
+<imagenes/tange.png, id=885, 1204.5pt x 663.47874pt>
 File: imagenes/tange.png Graphic file (type png)
 <use imagenes/tange.png>
 Package pdftex.def Info: imagenes/tange.png  used on input line 239.
@@ -921,18 +924,18 @@ Package pdftex.def Info: imagenes/tange.png  used on input line 239.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36 <./imagenes/save.png>]
-<imagenes/relu.png, id=881, 259.97125pt x 194.7275pt>
+<imagenes/relu.png, id=897, 259.97125pt x 194.7275pt>
 File: imagenes/relu.png Graphic file (type png)
 <use imagenes/relu.png>
 Package pdftex.def Info: imagenes/relu.png  used on input line 267.
 (pdftex.def)             Requested size: 256.07516pt x 167.87538pt.
  [37 <./imagenes/tange.png> <./imagenes/relu.png>]
-<imagenes/Softmax.png, id=895, 770.88pt x 578.16pt>
+<imagenes/Softmax.png, id=911, 770.88pt x 578.16pt>
 File: imagenes/Softmax.png Graphic file (type png)
 <use imagenes/Softmax.png>
 Package pdftex.def Info: imagenes/Softmax.png  used on input line 294.
 (pdftex.def)             Requested size: 256.07324pt x 199.16547pt.
-<imagenes/ia.jpg, id=897, 1430.34375pt x 639.38875pt>
+<imagenes/ia.jpg, id=913, 1430.34375pt x 639.38875pt>
 File: imagenes/ia.jpg Graphic file (type jpg)
 <use imagenes/ia.jpg>
 Package pdftex.def Info: imagenes/ia.jpg  used on input line 310.
@@ -942,7 +945,7 @@ Package pdftex.def Info: imagenes/ia.jpg  used on input line 310.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [38 <./imagenes/Softmax.png>]
-<imagenes/alan1.jpg, id=908, 1027.84pt x 578.16pt>
+<imagenes/alan1.jpg, id=924, 1027.84pt x 578.16pt>
 File: imagenes/alan1.jpg Graphic file (type jpg)
 <use imagenes/alan1.jpg>
 Package pdftex.def Info: imagenes/alan1.jpg  used on input line 322.
@@ -951,7 +954,7 @@ Package pdftex.def Info: imagenes/alan1.jpg  used on input line 322.
 Underfull \vbox (badness 1132) has occurred while \output is active []
 
  [39 <./imagenes/ia.jpg> <./imagenes/alan1.jpg>] [40]
-<imagenes/tensor2323.png, id=923, 1262.7175pt x 388.45125pt>
+<imagenes/tensor2323.png, id=939, 1262.7175pt x 388.45125pt>
 File: imagenes/tensor2323.png Graphic file (type png)
 <use imagenes/tensor2323.png>
 Package pdftex.def Info: imagenes/tensor2323.png  used on input line 359.
@@ -967,18 +970,18 @@ LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 37
  (/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
-<imagenes/capa3.png, id=937, 153.2124pt x 112.0185pt>
+<imagenes/capa3.png, id=953, 153.2124pt x 112.0185pt>
 File: imagenes/capa3.png Graphic file (type png)
 <use imagenes/capa3.png>
 Package pdftex.def Info: imagenes/capa3.png  used on input line 399.
 (pdftex.def)             Requested size: 153.212pt x 112.0182pt.
  [42 <./imagenes/capa3.png>] [43]
-<imagenes/yolo1.png, id=967, 223.83624pt x 168.63pt>
+<imagenes/yolo1.png, id=983, 223.83624pt x 168.63pt>
 File: imagenes/yolo1.png Graphic file (type png)
 <use imagenes/yolo1.png>
 Package pdftex.def Info: imagenes/yolo1.png  used on input line 454.
 (pdftex.def)             Requested size: 179.06923pt x 134.90417pt.
-<imagenes/yolo31.png, id=969, 770.88pt x 192.72pt>
+<imagenes/yolo31.png, id=985, 770.88pt x 192.72pt>
 File: imagenes/yolo31.png Graphic file (type png)
 <use imagenes/yolo31.png>
 Package pdftex.def Info: imagenes/yolo31.png  used on input line 464.
@@ -988,12 +991,12 @@ Package pdftex.def Info: imagenes/yolo31.png  used on input line 464.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [44 <./imagenes/yolo1.png>]
-<imagenes/yolo3.png, id=977, 514.92375pt x 335.2525pt>
+<imagenes/yolo3.png, id=993, 514.92375pt x 335.2525pt>
 File: imagenes/yolo3.png Graphic file (type png)
 <use imagenes/yolo3.png>
 Package pdftex.def Info: imagenes/yolo3.png  used on input line 474.
 (pdftex.def)             Requested size: 308.95662pt x 201.15305pt.
-<imagenes/yolo-interno.png, id=981, 1235.61626pt x 525.965pt>
+<imagenes/yolo-interno.png, id=997, 1235.61626pt x 525.965pt>
 File: imagenes/yolo-interno.png Graphic file (type png)
 <use imagenes/yolo-interno.png>
 Package pdftex.def Info: imagenes/yolo-interno.png  used on input line 489.
@@ -1003,13 +1006,13 @@ Package pdftex.def Info: imagenes/yolo-interno.png  used on input line 489.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [45 <./imagenes/yolo31.png> <./imagenes/yolo3.png>]
-<imagenes/entrada_salida.png, id=992, 777.90625pt x 447.6725pt>
+<imagenes/entrada_salida.png, id=1008, 777.90625pt x 447.6725pt>
 File: imagenes/entrada_salida.png Graphic file (type png)
 <use imagenes/entrada_salida.png>
 Package pdftex.def Info: imagenes/entrada_salida.png  used on input line 505.
 (pdftex.def)             Requested size: 369.88914pt x 142.26764pt.
  [46 <./imagenes/yolo-interno.png> <./imagenes/entrada_salida.png>]
-<imagenes/ama23.png, id=1001, 1199.48125pt x 440.64626pt>
+<imagenes/ama23.png, id=1017, 1199.48125pt x 440.64626pt>
 File: imagenes/ama23.png Graphic file (type png)
 <use imagenes/ama23.png>
 Package pdftex.def Info: imagenes/ama23.png  used on input line 531.
@@ -1019,7 +1022,7 @@ Package pdftex.def Info: imagenes/ama23.png  used on input line 531.
 ]
 Cap\'{\i }tulo 3.
 (./capitulos/marco_practico.tex
-<imagenes/persona9.png, id=1014, 492.84125pt x 389.455pt>
+<imagenes/persona9.png, id=1030, 492.84125pt x 389.455pt>
 File: imagenes/persona9.png Graphic file (type png)
 <use imagenes/persona9.png>
 Package pdftex.def Info: imagenes/persona9.png  used on input line 6.
@@ -1027,18 +1030,18 @@ Package pdftex.def Info: imagenes/persona9.png  used on input line 6.
  [49
 
  <./imagenes/persona9.png>]
-<imagenes/persona1.png, id=1023, 1277.77374pt x 736.7525pt>
+<imagenes/persona1.png, id=1040, 1277.77374pt x 736.7525pt>
 File: imagenes/persona1.png Graphic file (type png)
 <use imagenes/persona1.png>
 Package pdftex.def Info: imagenes/persona1.png  used on input line 23.
 (pdftex.def)             Requested size: 319.44266pt x 184.18767pt.
  [50 <./imagenes/persona1.png>]
-<imagenes/persona2.png, id=1031, 644.4075pt x 392.46625pt>
+<imagenes/persona2.png, id=1047, 644.4075pt x 392.46625pt>
 File: imagenes/persona2.png Graphic file (type png)
 <use imagenes/persona2.png>
 Package pdftex.def Info: imagenes/persona2.png  used on input line 35.
 (pdftex.def)             Requested size: 193.32373pt x 117.74077pt.
-<imagenes/persona5.png, id=1033, 1271.75125pt x 594.22pt>
+<imagenes/persona5.png, id=1049, 1271.75125pt x 594.22pt>
 File: imagenes/persona5.png Graphic file (type png)
 <use imagenes/persona5.png>
 Package pdftex.def Info: imagenes/persona5.png  used on input line 44.
@@ -1051,29 +1054,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 52--54
 [51
 
  <./imagenes/persona2.png> <./imagenes/persona5.png>]
-<imagenes/persona3.png, id=1041, 312.16624pt x 243.91125pt>
+<imagenes/persona3.png, id=1057, 312.16624pt x 243.91125pt>
 File: imagenes/persona3.png Graphic file (type png)
 <use imagenes/persona3.png>
 Package pdftex.def Info: imagenes/persona3.png  used on input line 63.
 (pdftex.def)             Requested size: 156.08273pt x 121.95532pt.
-<imagenes/persona6.png, id=1044, 284.06125pt x 131.49126pt>
+<imagenes/persona6.png, id=1060, 284.06125pt x 131.49126pt>
 File: imagenes/persona6.png Graphic file (type png)
 <use imagenes/persona6.png>
 Package pdftex.def Info: imagenes/persona6.png  used on input line 98.
 (pdftex.def)             Requested size: 113.62247pt x 52.59557pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[52
+ [52
 
  <./imagenes/persona3.png>]
-<imagenes/persona7.png, id=1052, 664.4825pt x 193.72375pt>
+<imagenes/persona7.png, id=1068, 664.4825pt x 193.72375pt>
 File: imagenes/persona7.png Graphic file (type png)
 <use imagenes/persona7.png>
 Package pdftex.def Info: imagenes/persona7.png  used on input line 117.
 (pdftex.def)             Requested size: 265.78828pt x 77.48811pt.
-<imagenes/persona8.png, id=1055, 693.59125pt x 266.9975pt>
+<imagenes/persona8.png, id=1071, 693.59125pt x 266.9975pt>
 File: imagenes/persona8.png Graphic file (type png)
 <use imagenes/persona8.png>
 Package pdftex.def Info: imagenes/persona8.png  used on input line 134.
@@ -1083,175 +1082,182 @@ Package pdftex.def Info: imagenes/persona8.png  used on input line 134.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [53 <./imagenes/persona6.png> <./imagenes/persona7.png>]
-<imagenes/persona11.png, id=1065, 541.02126pt x 109.40875pt>
+<imagenes/persona11.png, id=1081, 541.02126pt x 109.40875pt>
 File: imagenes/persona11.png Graphic file (type png)
 <use imagenes/persona11.png>
 Package pdftex.def Info: imagenes/persona11.png  used on input line 146.
 (pdftex.def)             Requested size: 216.40466pt x 43.76271pt.
-<imagenes/persona12.png, id=1067, 898.35625pt x 61.22874pt>
+<imagenes/persona12.png, id=1083, 898.35625pt x 61.22874pt>
 File: imagenes/persona12.png Graphic file (type png)
 <use imagenes/persona12.png>
 Package pdftex.def Info: imagenes/persona12.png  used on input line 156.
 (pdftex.def)             Requested size: 449.17702pt x 30.61429pt.
-<imagenes/persona14.png, id=1069, 872.25874pt x 534.99875pt>
+ [54 <./imagenes/persona8.png> <./imagenes/persona11.png> <./imagenes/persona12.png>]
+<imagenes/persona14.png, id=1092, 872.25874pt x 534.99875pt>
 File: imagenes/persona14.png Graphic file (type png)
 <use imagenes/persona14.png>
-Package pdftex.def Info: imagenes/persona14.png  used on input line 166.
+Package pdftex.def Info: imagenes/persona14.png  used on input line 168.
 (pdftex.def)             Requested size: 348.89731pt x 213.9957pt.
+ [55
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 3568) has occurred while \output is active []
-
- [54 <./imagenes/persona8.png> <./imagenes/persona11.png> <./imagenes/persona12.png>] [55 <./imagenes/persona14.png>]
-<imagenes/verdaderonega.png, id=1084, 621.32124pt x 266.9975pt>
+ <./imagenes/persona14.png>] [56]
+<imagenes/verdaderonega.png, id=1105, 621.32124pt x 266.9975pt>
 File: imagenes/verdaderonega.png Graphic file (type png)
 <use imagenes/verdaderonega.png>
-Package pdftex.def Info: imagenes/verdaderonega.png  used on input line 186.
+Package pdftex.def Info: imagenes/verdaderonega.png  used on input line 199.
 (pdftex.def)             Requested size: 310.65987pt x 133.49841pt.
- [56
+ [57
 
- <./imagenes/verdaderonega.png>] [57]
-<imagenes/rocsi.png, id=1106, 801.99625pt x 431.6125pt>
+ <./imagenes/verdaderonega.png>] [58]
+<imagenes/rocsi.png, id=1127, 801.99625pt x 431.6125pt>
 File: imagenes/rocsi.png Graphic file (type png)
 <use imagenes/rocsi.png>
-Package pdftex.def Info: imagenes/rocsi.png  used on input line 293.
-(pdftex.def)             Requested size: 561.39354pt x 302.12668pt.
+Package pdftex.def Info: imagenes/rocsi.png  used on input line 308.
+(pdftex.def)             Requested size: 483.71013pt x 369.89526pt.
 
-Overfull \hbox (106.14943pt too wide) in paragraph at lines 293--294
+Overfull \hbox (28.46602pt too wide) in paragraph at lines 308--309
  [][] 
  []
 
-<imagenes/pruebared.png, id=1109, 1206.5075pt x 642.4pt>
-File: imagenes/pruebared.png Graphic file (type png)
-<use imagenes/pruebared.png>
-Package pdftex.def Info: imagenes/pruebared.png  used on input line 321.
-(pdftex.def)             Requested size: 361.95505pt x 192.72148pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[58
+[59
 
  <./imagenes/rocsi.png>]
-<imagenes/imagen1.png, id=1117, 451.6875pt x 401.5pt>
+<imagenes/pruebared.png, id=1137, 1206.5075pt x 642.4pt>
+File: imagenes/pruebared.png Graphic file (type png)
+<use imagenes/pruebared.png>
+Package pdftex.def Info: imagenes/pruebared.png  used on input line 336.
+(pdftex.def)             Requested size: 426.77594pt x 341.4408pt.
+ [60 <./imagenes/pruebared.png>]
+<imagenes/personas_fila.png, id=1144, 268.00125pt x 261.97874pt>
+File: imagenes/personas_fila.png Graphic file (type png)
+<use imagenes/personas_fila.png>
+Package pdftex.def Info: imagenes/personas_fila.png  used on input line 346.
+(pdftex.def)             Requested size: 227.6222pt x 199.17387pt.
+ [61
+
+ <./imagenes/personas_fila.png>]
+<imagenes/imagen1.png, id=1154, 451.6875pt x 401.5pt>
 File: imagenes/imagen1.png Graphic file (type png)
 <use imagenes/imagen1.png>
-Package pdftex.def Info: imagenes/imagen1.png  used on input line 338.
-(pdftex.def)             Requested size: 180.67178pt x 160.59715pt.
- [59 <./imagenes/pruebared.png> <./imagenes/imagen1.png>]
-<imagenes/imagen2.png, id=1125, 451.6875pt x 401.5pt>
+Package pdftex.def Info: imagenes/imagen1.png  used on input line 368.
+(pdftex.def)             Requested size: 225.84319pt x 200.7495pt.
+<imagenes/imagen2.png, id=1155, 451.6875pt x 401.5pt>
 File: imagenes/imagen2.png Graphic file (type png)
 <use imagenes/imagen2.png>
-Package pdftex.def Info: imagenes/imagen2.png  used on input line 351.
-(pdftex.def)             Requested size: 180.67178pt x 160.59715pt.
-<imagenes/NeoVision3.png, id=1127, 439.8834pt x 545.1567pt>
+Package pdftex.def Info: imagenes/imagen2.png  used on input line 376.
+(pdftex.def)             Requested size: 225.84319pt x 200.7495pt.
+ [62
+
+ <./imagenes/imagen1.png> <./imagenes/imagen2.png>]
+<imagenes/NeoVision3.png, id=1163, 439.8834pt x 545.1567pt>
 File: imagenes/NeoVision3.png Graphic file (type png)
 <use imagenes/NeoVision3.png>
-Package pdftex.def Info: imagenes/NeoVision3.png  used on input line 362.
+Package pdftex.def Info: imagenes/NeoVision3.png  used on input line 389.
 (pdftex.def)             Requested size: 439.88232pt x 545.15535pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[60 <./imagenes/imagen2.png>] [61 <./imagenes/NeoVision3.png>]
-<imagenes/contenido2.png, id=1139, 834.11626pt x 824.07875pt>
+[63 <./imagenes/NeoVision3.png>]
+<imagenes/contenido2.png, id=1169, 834.11626pt x 824.07875pt>
 File: imagenes/contenido2.png Graphic file (type png)
 <use imagenes/contenido2.png>
-Package pdftex.def Info: imagenes/contenido2.png  used on input line 378.
+Package pdftex.def Info: imagenes/contenido2.png  used on input line 405.
 (pdftex.def)             Requested size: 417.05711pt x 412.03836pt.
-<imagenes/contenedor3.png, id=1141, 834.11626pt x 502.87875pt>
+<imagenes/contenedor3.png, id=1171, 834.11626pt x 502.87875pt>
 File: imagenes/contenedor3.png Graphic file (type png)
 <use imagenes/contenedor3.png>
-Package pdftex.def Info: imagenes/contenedor3.png  used on input line 390.
+Package pdftex.def Info: imagenes/contenedor3.png  used on input line 417.
 (pdftex.def)             Requested size: 417.05711pt x 251.43875pt.
- [62
+ [64
 
- <./imagenes/contenido2.png>] [63 <./imagenes/contenedor3.png>]
-<imagenes/persona15.png, id=1154, 559.08875pt x 99.37125pt>
+
+ <./imagenes/contenido2.png>] [65 <./imagenes/contenedor3.png>]
+<imagenes/persona15.png, id=1183, 559.08875pt x 99.37125pt>
 File: imagenes/persona15.png Graphic file (type png)
 <use imagenes/persona15.png>
-Package pdftex.def Info: imagenes/persona15.png  used on input line 407.
+Package pdftex.def Info: imagenes/persona15.png  used on input line 434.
 (pdftex.def)             Requested size: 279.54369pt x 49.6855pt.
-<imagenes/convertir_yolo.png, id=1156, 694.595pt x 32.12pt>
+<imagenes/convertir_yolo.png, id=1185, 694.595pt x 32.12pt>
 File: imagenes/convertir_yolo.png Graphic file (type png)
 <use imagenes/convertir_yolo.png>
-Package pdftex.def Info: imagenes/convertir_yolo.png  used on input line 418.
+Package pdftex.def Info: imagenes/convertir_yolo.png  used on input line 445.
 (pdftex.def)             Requested size: 486.21318pt x 22.48383pt.
 
-Overfull \hbox (30.96907pt too wide) in paragraph at lines 418--419
+Overfull \hbox (30.96907pt too wide) in paragraph at lines 445--446
  [][] 
  []
 
-[64
+[66
 
  <./imagenes/persona15.png> <./imagenes/convertir_yolo.png>]
-<imagenes/deteccionvstracker.png, id=1170, 1002.74625pt x 480.79625pt>
+<imagenes/deteccionvstracker.png, id=1199, 1002.74625pt x 480.79625pt>
 File: imagenes/deteccionvstracker.png Graphic file (type png)
 <use imagenes/deteccionvstracker.png>
-Package pdftex.def Info: imagenes/deteccionvstracker.png  used on input line 445.
+Package pdftex.def Info: imagenes/deteccionvstracker.png  used on input line 472.
 (pdftex.def)             Requested size: 300.82619pt x 144.23997pt.
-<imagenes/deteccionvstracker2.png, id=1172, 1002.74625pt x 480.79625pt>
+<imagenes/deteccionvstracker2.png, id=1201, 1002.74625pt x 480.79625pt>
 File: imagenes/deteccionvstracker2.png Graphic file (type png)
 <use imagenes/deteccionvstracker2.png>
-Package pdftex.def Info: imagenes/deteccionvstracker2.png  used on input line 456.
+Package pdftex.def Info: imagenes/deteccionvstracker2.png  used on input line 483.
 (pdftex.def)             Requested size: 300.82619pt x 144.23997pt.
- [65
+ [67
 
  <./imagenes/deteccionvstracker.png> <./imagenes/deteccionvstracker2.png>]
-<imagenes/persona19.png, id=1180, 493.845pt x 306.14375pt>
+<imagenes/persona19.png, id=1210, 493.845pt x 306.14375pt>
 File: imagenes/persona19.png Graphic file (type png)
 <use imagenes/persona19.png>
-Package pdftex.def Info: imagenes/persona19.png  used on input line 476.
+Package pdftex.def Info: imagenes/persona19.png  used on input line 503.
 (pdftex.def)             Requested size: 296.30928pt x 183.68765pt.
-<imagenes/persona20.png, id=1182, 860.21375pt x 484.81125pt>
+<imagenes/persona20.png, id=1212, 860.21375pt x 484.81125pt>
 File: imagenes/persona20.png Graphic file (type png)
 <use imagenes/persona20.png>
-Package pdftex.def Info: imagenes/persona20.png  used on input line 487.
+Package pdftex.def Info: imagenes/persona20.png  used on input line 514.
 (pdftex.def)             Requested size: 344.07939pt x 193.92105pt.
- [66
+ [68
 
  <./imagenes/persona19.png> <./imagenes/persona20.png>]
-<imagenes/persona21.png, id=1190, 879.285pt x 250.9375pt>
+<imagenes/persona21.png, id=1220, 879.285pt x 250.9375pt>
 File: imagenes/persona21.png Graphic file (type png)
 <use imagenes/persona21.png>
-Package pdftex.def Info: imagenes/persona21.png  used on input line 503.
+Package pdftex.def Info: imagenes/persona21.png  used on input line 530.
 (pdftex.def)             Requested size: 439.64143pt x 125.46843pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--513
+Underfull \hbox (badness 10000) in paragraph at lines 537--540
 
  []
 
-<imagenes/persona22.png, id=1192, 515.9275pt x 307.1475pt>
+<imagenes/persona22.png, id=1222, 515.9275pt x 307.1475pt>
 File: imagenes/persona22.png Graphic file (type png)
 <use imagenes/persona22.png>
-Package pdftex.def Info: imagenes/persona22.png  used on input line 519.
+Package pdftex.def Info: imagenes/persona22.png  used on input line 546.
 (pdftex.def)             Requested size: 232.16522pt x 138.21509pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[67
+[69
 
  <./imagenes/persona21.png>]
-<imagenes/mongodc.png, id=1200, 411.5375pt x 75.28125pt>
+<imagenes/mongodc.png, id=1229, 411.5375pt x 75.28125pt>
 File: imagenes/mongodc.png Graphic file (type png)
 <use imagenes/mongodc.png>
-Package pdftex.def Info: imagenes/mongodc.png  used on input line 537.
+Package pdftex.def Info: imagenes/mongodc.png  used on input line 564.
 (pdftex.def)             Requested size: 226.34633pt x 41.4048pt.
-<imagenes/persona25.png, id=1203, 524.96124pt x 164.615pt>
+<imagenes/persona25.png, id=1232, 524.96124pt x 164.615pt>
 File: imagenes/persona25.png Graphic file (type png)
 <use imagenes/persona25.png>
-Package pdftex.def Info: imagenes/persona25.png  used on input line 559.
+Package pdftex.def Info: imagenes/persona25.png  used on input line 586.
 (pdftex.def)             Requested size: 262.47998pt x 82.3073pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[68 <./imagenes/persona22.png> <./imagenes/mongodc.png>]) [69 <./imagenes/persona25.png>]
+[70 <./imagenes/persona22.png> <./imagenes/mongodc.png>]) [71 <./imagenes/persona25.png>] [72
+
+]
 Cap\'{\i }tulo 4.
 (./capitulos/aplicacion.tex
-<imagenes/comando_ejecucion.png, id=1220, 813.0375pt x 255.95625pt>
+<imagenes/comando_ejecucion.png, id=1253, 813.0375pt x 255.95625pt>
 File: imagenes/comando_ejecucion.png Graphic file (type png)
 <use imagenes/comando_ejecucion.png>
 Package pdftex.def Info: imagenes/comando_ejecucion.png  used on input line 9.
@@ -1259,19 +1265,17 @@ Package pdftex.def Info: imagenes/comando_ejecucion.png  used on input line 9.
 
 Underfull \vbox (badness 3965) has occurred while \output is active []
 
- [70
+ [73 <./imagenes/comando_ejecucion.png>] [74] [75
 
- <./imagenes/comando_ejecucion.png>] [71] [72
-
-] [73
+] [76
 
 ]
-<imagenes/caso1.png, id=1283, 641.39626pt x 362.35374pt>
+<imagenes/caso1.png, id=1316, 641.39626pt x 362.35374pt>
 File: imagenes/caso1.png Graphic file (type png)
 <use imagenes/caso1.png>
 Package pdftex.def Info: imagenes/caso1.png  used on input line 145.
 (pdftex.def)             Requested size: 320.69734pt x 181.17642pt.
-<imagenes/caso2.png, id=1285, 641.39626pt x 362.35374pt>
+<imagenes/caso2.png, id=1318, 641.39626pt x 362.35374pt>
 File: imagenes/caso2.png Graphic file (type png)
 <use imagenes/caso2.png>
 Package pdftex.def Info: imagenes/caso2.png  used on input line 156.
@@ -1280,7 +1284,7 @@ Package pdftex.def Info: imagenes/caso2.png  used on input line 156.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imagenes/caso4.png, id=1287, 641.39626pt x 362.35374pt>
+<imagenes/caso4.png, id=1320, 641.39626pt x 362.35374pt>
 File: imagenes/caso4.png Graphic file (type png)
 <use imagenes/caso4.png>
 Package pdftex.def Info: imagenes/caso4.png  used on input line 167.
@@ -1288,15 +1292,15 @@ Package pdftex.def Info: imagenes/caso4.png  used on input line 167.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[74
+[77
 
- <./imagenes/caso1.png>]) [75 <./imagenes/caso2.png> <./imagenes/caso4.png>]
+ <./imagenes/caso1.png>]) [78 <./imagenes/caso2.png> <./imagenes/caso4.png>]
 Cap\'{\i }tulo 5.
-(./capitulos/conclusion.tex [76
+(./capitulos/conclusion.tex [79
 
-]) (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.bbl [77
+]) (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.bbl [80
 
-] [78
+] [81
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 91--97
@@ -1328,7 +1332,7 @@ Overfull \hbox (58.30556pt too wide) in paragraph at lines 118--123
 \OT1/pcr/m/n/12 the-[]amazing-[]ways-[]tesla-[]is-[]using-[]artificial-[]intelligence-[]and-[]big-[]data /
  []
 
-[79]
+[82]
 Underfull \hbox (badness 10000) in paragraph at lines 210--215
 []\OT1/ptm/m/n/12 J. C. y Lin-da Mas-sa-re-lla y Bru-ce Gol-ding.  Ama-zon in-tro-du-ces next ma-
  []
@@ -1343,24 +1347,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 210--215
 \OT1/pcr/m/n/12 amazon-[]introduces-[]next-[]major-[]job-[]killer-[]to-[]face-[]americans/$[]\OT1/ptm/m/n/12 ,
  []
 
-) [80]
+) [83] [84
+
+]
 Ap\'{e}ndice A.
-(./capitulos/tablas.tex [81
-
-] [82
-
-]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[83
-
-] [84]
-LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
-(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 224.
- [85
-
-]
+(./capitulos/tablas.tex [85]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [86]
@@ -1373,51 +1364,83 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [89]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 434.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 434.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 434.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [90]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 195.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 195.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 195.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [91] [92])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 218.
- [93
+ [91] [92] [93
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 218.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[94
+
+] [95]
+LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <10> not available
+(Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 434.
+ [96
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [97]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [98]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [99]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [100]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102] [103]) [104
+
+] [105
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 221.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 221.
  (/Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 218.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 218.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 221.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 221.
 Package rerunfilecheck Info: File `deteccion_de_personas_YOLO.out' has not changed.
-(rerunfilecheck)             Checksum: D5ABE96E0EEDF7A945AB3FE75419449C;6126.
+(rerunfilecheck)             Checksum: D0C02431BA24D16AC8D4980129FCCB13;6333.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 218.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 221.
  ) 
 Here is how much of TeX's memory you used:
- 14497 strings out of 480608
- 227569 string characters out of 5903629
- 897880 words of memory out of 5000000
- 29307 multiletter control sequences out of 15000+600000
+ 14843 strings out of 480608
+ 233418 string characters out of 5903629
+ 1056063 words of memory out of 5000000
+ 29431 multiletter control sequences out of 15000+600000
  580796 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,48p,980b,1945s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,48p,980b,1947s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.pdf (93 pages, 41965286 bytes).
+Output written on /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.pdf (105 pages, 42331839 bytes).
 PDF statistics:
- 1936 PDF objects out of 2073 (max. 8388607)
- 1694 compressed objects within 17 object streams
- 701 named destinations out of 1000 (max. 500000)
- 964 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2257 PDF objects out of 2487 (max. 8388607)
+ 1998 compressed objects within 20 object streams
+ 922 named destinations out of 1000 (max. 500000)
+ 985 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -70,9 +70,9 @@ Para qué Darknet funcione correctamente necesita diferentes frameworks, en la F
 
 La red neuronal YOLO y Tiny-Yolo viene por defecto entrenada con varias clases que le permite detectar diferentes objetos, pero ninguna se podía ajustar a las necesidades del proyecto y por eso mismo se tuvo que realizar un entrenamiento con una base de datos propia. 
 
-Antes de modificar los parámetros, se decidió usar la Tiny-Yolo debido a que es una red neuronal más liviana (con menos capas), lo que ocasiona que sea menos exigente cuando se tiene que procesar las detecciones, lo que permite que funcione de mejor manera en mi computadora. 
+Antes de modificar los parámetros, se decidió realizar una prueba de rendimiento entre Tiny-Yolo y YOLO. Ya que Tiny-yolo al tener menos capas resulta ser una red mas liviana pero a costa de perder precisión. Por otra parte, YOLO al ser una red neuronal más compleja tiene una gran precisión pero al costo de muchos recursos de la computadora. 
 
-La diferencia de rendimiento se podrá ver de mejor manera en la Tabla \ref{tab:fruta}, el cual da cómo mejor opción Tiny-Yolo teniendo un mejor rendimiento que al usar YOLO. El único problema de usar Tiny-Yolo es que se pierde un poco de precisión al momento de realizar las detecciones. 
+La diferencia de rendimiento se podrá ver de mejor manera en la Tabla \ref{tab:fruta}, el cual da cómo mejor opción Tiny-Yolo teniendo un mejor rendimiento que al usar YOLO. 
 
 \begin{table}[h]
 \caption{Resultados de una prueba de rendimiento entre YOLO y Tiny-Yolo.}
@@ -91,7 +91,7 @@ YOLO                     & 1-3           \\
 \end{center}
 \end{table}
 
-Estos resultados demuestran que la mejor opción es trabajar con Tiny-Yolo, por lo cual se modificara el archivo \say{yolov4-tiny.cfg}, en el cual se cambiaran ciertos parámetros para que la red neuronal al momento de entrenar se adapte a los requerimientos del proyecto. los parámetros que se modificaron están señalados en la Figura \ref{fig:labeling6}. 
+Estos resultados demuestran que la mejor opción es trabajar con Tiny-Yolo, ya que corre mejor en maquinas que no poseen gran poder gráfico pero para no perder precisión en las detecciones se opto usar YOLO, por lo cual se modificara el archivo \say{yolov4-custom.cfg}, en el cual se cambiaran ciertos parámetros para que la red neuronal al momento de entrenar se adapte a los requerimientos del proyecto. los parámetros que se modificaron están señalados en la Figura \ref{fig:labeling6}. 
 
 \begin{figure}[h]
 	\centering
@@ -120,14 +120,14 @@ Otros parámetros que se tienen que modificar son los datos marcados que aparece
 	\label{fig:labeling7}
 \end{figure}
 
-Para calcular la cantidad de filtros se hará uso de una fórmula simple que se puede apreciar en la Ecuación \ref{eq:clases}, este dato obtenido se tendrá cambiar en todos los filtros que se encuentra en el documento \say{yolov4-tiny.cfg}.
+Para calcular la cantidad de filtros se hará uso de una fórmula simple que se puede apreciar en la Ecuación \ref{eq:clases}, este dato obtenido se tendrá cambiar en todos los filtros que se encuentra en el documento \say{yolov4-custom.cfg}.
 
 \begin{equation}
 	filtros = (\#\operatorname{clases}+5)*3
 	\label{eq:clases}
 \end{equation}
 
-Con esto se finaliza los cambios en el archivo \say{yolov4-tiny.cfg}, pero aún falta editar otros 2 archivos más el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar, la locación de donde se guardará la red entrenada y cuantas clases se usará para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}. 
+Con esto se finaliza los cambios en el archivo \say{yolov4-custom.cfg}, pero aún falta editar otros 2 archivos más el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar, la locación de donde se guardará la red entrenada y cuantas clases se usará para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}. 
 
 \begin{figure}[h]
 	\centering
@@ -161,6 +161,8 @@ Una vez teniendo los archivos generados se procede a iniciar el entrenamiento me
 
 Al finalizar el entrenamiento ya se obtendrá una red neuronal funcional, capaz de detectar personas. Un resultado de este entrenamiento se observa en la Figura \ref{fig:labeling48}, donde se ven marcadas una cantidad aceptable de personas que aparecen en la imagen, cada recuadro que marca a una persona viene con un numero el cual indica el porcentaje de seguridad de detención realizada por la red neuronal. 
 
+\clearpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.4]{imagenes/persona14.png}
@@ -168,6 +170,17 @@ Al finalizar el entrenamiento ya se obtendrá una red neuronal funcional, capaz 
 	\source{Elaboración propia}
 	\label{fig:labeling48}
 \end{figure}
+
+
+Mediante Darknet se puede correr una función que pone a prueba la red neuronal para poder calcular la precisión media que tiene al momento de realizar las detecciones. El comando para poder realizar esto se observa en el Código. 
+
+\begin{lstlisting}[language=Python,caption={Comando que realiza una prueba a la red neuronal para obtener la precisión media.},captionpos=b,label=23]
+!./darknet detector map data/obj.data cfg/yolov4-custom.cfg /mydrive/yolov4-2/backup/yolov4-custom_last.weights
+\end{lstlisting}
+\vspace{5mm}
+
+Con esta prueba se obtuvo una precisión media de 72.24\%, lo cual es un dato bastante bueno con el cual se puede garantizar una buena detección en la mayoría de los casos. Los resultados de esta prueba estarán en la parte de los anexos.
+
 
 \section{Prueba de rendimiento}
 
@@ -226,7 +239,9 @@ Cómo se puede observar en la tabla anterior, todos los datos fueron repartidos 
 \end{list}
 \end{center}
 
-Utilizando la anterior ecuación obtenemos una precisión del 71\%, la cual es bastante alto y demuestra una confiabilidad de los resultados que podrá obtener la red neuronal. Pero para poder demostrar el rendimiento se tiene que obtener la curva ROC, para poder obtener esta gráfica será necesario obtener la tasa de verdaderos positivos y la tasa de falsos positivos. 
+Utilizando la anterior ecuación obtenemos una precisión del 71\%, la cual es bastante alto y demuestra una confiabilidad de los resultados que podrá obtener la red neuronal. Tomando en cuenta el resultado obtenido mediante el comando de Darknet, se obtuvo una precisión de 72.31\% es un dato no muy alejado al obtenido mediante un análisis manual, lo que valida estos resultados.  
+
+ Pero para poder demostrar el rendimiento se tiene que obtener la curva ROC, para poder obtener esta gráfica será necesario obtener la tasa de verdaderos positivos y la tasa de falsos positivos. 
 
 Para poder obtener la tasa de verdaderos positivos se hara uso de la Ecuacion \ref{eq:vpvfss} y para tasa de falsos positivos se usara la Ecuacion \ref{eq:vpvfws}.
 
@@ -290,7 +305,7 @@ Con estos datos se obtiene la curva ROC, que indica el rendimiento que posee la 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.7]{imagenes/rocsi.png}
+	\includegraphics[width=17cm,height=13cm]{imagenes/rocsi.png}
 	\caption{Gráfica de rendimiento de la red neuronal entrenada.}
 	\source{Elaboración propia}
 	\label{fig:FROC}
@@ -311,17 +326,27 @@ Teniendo la gráfica se procede a calcular el area bajo la curva o AUC por sus s
 
 Aplicando la ecuación anterior se obtuvo un valor de 0.63, lo que indica que el rendimiento de la red no es bueno, para que una red entrenada tenga un rendimiento óptimo deberá tener un valor superior a 0.7. 
 
-Este valor de 0.63 podría mejorar realizando entrenamientos más largos a la red neuronal, tanto en la cantidad de iteraciones que tendría que dar como la cantidad de imágenes con la cual entrena, estas imágenes en su preferencia deberán ser más variadas.  
+El valor obtenido de 0.63 puede mejorar realizando entrenamientos más largos para la red neuronal, otro valor a considerar es aumentar la cantidad de imágenes con lo que se realiza los entrenamientos para así dar más casos de estudio. 
 
 
-Un factor que podría ocasionar un bajo rendimiento a la red es la posición de la cámara de donde se obtuvo el video y se realizaron las pruebas. Como se ve en la figura cuando hay una fila larga las personas están muy apegadas entre sí y eso no le permite identificar bien a las personas. 
+Un factor impórtate a considerar es la posición de la cámara ya que si se encuentra en una posición donde no se pude captar bien la imagen esto ocasionaría problemas al momento de detectar a las personas.  En este caso el video donde se realizaron las pruebas cuenta con este problema, ya que en un punto dada la posición de la cámara no se pude observar bien a las personas, porque se posición una detrás de otra evitando que se diferencien bien. Esto se observa bien en la Figura \ref{fig:FROC2}. 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.3]{imagenes/pruebared.png}
+	\includegraphics[width=15cm,height=12cm]{imagenes/pruebared.png}
 	\caption{Imagen del video donde se realizo las pruebas de rendimiento.}
-	\source{Elaboración propia}
-	\label{fig:FROC}
+	\source{Elaboración propia.}
+	\label{fig:FROC2}
+\end{figure}
+
+La posición ideal de la cámara tendría que ser un lateral ya que desde esa posición es posible captar de buena manera a las diferentes personas que se encuentran haciendo fila como se ve en la Figura \ref{fig:FROC3}, de esta manera se evitaría el problema que se mencionó anteriormente. 
+\clearpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=8cm,height=7cm]{imagenes/personas_fila.png}
+	\caption{Vista lateral de una fila que podría mejorar el rendimiento de la red neuronal.}
+	\source{Shutterstock.}
+	\label{fig:FROC3}
 \end{figure}
 
 \section{Diseño de la interfaz} 
@@ -333,22 +358,22 @@ Para el diseño de la interfaz se utilizó la herramienta Balsamiq Wireframes, e
 Esta es la pantalla principal de la aplicación, donde se indica la información de cuántas personas están siendo detectadas en ese momento, de igual manera se muestra en tiempo real el video obtenido por la cámara de seguridad. Otra información importante que se indica en la interfaz es el límite de detección, el cual ayuda a visualizar mejor los datos de esta pantalla, esto se apreciará mejor en la Figura \ref{fig:labeling30}. 
 
 
+\subsection{Pantalla de alerta}
+
+Esto es una pantalla de alerta que solo aparecerá cuando se pase el límite de tiempo de espera de una persona en la fila del supermercado. Esta pantalla tendrá una imagen de alerta para así poder captar la atención de las personas y se aconsejará abrir una nueva caja para poder acelerar el proceso de atención, el diseño de esta pantalla se puede ver en la Figura \ref{fig:labeling31}. 
+\clearpage
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{imagenes/imagen1.png}
+	\includegraphics[scale=0.5]{imagenes/imagen1.png}
 	\caption{Pantalla principal de la aplicación NeoVision.}
 	\source{Elaboración propia}
 	\label{fig:labeling30}
 \end{figure}
 
-\subsection{Pantalla de alerta}
-
-Esto es una pantalla de alerta que solo aparecerá cuando se pase el límite de tiempo de espera de una persona en la fila del supermercado. Esta pantalla tendrá una imagen de alerta para así poder captar la atención de las personas y se aconsejará abrir una nueva caja para poder acelerar el proceso de atención, el diseño de esta pantalla se puede ver en la Figura \ref{fig:labeling31}. 
-
-
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.4]{imagenes/imagen2.png}
+	\includegraphics[scale=0.5]{imagenes/imagen2.png}
 	\caption{Mockup de la pantalla de alerta.}
 	\source{Elaboración propia}
 	\label{fig:labeling31}
@@ -357,6 +382,8 @@ Esto es una pantalla de alerta que solo aparecerá cuando se pase el límite de 
 \section{Diagrama de flujo}
 En este apartado se mostrará un diagrama de flujo en el que se representa los principales procesos de este proyecto, cuáles son detectar a personas y dependiendo del tiempo de espera notificar con una alerta, este diagrama se observa en la Figura \ref{fig:labeling33}.
 
+\clearpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=1]{imagenes/NeoVision3.png}
@@ -364,8 +391,8 @@ En este apartado se mostrará un diagrama de flujo en el que se representa los p
 	\source{Elaboración propia}
 	\label{fig:labeling33}
 \end{figure}
-
 \clearpage
+
 \section{Diagrama C4Model}
 En este apartado se dará conocer un esquema siguiendo el modelo C4Model, el cual se va explicando de manera general hasta llegar a lo más específico, empezando por el contexto de la situación, sus contenedores, componentes y por último un diagrama de todas las clases.
 

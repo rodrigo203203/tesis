@@ -13,7 +13,7 @@
 
 	\item Mediante el añadido del rastreo se puede obtener ID independientes de cada detección el cual permite poder contar los objetos que están siendo detectados y con ello poder sacar un tiempo promedio de espera. 
 
-	\item Como conclusión, se llega a obtener el resultado esperado al identificar a personas y con ello poder calcular el tiempo promedio de espera, para poder notificar al encargado cuando una persona esté esperando más que el tiempo máximo definido, para así abrir una nueva caja para mejorar la velocidad de atención. 
+	\item Como conclusión, se llega a obtener el resultado esperado teniendo en cuenta el rendimiento obtenido de la red neuronal. Con las detecciones que se obtiene es posible calcular el tiempo promedio de espera, para así poder notificar al encargado cuando una persona esté esperando más que el tiempo máximo definido, para así abrir una nueva caja para mejorar la velocidad de atención. 
 
 \end{itemize} 
 
@@ -28,6 +28,8 @@ Como recomendaciones técnicas, un aspecto muy importante es contar con el hardw
 Otro apartado importante es tener en cuenta el tipo de cámara que se usará, ya que dependiendo de la calidad del video la exigencia de la aplicación será mayor, es decir, que si se trabaja con videos en 720p (1280x720 pixeles) consumirá menos recursos de la computadora que al trabajar con un video en 1080p (1920x1080 pixeles), porque la imagen es más pequeña y eso genera menos información al procesarlo.
 
 Un apartado muy importante es definir bien la posición de la cámara de donde se sacará el video, ya que el lugar donde se coloque la cámara podría ayudar o perjudicar bastante al momento que la red neuronal realice las detecciones. 
+
+Por otra parte, al momento de realizar el entrenamiento se recomienda usar una base de datos muy amplia y variada que le permita así obtener mejores resultados.
 
 \section{Trabajos futuros} 
 
