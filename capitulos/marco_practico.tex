@@ -9,7 +9,7 @@ Para la elección de la red neuronal se tomó en cuenta un estudio realizado por
 	\label{fig:labeling3}
 \end{figure}
 
-Estas pruebas fueron realizadas haciendo el uso de la base de datos \say{COCO}, que es una recopilación de cientos de miles de imágenes con millones de objetos ya etiquetados que ya están preparados para realizar un entrenamiento, lo cual facilita a realizar pruebas de las diferentes redes neuronales. Con estos resultados nos muestran que la red neuronal YOLO es la mejor opción, ya que cuenta con una gran velocidad sin perder mucha precisión al momento de detectar los diferentes objetos. Por otra parte, la red YOLOv3 presenta resultados interesantes, ya que tiene una gran velocidad pero a un gran costo en su precision y dependiendo de la aplicación podría ser una buena elección.
+Estas pruebas fueron realizadas haciendo el uso de la base de datos \say{COCO}, que es una recopilación de cientos de miles de imágenes con millones de objetos ya etiquetados que ya están preparados para realizar un entrenamiento, lo cual facilita a realizar pruebas de las diferentes redes neuronales. Con estos resultados nos muestran que la red neuronal YOLO es la mejor opción, ya que cuenta con una gran velocidad sin perder mucha precisión al momento de detectar los diferentes objetos. Por otra parte, la red EfficientDet presenta resultados interesantes, ya que tiene una gran precisión pero a un gran costo en su velocidad y dependiendo de la aplicación podría ser una buena elección.
 
 \section{Entrenamiento de la red neuronal} 
 
@@ -26,7 +26,7 @@ Para lograr el entrenamiento de la red neuronal, primeramente, se tiene que cons
 	\label{fig:labeling}
 \end{figure}
 
-Este proceso se tiene que realizar con cada imagen, para así obtener un archivo que especifica la posición de dónde se encuentra la \say{persona} en la imagen. En la Figura \ref{fig:labeling2} se observa la manera en la que se guardan esos datos. De esta manera se obtiene una base de datos que sirve para entrenar la red neuronal YOLO, la cual debe estar compuesta por lo menos con 400 imágenes. 
+Este proceso se tiene que realizar con cada imagen, para así obtener un archivo que especifica la posición de dónde se encuentra la \say{persona} en la imagen. En la Figura \ref{fig:labeling2} se observa la manera en la que se guardan esos datos. De esta manera se obtiene una base de datos que sirve para entrenar la red neuronal YOLO, la cual debe estar compuesta por lo menos con 400 imágenes y para este entrenamiento se utilizo 500 imágenes que se obtuvieron mediante la extracción de fotogramas de un video de seguridad proporcionado por el supermercado Makro, la cual capta el sistema de fila única que posee este supermercado
 
 \clearpage
 
@@ -49,7 +49,7 @@ Este procedimiento se puede realizar más rápido gracias a la base de datos de 
 
 \subsection{Preparación del ambiente}
 
-Al momento de entrenar una red neuronal se utiliza muchos recursos de la computadora, sobre todo en el apartado del GPU, ya que la mayoría de los cálculos se realizan de mejor manera en esa parte. Esto resulto ser un problema ya que mi computadora no cuenta con una GPU dedicada y los entrenamientos se realizaban de manera muy lenta, por ese motivo se optó por usar Colab, el cual es un servicio de Google que te permite realizar entrenamientos de redes neuronales ya que te deja usar los GPU's de sus servidores. 
+Al momento de entrenar una red neuronal se utiliza muchos recursos de la computadora, sobre todo en el apartado del GPU, ya que la mayoría de los cálculos se realizan de mejor manera en esa parte. Esto resulto ser un problema ya que mi computadora no cuenta con una GPU dedicada y los entrenamientos se realizaban de manera muy lenta, ya que todos los cálculos serian realizados mediante el CPU de la computadora y me equipo cuenta con un procesador i5 de sexta generación, por ese motivo se optó por usar Colab, el cual es un servicio de Google que te permite realizar entrenamientos de redes neuronales ya que te deja usar los GPU's de sus servidores. 
 \\ 
 
 Colab es un editor de texto online, que te permite escribir tu código y probarlo sin la necesidad de instalar programas en tu computadora, pero será necesarios instalarlos en tu editor online. El primer paso es instalar Darknet, el cual te permite trabajar con YOLO.  
@@ -70,9 +70,9 @@ Para qué Darknet funcione correctamente necesita diferentes frameworks, en la F
 
 La red neuronal YOLO y Tiny-Yolo viene por defecto entrenada con varias clases que le permite detectar diferentes objetos, pero ninguna se podía ajustar a las necesidades del proyecto y por eso mismo se tuvo que realizar un entrenamiento con una base de datos propia. 
 
-Antes de modificar los parámetros, se decidió realizar una prueba de rendimiento entre Tiny-Yolo y YOLO. Ya que Tiny-yolo al tener menos capas resulta ser una red mas liviana pero a costa de perder precisión. Por otra parte, YOLO al ser una red neuronal más compleja tiene una gran precisión pero al costo de muchos recursos de la computadora. 
-
-La diferencia de rendimiento se podrá ver de mejor manera en la Tabla \ref{tab:fruta}, el cual da cómo mejor opción Tiny-Yolo teniendo un mejor rendimiento que al usar YOLO. 
+Antes de modificar los parámetros, se decidió realizar una prueba de rendimiento en consumo de recursos entre Tiny-Yolo y YOLO. Ya que Tiny-yolo al tener menos capas resulta ser una red más liviana, pero a costa de perder precisión. Por otra parte, YOLO al ser una red neuronal más compleja tiene una gran precisión, pero al costo de muchos recursos de la computadora. 
+   
+Para realizar esta prueba se analizó el mismo video con ambas redes neuronales para valorar la velocidad de ejecución, esta prueba fue realizada en una MacBook Pro (2014) que cuenta con un procesador Intel i5 de sexta generación y sin tarjeta de video dedicada. La diferencia en velocidad de ejecución se podrá ver de mejor manera en la Tabla \ref{tab:fruta}.
 
 \begin{table}[h]
 \caption{Resultados de una prueba de rendimiento entre YOLO y Tiny-Yolo.}
@@ -91,7 +91,7 @@ YOLO                     & 1-3           \\
 \end{center}
 \end{table}
 
-Estos resultados demuestran que la mejor opción es trabajar con Tiny-Yolo, ya que corre mejor en maquinas que no poseen gran poder gráfico pero para no perder precisión en las detecciones se opto usar YOLO, por lo cual se modificara el archivo \say{yolov4-custom.cfg}, en el cual se cambiaran ciertos parámetros para que la red neuronal al momento de entrenar se adapte a los requerimientos del proyecto. los parámetros que se modificaron están señalados en la Figura \ref{fig:labeling6}. 
+Estos resultados demuestran que la mejor opción en consumo de recursos es Tiny-Yolo, ya que se ejecuta mejor en máquinas que no poseen gran poder gráfico, pero las fallas en la detección de personas encontradas en las pruebas no compensan su buen rendimiento por lo cual se optó por trabajar con YOLO. Se modificara el archivo \say{yolov4-custom.cfg}, en el cual se cambiaran ciertos parámetros para que la red neuronal al momento de entrenar se adapte a los requerimientos del proyecto. los parámetros a modificar están señalados en la Figura \ref{fig:labeling6}. 
 
 \begin{figure}[h]
 	\centering
@@ -103,7 +103,7 @@ Estos resultados demuestran que la mejor opción es trabajar con Tiny-Yolo, ya q
 
 El dato marcado \textit{learning rate} es una ponderación que se asigna a la nueva información que ingresa a la red, este valor entre más bajo sea aumentara la duración del entrenamiento pero se podrá conseguir una predicción menos volátil. Un valor muy bajo no es muy útil ya que no aplicaría ninguna mejora al entrenamiento, pero sí alargaría el tiempo de finalización.
 
-El siguiente es \textit{max batches}, el que se encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula que se observa en la Ecuación \ref{eq:maxb}, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}, como es en este caso. En \textit{step} se tomará el 80\% y 90\% de \say{max batches} respectivamente. 
+El siguiente es \textit{max batches}, el que se encarga de limitar el número de pasos máximos que realizará en el entrenamiento. Este número es obtenido mediante una simple fórmula que se observa en la Ecuación \ref{eq:maxb}, pero solo es aplicada cuando se trabajará con 3 o más clases de detección, caso contrario simplemente se tendrá que colocar \say{6000}, como es en este caso ya que solo se está trabajando con una clase, la cual es la detección de personas. En \textit{step} se tomará el 80\% y 90\% de \say{max batches} respectivamente. 
 
 \begin{equation}
 \label{eq:maxb}
@@ -120,14 +120,15 @@ Otros parámetros que se tienen que modificar son los datos marcados que aparece
 	\label{fig:labeling7}
 \end{figure}
 
-Para calcular la cantidad de filtros se hará uso de una fórmula simple que se puede apreciar en la Ecuación \ref{eq:clases}, este dato obtenido se tendrá cambiar en todos los filtros que se encuentra en el documento \say{yolov4-custom.cfg}.
+Para calcular la cantidad de filtros se hará uso de la Ecuación \ref{eq:clases}, el dato obtenido se tendrá que cambiar en todos los filtros que se encuentran en el documento \say{yolov4-custom.cfg}.
 
 \begin{equation}
 	filtros = (\#\operatorname{clases}+5)*3
 	\label{eq:clases}
 \end{equation}
 
-Con esto se finaliza los cambios en el archivo \say{yolov4-custom.cfg}, pero aún falta editar otros 2 archivos más el cual uno definirá el nombre de la clase y en el otro se definirán la ubicación de los archivos necesarios para entrenar, la locación de donde se guardará la red entrenada y cuantas clases se usará para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}. 
+En este caso como solo se está trabajando con una sola clase (persona), el resultado obtenido mediante la fórmula es de 18 filtros. Con esto se finalizarán l++++++
+os cambios en el archivo \say{yolov4-custom.cfg}, pero aún faltaría editar otros 2 archivos más el primero definirá el nombre de la clase y el segundo definirá la ubicación de los archivos necesarios para entrenar, la ubicación de donde se guardará la red entrenada y cuantas clases se usará para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}. 
 
 \begin{figure}[h]
 	\centering
@@ -184,15 +185,15 @@ Con esta prueba se obtuvo una precisión media de 72.24\%, lo cual es un dato ba
 
 \section{Prueba de rendimiento}
 
-Una vez entrenada la red neuronal se procede a realizar unas diversas pruebas para así poder calcular el rendimiento y sobre todo la precisión de esta red construida. Para estas pruebas se está usando la documentación que proporciona la página de desarrolladores de Google, donde se detalla la manera en la que se tiene que realizar estas pruebas para calcular la precisión. 
-
-Para estas pruebas se está usando un video de vigilancia que fue proporcionado por el supermercado Makro, la posición de la cámara permite capturar bien la fila que se genera en el supermercado. Este video será analizado por la red neuronal y así calcular cuantas personas fueron detectadas para así realizar una comprobación que permita confirmar si la cantidad de personas detectadas es la correcta.   
-
-Una vez procesado el video por la red neuronal se extrajo 44 imágenes, con estas imágenes se procedió a realizar el análisis el cual permitiría medir la precisión de esta red neuronal. Para ellos las diferentes detecciones se dividió en 3 diferentes categorías, estas categorías son: verdadero positivo (VP), falso positivo (FP) y falso negativo (FN). 
-
-Para una detección sea considerado como VP, debe tener un 70\% de confiabilidad en la detección y también tiene que encerrar casi por completo al objeto detectado. Por otra parte, para que la detección sea considerada como FP debe tener una confiabilidad menor a 70\% o que enmarque una detección errónea y para que pertenezca al grupo de FN el objeto no tiene que ser detectado por la red neuronal. Esto se podrá entender mejor en la Figura \ref{fig:FN} 
+Una vez entrenada la red neuronal se procede a realizar una prueba para poder calcular la precisión y el rendimiento que tiene al detectar personas. Para realizar esta prueba se está usando la documentación que proporciona la página de desarrolladores de Google (\cite{google}), donde se detalla las fórmulas para calcular la precisión.  
+  
+Para estas pruebas se está usando un video de vigilancia que fue proporcionado por el supermercado Makro, la posición de la cámara permite capturar bien la fila que se genera en el supermercado. Este video será analizado por la red neuronal y así calcular cuantas personas fueron detectadas para así realizar una comprobación que permita confirmar si la cantidad de personas detectadas es la correcta.    
 
 \clearpage
+
+Una vez procesado el video por la red neuronal se extrajo 44 imágenes, con estas imágenes se procedió a realizar el análisis el cual permitiría medir la precisión de esta red neuronal. Para ellos las diferentes detecciones se dividió en cuatro categorías, estas son: verdadero positivo (VP), falso positivo (FP), falso negativo (FN) y verdadero negativo(VN). 
+
+Para una detección sea considerado como VP, debe tener un 70\% de confiabilidad en la detección y también tiene que encerrar casi por completo al objeto detectado. Por otra parte, para que la detección sea considerada como FP debe tener una confiabilidad menor a 70\% o que enmarque una detección errónea, para que una detección pertenezca al grupo de FN el objeto no tiene que ser detectado y para que sea considerada en la ultima categoría la detección será considera VN no debe cometer una detección erronea. Esto se podrá entender mejor en la Figura \ref{fig:FN} 
 
 \begin{figure}[h]
 	\centering
@@ -329,7 +330,7 @@ Aplicando la ecuación anterior se obtuvo un valor de 0.63, lo que indica que el
 El valor obtenido de 0.63 puede mejorar realizando entrenamientos más largos para la red neuronal, otro valor a considerar es aumentar la cantidad de imágenes con lo que se realiza los entrenamientos para así dar más casos de estudio. 
 
 
-Un factor impórtate a considerar es la posición de la cámara ya que si se encuentra en una posición donde no se pude captar bien la imagen esto ocasionaría problemas al momento de detectar a las personas.  En este caso el video donde se realizaron las pruebas cuenta con este problema, ya que en un punto dada la posición de la cámara no se pude observar bien a las personas, porque se posición una detrás de otra evitando que se diferencien bien. Esto se observa bien en la Figura \ref{fig:FROC2}. 
+Un factor importante para considerar es la posición de la cámara ya que si se encuentra en una posición donde no se pude captar bien la imagen esto ocasionaría problemas al momento de detectar a las personas.  En este caso el video donde se realizaron las pruebas cuenta con este problema, ya que en un punto dada la posición de la cámara no se pude observar bien a las personas, porque se posicionan una detrás de otra evitando que se pueda diferenciar bien. Esto se observa bien en la Figura \ref{fig:FROC2}. 
 
 \begin{figure}[h]
 	\centering

@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,12 @@ A.~B. {Abdul Qayyum}, A.~{Arefeen}, and C.~{Shahnaz}.
 \newblock Convolutional neural network (cnn) based speech-emotion recognition.
 \newblock In \emph{2019 IEEE International Conference on Signal Processing,
   Information, Communication Systems (SPICSCON)}, pages 122--125, 2019.
+
+\bibitem[{Amazon Web Service}({A}bril de 2021)]{aws}
+{Amazon Web Service}.
+\newblock
+  \texttt{https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html},
+  {A}bril de 2021.
 
 \bibitem[{Bochkovskiy} et~al.(2020){Bochkovskiy}, {Wang}, and {Liao}]{persona}
 A.~{Bochkovskiy}, C.-Y. {Wang}, and H.-Y.~M. {Liao}.
@@ -39,6 +45,17 @@ A.~Fiore.
 \newblock The shopping experience.
 \newblock \emph{Product Experience}, pages 629--648, 12 2008.
 \newblock \doi{10.1016/B978-008045089-6.50030-7}.
+
+\bibitem[{Google Colab}(2019)]{colab23}
+{Google Colab}.
+\newblock \texttt{https://colab.research.google.com/notebooks/intro.ipynb},
+  2019.
+
+\bibitem[{Google Developer}(10 de {F}ebrero de 2020)]{google}
+{Google Developer}.
+\newblock
+  \texttt{https://developers.google.com/machine-learning/crash-course/classification/precision-and-recall?hl=es},
+  10 de {F}ebrero de 2020.
 
 \bibitem[Gross et~al.(2011)Gross, Shortle, Thompson, and Harris]{fifo}
 D.~Gross, J.~Shortle, J.~Thompson, and C.~Harris.
@@ -136,6 +153,11 @@ M.~Olazaran.
 \newblock \doi{10.1177/030631296026003005}.
 \newblock URL \url{https://doi.org/10.1177/030631296026003005}.
 
+\bibitem[{OpenCV}(2 de {A}bril de 2021)]{opencv4}
+{OpenCV}.
+\newblock \texttt{https://docs.opencv.org/4.5.2/index.html}, 2 de {A}bril de
+  2021.
+
 \bibitem[Palomares et~al.(2016)Palomares, Serrá, and Martínez]{conv2323}
 F.~G. Palomares, J.~A.~M. Serrá, and E.~A. Martínez.
 \newblock Aplicación de la convolución de matrices al filtrado de imágenes.
@@ -149,6 +171,11 @@ A.~Panesar.
   Health Outcomes}.
 \newblock O'Reilly Media, Inc., Febrero del 2019.
 \newblock ISBN 9781484237991.
+
+\bibitem[Redmon(2013--2016)]{darknet3}
+J.~Redmon.
+\newblock Darknet: Open source neural networks in c.
+\newblock \url{http://pjreddie.com/darknet/}, 2013--2016.
 
 \bibitem[Redmon and y~Ross B. Girshick~y Ali~Farhadi(2015)]{yolo}
 J.~Redmon and S.~K.~D. y~Ross B. Girshick~y Ali~Farhadi.
@@ -180,6 +207,12 @@ H.~Singh.
 C.~Szegedy, W.~Liu, Y.~Jia, P.~Sermanet, S.~Reed, D.~Anguelov, D.~Erhan,
   V.~Vanhoucke, and A.~Rabinovich.
 \newblock Going deeper with convolutions, 2014.
+
+\bibitem[Trieu(2018)]{tdarkflow}
+T.~H. Trieu.
+\newblock Darkflow.
+\newblock \emph{GitHub Repository. Available online: https://github.
+  com/thtrieu/darkflow (accessed on 14 February 2019)}, 2018.
 
 \bibitem[{Wenjie} et~al.(2015){Wenjie}, {Senbiao}, and {Lihong}]{cola2323}
 X.~{Wenjie}, L.~{Senbiao}, and H.~{Lihong}.

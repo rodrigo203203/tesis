@@ -12,73 +12,73 @@
 \contentsline {chapter}{\numberline {2}MARCO TEÓRICO}{27}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Estado del Arte}{27}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Evolución de los Sistemas de filas de un supermercado}{27}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Innovación en las redes neuronales}{29}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Fundamentos Teóricos}{31}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Redes neuronales artificiales}{31}{subsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Capas}{33}{subsubsection.2.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Métodos de aprendizaje}{33}{subsubsection.2.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.2.1.3}Aprendizaje supervisado}{33}{subsubsection.2.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.2.1.4}Aprendizaje reforzado}{34}{subsubsection.2.2.1.4}%
-\contentsline {subsection}{\numberline {2.2.2}Función de activación}{35}{subsection.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.1}Sigmoid/Sigmoide}{35}{subsubsection.2.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}Tangente hiperbólica(Tanh)}{36}{subsubsection.2.2.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.2.3}Relu}{36}{subsubsection.2.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.2.4}Softmax}{37}{subsubsection.2.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.3}Inteligencia artificial}{38}{subsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}Visión computacional}{40}{subsubsection.2.2.3.1}%
-\contentsline {subsubsection}{\numberline {2.2.3.2}OpenCV}{40}{subsubsection.2.2.3.2}%
-\contentsline {subsection}{\numberline {2.2.4}Machine Learning}{40}{subsection.2.2.4}%
-\contentsline {subsubsection}{\numberline {2.2.4.1}Tensorflow}{41}{subsubsection.2.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.2.4.2}Gráficos de cómputo}{41}{subsubsection.2.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.2.4.3}Keras}{42}{subsubsection.2.2.4.3}%
-\contentsline {subsubsection}{\numberline {2.2.4.4}Configuración de capas iniciales}{43}{subsubsection.2.2.4.4}%
-\contentsline {subsection}{\numberline {2.2.5}Deep Learning}{44}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}YOLO}{44}{subsection.2.2.6}%
-\contentsline {subsubsection}{\numberline {2.2.6.1}Tiny Yolo}{46}{subsubsection.2.2.6.1}%
-\contentsline {subsubsection}{\numberline {2.2.6.2}Darknet}{46}{subsubsection.2.2.6.2}%
-\contentsline {subsubsection}{\numberline {2.2.6.3}Darkflow}{47}{subsubsection.2.2.6.3}%
-\contentsline {subsection}{\numberline {2.2.7}Servicios de cómputo en la nube}{47}{subsection.2.2.7}%
-\contentsline {subsubsection}{\numberline {2.2.7.1}Amazon Web Service}{47}{subsubsection.2.2.7.1}%
-\contentsline {section}{\numberline {2.3}Google Colab}{48}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Conclusiones del Capítulo II}{48}{section.2.4}%
-\contentsline {chapter}{\numberline {3}MARCO PRÁCTICO}{49}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Elección de una red neuronal}{49}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Entrenamiento de la red neuronal}{50}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Base de datos}{50}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Preparación del ambiente}{51}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Personalizar una red neuronal}{52}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Inicio de entrenamiento}{54}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Prueba de rendimiento}{55}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Diseño de la interfaz}{61}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Detección de personas}{61}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Pantalla de alerta}{61}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Diagrama de flujo}{62}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Diagrama C4Model}{64}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Contexto}{64}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Contenedores}{65}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Descripción de la aplicación}{65}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Agregar el tracker a la detección}{66}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Agregar contador y límite de detección}{68}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Alarma al superar el tiempo máximo}{69}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Crear una base de datos}{69}{subsection.3.7.4}%
-\contentsline {section}{\numberline {3.8}Conclusiones del capitulo III}{71}{section.3.8}%
-\contentsline {chapter}{\numberline {4}FUNCIONAMIENTO DE LA APLICACIÓN}{73}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Proceso de iniciar la aplicación}{73}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Configuración de parámetros}{74}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Proceso de detección y cálculo de tiempo de espera promedio}{74}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Prueba de la aplicación}{76}{section.4.4}%
-\contentsline {chapter}{\numberline {5}MARCO CONCLUSIVO}{79}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{79}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recomendaciones}{80}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Trabajos futuros}{80}{section.5.3}%
-\contentsline {chapter}{BIBLIOGRAFÍA}{80}{section.5.3}%
-\contentsline {chapter}{\numberline {A}Anexos}{85}{appendix.Alph1}%
-\contentsline {section}{\numberline {A.1}Resultado obtenido mediante la prueba de Darknet.}{85}{section.Alph1.1}%
-\contentsline {subsection}{\numberline {A.1.1}Reporte de prueba de precisión media.}{85}{subsection.Alph1.1.1}%
-\contentsline {section}{\numberline {A.2}Tablas}{92}{section.Alph1.2}%
-\contentsline {subsection}{\numberline {A.2.1}Datos obtenidos mediante el análisis de las detecciones.}{92}{subsection.Alph1.2.1}%
-\contentsline {subsection}{\numberline {A.2.2}Tasa de verdaderos positivos y tasa de falsos positivos.}{93}{subsection.Alph1.2.2}%
-\contentsline {subsection}{\numberline {A.2.3}Tabla ordenada y lista para graficar la curva ROC.}{94}{subsection.Alph1.2.3}%
-\contentsline {section}{\numberline {A.3}Código}{96}{section.Alph1.3}%
-\contentsline {subsection}{\numberline {A.3.1}Código general de la aplicación NeoVision.}{96}{subsection.Alph1.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}Código que genera la ventana de alerta.}{104}{subsection.Alph1.3.2}%
+\contentsline {subsection}{\numberline {2.1.2}Innovación en las redes neuronales}{30}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Fundamentos Teóricos}{32}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Redes neuronales artificiales}{32}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Capas}{34}{subsubsection.2.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Métodos de aprendizaje}{34}{subsubsection.2.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Aprendizaje supervisado}{34}{subsubsection.2.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.2.1.4}Aprendizaje reforzado}{35}{subsubsection.2.2.1.4}%
+\contentsline {subsection}{\numberline {2.2.2}Función de activación}{36}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Sigmoid/Sigmoide}{36}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Tangente hiperbólica(Tanh)}{37}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}Relu}{37}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}Softmax}{38}{subsubsection.2.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.3}Inteligencia artificial}{39}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Visión computacional}{41}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}OpenCV}{41}{subsubsection.2.2.3.2}%
+\contentsline {subsection}{\numberline {2.2.4}Machine Learning}{41}{subsection.2.2.4}%
+\contentsline {subsubsection}{\numberline {2.2.4.1}Tensorflow}{42}{subsubsection.2.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.2.4.2}Gráficos de cómputo}{42}{subsubsection.2.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.2.4.3}Keras}{43}{subsubsection.2.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.2.4.4}Configuración de capas iniciales}{44}{subsubsection.2.2.4.4}%
+\contentsline {subsection}{\numberline {2.2.5}Deep Learning}{45}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}YOLO}{45}{subsection.2.2.6}%
+\contentsline {subsubsection}{\numberline {2.2.6.1}Tiny Yolo}{47}{subsubsection.2.2.6.1}%
+\contentsline {subsubsection}{\numberline {2.2.6.2}Darknet}{47}{subsubsection.2.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.2.6.3}Darkflow}{48}{subsubsection.2.2.6.3}%
+\contentsline {subsection}{\numberline {2.2.7}Servicios de cómputo en la nube}{48}{subsection.2.2.7}%
+\contentsline {subsubsection}{\numberline {2.2.7.1}Amazon Web Service}{48}{subsubsection.2.2.7.1}%
+\contentsline {section}{\numberline {2.3}Google Colab}{49}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Conclusiones del Capítulo II}{49}{section.2.4}%
+\contentsline {chapter}{\numberline {3}MARCO PRÁCTICO}{50}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Elección de una red neuronal}{50}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Entrenamiento de la red neuronal}{51}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Base de datos}{51}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Preparación del ambiente}{52}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Personalizar una red neuronal}{53}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Inicio de entrenamiento}{55}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Prueba de rendimiento}{57}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Diseño de la interfaz}{63}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detección de personas}{63}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Pantalla de alerta}{63}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Diagrama de flujo}{64}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Diagrama C4Model}{66}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Contexto}{66}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Contenedores}{67}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Descripción de la aplicación}{67}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Agregar el tracker a la detección}{68}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Agregar contador y límite de detección}{70}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Alarma al superar el tiempo máximo}{71}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Crear una base de datos}{71}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Conclusiones del capitulo III}{73}{section.3.8}%
+\contentsline {chapter}{\numberline {4}FUNCIONAMIENTO DE LA APLICACIÓN}{75}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Proceso de iniciar la aplicación}{75}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Configuración de parámetros}{76}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Proceso de detección y cálculo de tiempo de espera promedio}{76}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Prueba de la aplicación}{78}{section.4.4}%
+\contentsline {chapter}{\numberline {5}MARCO CONCLUSIVO}{81}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{81}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recomendaciones}{82}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Trabajos futuros}{82}{section.5.3}%
+\contentsline {chapter}{BIBLIOGRAFÍA}{82}{section.5.3}%
+\contentsline {chapter}{\numberline {A}Anexos}{88}{appendix.Alph1}%
+\contentsline {section}{\numberline {A.1}Resultado obtenido mediante la prueba de Darknet.}{88}{section.Alph1.1}%
+\contentsline {subsection}{\numberline {A.1.1}Reporte de prueba de precisión media.}{88}{subsection.Alph1.1.1}%
+\contentsline {section}{\numberline {A.2}Tablas}{89}{section.Alph1.2}%
+\contentsline {subsection}{\numberline {A.2.1}Datos obtenidos mediante el análisis de las detecciones.}{89}{subsection.Alph1.2.1}%
+\contentsline {subsection}{\numberline {A.2.2}Tasa de verdaderos positivos y tasa de falsos positivos.}{90}{subsection.Alph1.2.2}%
+\contentsline {subsection}{\numberline {A.2.3}Tabla ordenada y lista para graficar la curva ROC.}{91}{subsection.Alph1.2.3}%
+\contentsline {section}{\numberline {A.3}Código}{93}{section.Alph1.3}%
+\contentsline {subsection}{\numberline {A.3.1}Código general de la aplicación NeoVision.}{93}{subsection.Alph1.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}Código que genera la ventana de alerta.}{101}{subsection.Alph1.3.2}%

@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
 The style file: abbrvnat.bst
-Illegal, another \bibstyle command---line 316 of file /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
+Illegal, another \bibstyle command---line 323 of file /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
@@ -24,51 +24,59 @@ I was expecting a `,' or a `}'---line 262 of file ../capitulos/bibliography.bib
  : @ARTICLE{neu3,  author={F. {Rosenblatt}},  journal={Proceedings of the IRE},   title={Perceptron Simulation Experiments},   year={1960},  volume={48},  number={3},  pages={301-309},}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 328 of file ../capitulos/bibliography.bib
+Warning--entry type for "google" isn't style-file defined
+--line 308 of file ../capitulos/bibliography.bib
+Warning--entry type for "opencv4" isn't style-file defined
+--line 314 of file ../capitulos/bibliography.bib
+Warning--entry type for "aws" isn't style-file defined
+--line 320 of file ../capitulos/bibliography.bib
+Warning--entry type for "colab23" isn't style-file defined
+--line 326 of file ../capitulos/bibliography.bib
+I was expecting a `,' or a `}'---line 366 of file ../capitulos/bibliography.bib
  :  issn = {1988-3145}, pages = {97--108} 
  :                                        doi = {10.4995/msel.2016.4524},
 I'm skipping whatever remains of this entry
 Warning--empty journal in shoppingExp
 Warning--empty journal in AprendizajeSup
-You've used 34 entries,
+You've used 40 entries,
             2773 wiz_defined-function locations,
-            805 strings with 9989 characters,
-and the built_in function-call counts, 14733 in all, are:
-= -- 1314
-> -- 716
-< -- 31
-+ -- 250
-- -- 216
-* -- 1058
-:= -- 2245
-add.period$ -- 125
-call.type$ -- 34
-change.case$ -- 164
-chr.to.int$ -- 34
-cite$ -- 70
-duplicate$ -- 758
-empty$ -- 1287
-format.name$ -- 260
-if$ -- 3177
+            829 strings with 10672 characters,
+and the built_in function-call counts, 16457 in all, are:
+= -- 1458
+> -- 776
+< -- 37
++ -- 274
+- -- 234
+* -- 1138
+:= -- 2507
+add.period$ -- 139
+call.type$ -- 40
+change.case$ -- 188
+chr.to.int$ -- 40
+cite$ -- 82
+duplicate$ -- 852
+empty$ -- 1477
+format.name$ -- 284
+if$ -- 3547
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 40
-newline$ -- 200
-num.names$ -- 136
-pop$ -- 385
+missing$ -- 41
+newline$ -- 226
+num.names$ -- 160
+pop$ -- 458
 preamble$ -- 1
-purify$ -- 140
+purify$ -- 158
 quote$ -- 0
-skip$ -- 584
+skip$ -- 666
 stack$ -- 0
-substring$ -- 445
-swap$ -- 125
+substring$ -- 457
+swap$ -- 131
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 319
+type$ -- 385
 warning$ -- 2
-while$ -- 126
+while$ -- 144
 width$ -- 0
-write$ -- 480
+write$ -- 544
 (There were 5 error messages)

@@ -2,11 +2,11 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Resultados de una prueba de rendimiento entre YOLO y Tiny-Yolo.\relax }}{52}{table.caption.38}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Datos obtenidos mediante el análisis realizado de las detecciones de la red neuronal.\relax }}{57}{table.caption.46}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Datos necesarios para obtener la curva ROC que indica el rendimiento de la red neuronal.\relax }}{58}{table.caption.47}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Resultados de una prueba de rendimiento entre YOLO y Tiny-Yolo.\relax }}{53}{table.caption.38}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Datos obtenidos mediante el análisis realizado de las detecciones de la red neuronal.\relax }}{58}{table.caption.46}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Datos necesarios para obtener la curva ROC que indica el rendimiento de la red neuronal.\relax }}{60}{table.caption.47}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Datos guardados en la base de datos mediante MongoDB.\relax }}{76}{table.caption.67}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Datos guardados en la base de datos.\relax }}{78}{table.caption.71}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Datos guardados en la base de datos mediante MongoDB.\relax }}{78}{table.caption.67}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Datos guardados en la base de datos.\relax }}{80}{table.caption.71}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

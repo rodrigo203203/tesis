@@ -1,4 +1,10 @@
+
+En este capítulo se introducirán los conceptos básicos para poder entender la tecnología que se utilizó para poder realizar la implementación de esta aplicación. 
+
 \section{Estado del Arte}
+
+En el estado del arte se mencionarán las últimas innovaciones que se realizaron para mejorar el sistema de filas de un supermercado o comercio y también se mencionarán los cambios que paso las redes neuronales artificiales y sus últimos usos en diversos proyectos. 
+
 \subsection{Evolución de los Sistemas de filas de un supermercado}
 El primer supermercado se inauguró en el año 1916 en Tennessee, Estados Unidos, con el nombre Pegly Wiggly, pero presentaba un sistema de cajas que se concentraban más en facilitar y agilizar el trabajo del cajero, sin darle mucha importancia al cliente, ya que las personas no tenían mucho espacio de maniobra, como se puede observar en la Figura \ref{fig:qw}.
 
@@ -34,7 +40,7 @@ Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió loca
 	\label{fig:amago}
 \end{figure}
 
-Amazon igualmente está utilizando otro método para hacer desaparecer las filas y las cajas es utilizar unos carritos de compra inteligentes, lo que ocasiona que el cliente cobre el mismo los productos que comprara.  Otra innovación viene de los supermercados de China, donde implementaron un sistema de pago mediante el uso de la aplicación WeChat, en este caso los clientes tienen que escanear los diferentes productos que compraran y esto genera una \say{lista de compra}, la cual al momento de realizar el pago se crea un código QR, que posteriormente es escaneado por el cajero para registrar la compra y así realizar el pago a través de WeChat (\cite{wechat}), de esta manera se agiliza la atención y se evita que se genere largas filas.  
+Amazon igualmente está utilizando otro método para hacer desaparecer las filas y las cajas, mediante el uso de carritos de compra inteligentes, lo que ocasiona que el cliente cobre el mismo los productos que comprara.  Otra innovación viene de los supermercados de China, donde implementaron un sistema de pago mediante el uso de la aplicación WeChat, en este caso los clientes tienen que escanear los diferentes productos que compraran y esto genera una \say{lista de compra}, la cual al momento de realizar el pago se crea un código QR, que posteriormente es escaneado por el cajero para registrar la compra y así realizar el pago a través de WeChat (\cite{wechat}), de esta manera se agiliza la atención y se evita que se genere largas filas.   
 
 \clearpage 
 
@@ -55,7 +61,7 @@ El dato sustancial para este proyecto es la introducción de las redes neuronale
  \vspace{5mm}
  \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.2]{imagenes/gato.png}
+	\includegraphics[scale=0.25]{imagenes/gato.png}
 	\caption{Aplicación de redes neuronales convolucionales para la clasificación de imágenes.}
 	\source{Hamilton Chang (2019).}
 	\label{fig:gato}
@@ -192,7 +198,7 @@ Para realizar este entrenamiento se necesita de un “agente” en un estado det
 Existen varias funciones de activación que actúan de diferente manera y eso nos permite adecuar las capas de las neuronas, estas funciones son (\cite{funAc}):
 \subsubsection{Sigmoid/Sigmoide}
 
-Esta función se encarga de transformar los valores introducidos a una escala de una décima (0,1), la Ecuación (\ref{eq:sigmoideq}) tomará los valores de alto rango y lo transformara de manera asintomática a 1 y los valores bajos tienden de manera contraria acercándose al 0 (\cite{activa2}), la gráfica de la función se apreciará en la Figura \ref{fig:sigmoid}.
+Esta función se encarga de transformar los valores introducidos a una escala de una décima (0,1), la Ecuación (\ref{eq:sigmoideq}) tomará los valores de alto rango y lo transformará de manera asintomática a 1 y los valores bajos tienden de manera contraria acercándose al 0 (\cite{activa2}), la gráfica de la función se apreciará en la Figura \ref{fig:sigmoid}.
 
 \vspace{5mm}
 \begin{equation}
@@ -329,7 +335,7 @@ El concepto de la inteligencia artificial fue introducido en el año 1950 por Al
 
 La visión computacional es un campo que va muy conectado con la inteligencia artificial, que consiste que una máquina tenga un alto nivel de comprensión de imágenes o videos. Con esta tecnología se quiere automatizar tareas que requieran un sistema visual, por ejemplo, sistemas de clasificación de imágenes. Ahora, lograr una interpretación de imágenes al mismo nivel que el ser humano es un problema complejo. Sin embargo, en los últimos años hubo avances considerables, uno de ellos son el uso de esta tecnología para el piloto automático de los automóviles.
 \subsubsection{OpenCV}
-Actualmente, una de las herramientas más usadas para el campo de visión computacional es OpenCV, ya que es libre de uso y presenta varias opciones para trabajar en diversas aplicaciones que van desde reconocimiento de objetos, calibración de cámaras, visión estereoscópica y visión robótica.
+Actualmente, una de las herramientas más usadas para el campo de visión computacional es OpenCV, ya que es libre de uso y presenta varias opciones para trabajar en diversas aplicaciones que van desde reconocimiento de objetos, calibración de cámaras, visión estereoscópica y visión robótica (\cite{opencv4}).
 
 \vspace{5mm}
 
@@ -457,7 +463,7 @@ YOLO (\textit{You Only Look Once}, \say{sólo se ve una vez}) es un algoritmo de
 	\label{fig:yolo1}
 \end{figure}
 
-La principal innovación que YOLO trajo consigo a este campo, fue el hecho de que es capaz de realizar múltiples detecciones de una sola vez, lo cual realiza este proceso de manera rápida y eficiente.
+La principal innovación que YOLO trajo consigo a este campo, fue el hecho de que es capaz de realizar múltiples detecciones de una sola vez, lo cual realiza este proceso de manera rápida y eficiente (\cite{yolo}).
 El procesamiento de imágenes con YOLO es simple y directo, por ejemplo, teniendo una imagen de entrada de un tamaño de 448x448ppx, esto se aprecia en la Figura \ref{fig:yolo2}, ejecuta una red convolucional a la imagen que llegaría a cambiar de tamaño y así limitar los resultantes de las detecciones confiando en el modelo que se usó para entrenar la red neuronal. 
 \begin{figure}[h]
 	\centering
@@ -510,11 +516,11 @@ Al tener menos capas está red neuronal es capaz de tener un mejor rendimiento e
 
 \subsubsection{Darknet}
 
-Darknet es un \textit{framework} de \textit{open source} (código abierto) que permite trabajar con la red neuronal YOLO, este \textit{framework} está escrita en C/CUDA. La finalidad de utilizar Darknet es poder entrenar la red neuronal para que tenga la capacidad de detectar personas y con ello poder utilizarlo en el proyecto. 
+Darknet es un \textit{framework} de \textit{open source} (código abierto) que permite trabajar con la red neuronal YOLO, este \textit{framework} está escrita en C/CUDA. La finalidad de utilizar Darknet es poder entrenar la red neuronal para que tenga la capacidad de detectar personas y con ello poder utilizarlo en el proyecto (\cite{darknet3}). 
 
 \subsubsection{Darkflow} 
 
-Darkflow es una herramienta muy similar a Darknet, pero con la diferencia de que Darkflow utiliza Tensorflow como motor para la red neuronal, lo cual provoca que para usar esta red se tiene que realizar en un entorno que reconozca el lenguaje Python.  
+Darkflow es una herramienta muy similar a Darknet, pero con la diferencia de que Darkflow utiliza Tensorflow como motor para la red neuronal, lo cual provoca que para usar esta red se tiene que realizar en un entorno que reconozca el lenguaje Python (\cite{tdarkflow}).  
 
 \subsection{Servicios de cómputo en la nube} 
 
@@ -542,12 +548,12 @@ Se utilizó este servicio para crear una máquina en la nube que tenga las capac
 
 \vspace{5mm} 
 
-Para ser más específico el tipo de servicio que se utilizó es \textit{Amazon Elastic Compute Cloud} o EC2 por sus siglas en inglés, el cual es un servicio web que ofrece la capacidad de realizar cálculos de cómputo adaptable, que en otras palabras se refiere a hospedar sistemas de \textit{software} para la ejecución de aplicaciones. 
+Para ser más específico el tipo de servicio que se utilizó es \textit{Amazon Elastic Compute Cloud} o EC2 por sus siglas en inglés (\cite{aws}), el cual es un servicio web que ofrece la capacidad de realizar cálculos de cómputo adaptable, que en otras palabras se refiere a hospedar sistemas de \textit{software} para la ejecución de aplicaciones. 
 
 
 \section{Google Colab}
 
-Google Colab es una plataforma de programación a través de la nube, la ventaja de este servicio es que ofrece el uso de GPU para el entrenamiento de redes neuronales de manera gratuita, pero sólo se le puede dejar 5 horas en \textit{stand by} antes de que se cierre. Pero al ser una herramienta de Google tiene buena integración con Drive, lo que permite realizar copias de seguridad utilizando este servicio, por otra parte, se puede mantener la página activa por más tiempo gracias a las funciones de desarrollador que poseen los navegadores web. Para usar este servicio lo único que se necesita es una cuenta en Google e iniciar sesión, una gran parte de herramientas ya se encuentran instaladas en Colab, lo cual facilita la interacción de ella misma. 
+Google Colab es una plataforma de programación a través de la nube, la ventaja de este servicio es que ofrece el uso de GPU para el entrenamiento de redes neuronales de manera gratuita, pero sólo se le puede dejar 5 horas en \textit{stand by} antes de que se cierre. Pero al ser una herramienta de Google tiene buena integración con Drive, lo que permite realizar copias de seguridad utilizando este servicio, por otra parte, se puede mantener la página activa por más tiempo gracias a las funciones de desarrollador que poseen los navegadores web. Para usar este servicio lo único que se necesita es una cuenta en Google e iniciar sesión, una gran parte de herramientas ya se encuentran instaladas en Colab, lo cual facilita la interacción de ella misma (\cite{colab23}). 
 
  \section{Conclusiones del Capítulo II} 
 
