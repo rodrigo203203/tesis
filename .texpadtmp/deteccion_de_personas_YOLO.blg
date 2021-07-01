@@ -2,81 +2,88 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
 The style file: abbrvnat.bst
-Illegal, another \bibstyle command---line 323 of file /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
+Illegal, another \bibstyle command---line 329 of file /Users/rodrigomoralesrivas/Documents/documento_tesis/.texpadtmp/deteccion_de_personas_YOLO.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
 Database file #1: ../capitulos/bibliography.bib
 Warning--entry type for "funAc" isn't style-file defined
---line 89 of file ../capitulos/bibliography.bib
-I was expecting a `,' or a `}'---line 93 of file ../capitulos/bibliography.bib
+--line 113 of file ../capitulos/bibliography.bib
+I was expecting a `,' or a `}'---line 117 of file ../capitulos/bibliography.bib
  :   
  :   url = {https://www.diegocalvo.es/funcion-de-activacion-redes-neuronales/}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 187 of file ../capitulos/bibliography.bib
+Warning--entry type for "estudio1" isn't style-file defined
+--line 120 of file ../capitulos/bibliography.bib
+I was expecting a `,' or a `}'---line 124 of file ../capitulos/bibliography.bib
+ :   
+ :   url = {https://zsc.github.io/megvii-pku-dl-course/slides/Lecture6(Object%20Detection).pdf}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 218 of file ../capitulos/bibliography.bib
  : 
  : @book{fifo,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 262 of file ../capitulos/bibliography.bib
+I was expecting a `,' or a `}'---line 293 of file ../capitulos/bibliography.bib
  : 
  : @ARTICLE{neu3,  author={F. {Rosenblatt}},  journal={Proceedings of the IRE},   title={Perceptron Simulation Experiments},   year={1960},  volume={48},  number={3},  pages={301-309},}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "google" isn't style-file defined
---line 308 of file ../capitulos/bibliography.bib
+--line 339 of file ../capitulos/bibliography.bib
 Warning--entry type for "opencv4" isn't style-file defined
---line 314 of file ../capitulos/bibliography.bib
+--line 345 of file ../capitulos/bibliography.bib
 Warning--entry type for "aws" isn't style-file defined
---line 320 of file ../capitulos/bibliography.bib
+--line 351 of file ../capitulos/bibliography.bib
 Warning--entry type for "colab23" isn't style-file defined
---line 326 of file ../capitulos/bibliography.bib
-I was expecting a `,' or a `}'---line 366 of file ../capitulos/bibliography.bib
+--line 357 of file ../capitulos/bibliography.bib
+I was expecting a `,' or a `}'---line 397 of file ../capitulos/bibliography.bib
  :  issn = {1988-3145}, pages = {97--108} 
  :                                        doi = {10.4995/msel.2016.4524},
 I'm skipping whatever remains of this entry
 Warning--empty journal in shoppingExp
 Warning--empty journal in AprendizajeSup
-You've used 40 entries,
+You've used 42 entries,
             2773 wiz_defined-function locations,
-            829 strings with 10672 characters,
-and the built_in function-call counts, 16457 in all, are:
-= -- 1458
-> -- 776
-< -- 37
-+ -- 274
-- -- 234
-* -- 1138
-:= -- 2507
-add.period$ -- 139
-call.type$ -- 40
-change.case$ -- 188
-chr.to.int$ -- 40
-cite$ -- 82
-duplicate$ -- 852
-empty$ -- 1477
-format.name$ -- 284
-if$ -- 3547
+            837 strings with 11018 characters,
+and the built_in function-call counts, 17571 in all, are:
+= -- 1543
+> -- 888
+< -- 38
++ -- 312
+- -- 270
+* -- 1236
+:= -- 2692
+add.period$ -- 145
+call.type$ -- 42
+change.case$ -- 206
+chr.to.int$ -- 42
+cite$ -- 86
+duplicate$ -- 887
+empty$ -- 1540
+format.name$ -- 322
+if$ -- 3768
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 41
-newline$ -- 226
-num.names$ -- 160
-pop$ -- 458
+missing$ -- 42
+newline$ -- 236
+num.names$ -- 168
+pop$ -- 496
 preamble$ -- 1
-purify$ -- 158
+purify$ -- 174
 quote$ -- 0
-skip$ -- 666
+skip$ -- 704
 stack$ -- 0
-substring$ -- 457
-swap$ -- 131
+substring$ -- 461
+swap$ -- 133
 text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 385
+type$ -- 407
 warning$ -- 2
-while$ -- 144
+while$ -- 150
 width$ -- 0
-write$ -- 544
-(There were 5 error messages)
+write$ -- 569
+(There were 6 error messages)

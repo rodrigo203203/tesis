@@ -8,6 +8,16 @@ En el estado del arte se mencionarán las últimas innovaciones que se realizaro
 \subsection{Evolución de los Sistemas de filas de un supermercado}
 El primer supermercado se inauguró en el año 1916 en Tennessee, Estados Unidos, con el nombre Pegly Wiggly, pero presentaba un sistema de cajas que se concentraban más en facilitar y agilizar el trabajo del cajero, sin darle mucha importancia al cliente, ya que las personas no tenían mucho espacio de maniobra, como se puede observar en la Figura \ref{fig:qw}.
 
+
+La gran innovación surgió cuando se incorporó el concepto de la teoría de colas, que fue introducido por Agner Kraup Erlang,  cuyo artículo estaba enfocado en las llamadas telefónicas.  
+
+Teniendo los conceptos ya establecidos, se fueron probando diferentes sistemas para agilizar la atención, ya que cada vez más gente realizaba sus compras en las tiendas. Estos modelos son: FIFO, LIFO y SJF (\cite{fifo}).  
+  
+
+La búsqueda de mejoras para agilizar la atención en las cajas es un hecho, ya que estudios demuestran la importancia de generar una gran experiencia de compra, porque eso aumenta la probabilidad que el cliente vuelva al local a realizar otra compra, (\cite{enjoy1}); (\cite{enjoy2}); (\cite{shoppingExp}); (\cite{enjoy3}).
+
+\clearpage 
+
 \vspace{5mm}
 \begin{figure}[h]
 	\centering
@@ -16,18 +26,6 @@ El primer supermercado se inauguró en el año 1916 en Tennessee, Estados Unidos
 	\source{Xataka (2016).}
 	\label{fig:qw}
 \end{figure}
-
-La gran innovación surgió cuando se incorporó el concepto de la teoría de colas, que fue introducido por Agner Kraup Erlang,  cuyo artículo estaba enfocado en las llamadas telefónicas.  
-
-Teniendo los conceptos ya establecidos, se fueron probando diferentes sistemas para agilizar la atención, ya que cada vez más gente realizaba sus compras en las tiendas. Estos modelos son: FIFO, LIFO y SJF (\cite{fifo}).  
-
-\clearpage 
-
-  
-
-La búsqueda de mejoras para agilizar la atención en las cajas es un hecho, ya que estudios demuestran la importancia de generar una gran experiencia de compra, porque eso aumenta la probabilidad que el cliente vuelva al local a realizar otra compra, (\cite{enjoy1}); (\cite{enjoy2}); (\cite{shoppingExp}); (\cite{enjoy3}).\\  
-
-  
 
 Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió locales en el que no existen cajas, como se observa en la Figura \ref{fig:amago}. Este nuevo sistema que utiliza Amazon realiza un cobro mediante el uso de cámaras con visión computacional para así detectar que productos selecciona el cliente, esos productos seleccionados se agregan directamente a un carrito virtual en la aplicación de Amazon, el cobro se realiza cuando el cliente sale del local (\cite{ama}); (\cite{ama2}). 
 
@@ -42,7 +40,6 @@ Una de las nuevas innovaciones viene dada por parte de Amazon, donde abrió loca
 
 Amazon igualmente está utilizando otro método para hacer desaparecer las filas y las cajas, mediante el uso de carritos de compra inteligentes, lo que ocasiona que el cliente cobre el mismo los productos que comprara.  Otra innovación viene de los supermercados de China, donde implementaron un sistema de pago mediante el uso de la aplicación WeChat, en este caso los clientes tienen que escanear los diferentes productos que compraran y esto genera una \say{lista de compra}, la cual al momento de realizar el pago se crea un código QR, que posteriormente es escaneado por el cajero para registrar la compra y así realizar el pago a través de WeChat (\cite{wechat}), de esta manera se agiliza la atención y se evita que se genere largas filas.   
 
-\clearpage 
 
 \subsection{Innovación en las redes neuronales} 
 
@@ -66,8 +63,11 @@ El dato sustancial para este proyecto es la introducción de las redes neuronale
 	\source{Hamilton Chang (2019).}
 	\label{fig:gato}
 \end{figure}
-En el proceso de la   se pasa por diferentes procedimientos, uno de ellos es la multiplicación con un \textit{kernel}, este proceso se apreciará mejor en la Figura \ref{fig:conv24}. En la Figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila, y la primera y última columna se les ha asignado el valor original (\cite{conv2323}).
+
 \clearpage
+
+En el proceso de la   se pasa por diferentes procedimientos, uno de ellos es la multiplicación con un \textit{kernel}, este proceso se apreciará mejor en la Figura \ref{fig:conv24}. En la Figura \ref{fig:conv23} observamos el resultado final de la convolución, donde a las entradas de la primera y última fila, y la primera y última columna se les ha asignado el valor original (\cite{conv2323}).
+
  \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/convu2.png}
@@ -76,6 +76,7 @@ En el proceso de la   se pasa por diferentes procedimientos, uno de ellos es la 
 Volume 9 (2016).}
 	\label{fig:conv24}
 \end{figure}
+
  \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.5]{imagenes/convu3.png}
@@ -239,6 +240,8 @@ Las características de esta función son las siguientes:
 	\item Tiene un gran rendimiento en redes recurrentes.
 \end{itemize}
 
+\clearpage
+
 \vspace{5mm}
 \begin{figure}[h]
 	\centering
@@ -270,7 +273,7 @@ Algunas de las características de esta función son las siguientes:
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=9cm, height=5.9cm]{imagenes/relu.png}
+	\includegraphics[width=9cm, height=5cm]{imagenes/relu.png}
 	\caption{Representación gráfica de la función Relu.}
 	\source{Visweswaran N. (2020).}
 	\label{fig:relu}
@@ -532,24 +535,23 @@ Computación en la nube es un término que normalmente se utiliza para denominar
 
 \textit{Amazon Web Services} o AWS en sus siglas en inglés, es un servicio en la nube que ofrece más de 175 servicios de manejo de datos a nivel global, estos servicios se pueden observar en la Figura \ref{fig:aws}. Ofrece tecnologías desde infraestructura para almacenamiento, servicios de cómputo hasta nuevas tecnologías como ser el aprendizaje automático e inteligencia artificial. 
 
- \begin{figure}[h]
-	\centering
-	\includegraphics[width=14cm, height=9cm, ]{imagenes/ama23.png}
-	\caption{Servicio que ofrece AWS.}
-	\source{Amazon (2019).}
-	\label{fig:aws}
-\end{figure}
-
 Ofrece tres tipos de servicios principales en la nube, el cual son: infraestructura como servicio, plataforma como servicio y software como servicio. Cada tipo de servicio tiene diferentes niveles de control. 
 
- \clearpage
 
 Se utilizó este servicio para crear una máquina en la nube que tenga las capacidades para correr el entrenamiento y que éste pueda estar encendido las 24 horas al día o por lo menos hasta que finalice el entrenamiento. 
 
 \vspace{5mm} 
 
 Para ser más específico el tipo de servicio que se utilizó es \textit{Amazon Elastic Compute Cloud} o EC2 por sus siglas en inglés (\cite{aws}), el cual es un servicio web que ofrece la capacidad de realizar cálculos de cómputo adaptable, que en otras palabras se refiere a hospedar sistemas de \textit{software} para la ejecución de aplicaciones. 
+\clearpage
 
+ \begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm, height=6cm, ]{imagenes/ama23.png}
+	\caption{Servicio que ofrece AWS.}
+	\source{Amazon (2019).}
+	\label{fig:aws}
+\end{figure}
 
 \section{Google Colab}
 

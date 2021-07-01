@@ -47,12 +47,13 @@ Actualmente, las tiendas están muy conscientes sobre la importancia de mantener
 \vspace{5mm} 
 
 Una de las soluciones que normalmente se aplica es el generar una fila única con varias cajas (\cite{cola2323}), para así lograr una atención efectiva, pero el éxito de este método es saber cuántas cajas tendrán que estar disponibles para atender, porque teniendo todas las cajas abiertas en todo momento no es muy eficiente para el supermercado, ya que habría cajas vacías y eso ocasiona tener personal que no esté realizando ninguna actividad, por otra parte, teniendo poco personal atendiendo las cajas ocasionaría largas filas y eso conlleva a generar una mala experiencia al cliente. 
- 
+
+El área de inteligencia de negocios de Makro Parque no sabe cuántas veces se generan filas largas en cajas al momento de realizar el pago y como estas afectan a la experiencia de los clientes y la decisión de retornar al supermercado  
 
 \vspace{5mm}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.7]{imagenes/fila_larga.png}
+	\includegraphics[scale=0.6]{imagenes/fila_larga.png}
 	\caption{Representación de una fila larga.}
 	\source{Shutterstock}
 	\label{fig:longF}
@@ -64,17 +65,17 @@ Una de las soluciones que normalmente se aplica es el generar una fila única co
 \subsection{Objetivo General}
 
 
-Desarrollar una aplicación utilizando redes neuronales convulucionales para detectar personas y así poder calcular el tiempo de espera promedio de los clientes en un sistema de atención de fila única en un supermercado.
+Desarrollar una aplicación utilizando redes neuronales convolucionales para detectar y monitorear personas y así poder calcular el tiempo de espera promedio de los clientes en un sistema de atención de fila única en un supermercado. 
 
 \subsection{Objetivos Específicos}
 
 
-\begin{itemize}
-    \item Seleccionar el algoritmo de detección de objetos basado en los requerimientos del proyecto.
-    \item Entrenar una red neuronal para que sea capaz de detectar personas a través de videos de cámara de seguridad.
-    \item Realizar una aplicación que pueda efectuar un seguimiento de las personas en una fila de supermercado.
-    \item Documentar el desarrollo de la aplicación y las herramientas utilizadas.
-\end{itemize}
+\begin{itemize} 
+    \item Seleccionar el algoritmo de detección de objetos basado en los requerimientos del proyecto. 
+    \item Entrenar una red neuronal para que sea capaz de detectar personas a través de videos de cámara de seguridad. 
+\item Calcular el tiempo de espera de las personas detectas por la red neuronal a través de cámaras de seguridad en tiempo real.  
+    \item Implementar una aplicación que pueda efectuar un seguimiento de las personas en una fila de un supermercado. 
+\end{itemize} 
 
 \vspace{10mm}
 
@@ -84,10 +85,10 @@ En los últimos años la inteligencia artificial junto con la visión computacio
 
 \section{Justificación} 
 
-Una fila muy larga en la atención de las cajas afecta tanto al cliente (más tiempo de espera) como al supermercado (clientes que se retiran sin terminar su compra). Reducir el tiempo de  espera de un comprador habilitando más cajas para la atención, podría mejorar la experiencia de compra y con ello aumentar las probabilidades de retorno del cliente al local. Por tanto, este proyecto se lleva a cabo para ayudar a determinar cuántas cajas tienen que estar abiertas en un sistema de fila única. 
-\\  
+Una fila muy larga en la atención de las cajas afecta tanto al cliente (más tiempo de espera) como al supermercado (clientes que se retiran sin terminar su compra). El poder conocer la cantidad de veces que esto sucede y con qué frecuencia puede ayudar al supermercado a identificar la mejor manera de reducir el tiempo de espera de un comprador. Esto podría ser habilitando más cajas para la atención lo que podría mejorar la experiencia de compra y con ello aumentar las probabilidades de retorno del cliente al local. Por tanto, este proyecto se lleva a cabo para ayudar a conocer cuantas veces se generan las filas largas en cajas en un supermercado que utilicen un sistema de fila única. 
+\\
 
-Con esta información el supermercado puede determinar en qué momento necesitará mayor personal para mejorar la atención y cuándo no, con esto podrá tomar la decisión si es necesario reducir la cantidad de empleados en los periodos que no son necesitados. 
+Con esta información el supermercado puede monitorear las filas largas en la caja y determinar en qué momento se necesitará mayor personal para mejorar la atención y cuándo no. 
 
 \section{Delimitación}
 Los límites y alcances del proyecto, se resumen en los siguientes puntos: 

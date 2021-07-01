@@ -1,5 +1,45 @@
 \section{Elección de una red neuronal}
-Para la elección de la red neuronal se tomó en cuenta un estudio realizado por el equipo de YOLO (\cite{persona}), este equipo realizo pruebas con diferentes redes neuronales para poder demostrar el gran rendimiento que tiene la red YOLO, estas pruebas fueron hechas en la misma computadora, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3}.
+Para la elección de la red neuronal se tomó en cuenta diferentes estudios en el cual comparan el rendimiento que tienen las diferentes redes neuronales convolucionales. El primer estudio realizado por un investigador de la empresa Face++ (\cite{estudio1}), realiza una prueba con varias redes neuronales para comparar el rendimiento entre detecciones de una sola etapa y detecciones en dos etapa. Los resultados de esta investigación están en la Tabla \ref{tab:investigacion1}. 
+
+\begin{table}[h]
+\caption{Comparación de rendimiento entre diferentes redes neuronales realizado por Face++.}
+\centering
+\begin{tabular}{ccc}
+\textbf{Modelo} & \textbf{COCO (mP)} & \textbf{Tiempo (fps)}  \\ 
+\hline
+YOLO            & NA                 & NA                     \\
+YOLOv2          & 21.6               & 40                     \\
+SSD             & 25.1-28.8          & 46-19                  \\
+DSSD            & 33.2               & 5.5                    \\
+RON             & 27.4               & 15                     \\
+RETINANET       & 39.1               & 5                     
+\end{tabular}
+\label{tab:investigacion1}
+\vspace{3mm}
+\sources{Gang Yu (Modificado).}
+\end{table}
+
+Otro estudio importante a tomar en cuenta es uno realizado por un equipo de investigadores de Google (\cite{google2}), donde el objetivo es ayudar a escoger una red neuronal brindando diferente información como la velocidad, precisión y consumo de recursos de las redes neuronales analizadas, el resumen de los resultados se encuentra en la Tabla \ref{tab:investigacion2}. 
+
+Por último, se tomará en cuenta un estudio realizado por el equipo de YOLO (\cite{persona}), la cual pone a prueba la cuarta versión de su red neuronal y la compara con otras, el resultado de estas pruebas se puede observar en la Figura \ref{fig:labeling3}. 
+\clearpage
+
+\begin{table}[h]
+\caption{Resultados de una prueba de rendimiento realizado investigadores de Google.}
+\centering
+\begin{tabular}{cc}
+\textbf{Modelo}                                                   & \textbf{test-dev mAP}  \\ 
+\hline
+(Fastest) SSD w/MobileNet (Low Resolution)                        & 18.8                   \\
+(Fastest) SSD w/Inception V2 (Low Resolution)                     & 21.6                   \\
+(Sweet Spot) Faster R-CNN w/Resnet 101, 100 Proposals             & 31.9                   \\
+(Sweet Spot) R-FCN w/Resnet 101, 300 Proposals                    & 30.3                   \\
+(Most Accurate) Faster R-CNN w/Inception Resnet V2, 300 Proposals & 35.6                  
+\end{tabular}
+\label{tab:investigacion2}
+\vspace{3mm}
+\sources{Google Research (Modificado).}
+\end{table}
 
 \begin{figure}[h]
 	\centering
@@ -9,7 +49,11 @@ Para la elección de la red neuronal se tomó en cuenta un estudio realizado por
 	\label{fig:labeling3}
 \end{figure}
 
-Estas pruebas fueron realizadas haciendo el uso de la base de datos \say{COCO}, que es una recopilación de cientos de miles de imágenes con millones de objetos ya etiquetados que ya están preparados para realizar un entrenamiento, lo cual facilita a realizar pruebas de las diferentes redes neuronales. Con estos resultados nos muestran que la red neuronal YOLO es la mejor opción, ya que cuenta con una gran velocidad sin perder mucha precisión al momento de detectar los diferentes objetos. Por otra parte, la red EfficientDet presenta resultados interesantes, ya que tiene una gran precisión pero a un gran costo en su velocidad y dependiendo de la aplicación podría ser una buena elección.
+Los datos a tomar en consideración son las únicas que fueron ejecutadas con la base de datos \say{COCO}, ya que es una recopilación de cientos de miles de imágenes lo cual facilita al momento de realizar pruebas en las diferentes redes neuronales y en los últimos años es la más usada para este tipo de pruebas. 
+
+Estos resultados nos muestran que la cuarta versión de la red neuronal YOLO presenta una buena combinación entre precisión y velocidad, por otra parte, en el estudio realizado por Face++ nuevamente destaca YOLOv2 teniendo una buena combinación entre precisión y velocidad y en el estudio realizado por Google aunque no aparece YOLO ya que en ese momento la documentación que tenía YOLO no especificaba los datos suficientes como para poder realizar una comparación justa, pero por los resultados anteriores se puede considerar que YOLO se encontraría en la media de los datos que presenta la investigación.  
+ Ya que se está buscando tener una red neuronal que tenga una buena precisión y que se ejecute de manera rápida, se optó por trabajar con la cuarta versión de YOLO ya que presenta un mejor resultado en estos aspectos.  
+\clearpage
 
 \section{Entrenamiento de la red neuronal} 
 
@@ -127,8 +171,7 @@ Para calcular la cantidad de filtros se hará uso de la Ecuación \ref{eq:clases
 	\label{eq:clases}
 \end{equation}
 
-En este caso como solo se está trabajando con una sola clase (persona), el resultado obtenido mediante la fórmula es de 18 filtros. Con esto se finalizarán l++++++
-os cambios en el archivo \say{yolov4-custom.cfg}, pero aún faltaría editar otros 2 archivos más el primero definirá el nombre de la clase y el segundo definirá la ubicación de los archivos necesarios para entrenar, la ubicación de donde se guardará la red entrenada y cuantas clases se usará para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}. 
+En este caso como solo se está trabajando con una sola clase (persona), el resultado obtenido mediante la fórmula es de 18 filtros. Con esto se finalizarán los cambios en el archivo \say{yolov4-custom.cfg}, pero aún faltaría editar otros 2 archivos más el primero definirá el nombre de la clase y el segundo definirá la ubicación de los archivos necesarios para entrenar, la ubicación de donde se guardará la red entrenada y cuantas clases se usará para entrenar, esto se aprecia en la Figura \ref{fig:labeling45}. 
 
 \begin{figure}[h]
 	\centering
@@ -161,8 +204,6 @@ Una vez teniendo los archivos generados se procede a iniciar el entrenamiento me
 \end{figure}
 
 Al finalizar el entrenamiento ya se obtendrá una red neuronal funcional, capaz de detectar personas. Un resultado de este entrenamiento se observa en la Figura \ref{fig:labeling48}, donde se ven marcadas una cantidad aceptable de personas que aparecen en la imagen, cada recuadro que marca a una persona viene con un numero el cual indica el porcentaje de seguridad de detención realizada por la red neuronal. 
-
-\clearpage
 
 \begin{figure}[h]
 	\centering
@@ -272,6 +313,14 @@ Para poder obtener la tasa de verdaderos positivos se hara uso de la Ecuacion \r
 
 Una vez utilizando estas ecuaciones en los datos de la Tabla \ref{tab:FP} se obtendrá las datos necesarios para poder obtener la curva ROC, estos datos se podrán observar en la Tabla \ref{tab:TVFTFV}. 
 
+Con la tabla anterior ya se tiene todos los datos para obtener la curva ROC, pero para poder graficarlo es necesario que cada dato de la TFP reste a 1, como se indica en la Ecuación \ref{eq:v1}. Una vez realizado esto los datos tendrán que ser ordenados de forma ascendente.
+
+\begin{equation}
+\label{eq:v1}
+		1 - TFP  
+\end{equation}
+\clearpage
+ 
 \begin{table}[h]
 \centering
 \caption{Datos necesarios para obtener la curva ROC que indica el rendimiento de la red neuronal.}
@@ -292,21 +341,13 @@ Una vez utilizando estas ecuaciones en los datos de la Tabla \ref{tab:FP} se obt
 \label{tab:TVFTFV}
 \sources{Elaboración propia.}
 \end{table}
-
-Con la tabla anterior ya se tiene todos los datos para obtener la curva ROC, pero para poder graficarlo es necesario que cada dato de la TFP reste a 1, como se indica en la Ecuación \ref{eq:v1}. Una vez realizado esto los datos tendrán que ser ordenados de forma ascendente.
-
-\begin{equation}
-\label{eq:v1}
-		1 - TFP  
-\end{equation}
  
 Con estos datos se obtiene la curva ROC, que indica el rendimiento que posee la red neuronal entrenada. Esto se podrá observar en la Figura \ref{fig:FROC}, Los datos de las tablas anteriores no está completas ya que se analizaron varios objetos, por eso mismo las tablas completas se podrá observar en el apartado de los anexos del documento. 
 
-\clearpage
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=17cm,height=13cm]{imagenes/rocsi.png}
+	\includegraphics[width=12cm,height=10cm]{imagenes/rocsi.png}
 	\caption{Gráfica de rendimiento de la red neuronal entrenada.}
 	\source{Elaboración propia}
 	\label{fig:FROC}
@@ -334,7 +375,7 @@ Un factor importante para considerar es la posición de la cámara ya que si se 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=15cm,height=12cm]{imagenes/pruebared.png}
+	\includegraphics[width=12cm,height=10cm]{imagenes/pruebared.png}
 	\caption{Imagen del video donde se realizo las pruebas de rendimiento.}
 	\source{Elaboración propia.}
 	\label{fig:FROC2}

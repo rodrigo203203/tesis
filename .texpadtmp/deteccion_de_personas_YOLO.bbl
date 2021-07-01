@@ -1,4 +1,4 @@
-\begin{thebibliography}{40}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -81,6 +81,14 @@ T.~Hope, Y.~S., and I.~Lieder.
 \newblock \emph{Learning Tensorflow}.
 \newblock O'Reilly Media, Inc., Agosto del 2017.
 \newblock ISBN 9781491978511.
+
+\bibitem[Huang et~al.(2016)Huang, Rathod, Sun, Zhu, Korattikara, Fathi,
+  Fischer, Wojna, Song, Guadarrama, and Murphy]{google2}
+J.~Huang, V.~Rathod, C.~Sun, M.~Zhu, A.~Korattikara, A.~Fathi, I.~Fischer,
+  Z.~Wojna, Y.~Song, S.~Guadarrama, and K.~Murphy.
+\newblock Speed/accuracy trade-offs for modern convolutional object detectors.
+\newblock \emph{CoRR}, abs/1611.10012, 2016.
+\newblock URL \url{http://arxiv.org/abs/1611.10012}.
 
 \bibitem[{Huang} and {Tang}(2015)]{wechat}
 W.~{Huang} and J.~{Tang}.
@@ -251,6 +259,10 @@ A.~C.~M. y~Sarah~Guido.
 \newblock \emph{Introduction to Machine Learning with Python}.
 \newblock O'Reilly Media, Inc., Octubre del 2016.
 \newblock ISBN 9781449369880.
+
+\bibitem[Yu(2019)]{estudio1}
+G.~Yu.
+\newblock Modern object detection, 2019.
 
 \bibitem[Zeithaml et~al.(1996)Zeithaml, Berry, and Parasuraman]{enjoy2}
 V.~A. Zeithaml, L.~L. Berry, and A.~Parasuraman.

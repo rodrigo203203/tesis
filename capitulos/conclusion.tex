@@ -2,18 +2,13 @@
 
 \begin{itemize} 
 
-	\item Se realizó la investigación de diferentes métodos para construir una red neuronal para la detección de objetos en imágenes, como Tensorflow, Pytorch y Keras y se concluyó que lo mejor es usar una red ya construida que está basada en Tensorflow, el cual es Darknet este nos da resultados muy superiores que al construir una. 
+	\item Se realizo la investigación de diferentes algoritmos para la detección de objetos en imágenes y videos, y se seleccionó el algoritmo de YOLOv4 porque su velocidad de detección es aceptable para los requerimientos de proyecto y no compromete demasiado la precisión al identificar a las personas. 
 
-	\item Se logró entrenar una red neuronal para que sea capaz de detectar a personas tanto en imágenes como en videos en tiempo real. 
-	
-	\item La red entrenado demostró tener una precisión bastante aceptable teniendo una valor del 70\%, pero con un rendimiento bajo, lo que dificulta al entregar resultados óptimos.
+	\item Se entreno una red neuronal capaz de detectar personas en tiempo real utilizando imágenes y videos capturados por las cámaras de seguridad del supermercado. La red neuronal entrenada demostró tener una precisión del 71\% y un rendimiento del 63\% lo que es bastante aceptable tomando en cuenta que solo se utilizó 500 imágenes para el entrenamiento que se obtuvieron de las cámaras de seguridad. Esto se puede mejorar ampliando la cantidad y variedad de imágenes para el entrenamiento además que se identificó que el ángulo en la que se encuentra la cámara dificulta la detección de personas. 
 
+	\item Se logro calcular el tiempo promedio de espera de las personas generando identificadores independientes para cada detección, esto permite poder contar los objetos que están siendo detectados y con ello poder calcular el tiempo promedio de espera. Para eliminar ciertas fallas que se tiene al trabajar solamente con la detección de objetos se agregó la función de rastreo Deepsort, el cual es uno de los más conocidos, ya que tiene uno de los mejores rendimientos al momento de realizar un rastreo de los objetos detectados. 
 
-	\item Se juntó la detección con la función de rastreo, el cual elimina ciertas fallas que tiene al trabajar con solo la detección de objetos. Para la función de rastreo se decidió utilizar Deepsort, el cual es uno de los más conocidos, ya que tiene uno de los mejores rendimientos al momento de realizar un rastreo de los objetos detectados.  
-
-	\item Mediante el añadido del rastreo se puede obtener ID independientes de cada detección el cual permite poder contar los objetos que están siendo detectados y con ello poder sacar un tiempo promedio de espera. 
-
-	\item Como conclusión, se llega a obtener el resultado esperado teniendo en cuenta el rendimiento obtenido de la red neuronal. Con las detecciones que se obtiene es posible calcular el tiempo promedio de espera, para así poder notificar al encargado cuando una persona esté esperando más que el tiempo máximo definido, para así abrir una nueva caja para mejorar la velocidad de atención. 
+	\item Se implemento la aplicación de escritorio Neovision utilizando Python y Tkinter que obtiene las imágenes a través de OpenCv  para después ser analizadas por la red neuronal de YOLO que detecta a las personas y luego generar con un identificador único para cada persona. Con esta información la aplicación calcula el tiempo de espera promedio y presenta una alerta cuando se sobrepasa el tiempo máximo configurado.  
 
 \end{itemize} 
 
