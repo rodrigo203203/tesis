@@ -46,22 +46,22 @@
 \contentsline {section}{\numberline {3.2}Entrenamiento de la red neuronal}{51}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Base de datos}{51}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Preparación del ambiente}{52}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Personalizar una red neuronal}{53}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Inicio de entrenamiento}{55}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Prueba de rendimiento}{56}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Diseño de la interfaz}{61}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Detección de personas}{61}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Pantalla de alerta}{61}{subsection.3.4.2}%
-\contentsline {section}{\numberline {3.5}Diagrama de flujo}{62}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Diagrama C4Model}{64}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Contexto}{64}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Contenedores}{65}{subsection.3.6.2}%
-\contentsline {section}{\numberline {3.7}Descripción de la aplicación}{65}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Agregar el tracker a la detección}{66}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Agregar contador y límite de detección}{68}{subsection.3.7.2}%
-\contentsline {subsection}{\numberline {3.7.3}Alarma al superar el tiempo máximo}{69}{subsection.3.7.3}%
-\contentsline {subsection}{\numberline {3.7.4}Crear una base de datos}{69}{subsection.3.7.4}%
-\contentsline {section}{\numberline {3.8}Conclusiones del capitulo III}{71}{section.3.8}%
+\contentsline {subsection}{\numberline {3.2.3}Personalizar una red neuronal}{54}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Inicio de entrenamiento}{56}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Prueba de rendimiento}{57}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Diseño de la interfaz}{62}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detección de personas}{62}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Pantalla de alerta}{62}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}Diagrama de flujo}{63}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Diagrama C4Model}{65}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Contexto}{65}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Contenedores}{66}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}Descripción de la aplicación}{66}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Agregar el tracker a la detección}{67}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Agregar contador y límite de detección}{69}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}Alarma al superar el tiempo máximo}{70}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}Crear una base de datos}{70}{subsection.3.7.4}%
+\contentsline {section}{\numberline {3.8}Conclusiones del capitulo III}{72}{section.3.8}%
 \contentsline {chapter}{\numberline {4}FUNCIONAMIENTO DE LA APLICACIÓN}{73}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Proceso de iniciar la aplicación}{73}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Configuración de parámetros}{74}{section.4.2}%

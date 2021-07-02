@@ -121,72 +121,38 @@ Este registro de las alarmas se realiza con MongoDB, el cual lo guardara en este
 
 \section{Prueba de la aplicación}
 
-En este apartado se desarrollará un caso de estudio ficticio, donde se hará uso de la aplicación para poder saber cuántas veces suena la alarma en un día de atención normal con una sola caja. 
+En este apartado se desarrollará dos pruebas de la aplicación utilizando un video de seguridad proporcionado por Makro Parque, el cual capta a las personas haciendo fila. Los resultados que se obtendrán de esta prueba indicaran el tiempo promedio de espera que tienen los clientes y se sabrá si en algún momento se superó el tiempo máximo de espera.
+ 
+El primer video que se analizara tiene una duración de 20 minutos y fue grabado un martes al medio día, se eligió esta hora ya que es considerada un periodo donde hay mucho flujo de personas en el local. 
 
-Antes de poder ejecutar debidamente la aplicación se tiene que configurar los parámetros principales, el cual dependerá de los requerimientos del supermercado. En este caso, este supermercado considera que el tiempo promedio máximo es de 5 segundos y el tiempo máximo de una persona sin cruzar el límite es de 10 segundos.  Otro factor importante es la posición de la cámara, que en este caso se encuentra enfocando la parte lateral de la fila, lo cual llega a modificar la posición del límite de detección. Estas modificaciones se observan en el Código \ref{70}. 
-\clearpage
+Antes de poder ejecutar debidamente la aplicación se tiene que configurar los parámetros principales, el cual dependerá de los requerimientos del supermercado. En este caso, Makro Parque considera que una persona no puede esperar más de 6 minutos en ser atendido.  Otro factor importante es la posición de la cámara, que en este caso se encuentra posicionado en el techo teniendo una vista frontal y elevada de la fila, este dato es importante ya que ayuda a establecer las líneas que limiten la detección. Estas modificaciones se observan en el Código \ref{701}. 
 
-\begin{lstlisting}[language=Python,caption={Configuración de los parámetros para el caso de estudio.},captionpos=b,label=70]
+\begin{lstlisting}[language=Python,caption={Configuración de los parámetros para el caso de estudio.},captionpos=b,label=701]
 DETECTION_EVENTS = []
-MAXIMUM_AVERAGE_WAITING_TIME_IN_SECONDS = 5
+MAXIMUM_AVERAGE_WAITING_TIME_IN_SECONDS = 360
 MAXIMUM_NUMBER_OF_PEOPLE_DETECTED = 0
-MAXIMUM_TIME_WAITING_IN_SECONDS = 10
-LIMIT_LINE_OF_DETECTION = 550
+MAXIMUM_TIME_WAITING_IN_SECONDS = 360
+LIMIT_LINE_OF_DETECTION_MIN = 350
+LIMIT_LINE_OF_DETECTION_MAX = 1550
 \end{lstlisting}
 \vspace{5mm}
 
-Una vez establecido los parámetros, se procede a ejecutar la aplicación de la manera en la que se indicó en la Figura \ref{fig:labeling15}. En el periodo en que la aplicación estaba en funcionamiento se llegó a detectar 4 alarmas, las cuales fueron registradas en la base de datos y eso nos permite saber en qué momento salto la alarma y como este procedimiento de detección igual se guarda en un video se puede ver por cuál de los problemas se registró la alarma. 
+Una vez configurada la aplicación se procede a ejecutar la aplicación y la primera imagen que se observa son las líneas que indican los límites de detección, esto se podrá ver en la Figura \ref{fig:labeling80}.   
 
-La primera alarma se activa debido a que se superó el tiempo promedio máximo de espera sin cruzar el límite, este caso se observa en la Figura \ref{fig:labeling80}, donde la fila solo era de una persona y aun así hubo demora para llegar a ser atendido. 
+
 
 \vspace{5mm}
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.5]{imagenes/caso1.png}
-	\caption{Primer caso en el que se activa la alarma debido a la falta de movimiento en la fila.}
+	\includegraphics[scale=0.3]{imagenes/resultado-real.png}
+	\caption{Imagen del video analizado para las pruebas donde se dibujan los límites de detección.}
 	\source{Elaboración propia}
 	\label{fig:labeling80}
 \end{figure}
 
-El siguiente caso se activa debido a que se supera el tiempo promedio máximo de espera, lo cual se observa en la Figura \ref{fig:labeling81}, en este caso hay una situación especial donde se demuestra la buena detección que realiza la red neuronal entrenada, ya que una de las personas está con un perro y a pesar de eso la red neuronal es capaz de detectarlo e ignorar al perro.
+Una vez finalizado el video y analizando los resultados se puede concluir que la cantidad de cajas que utilizo el supermercado era el correcto ya que en ningún momento se activó la alarma y en cambio se obtuvo un buen tiempo promedio de espera ya que este resultado oscilaba entre un minuto a dos minutos de espera. 
 
-\vspace{5mm}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.4]{imagenes/caso2.png}
-	\caption{Segundo caso en el que se activa la alarma debido a que se superó el tiempo máximo de espera.}
-	\source{Elaboración propia}
-	\label{fig:labeling81}
-\end{figure}
-
-El tercer y cuarto caso en el que se activa la alarma es por la falta de movimiento en la fila, en la Figura \ref{fig:labeling82} se observa el momento exacto donde se registra la alarma. 
-
-\vspace{5mm}
-\begin{figure}[h]
-	\centering
-	\includegraphics[scale=0.33]{imagenes/caso4.png}
-	\caption{Cuarto caso en el que se activa la alarma debido nuevamente a la falta de movimiento en la fila.}
-	\source{Elaboración propia}
-	\label{fig:labeling82}
-\end{figure}
-
-Todos los casos en el que se activó la alarma fueron registrados en la base de datos que genera MongoDB, estos datos guardados se observara mejor en la Tabla \ref{tab:fruta3}. Con esta información se puede determinar que, si hay un problema en la atención de las cajas, debido a que se activó varias veces la alarma y el caso más frecuente es la falta de movimiento en la fila, con esto se podría determinar que el problema podría venir por parte del cajero, debido a que realiza una atención lenta. 
-\begin{table}[h]
-\begin{center}
-\caption{Datos guardados en la base de datos.}
-\begin{tabular}{| c | c |}
-\hline \textbf{Identificador} & \textbf{Fecha} \\ \hline
-5fb47795f1986a8bdb48115a & 2020-11-17T09:23:33.793Z  \\
-5fb47838f1986a8bdb48115b & 2020-11-17T09:26:16.45Z \\ 
-5fb47958f1986a8bdb48115c & 2020-11-17T09:45:01.503Z \\ 
-5fb48147f1986a8bdb48115d & 2020-11-17T09:48:50.109Z\\ \hline
-\end{tabular}
-%\caption{Datos guardados en la base de datos.}
-\label{tab:fruta3}
-\sources{Elaboración propia.}
-\end{center}
-\end{table}
-
+El segundo video analizado tiene una duración de 27 minutos y fue grabado a las 7 de la noche, el cual es otra hora considerada donde existe mucho flujo de clientes. Igualmente, como la anterior prueba no se activa ninguna alarma y se obtiene un tiempo promedio de espera de veinte cinco a treinta segundos, lo cuales es un tiempo bastante bueno lo que demuestra que Makro Parque tiene un sistema de fila única muy eficiente. 
 
 
 

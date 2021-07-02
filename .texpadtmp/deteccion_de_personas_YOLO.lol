@@ -1,9 +1,9 @@
 \contentsline {lstlisting}{\numberline {2.1}Ejemplos de los primeros pasos para crear nodos con Tensorflow.}{42}{lstlisting.2.1}%
 \contentsline {lstlisting}{\numberline {2.2}Ejecución de funciones aritméticas en Tensorflow.}{42}{lstlisting.2.2}%
 \contentsline {lstlisting}{\numberline {2.3}Configuración con Keras para trabajar con imágenes.}{43}{lstlisting.2.3}%
-\contentsline {lstlisting}{\numberline {3.1}Comando que realiza una prueba a la red neuronal para obtener la precisión media.}{56}{lstlisting.3.1}%
-\contentsline {lstlisting}{\numberline {3.2}Manera en la que se importan los diferentes paquetes al programa.}{66}{lstlisting.3.2}%
-\contentsline {lstlisting}{\numberline {3.3}Comando para guardar información en la base de datos.}{70}{lstlisting.3.3}%
+\contentsline {lstlisting}{\numberline {3.1}Comando que realiza una prueba a la red neuronal para obtener la precisión media.}{57}{lstlisting.3.1}%
+\contentsline {lstlisting}{\numberline {3.2}Manera en la que se importan los diferentes paquetes al programa.}{67}{lstlisting.3.2}%
+\contentsline {lstlisting}{\numberline {3.3}Comando para guardar información en la base de datos.}{71}{lstlisting.3.3}%
 \contentsline {lstlisting}{\numberline {4.1}Se definen los parámetros de tiempo máximo de espera, el límite de detección y el máximo tiempo promedio de espera.}{74}{lstlisting.4.1}%
 \contentsline {lstlisting}{\numberline {4.2}Función que suma la diferencia de tiempo entre cada detección en segundos.}{75}{lstlisting.4.2}%
 \contentsline {lstlisting}{\numberline {4.3}Cálculo para la obtención del tiempo promedio de espera.}{75}{lstlisting.4.3}%
